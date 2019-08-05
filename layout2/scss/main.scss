@@ -15,5 +15,9 @@
     @import "./layout/main/cLients";
 }
 #footer{
+    font-size: 14px;
+    background: #141313;
+    padding: 6em 0;
+    position: relative;
     @import "./layout/footer/footer.scss";
 }

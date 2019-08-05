@@ -1,3 +1,104 @@
 @import "../../helper/mixin.scss";
 @import "../../helper/variable.scss";
 @import "../../helper/font.scss";
+
+.ft-container{
+    @include container-mw(1300px);
+
+    .row-top{
+        @include row-fb;
+        margin-bottom: 4rem;
+
+        .col-ft{
+            @include col-3;
+            padding: 0 15px;
+
+            .ftco-footer-widget{
+                @include ft-default;
+
+                .ftco-heading-2{
+                    color: #fff;
+                    margin-bottom: 40px;
+                    font-size: 18px;
+                    font-weight: 400 !important;
+                    line-height: 1.5;
+                }
+                p{
+                    color: rgba(255,255,255,.7);
+                    margin-bottom: 1rem;
+                    font-size: 14px;
+                }
+                .ftco-footer-social{
+                    li{
+                        a{
+                            height: 40px;
+                            width: 40px;
+                            display: block;
+                            float: left;
+                            background: rgba(255,255,255,.05);
+                            border-radius: 50%;
+                            position: relative;
+                            color: $white;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            margin-right: 10px;
+                        }
+                    }
+                }
+                .list-unstyled{
+                    li{
+                        a{
+                            color: rgba(255,255,255,.7);
+                            font-size: 14px;
+                            transition: all .5s;
+
+                            &:hover{
+                                color: $white;
+                            }
+                            i{
+                                color: $white;
+                                margin-right: 8px;
+                            }
+                        }
+                    }
+                }
+                .subscribe-form{
+                    .form-group{
+                        .address{
+                            @include input;
+                            height: 52px;
+                            margin-bottom: 15px;
+                            border-radius: 2px;
+                            width: 100%;
+                            background: rgba(255,255,255,.1)!important;
+                            border: none;
+                            color: rgba(255,255,255,.7)!important;
+                            font-size: 16px;
+                            text-align: center;
+                            cursor: pointer;
+                        }
+                        .submit{
+                            @include input;
+                            height: 52px;
+                            color: #fff!important;
+                            font-size: 16px;
+                            background: #0033c7!important;
+                            border: none!important;
+                            cursor: pointer;
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+    .row-coppyright{
+        text-align: center;
+
+        p{
+            color: rgba(255,255,255,.7);
+            margin-bottom: 1rem;
+        }
+    }
+}

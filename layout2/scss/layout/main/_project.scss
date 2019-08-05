@@ -78,4 +78,105 @@
             }
         }
     }
+    .prj-gallery-container{
+        @include container(100%);
+        @include row-fb;
+
+        .col{
+            @include col-3;
+            cursor: pointer;
+            overflow: hidden;
+
+            .overlay{
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                height: 100%;
+                width: 100%;
+                opacity: 0;
+                transition: .5s ease;
+                background: #0033c7;
+                z-index: 10;
+
+                .text{
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    padding: 2em;
+                    z-index: 2;
+                    transition: all .5s ease;
+                    margin-top: -100px;
+
+                    span{
+                        @include ft-default;
+                        font-size: 14px;
+                        text-transform: uppercase;
+                        letter-spacing: 2px;
+                        color: rgba(255,255,255,.8);
+                    }
+                    h3{
+                        @include ft-default;
+                        font-weight: 400;
+                        line-height: 1.5;
+                        font-size: 1.75rem;
+                        margin-bottom: .5rem;
+
+                        a{
+                            color: #fff;
+                        }
+                    }
+                }
+                .view{
+                    >a{
+                        color: $white;
+                        position: absolute;
+                        bottom: -60px;
+                        display: block;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        left: 2em;
+                        width: 50px;
+                        height: 50px;
+                        border: 1px solid #fff;
+                        border-radius: 50%;
+                        transition: all .5s ease;
+                        z-index: 2;
+                        cursor: zoom-in;
+                    }
+                }
+            }
+            &:hover{
+                .overlay{
+                    opacity: .8;
+
+                    .text{
+                        margin-top: unset;
+                    }
+                    .view{
+                        >a{
+                            bottom: 30px;
+                        }
+                    }
+                }
+                a.fancybox-button{
+                    img{
+                        transform: scale(1.1,1.1);
+                    }
+                }
+                
+            }
+            a.fancybox-button{
+                position: relative;
+
+                img{
+                    @include img-res;
+                    width: 100%;
+                    transition: all .4s;
+                }
+            }
+        }
+    }
 }

@@ -1,0 +1,116 @@
+.architect{
+    padding: 7em 0;
+
+    .arch-container{
+        @include container-mw(1300px);
+
+        .row-top{
+            @include col-auto(58.33333%);
+            margin: 0 auto;
+            padding-bottom: 1rem;
+            margin-bottom: 3rem;
+
+            .title{
+                .subheading{
+                    font-family: $font-1;
+                    font-weight: 400;
+                    font-size: 18px;
+                    display: block;
+                    margin-bottom: 5px;
+                    text-transform: uppercase;
+                    letter-spacing: 2px;
+                    color: #000;
+                    position: relative;
+
+                    &::after{
+                        position: absolute;
+                        top: 50%;
+                        left: 0;
+                        right: 0;
+                        width: 100%;
+                        height: 1px;
+                        content: '';
+                        background: #e1e8ff;
+                        z-index: -1;
+                    }
+                    small{
+                        font-size: 80%;
+                        font-weight: 400;
+                        text-transform: uppercase;
+                        letter-spacing: 2px;
+                        color: #000;
+                        background: $white;
+                    }
+                }
+                h2{
+                    @include tt-default;
+                }
+                p{
+                    @include ft-default;
+                }
+            }
+        }
+        .row-body{
+            @include row-fb;
+
+            .col{
+                @include col-3;
+                padding: 0 15px;
+
+                .staff{
+                    cursor: pointer;
+
+                    &:hover{
+                        .text{
+                            margin-top: -45px;
+                            
+                            .faded{
+                                opacity: 1;
+                            }
+                        }
+                    }
+
+                    .img{
+                        background-image: url($bgURL+"team-1.webp");
+                        height: 320px;
+                        background-position: top center;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                    }
+                    .text{
+                        background: #fff;
+                        transition: all .3s ease;
+                        padding: 1.5rem;
+                        @include ft-default;
+
+                        h3{
+                            font-size: 20px;
+                            margin-bottom: 0;
+                            line-height: 1.5;
+                            color: rgba(0,0,0,.8);
+                            font-weight: 400;
+                        }
+                        span{
+                            color: #0033c7;
+                            display: block;
+                            margin-bottom: .5rem;
+                        }
+                        .faded{
+                            opacity: 0;
+                            transition: all .3s ease;
+
+                            .ftco-social{
+                                display: flex;
+                                margin-top: 1rem;
+
+                                li{
+                                    margin-right: 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
