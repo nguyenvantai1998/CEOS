@@ -1,0 +1,19 @@
+@import "helper/custom.scss";
+@import "./helper/font.scss";
+#header{
+    @import "./layout/header/header.scss";
+}
+#main{
+    @import "./layout/main/about";
+    @import "./layout/main/counter";
+    @import "./layout/main/work";
+    @import "./layout/main/service";
+    @import "./layout/main/project";
+    @import "./layout/main/satisfied";
+    @import "./layout/main/architect";
+    @import "./layout/main/blog";
+    @import "./layout/main/cLients";
+}
+#footer{
+    @import "./layout/footer/footer.scss";
+}

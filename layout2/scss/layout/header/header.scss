@@ -1,0 +1,135 @@
+@import "../../helper/mixin.scss";
+@import "../../helper/variable.scss";
+@import "../../helper/font.scss";
+
+.hd-container{
+    @include container(100%);
+
+    .hd-top{
+        
+        .nav-primary{
+            @include container-mw(1300px);
+            @include row-fb;
+
+            .logo{
+                @include col-auto(20%);
+                display: flex;
+                align-items: center;
+
+                >a{
+                    font-family: $font-1;
+                    color: $cl-2;
+                    font-weight: 900;
+                    font-size: 20px;
+                    display: inline-block;
+                    padding-top: .3125rem;
+                    padding-bottom: .3125rem;
+                    margin-right: 1rem;
+                    line-height: inherit;
+                    white-space: nowrap;
+                }
+            }
+            .menu{
+                @include col-auto(80%);
+
+                .navbar-nav{
+                    @include row-fb;
+                    justify-content: flex-end;
+
+                    >li{
+                        >a{
+                            font-family: $font-1;
+                            font-size: 14px;
+                            padding: 1.2rem 20px;
+                            color: $cl-2;
+                            display: block;
+                            font-weight: 400;
+                            line-height: 1.8;
+                        }
+                        >a.active{
+                            color: $cl-1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .hd-banner{
+        .banner-slider{
+            >div{
+                .item{
+
+                    .bg-container{
+                        @include container-mw(1300px);
+                        @include row-fb;
+
+                        .box-content{
+                            @include col-auto(30%);
+                            position: relative;                      
+                        }
+                        .box-img{
+                            min-height: 722px;
+                            // background-image: url($bgURL+'bg_2.webp');
+                            background-size: cover;
+                            background-repeat: no-repeat;
+                            background-position: center center;
+                            @include col-auto(70%);
+                            position: relative;
+                            z-index: -1;
+                            
+                            h3{
+                                position: absolute;
+                                top: 0;
+                                bottom: 0;
+                                display: flex;
+                                align-items: center;
+                                transform: rotate(90deg);
+                                @include ft-title1;
+                            }
+                            .tt-1{
+                                right: -120px;
+                            }
+                            .tt-2{
+                                right: -90px;
+                            }
+                        }
+                        .text{
+                            position: absolute;
+                            top: 0;
+                            bottom: 0;
+                            width: 45%;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+
+                            .title{
+                                font-family: $font-1;
+                                font-size: 60px;
+                                color: $cl-2;
+                                line-height: 1.5;
+                                font-weight: 900;
+                                margin-bottom: 1.5rem;
+                            }
+                            p{
+                                @include ft-content;
+                                margin-bottom: 30px;
+
+                                .btn-view{
+                                    @include button;
+
+                                    &:hover{
+                                        @include button-hv;
+                                    }
+                                }
+                            }
+                        } 
+                    }
+                }
+                .owl-dots{
+                    display: none !important;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,88 @@
+.about{
+    padding: 7em 0;
+    position: relative;
+
+    .ab-container{
+        @include container-mw(1300px);
+        @include row-fb;
+
+        .box-img{
+            @include col-auto(41.66667%);
+            
+            img{
+                @include img-res;
+            }
+        }
+        .box-content{
+            @include col-auto(58.33333%);
+            padding-left: 3rem;
+
+            .row-top{
+                padding-left: 3rem;
+
+                .title{
+                    padding-left: 3rem;
+
+                    .subheading{
+                        font-family: $font-1;
+                        font-weight: 400;
+                        font-size: 18px;
+                        display: block;
+                        margin-bottom: 5px;
+                        text-transform: uppercase;
+                        letter-spacing: 2px;
+                        color: #000;
+                        position: relative;
+
+                        &::after{
+                            position: absolute;
+                            top: 50%;
+                            left: 0;
+                            right: 0;
+                            width: 100%;
+                            height: 1px;
+                            content: '';
+                            background: #e1e8ff;
+                            z-index: -1;
+                        }
+                        small{
+                            font-size: 80%;
+                            font-weight: 400;
+                            text-transform: uppercase;
+                            letter-spacing: 2px;
+                            color: #000;
+                            background: $white;
+                        }
+                    }
+                    h2{
+                        @include tt-default;
+                    }
+                }
+            }
+            .row-body{
+                padding-left: 3rem;
+
+                .content{
+                    @include ft-default;
+                    background: $white;
+
+                    p{
+                        margin-bottom: 1rem;
+
+                        .btn-custom{
+                            font-weight: 500;
+                            color: $cl-4;
+                            border-bottom: 4px solid $cl-3;
+
+                            &:hover{
+                                text-decoration: none;
+                                color: $cl-1;
+                                outline: none!important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
