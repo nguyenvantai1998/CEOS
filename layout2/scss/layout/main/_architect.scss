@@ -114,3 +114,56 @@
         }
     }
 }
+
+// res
+@include res(1199px){
+    .architect {
+        .arch-container{
+            @include container-mw(90%);
+        }
+    }
+}
+
+@include res(991px){
+    .architect {
+        .arch-container{
+            @include container-mw(95%);
+
+            .row-body{
+                .col{
+                    @include col-6;
+                }
+            }
+        }
+    }
+}
+
+@include res(767px){
+    .architect {
+        .arch-container {
+            .row-top {
+                @include col-12;
+            }
+            .row-body{
+                .col{
+                    @include col-12;
+                    margin-bottom: 30px;
+
+                    .staff {
+                        .text{
+                            .faded{
+                                opacity: 1 !important;
+                            }
+                        }
+
+                        &:hover{
+                            .text{
+                                margin-top: unset !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -107,3 +107,31 @@
         }
     }
 }
+
+// res
+@include res(1199px){
+    .clients {
+        .clie-container{
+            @include container-mw(90%);
+        }
+    }
+}
+
+@include res(767px){
+    .clients {
+        .clie-container {
+            .row-top {
+                .box-left {
+                    @include col-12;
+                }
+                .box-right{
+                    @include col-12;
+
+                    .box-content{
+                        padding: 0;
+                    }
+                }
+            }
+        }
+    }
+}

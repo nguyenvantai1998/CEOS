@@ -66,3 +66,43 @@
     }
 
 }
+
+// res
+@include res(1199px){
+    .service {
+        .sv-container{
+            @include container-mw(90%);
+        }
+    }
+}
+
+@include res(991px){
+    .service {
+        padding-right: 0;
+        padding-left: 0;
+
+        .sv-container{
+            @include container-mw(95%);
+        }
+    }
+}
+
+@include res(767px){
+    .service{
+        .sv-container {
+            .sv-top {
+                .box-left {
+                    @include col-12;
+                }
+                .box-right {
+                    @include col-12;
+
+                    .col{
+                        @include col-12;
+                        padding-left: 0;
+                    }
+                }
+            }
+        }
+    }
+}

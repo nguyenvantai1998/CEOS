@@ -51,3 +51,17 @@
         }
     }
 }
+
+// res
+@include res(767px){
+    .counter {
+        .ct-container{
+            @include container-mw(95%);
+
+            .col-ct{
+                @include col-6;
+                margin-bottom: 50px;
+            }
+        }
+    }
+}

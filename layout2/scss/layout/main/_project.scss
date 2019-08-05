@@ -180,3 +180,55 @@
         }
     }
 }
+
+// res
+@include res(1199px){
+    .project {
+        .prj-container{
+            @include container-mw(90%);
+            margin-bottom: 30px;
+        }
+    }
+}
+
+@include res(991px){
+    .project {
+        .prj-container{
+            @include container-mw(95%);
+            margin-bottom: 40px;
+        }
+        .prj-gallery-container{
+            .col{
+                @include col-6;
+            }
+        }
+    }
+}
+
+@include res(767px){
+    .project {
+        .prj-container {
+            .box-left {
+                @include col-12;
+                padding-right: 0;
+            }
+            .box-right{
+                @include col-12;
+
+                .box-content{
+                    padding: 0;
+                }
+            }
+        }
+    }
+}
+
+@include res(599px){
+    .project {
+        .prj-gallery-container{
+            .col {
+                @include col-12;
+            }
+        }
+    }
+}

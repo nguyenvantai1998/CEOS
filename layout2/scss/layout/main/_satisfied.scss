@@ -160,3 +160,30 @@
         }
     }
 }
+
+// res
+@include res(1199px){
+    .satisfied {
+        .sati-container{
+            @include container-mw(90%);
+        }
+    }
+}
+
+@include res(991px){
+    .satisfied {
+        .sati-container{
+            @include container-mw(95%);
+        }
+    }
+}
+
+@include res(767px){
+    .satisfied {
+        .sati-container {
+            .row-top {
+                @include col-12;
+            }
+        }
+    }
+}

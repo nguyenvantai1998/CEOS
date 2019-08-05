@@ -105,4 +105,30 @@
       color: rgba(255, 255, 255, 0.7);
       margin-bottom: 1rem; }
 
+@media screen and (max-width: 1199px) {
+  .ft-container {
+    max-width: 90%;
+    margin: 0 auto;
+    box-sizing: border-box; } }
+@media screen and (max-width: 991px) {
+  .ft-container {
+    max-width: 95%;
+    margin: 0 auto;
+    box-sizing: border-box; }
+    .ft-container .row-top .col-ft {
+      position: relative;
+      -ms-flex: 0 0 50%;
+      flex: 0 0 50%;
+      max-width: 50%;
+      box-sizing: border-box;
+      margin-bottom: 30px; } }
+@media screen and (max-width: 767px) {
+  .ft-container .row-top .col-ft {
+    position: relative;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 30px; } }
+
 /*# sourceMappingURL=footer.css.map */

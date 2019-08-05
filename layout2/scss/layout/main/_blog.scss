@@ -133,3 +133,51 @@
         }
     }
 }
+
+// res
+@include res(1199px){
+    .blog {
+        .blg-container{
+            @include container-mw(90%);
+        }
+    }
+}
+
+@include res(991px){
+    .blog {
+        .blg-container{
+            @include container-mw(95%);
+
+            .row-body{
+                .col{
+                    @include col-12;
+                }
+            }
+        }
+    }
+}
+
+@include res(767px){
+    .blog {
+        .blg-container {
+            .row-top {
+                .box-left {
+                    @include col-12;
+                }
+                .box-right{
+                    @include col-12;
+
+                    .box-content{
+                        padding: 0;
+                    }
+                }
+            }
+            .row-body{
+                .col{
+                    padding-right: 0;
+                    padding-left: 0;
+                }
+            }
+        }
+    }
+}

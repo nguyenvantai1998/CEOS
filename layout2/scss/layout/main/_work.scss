@@ -103,3 +103,46 @@
     }
 
 }
+
+// res
+@include res(1199px){
+    .work {
+        .wk-container{
+            @include container-mw(90%);
+        }
+    }
+}
+
+@include res(991px){
+    .work {
+        .wk-container{
+            @include container-mw(95%);
+        }
+    }
+}
+
+@include res(767px){
+    .work {
+        .wk-container {
+            .wk-top {
+                .box-title {
+                    @include col-12;
+                }
+                .box-content{
+                    @include col-12;
+                    padding-left: 0;
+
+                    .content{
+                        padding-left: 0;
+                    }
+                }
+            }
+            .wk-body{
+                .box-icon-content{
+                    @include col-12;
+                    padding-left: 0;
+                }
+            }
+        }
+    }
+}

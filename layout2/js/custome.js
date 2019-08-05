@@ -2,12 +2,30 @@ $(document).ready(function () {
 
   // animation
   // AOS.init();
+
+  // scroll nav
+  var heightNav = $('.hd-top').height();
+  $(window).bind('scroll', function () {
+    var posNav = window.scrollY;
+    if (posNav > heightNav) {
+      $('.hd-top').addClass('hd-top-active');
+    } else {
+      $('.hd-top').removeClass('hd-top-active');
+    }
+  })
+
+  // nav mobile
+  $('#btn-showhide').click(function () {
+    $('.menu').toggleClass("menu-active", 500);
+  })
+
+  // slider banner
   $('.fadeOut').owlCarousel({
     items: 1,
     animateOut: 'fadeOut',
     loop: true,
     margin: 10,
-    autoplay: true,
+    // autoplay: true,
     // autoplayTimeout:2000
   });
 
