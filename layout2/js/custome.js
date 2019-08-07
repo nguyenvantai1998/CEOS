@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
   // animation
-  // AOS.init();
+  AOS.init();
 
   // scroll nav
   var heightNav = $('.hd-top').height();
@@ -22,10 +22,9 @@ $(document).ready(function () {
   // slider banner
   $('.fadeOut').owlCarousel({
     items: 1,
-    animateOut: 'fadeOut',
     loop: true,
     margin: 10,
-    // autoplay: true,
+    autoplay: true,
     // autoplayTimeout:2000
   });
 

@@ -8,6 +8,7 @@
             @include row-fb;
             margin-bottom: 3rem;
             padding-bottom: .5rem;
+            overflow: hidden;
 
             .box-left{
                 @include col-4;

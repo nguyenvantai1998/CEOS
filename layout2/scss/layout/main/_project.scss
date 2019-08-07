@@ -1,8 +1,12 @@
 .project{
+    padding: 7em 0;
+    position: relative;
 
     .prj-container{
         @include container-mw(1300px);
         @include row-fb;
+        margin-bottom: 35px;
+        overflow: hidden;
 
         .box-left{
             @include col-4;
@@ -179,6 +183,63 @@
             }
         }
     }
+
+    // pagination page
+    .pagination{
+        padding: 3rem 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .block-page{
+            
+            ul{
+                li{
+                    display: inline-block;
+                    margin-bottom: 4px;
+                    font-weight: 400;
+
+                    a{
+                        border: 1px solid #0033c7;
+                        text-align: center;
+                        display: inline-block;
+                        width: 40px;
+                        height: 40px;
+                        line-height: 40px;
+                        border-radius: 50%;
+                    }
+                }
+                li.active{
+                    span{
+                        background: #0033c7;
+                        color: #fff;
+                        border: 1px solid transparent;
+                        text-align: center;
+                        display: inline-block;
+                        width: 40px;
+                        height: 40px;
+                        line-height: 40px;
+                        border-radius: 50%;
+                    }
+                }
+            }
+        }
+    }
+
+    // service
+    .prj-gallery-service{
+        @include container-mw(1300px);
+
+        .boxGallery{
+            @include col-3;
+            padding: 0 15px;
+
+            .col{
+                @include col-auto(100%);
+            }
+        }
+    }
+
 }
 
 // res
@@ -200,6 +261,12 @@
         .prj-gallery-container{
             .col{
                 @include col-6;
+            }
+        }
+        .prj-gallery-service{
+            .boxGallery{
+                @include col-6;
+                margin-bottom: 30px;
             }
         }
     }
@@ -228,6 +295,12 @@
         .prj-gallery-container{
             .col {
                 @include col-12;
+            }
+        }
+        .prj-gallery-service{
+            .boxGallery{
+                @include col-auto(100%);
+                margin-bottom: 15px;
             }
         }
     }

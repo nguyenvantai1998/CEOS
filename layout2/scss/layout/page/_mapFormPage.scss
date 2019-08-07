@@ -1,0 +1,117 @@
+.mapForm{
+
+    .mapF-container{
+        @include container-mw(100%);
+        @include row-fb;
+
+        .colMap{
+            @include col-6;
+
+            iframe{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .colForm{
+            @include col-6;
+            padding: 3rem;
+
+            .form-group{
+                margin-bottom: 1rem;
+                @include ft-default;
+
+                .form-control{
+                    @include input;
+                    border: 1px solid rgba(0,0,0,.1);
+                    height: 52px;
+                    background: $white;
+                    color: $cl-2;
+                    font-size: 18px;
+                    border-radius: 0;
+                    box-shadow: none;
+                }
+                textarea{
+                    height: unset !important;
+                }
+                .btn-send{
+                    @include ft-default;
+                    cursor: pointer;
+                    background: $cl-1;
+                    border: 1px solid $cl-1;
+                    color: $white;
+                    padding: 1rem 3rem;
+                    font-weight: 400;
+                    border-radius: 30px;
+                    transition: all .3s;
+
+                    &:hover{
+                        border: 1px solid $cl-1;
+                        background: 0 0;
+                        color: $cl-1;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// res
+@include res(1199px){
+    .contactPage {
+        .ctpage-container{
+            @include container-mw(95%);
+        }
+    }
+}
+
+@include res(991px){
+    .contactPage {
+        .ctpage-container {
+            .contact-info {
+                .col {
+                    @include col-6;
+                    margin-bottom: 25px;
+                }
+            }
+        }
+    }
+}
+
+@include res(767px){
+    .contactPage {
+        .ctpage-container {
+            .contact-info {
+                .col {
+                    @include col-auto(100%);
+                    margin-bottom: 25px;
+                }
+            }
+        }
+    }
+    .mapForm {
+        .mapF-container {
+            .colMap {
+                @include col-auto(100%);
+
+                iframe{
+                    min-height: 400px;
+                }
+            }
+            .colForm{
+                @include col-auto(100%);
+            }
+        }
+    }
+}
+
+@include res(599px){
+    .mapForm {
+        .mapF-container {
+            .colForm{
+                @include col-auto(100%);
+                padding-right: 25px;
+                padding-left: 25px;
+            }
+        }
+    }
+}

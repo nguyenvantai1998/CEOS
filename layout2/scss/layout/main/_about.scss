@@ -5,6 +5,7 @@
     .ab-container{
         @include container-mw(1300px);
         @include row-fb;
+        overflow: hidden;
 
         .box-img{
             @include col-auto(41.66667%);
@@ -85,6 +86,26 @@
             }
         }
     }
+
+    // page about
+    .boxContent{
+        @include row-fb;
+        margin-top: 40px;
+
+        .col-box{
+            @include col-4;
+            @include ft-default;
+            padding:  0 30px 0 0;
+
+            h3{
+                line-height: 1.5;
+                color: rgba(0,0,0,.8);
+                font-weight: 400;
+                font-size: 1.5rem;
+                margin-bottom: .5rem;
+            }
+        }
+    }
 }
 
 // res
@@ -122,7 +143,17 @@
                 }
             }
         }
+        // page about
+        .boxContent{
+            margin-top: 3rem;
+
+            .col-box{
+                @include col-auto(100%);
+                margin-bottom: 30px;
+            }
+        }
     }
+    
 }
 
 @include res(599px){

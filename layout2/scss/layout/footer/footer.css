@@ -130,5 +130,8 @@
     max-width: 100%;
     box-sizing: border-box;
     margin-bottom: 30px; } }
+@media screen and (max-width: 599px) {
+  .ft-container .row-coppyright p {
+    line-height: 1.8em; } }
 
 /*# sourceMappingURL=footer.css.map */

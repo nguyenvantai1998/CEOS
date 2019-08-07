@@ -133,3 +133,13 @@
         }
     }
 }
+
+@include res(599px){
+    .ft-container {
+        .row-coppyright {
+            p {
+                line-height: 1.8em;
+            }
+        }
+    }
+}

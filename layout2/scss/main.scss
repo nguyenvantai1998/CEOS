@@ -3,6 +3,7 @@
 #header{
     @import "./layout/header/header.scss";
 }
+@import "./layout/main/bannerPage";
 #main{
     @import "./layout/main/about";
     @import "./layout/main/counter";
@@ -13,7 +14,14 @@
     @import "./layout/main/architect";
     @import "./layout/main/blog";
     @import "./layout/main/cLients";
+    @import "./layout/main/mapFanpage";
+
+    // all page sub
+    @import "./layout/page/blogPage";
+    @import "./layout/page/contactPage";
+    @import "./layout/page/mapFormPage";
 }
+
 #footer{
     font-size: 14px;
     background: #141313;

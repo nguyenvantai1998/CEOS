@@ -1,0 +1,215 @@
+.pageBlog{
+    @include container-mw(1300px);
+    @include row-fb;
+    padding: 7rem 0;
+
+    .col-page-left{
+        @include col-auto(66.66667%);
+        padding: 0 15px;
+
+        .blog{
+            background: none;
+            padding: 0;
+
+            .blg-container{
+                .row-body{
+                    .col{
+                        @include col-6;
+                        margin-bottom: 30px;
+                    }
+                }
+                .pagination{
+                    padding: 1rem 0;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+            
+                    .block-page{
+                        
+                        ul{
+                            li{
+                                display: inline-block;
+                                margin-bottom: 4px;
+                                font-weight: 400;
+            
+                                a{
+                                    border: 1px solid #0033c7;
+                                    text-align: center;
+                                    display: inline-block;
+                                    width: 40px;
+                                    height: 40px;
+                                    line-height: 40px;
+                                    border-radius: 50%;
+                                }
+                            }
+                            li.active{
+                                span{
+                                    background: #0033c7;
+                                    color: #fff;
+                                    border: 1px solid transparent;
+                                    text-align: center;
+                                    display: inline-block;
+                                    width: 40px;
+                                    height: 40px;
+                                    line-height: 40px;
+                                    border-radius: 50%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .col-page-right{
+        @include col-auto(33.33333%);
+
+        .sidebar-box{
+            margin-bottom: 30px;
+            padding: 0 25px 25px;
+            font-size: 15px;
+            width: 100%;
+            @include ft-default;
+
+            h3{
+                font-size: 18px;
+                margin-bottom: 20px;
+                line-height: 1.5;
+                color: rgba(0,0,0,.8);
+                font-weight: 400;
+            }
+            ul{
+                margin-bottom: 1rem;
+            }
+            .categories{
+                >li{
+                    position: relative;
+                    margin-bottom: 10px;
+                    padding-bottom: 10px;
+                    border-bottom: 1px solid #dee2e6;
+
+                    >a{
+                        color: #0033c7;
+                        display: block;
+                        font-size: 15px;
+
+                        >span{
+                            position: absolute;
+                            right: 0;
+                            top: 0;
+                            color: #ccc;
+                        }
+                    }
+                }
+                >li:last-child{
+                    border-bottom: 0;
+                }
+            }
+            .block-popular{
+                display: flex;
+                margin-bottom: 1.5rem;
+
+                .blog-img{
+                    background-image: url($bgURL + "image_1.webp");
+                    display: block;
+                    height: 80px;
+                    width: 80px;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                    margin-right: 1.5rem;
+                }
+                .text{
+                    width: calc(100% - 100px);
+
+                    .heading{
+                        font-size: 18px;
+                        font-weight: 300;
+                        margin-bottom: 20px;
+                        line-height: 1.5;
+                        
+                        >a{
+                            color: #000;
+                        }
+                    }
+                    .meta{
+                        >div{
+                            display: inline-block;
+                            font-size: 12px;
+                            margin-right: 5px;
+
+                            a{
+                                color: gray;
+                            }
+                        }
+                    }
+                }
+            }
+            .tagcloud{
+                >a{
+                    text-transform: uppercase;
+                    display: inline-block;
+                    padding: 4px 10px;
+                    margin-bottom: 7px;
+                    margin-right: 4px;
+                    border-radius: 4px;
+                    color: #000;
+                    border: 1px solid #ccc;
+                    font-size: 11px;
+                    transition: .3s all ease;
+
+                    &:hover{
+                        border: 1px solid #000;
+                    }
+                }
+            }
+            >p{
+                font-size: 15px;
+            }
+        }
+    }
+}
+
+// res
+@include res(1199px){
+    .pageBlog{
+        @include container-mw(100%);
+
+        .col-page-left{
+            .blog{
+                @include container-mw(100%);
+
+                .blg-container{
+                    @include container-mw(100%);
+                }
+            }
+        }
+    }
+}
+
+@include res(991px){
+    .pageBlog{
+        .col-page-left{
+            @include col-auto(100%);
+        }
+        .col-page-right{
+            @include col-auto(100%);
+        }
+    }
+}
+
+@include res(767px){
+    .pageBlog{
+        .col-page-left{
+            .blog {
+                .blg-container {
+                    .row-body {
+                        .col{
+                            @include col-auto(100%);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
