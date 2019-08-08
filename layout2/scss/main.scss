@@ -4,6 +4,7 @@
     @import "./layout/header/header.scss";
 }
 @import "./layout/main/bannerPage";
+@import "./layout/main/preloader";
 #main{
     @import "./layout/main/about";
     @import "./layout/main/counter";
@@ -29,3 +30,30 @@
     position: relative;
     @import "./layout/footer/footer.scss";
 }
+
+// scroll to top
+#scrollToTop{
+    position: fixed;
+    z-index: 9999;
+    right: 5%;
+    bottom: 0;
+    border: none;
+    outline: none;
+    background-color: #333;
+    color: $white;
+    font-size: 25px;
+    width: 50px;
+    height: 35px;
+    font-weight: normal;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    cursor: pointer;
+    transition: all .7s;
+    display: none;
+}
+#scrollToTop:hover{
+    background: $cl-1;
+}
+
+// call phone
+@import "./layout/main/phoneCall";

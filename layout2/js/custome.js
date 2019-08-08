@@ -63,4 +63,28 @@ $(document).ready(function () {
     }
   });
 
+  // scroll to top
+  var h = $('#header').height();
+  $(window).bind('scroll', function () {
+    var pos = window.scrollY;
+    if (pos >= h) {
+      $('#scrollToTop').show();
+    } else {
+      $('#scrollToTop').hide();
+    }
+  })
+  $('#scrollToTop').click(function () {
+    $('html,body').animate({ scrollTop: 0 }, 1000);
+  });
+
+});
+
+// preloader
+function loader() {
+  $(".loader").delay(2000).fadeOut("slow");
+  $("#overlayer").delay(2000).fadeOut("slow");
+}
+$(function () {
+  window.setTimeout(loader, 200);
 })
+
