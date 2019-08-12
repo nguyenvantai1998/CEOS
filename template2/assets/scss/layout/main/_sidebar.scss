@@ -1,0 +1,73 @@
+.row-item{
+    padding: 0.5rem 0;
+    border-bottom: 1px solid $clbd-1;
+    font-family: $ft-content;
+
+    >h3{
+        color: $color-3;
+        font-size: 21px;
+        margin-bottom: 1rem;
+    }
+    .search{
+        background: $white;
+        border: none;
+        width: 78%;
+        outline: none;
+        padding: 12px 10px 11px 10px;
+        font-size: 13px;
+        color: #c4c4c4;
+        display: inline-block;
+    }
+    .btn-submit{
+        background: url($bgURL+'search.png') no-repeat 13px 11px #0879c9;
+        width: 44px;
+        height: 39px;
+        border: none;
+        padding: 0;
+        margin-top: 0;
+        cursor: pointer;
+        transition: all .5s;
+
+        &:hover{
+            background-color: $color-4;
+        }
+    }
+    .list-range{
+        >ul{
+            >li{
+                >a{
+                    font-size: 14px;
+                    color: $color-4;
+                    letter-spacing: 1px;
+                    transition: all .5s;
+                    line-height: 1.5;
+                    font-weight: 400;
+                }
+            }
+            .my-after{
+                margin: .25rem 0;
+            }
+        }
+    }
+    .check-list{
+        >li{
+            display: inline-block;
+            width: 100%;
+            margin-bottom: 6px;
+
+            .checked{
+                margin: 0 4px 0 0;
+                cursor: pointer;
+                display: inline-block;
+            }
+            .span{
+                font-size: 13px;
+                color: #000;
+                letter-spacing: 1px;
+                margin-left: 3px;
+                vertical-align: top;
+            }
+        }
+    }
+
+}

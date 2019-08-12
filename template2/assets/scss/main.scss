@@ -1,0 +1,63 @@
+@import "helper/custom.scss";
+@import "./helper/font.scss";
+
+#header{
+    @import "layout/header/header";
+}
+#main{
+
+    // our new
+    .ourNew{
+        @include container-mw(100%);
+        padding: 3rem 0;
+
+        .on-container{
+            @include container-mw(1140px);
+
+            .title{
+                >h3{
+                    font-family: $ft-title-1;
+                    color: $color-4;
+                    font-size: 38px;
+                    letter-spacing: 1px;
+                    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.19);
+                    text-align: center;
+                    margin-bottom: 3rem;
+                    line-height: 1.2;
+
+                    >span{
+                        color: $color-1;
+                        font-size: 50px;
+                        letter-spacing: 0;
+                    }
+                }
+            }
+            .row-container{
+                @include row-fb;
+
+                .col-left{
+                    @include col-9;
+                    padding: 0 15px;
+
+                    .wrapper-box{
+                        @import "./layout/main/producttype";
+                        @import "./layout/main/bannerbox";
+                    }
+                    
+                }
+                .col-right{
+                    @include col-3;
+                    background-color: #F9F9F9;
+                    padding: 1.5rem;
+                    @import "./layout/main/sidebar";
+                }
+            }
+            
+        }
+    }
+
+}
+#footer{
+   @import "layout/footer/footer"; 
+}
+

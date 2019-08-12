@@ -1,0 +1,21 @@
+@import 'mixin';
+
+@include set-font('OpenSans-Bold', './../../fonts/OpenSans-Bold.ttf');
+@include set-font('OpenSans-BoldItalic', './../../fonts/OpenSans-BoldItalic.ttf');
+@include set-font('OpenSans-ExtraBold', './../../fonts/OpenSans-ExtraBold.ttf');
+@include set-font('OpenSans-ExtraBoldItalic', './../../fonts/OpenSans-ExtraBoldItalic.ttf');
+@include set-font('OpenSans-Light', './../../fonts/OpenSans-Light.ttf');
+@include set-font('OpenSans-LightItalic', './../../fonts/OpenSans-LightItalic.ttf');
+@include set-font('OpenSans-Regular', './../../fonts/OpenSans-Regular.ttf');
+@include set-font('OpenSans-RegularItalic', './../../fonts/OpenSans-RegularItalic.ttf');
+@include set-font('OpenSans-SemiBold', './../../fonts/OpenSans-SemiBold.ttf');
+@include set-font('OpenSans-SemiBoldItalic', './../../fonts/OpenSans-SemiBoldItalic.ttf');
+@include set-font('Oswald[wght]', './../../fonts/Oswald[wght].ttf');
+
+//! fontawesome cdn
+@import url('https://use.fontawesome.com/releases/v5.8.2/css/all.css');
+// @import url('https://pro.fontawesome.com/releases/v5.8.2/css/all.css');
+
+//! font cdn
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap');
+

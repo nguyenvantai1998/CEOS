@@ -1,0 +1,13 @@
+$(document).ready(function(){
+
+    // animation
+    // AOS.init();
+    $('.fadeOut').owlCarousel({
+        items: 1,
+        loop: true,
+        margin: 10,
+        nav:true
+      });
+
+    
+})

@@ -1,0 +1,242 @@
+@import url("https://use.fontawesome.com/releases/v5.8.2/css/all.css");
+@import url("https://pro.fontawesome.com/releases/v5.8.2/css/all.css");
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box; }
+
+body {
+  font: 15px/1 poppins-regular, Arial, Helvetica, sans-serif; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+nav ul, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none; }
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none; }
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold; }
+
+del {
+  text-decoration: line-through; }
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0; }
+
+input, select {
+  vertical-align: middle; }
+
+.mg-0-auto-70 {
+  margin: 0 auto;
+  width: 70%; }
+
+@font-face {
+  font-family: "poppins-bold";
+  src: url("./../../fonts/Poppins-Bold.ttf") format("opentype"); }
+@font-face {
+  font-family: "poppins-semiBold";
+  src: url("./../../fonts/Poppins-SemiBold.ttf") format("opentype"); }
+@font-face {
+  font-family: "poppins-italic";
+  src: url("./../../fonts/Poppins-Italic.ttf") format("opentype"); }
+@font-face {
+  font-family: "poppins-medium";
+  src: url("./../../fonts/Poppins-Medium.ttf") format("opentype"); }
+@font-face {
+  font-family: "poppins-regular";
+  src: url("./../../fonts/Poppins-Regular.ttf") format("opentype"); }
+@font-face {
+  font-family: "poppins-light";
+  src: url("./../../fonts/Poppins-Light.ttf") format("opentype"); }
+@font-face {
+  font-family: "sanspro-bold";
+  src: url("./../../fonts/SourceSansPro-Bold.ttf") format("opentype"); }
+@font-face {
+  font-family: "sanspro-semibold";
+  src: url("./../../fonts/SourceSansPro-SemiBold.ttf") format("opentype"); }
+@font-face {
+  font-family: "sanspro-regular";
+  src: url("./../../fonts/SourceSansPro-Regular.ttf") format("opentype"); }
+@font-face {
+  font-family: "play-fair";
+  src: url("./../../fonts/PlayfairDisplay-Italic.ttf") format("opentype"); }
+@font-face {
+  font-family: "display-regular";
+  src: url("./../../fonts/PlayfairDisplay-Regular.ttf") format("opentype"); }
+@font-face {
+  font-family: "oswald-bold";
+  src: url("./../../fonts/Oswald[wght].ttf") format("opentype"); }
+@font-face {
+  font-family: "shadow-to-light";
+  src: url("./../../fonts/ShadowsIntoLight.ttf") format("opentype"); }
+#header {
+  @import url("https://use.fontawesome.com/releases/v5.8.2/css/all.css");
+  @import url("https://pro.fontawesome.com/releases/v5.8.2/css/all.css"); }
+@font-face {
+  #header {
+    font-family: "poppins-bold";
+    src: url("./../../fonts/Poppins-Bold.ttf") format("opentype"); } }
+@font-face {
+  #header {
+    font-family: "poppins-semiBold";
+    src: url("./../../fonts/Poppins-SemiBold.ttf") format("opentype"); } }
+@font-face {
+  #header {
+    font-family: "poppins-italic";
+    src: url("./../../fonts/Poppins-Italic.ttf") format("opentype"); } }
+@font-face {
+  #header {
+    font-family: "poppins-medium";
+    src: url("./../../fonts/Poppins-Medium.ttf") format("opentype"); } }
+@font-face {
+  #header {
+    font-family: "poppins-regular";
+    src: url("./../../fonts/Poppins-Regular.ttf") format("opentype"); } }
+@font-face {
+  #header {
+    font-family: "poppins-light";
+    src: url("./../../fonts/Poppins-Light.ttf") format("opentype"); } }
+@font-face {
+  #header {
+    font-family: "sanspro-bold";
+    src: url("./../../fonts/SourceSansPro-Bold.ttf") format("opentype"); } }
+@font-face {
+  #header {
+    font-family: "sanspro-semibold";
+    src: url("./../../fonts/SourceSansPro-SemiBold.ttf") format("opentype"); } }
+@font-face {
+  #header {
+    font-family: "sanspro-regular";
+    src: url("./../../fonts/SourceSansPro-Regular.ttf") format("opentype"); } }
+@font-face {
+  #header {
+    font-family: "play-fair";
+    src: url("./../../fonts/PlayfairDisplay-Italic.ttf") format("opentype"); } }
+@font-face {
+  #header {
+    font-family: "display-regular";
+    src: url("./../../fonts/PlayfairDisplay-Regular.ttf") format("opentype"); } }
+@font-face {
+  #header {
+    font-family: "oswald-bold";
+    src: url("./../../fonts/Oswald[wght].ttf") format("opentype"); } }
+@font-face {
+  #header {
+    font-family: "shadow-to-light";
+    src: url("./../../fonts/ShadowsIntoLight.ttf") format("opentype"); } }
+#footer {
+  @import url("https://use.fontawesome.com/releases/v5.8.2/css/all.css");
+  @import url("https://pro.fontawesome.com/releases/v5.8.2/css/all.css"); }
+@font-face {
+  #footer {
+    font-family: "poppins-bold";
+    src: url("./../../fonts/Poppins-Bold.ttf") format("opentype"); } }
+@font-face {
+  #footer {
+    font-family: "poppins-semiBold";
+    src: url("./../../fonts/Poppins-SemiBold.ttf") format("opentype"); } }
+@font-face {
+  #footer {
+    font-family: "poppins-italic";
+    src: url("./../../fonts/Poppins-Italic.ttf") format("opentype"); } }
+@font-face {
+  #footer {
+    font-family: "poppins-medium";
+    src: url("./../../fonts/Poppins-Medium.ttf") format("opentype"); } }
+@font-face {
+  #footer {
+    font-family: "poppins-regular";
+    src: url("./../../fonts/Poppins-Regular.ttf") format("opentype"); } }
+@font-face {
+  #footer {
+    font-family: "poppins-light";
+    src: url("./../../fonts/Poppins-Light.ttf") format("opentype"); } }
+@font-face {
+  #footer {
+    font-family: "sanspro-bold";
+    src: url("./../../fonts/SourceSansPro-Bold.ttf") format("opentype"); } }
+@font-face {
+  #footer {
+    font-family: "sanspro-semibold";
+    src: url("./../../fonts/SourceSansPro-SemiBold.ttf") format("opentype"); } }
+@font-face {
+  #footer {
+    font-family: "sanspro-regular";
+    src: url("./../../fonts/SourceSansPro-Regular.ttf") format("opentype"); } }
+@font-face {
+  #footer {
+    font-family: "play-fair";
+    src: url("./../../fonts/PlayfairDisplay-Italic.ttf") format("opentype"); } }
+@font-face {
+  #footer {
+    font-family: "display-regular";
+    src: url("./../../fonts/PlayfairDisplay-Regular.ttf") format("opentype"); } }
+@font-face {
+  #footer {
+    font-family: "oswald-bold";
+    src: url("./../../fonts/Oswald[wght].ttf") format("opentype"); } }
+@font-face {
+  #footer {
+    font-family: "shadow-to-light";
+    src: url("./../../fonts/ShadowsIntoLight.ttf") format("opentype"); } }
+
+/*# sourceMappingURL=main.css.map */
