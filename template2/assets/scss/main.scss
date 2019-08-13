@@ -56,8 +56,29 @@
         }
     }
 
+    @import "./layout/main/bannerbig";
+
 }
 #footer{
    @import "layout/footer/footer"; 
 }
+.coppy-right{
+    padding: 1rem 0;
+    background: #0879c9;
+
+    .cpr-container{
+        @include container-mw(1140px);
+        font-family: $ft-content;
+
+        p{
+            letter-spacing: 2px;
+            font-size: 15px;
+            color: $white;
+            text-align: center;
+        }
+    }   
+}
+// responsive
+@import "./layout/responsive";
+
 
