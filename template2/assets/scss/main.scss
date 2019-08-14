@@ -4,6 +4,9 @@
 #header{
     @import "layout/header/header";
 }
+#bannerPage{
+    @import "./layout/main/bannerpage";
+}
 #main{
 
     // our new
@@ -58,6 +61,12 @@
 
     @import "./layout/main/bannerbig";
 
+    // page
+    @import "./layout/main/about";
+    @import "./layout/main/ourCustomer";
+    @import "./layout/main/contactus";
+    @import "./layout/main/googlemap";
+    @import "./layout/main/payment";
 }
 #footer{
    @import "layout/footer/footer"; 
