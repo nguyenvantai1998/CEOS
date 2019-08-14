@@ -1679,7 +1679,7 @@ input, select {
     letter-spacing: 1px;
     font-weight: 600;
     font-family: "Lato", sans-serif; }
-  #main .payMent .pm-container .row-payment-tab .tab-content .cash-content .cash-box-content .checkbox .check-box > label .checkbox {
+  #main .payMent .pm-container .row-payment-tab .tab-content .cash-content .cash-box-content .checkbox .check-box > label .checkbox-ip {
     margin-right: 4px; }
   #main .payMent .pm-container .row-payment-tab .tab-content .cash-content .cash-box-content .checkbox .check-box > label > span {
     font-family: "Open Sans", sans-serif;
@@ -1688,6 +1688,8 @@ input, select {
     color: #212529;
     text-align: left;
     letter-spacing: 1px; }
+  #main .payMent .pm-container .row-payment-tab .tab-content .cash-content .cash-box-content .checkbox .check-radio {
+    margin-top: 20px; }
   #main .payMent .pm-container .row-payment-tab .tab-content .credit-content .credit-box-content .form-1 > label {
     display: inline-block;
     margin-bottom: 10px;
@@ -1715,6 +1717,120 @@ input, select {
     cursor: pointer; }
     #main .payMent .pm-container .row-payment-tab .tab-content .credit-content .credit-box-content .form-button .submit-payment:hover {
       background: #0879c9; }
+  #main .payMent .pm-container .row-payment-tab .tab-content .banking-content .banking-box-content .list-radio {
+    margin-bottom: 30px; }
+  #main .payMent .pm-container .row-payment-tab .tab-content .banking-content .banking-box-content .section-list-pay .sl-control {
+    padding: 6px 10px;
+    width: 100%;
+    background: none;
+    border: 1px solid #E6E4E4;
+    color: #999;
+    outline: none;
+    font-size: 16px;
+    margin-bottom: 0;
+    background-size: 4% !important;
+    cursor: pointer; }
+  #main .payMent .pm-container .row-payment-tab .tab-content .banking-content .banking-box-content .form-button {
+    margin-top: 30px; }
+    #main .payMent .pm-container .row-payment-tab .tab-content .banking-content .banking-box-content .form-button .submit-payment {
+      padding: 12px 25px;
+      letter-spacing: 1px;
+      background: #0879c9;
+      font-size: 16px;
+      color: #fff;
+      border: none;
+      outline: none;
+      display: inline-block;
+      -webkit-transition: all .5s;
+      transition: all .5s;
+      font-family: "Open Sans", sans-serif;
+      line-height: 1.5;
+      cursor: pointer;
+      text-transform: uppercase;
+      font-weight: 600; }
+      #main .payMent .pm-container .row-payment-tab .tab-content .banking-content .banking-box-content .form-button .submit-payment:hover {
+        background: #F45C5D; }
+  #main .payMent .pm-container .row-payment-tab .tab-content .paypal-content .paypal-box-content {
+    max-width: 100%;
+    margin: 0 auto;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+    #main .payMent .pm-container .row-payment-tab .tab-content .paypal-content .paypal-box-content .col-left {
+      position: relative;
+      -ms-flex: 0 0 50%;
+      -webkit-box-flex: 0;
+      flex: 0 0 50%;
+      max-width: 50%;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box; }
+      #main .payMent .pm-container .row-payment-tab .tab-content .paypal-content .paypal-box-content .col-left > p {
+        color: #8B8B8B;
+        font-size: 0.95em;
+        line-height: 1.8em;
+        font-weight: 400;
+        margin: 10px 0;
+        font-family: "Open Sans", sans-serif;
+        letter-spacing: 1px; }
+      #main .payMent .pm-container .row-payment-tab .tab-content .paypal-content .paypal-box-content .col-left .btn-checkout {
+        background-color: #3a5795;
+        font-family: "Open Sans", sans-serif;
+        color: #fff;
+        border: none;
+        display: inline-block;
+        padding: 0.375rem 0.75rem;
+        font-size: 1rem;
+        line-height: 1.5;
+        border-radius: 0.25rem;
+        cursor: pointer; }
+      #main .payMent .pm-container .row-payment-tab .tab-content .paypal-content .paypal-box-content .col-left .pp-img {
+        vertical-align: middle;
+        max-width: 100%;
+        height: auto;
+        width: 65%; }
+    #main .payMent .pm-container .row-payment-tab .tab-content .paypal-content .paypal-box-content .col-right {
+      position: relative;
+      -ms-flex: 0 0 50%;
+      -webkit-box-flex: 0;
+      flex: 0 0 50%;
+      max-width: 50%;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box; }
+      #main .payMent .pm-container .row-payment-tab .tab-content .paypal-content .paypal-box-content .col-right > label {
+        display: inline-block;
+        margin-bottom: 10px;
+        font-weight: 500;
+        color: #212121;
+        font-size: 16px;
+        line-break: 1.5;
+        font-family: "Open Sans", sans-serif; }
+      #main .payMent .pm-container .row-payment-tab .tab-content .paypal-content .paypal-box-content .col-right > input {
+        margin-bottom: 1rem;
+        border-radius: 0; }
+      #main .payMent .pm-container .row-payment-tab .tab-content .paypal-content .paypal-box-content .col-right .form-button .submit-payment {
+        padding: 12px 25px;
+        letter-spacing: 1px;
+        background: #0879c9;
+        font-size: 16px;
+        color: #fff;
+        border: none;
+        outline: none;
+        display: inline-block;
+        -webkit-transition: all .5s;
+        transition: all .5s;
+        font-family: "Open Sans", sans-serif;
+        line-height: 1.5;
+        cursor: pointer;
+        font-weight: 600;
+        margin-top: 25px; }
+        #main .payMent .pm-container .row-payment-tab .tab-content .paypal-content .paypal-box-content .col-right .form-button .submit-payment:hover {
+          background: #F45C5D; }
 
 #footer {
   @import url("https://use.fontawesome.com/releases/v5.8.2/css/all.css");
@@ -2305,7 +2421,11 @@ input, select {
     margin: 0 auto;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    padding: 0 15px; } }
+    padding: 0 15px; }
+  #main .payMent .pm-container .row-payment-tab .nav-tabs .nav-item .nav-link {
+    padding-right: 25px;
+    padding-left: 25px;
+    font-size: 18px; } }
 @media screen and (max-width: 991px) {
   #main .about .ab-container .row-content .wc-left {
     position: relative;
@@ -2334,7 +2454,13 @@ input, select {
     -webkit-box-sizing: border-box;
     box-sizing: border-box; }
   #main .contactUS .ctus-container .row-contact .col-contact {
-    padding: 0; } }
+    padding: 0; }
+  #main .payMent .pm-container .row-payment-tab .nav-tabs .nav-item {
+    width: 100%; }
+    #main .payMent .pm-container .row-payment-tab .nav-tabs .nav-item .nav-link {
+      width: 100%;
+      border: 1px solid #c1c1c1;
+      margin: 0; } }
 @media screen and (max-width: 767px) {
   #main .about .ab-container .title {
     font-size: 34px; }
@@ -2357,7 +2483,24 @@ input, select {
   #main .contactUS .ctus-container .row-contact .col-contact .box-center > h4 {
     font-size: 22px; }
   #main .googleMap .gm-container iframe {
-    min-height: 350px; } }
+    min-height: 350px; }
+  #main .payMent .pm-container .row-payment-tab .tab-content .paypal-content .paypal-box-content .col-left {
+    position: relative;
+    -ms-flex: 0 0 100%;
+    -webkit-box-flex: 0;
+    flex: 0 0 100%;
+    max-width: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-bottom: 25px; }
+  #main .payMent .pm-container .row-payment-tab .tab-content .paypal-content .paypal-box-content .col-right {
+    position: relative;
+    -ms-flex: 0 0 100%;
+    -webkit-box-flex: 0;
+    flex: 0 0 100%;
+    max-width: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; } }
 @media screen and (max-width: 599px) {
   #main .about .ab-container {
     max-width: 100%;
