@@ -14,8 +14,13 @@
 };
 
 @mixin flex($dir){
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: $dir;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: $dir;
+            flex-direction: $dir;
     @content
 };
 
@@ -38,40 +43,51 @@
 @mixin container ($w){
     width: $w;
     margin: 0 auto;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 @mixin container-mw ($mw){
     max-width: $mw;
     margin: 0 auto;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 // TODO: row
 @mixin row-fb {
     display: -ms-flexbox;
+    display: -webkit-box;
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 // TODO: flex
 @mixin flex($dir){
+    display: -webkit-box;
     display: flex;
     display: -ms-flexbox;
     flex-wrap: wrap;
     -ms-flex-wrap: wrap;
-    flex-direction: $dir;
-    box-sizing: border-box;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: $dir;
+            flex-direction: $dir;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 // TODO: col
 @mixin col-auto($size) {
     position: relative;
     -ms-flex: 0 0 $size;
-    flex: 0 0 $size;
+    -webkit-box-flex: 0;
+            flex: 0 0 $size;
     max-width: $size;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 // TODO: font-size, color
@@ -84,44 +100,56 @@
 @mixin col-3 {
     position: relative;
     -ms-flex: 0 0 25%;
-    flex: 0 0 25%;
+    -webkit-box-flex: 0;
+            flex: 0 0 25%;
     max-width: 25%;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 @mixin col-9 {
     position: relative;
     -ms-flex: 0 0 75%;
-    flex: 0 0 75%;
+    -webkit-box-flex: 0;
+            flex: 0 0 75%;
     max-width: 75%;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 @mixin col-4 {
     position: relative;
     -ms-flex: 0 0 33.333333%;
-    flex: 0 0 33.333333%;
+    -webkit-box-flex: 0;
+            flex: 0 0 33.333333%;
     max-width: 33.333333%;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 @mixin col-8 {
     position: relative;
     -ms-flex: 0 0 66.666667%;
-    flex: 0 0 66.666667%;
+    -webkit-box-flex: 0;
+            flex: 0 0 66.666667%;
     max-width: 66.666667%;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 @mixin col-6 {
     position: relative;
     -ms-flex: 0 0 50%;
-    flex: 0 0 50%;
+    -webkit-box-flex: 0;
+            flex: 0 0 50%;
     max-width: 50%;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 @mixin col-12 {
     position: relative;
     -ms-flex: 0 0 100%;
-    flex: 0 0 100%;
+    -webkit-box-flex: 0;
+            flex: 0 0 100%;
     max-width: 100%;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 //! image
@@ -135,7 +163,8 @@
 @mixin input {
     border: none;
     outline: none;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     font-family: inherit;
     overflow: visible;
     display: block;
@@ -151,7 +180,8 @@
 @mixin textarea {
     border: none;
     outline: none;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     font-family: inherit;
     overflow: auto;
     resize: vertical;
@@ -181,13 +211,17 @@
     color: #191e21;
     letter-spacing: 1px;
     padding: 10px;
-    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.22);
+    -webkit-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.22);
+            box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.22);
     font-size: 1rem;
     line-height: 1.5;
     background-color: $white;
     background-clip: padding-box;
     border: 1px solid $clbd-2;
+    -webkit-transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+    transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
     outline-offset: -2px;
     margin-right: 0.5rem;
     display: inline-block;
@@ -197,7 +231,8 @@
     border-radius: 0;
     background: $color-3;
     color: $white;
-    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.22);
+    -webkit-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.22);
+            box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.22);
     padding: 10px;
     display: inline-block;
     font-weight: 400;
@@ -207,7 +242,10 @@
     border: 1px solid transparent;
     font-size: 1rem;
     line-height: 1.5;
+    -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
 }
 @mixin ft-title {
     font-family: $ft-title-1;
@@ -243,6 +281,7 @@
     color: $white;
     letter-spacing: 2px;
     padding: 11px 27px;
+    -webkit-transition: all .5s;
     transition: all .5s;
     font-weight: 400;
     line-height: 1.5;

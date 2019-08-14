@@ -6,7 +6,8 @@ $(document).ready(function () {
     items: 1,
     loop: true,
     margin: 10,
-    nav: true
+    nav: true,
+    autoplay:true
   });
 
   paypals.minicarts.render(); //use only unique class names other than paypals.minicarts.Also Replace same class name in css and minicart.min.js

@@ -1,5 +1,6 @@
 .productType{
-    box-shadow: 0px 0px 15px 0px #D6D6D6;
+    -webkit-box-shadow: 0px 0px 15px 0px #D6D6D6;
+            box-shadow: 0px 0px 15px 0px #D6D6D6;
     padding: 3rem 1.5rem;
     margin-bottom: 1.5rem;
 
@@ -48,6 +49,7 @@
                             right: 0;
                             text-align: center;
                             top: 0;
+                            -webkit-transition: all 0.5s ease-out 0s;
                             transition: all 0.5s ease-out 0s;
                             visibility: hidden;
 
@@ -58,6 +60,7 @@
                                     left: 24%;
                                     margin: 0 auto;
                                     position: absolute;
+                                    -webkit-transition: all 0.5s ease-out 0s;
                                     transition: all 0.5s ease-out 0s;
                                     bottom: -40px;
                                     background: hsla(205, 92%, 41%, 0.72);
@@ -101,6 +104,7 @@
                             font-size: 17px;
                             letter-spacing: 1px;
                             text-decoration: none;
+                            -webkit-transition: all .5s;
                             transition: all .5s;
 
                             &:hover{
@@ -135,12 +139,14 @@
                             padding: 13px;
                             outline: none;
                             letter-spacing: 1px;
-                            box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.45);
+                            -webkit-box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.45);
+                                    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.45);
                             font-weight: 600;
                             cursor: pointer;
                             border-radius: 4px;
                             display: inline-block;
                             line-height: 1.5;
+                            -webkit-transition: all .5s;
                             transition: all .5s;
 
                             &:hover{

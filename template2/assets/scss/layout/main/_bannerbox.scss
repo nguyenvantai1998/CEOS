@@ -1,7 +1,8 @@
 .bannerBox{
     background: $color-3;
     position: relative;
-    box-shadow: 0px 0px 15px 0px #D6D6D6;
+    -webkit-box-shadow: 0px 0px 15px 0px #D6D6D6;
+            box-shadow: 0px 0px 15px 0px #D6D6D6;
     padding: 0 3rem;
     margin-bottom: 1.5rem;
 
@@ -25,7 +26,8 @@
             font-size: 31px;
             font-weight: 800;
             color: rgba(10, 10, 10, 0.38);
-            transform: rotate(-64deg);
+            -webkit-transform: rotate(-64deg);
+                    transform: rotate(-64deg);
             letter-spacing: 1px;
         }
         .bg-right{

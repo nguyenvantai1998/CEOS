@@ -3,6 +3,10 @@
     border-bottom: 1px solid $clbd-1;
     font-family: $ft-content;
 
+    &:last-child{
+        border-bottom: none;
+    }
+
     >h3{
         color: $color-3;
         font-size: 21px;
@@ -26,6 +30,7 @@
         padding: 0;
         margin-top: 0;
         cursor: pointer;
+        -webkit-transition: all .5s;
         transition: all .5s;
 
         &:hover{
@@ -39,6 +44,7 @@
                     font-size: 14px;
                     color: $color-4;
                     letter-spacing: 1px;
+                    -webkit-transition: all .5s;
                     transition: all .5s;
                     line-height: 1.5;
                     font-weight: 400;
@@ -77,6 +83,7 @@
 
             >a{
                 text-decoration: none;
+                -webkit-transition: all .5s;
                 transition: all .5s;
 
                 &:hover{
@@ -94,6 +101,81 @@
                 }
             }
         }
+    }
+    .scroll-top-animation{
+        min-height: 25em;
+        position: relative;
+        overflow: hidden;
+
+        .box-scroll{
+            position: absolute;
+            @include container-mw(100%);
+            left: 0;
+            right: 0;
+            -webkit-animation-duration: 15s;
+                    animation-duration: 15s;
+            -webkit-animation-name: slidein;
+                    animation-name: slidein;
+            -webkit-animation-iteration-count: infinite;
+                    animation-iteration-count: infinite;
+
+            .r-pro{
+                @include row-fb;
+                padding: 15px 0;
+
+                .left-img{
+                    @include col-3;
+                    padding: 0 5px;
+
+                    >img{
+                        @include img-res;
+                    }
+                }
+                .right-content{
+                    @include col-9;
+                    padding: 0 10px;
+
+                    >a{
+                        font-family: $ft-content;
+                        font-size: 15px;
+                        color: #0879c9;
+                        text-decoration: none;
+                        line-height: 1.5;
+                    }
+                    .price{
+                        color: #ef0e0e;
+                        display: block;
+                        margin-top: 10px;
+                    }
+                }
+            }
+
+        }
+
+        @-webkit-keyframes slidein {
+            from {
+              top: 0;
+              width: 100%; 
+            }
+          
+            to {
+              top: -100%;
+              width: 100%;
+            }
+          }
+
+        @keyframes slidein {
+            from {
+              top: 0;
+              width: 100%; 
+            }
+          
+            to {
+              top: -100%;
+              width: 100%;
+            }
+          }
+
     }
 
 }

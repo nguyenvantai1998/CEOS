@@ -27,8 +27,12 @@
             }
             .hd-right{
                 @include col-8;
+                display: -webkit-box;
+                display: -ms-flexbox;
                 display: flex;
-                align-items: center;
+                -webkit-box-align: center;
+                    -ms-flex-align: center;
+                        align-items: center;
 
                 >ul {
                     @include col-auto(100%);
@@ -47,6 +51,7 @@
                         >a{
                             color: $white;
                             text-decoration: none;
+                            -webkit-transition: all .5s;
                             transition: all .5s;
 
                             >i{
@@ -96,6 +101,7 @@
                         position: relative;
                         font-style: italic;
                         font-weight: 700;
+                        -webkit-transition: all .5s;
                         transition: all .5s;
 
                         >img{
@@ -115,7 +121,9 @@
             .col-right{
                 @include col-9;
                 @include row-fb;
-                align-items: center;
+                -webkit-box-align: center;
+                    -ms-flex-align: center;
+                        align-items: center;
 
                 .search-hd{
                     @include col-auto(83.333333%);
@@ -123,7 +131,9 @@
 
                     .form{
                         @include row-fb;
-                        align-items: center;
+                        -webkit-box-align: center;
+                            -ms-flex-align: center;
+                                align-items: center;
 
                         .form-search{
                             @include input-page;
@@ -159,7 +169,8 @@
 
     .hd-nav{
         background: #f8f9fa;
-        box-shadow: 0px 2px 6px 1px rgba(0, 0, 0, 0.13);
+        -webkit-box-shadow: 0px 2px 6px 1px rgba(0, 0, 0, 0.13);
+                box-shadow: 0px 2px 6px 1px rgba(0, 0, 0, 0.13);
         
         .hd-nav-container{
             @include container-mw(1140px);
@@ -193,8 +204,12 @@
                     @include row-fb;
                     
                     padding-right: 3rem;
-                    align-items: center;
-                    justify-content: flex-end;
+                    -webkit-box-align: center;
+                        -ms-flex-align: center;
+                            align-items: center;
+                    -webkit-box-pack: end;
+                        -ms-flex-pack: end;
+                            justify-content: flex-end;
 
                     >li{
                         margin-right: 0.5rem;
@@ -211,6 +226,7 @@
                             font-weight: 400;
                             line-height: 1.5;
                             position: relative;
+                            -webkit-transition: all .5s;
                             transition: all .5s;
                             
                             &:hover{
@@ -240,7 +256,7 @@
                             z-index: 1000;
                             min-width: 10rem;
                             padding: 0.5rem 0;
-                            margin: 0.125rem 0 0;
+                            margin: -1px 0 0;
                             font-size: 1rem;
                             color: #212529;
                             text-align: left;
@@ -249,8 +265,11 @@
                             background-clip: padding-box;
                             border: 1px solid rgba(0, 0, 0, 0.15);
                             border-radius: 0.25rem;
-                            display: none;
-                            transition: all .5s;
+                            overflow: hidden;
+                            height: 0;
+                            opacity: 0;
+                            -webkit-transition: height .5s;
+                            transition: height .5s;
 
                             .small-nav{
                                 min-width: 673px;
@@ -282,6 +301,11 @@
                                                     font-size: 14px;
                                                     color: #545454;
                                                     letter-spacing: 1px;
+                                                    transition: all .5s;
+
+                                                    &:hover{
+                                                        color: #F45C5D;
+                                                    }
                                                 } 
                                             }
 
@@ -302,6 +326,7 @@
                                 background-color: transparent;
                                 border: 0;
                                 font-size: 15px;
+                                -webkit-transition: all .5s;
                                 transition: all .5s;
                                 font-family: $ft-content;
                                 line-height: 1.5;
@@ -323,7 +348,11 @@
                         }
                         &:hover{
                             .sub-nav-container{
-                                display: block;
+                                height: 456px;
+                                opacity: 1;
+                            }
+                            .fix-page-nav{
+                                height: 235px;
                             } 
                         }
                         
@@ -360,7 +389,8 @@
                             background: rgba(16, 16, 16, 0.27);
                             text-align: left;
                             position: inherit;
-                            box-shadow: 0px 2px 2px 2px rgba(2, 2, 2, 0.43);
+                            -webkit-box-shadow: 0px 2px 2px 2px rgba(2, 2, 2, 0.43);
+                                    box-shadow: 0px 2px 2px 2px rgba(2, 2, 2, 0.43);
                             padding: 3rem;
 
                             >p{
@@ -401,6 +431,7 @@
                                 color: $white;
                                 letter-spacing: 2px;
                                 padding: 11px 27px;
+                                -webkit-transition: all .5s;
                                 transition: all .5s;
                                 font-weight: 400;
                                 line-height: 1.5;
@@ -422,9 +453,15 @@
                     position: absolute;
                     top: 0;
                     bottom: 0;
+                    display: -webkit-box;
+                    display: -ms-flexbox;
                     display: flex;
-                    align-items: center;
-                    justify-content: center;
+                    -webkit-box-align: center;
+                        -ms-flex-align: center;
+                            align-items: center;
+                    -webkit-box-pack: center;
+                        -ms-flex-pack: center;
+                            justify-content: center;
                     width: 15%;
                     color: $white;
                     text-align: center;
@@ -450,8 +487,12 @@
                 right: 0;
                 left: 0;
                 z-index: 15;
+                display: -webkit-box;
+                display: -ms-flexbox;
                 display: flex;
-                justify-content: center;
+                -webkit-box-pack: center;
+                    -ms-flex-pack: center;
+                        justify-content: center;
                 padding-left: 0;
                 margin-right: 15%;
                 margin-left: 15%;
@@ -460,7 +501,9 @@
 
                 .owl-dot{
                     position: relative;
-                    flex: 0 1 auto;
+                    -webkit-box-flex: 0;
+                        -ms-flex: 0 1 auto;
+                            flex: 0 1 auto;
                     width: 30px;
                     height: 3px;
                     margin-right: 3px;
@@ -472,7 +515,9 @@
 
                     >span{
                         position: absolute;
-                        flex: 0 1 auto;
+                        -webkit-box-flex: 0;
+                            -ms-flex: 0 1 auto;
+                                flex: 0 1 auto;
                         width: 30px;
                         height: 3px;
                         margin-right: 3px;
