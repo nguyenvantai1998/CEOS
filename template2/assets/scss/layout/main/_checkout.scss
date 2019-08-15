@@ -1,0 +1,232 @@
+.checkout{
+    .checkout-container{
+        
+        .checkout-top{
+            >h4{
+                color: #F45C5D;
+                font-size: 26px;
+                letter-spacing: 1px;
+                margin-bottom: 1.5rem;
+                font-family: $ft-title-1;
+            }
+            .table-container{
+                @include container-mw(100%);
+
+                .table-sub{
+                    border-collapse: collapse;
+                    border-spacing: 2px;
+                    width: 100%;
+                    margin: 0 auto;
+
+                    th{
+                        background: #000;
+                        color: $white;
+                        font-size: 16px;
+                        border-right: 1px solid #ded2d2;
+                        text-align: center;
+                        padding: 12px 0;
+                        letter-spacing: 1px;
+                        font-weight: normal;
+                        display: table-cell;
+                        vertical-align: inherit;
+                        font-family: $ft-content;
+                        letter-spacing: 1px;
+                        line-height: 1.5;
+                    }
+                    td{
+                        border: 1px solid #CDCDCD;
+                        text-align: center;
+                        padding: 7px;
+                        font-size: 14px;
+                        color: #212121;
+                        display: table-cell;
+                        vertical-align: inherit;
+                        font-family: $ft-content;
+
+                        >a{
+                            >img{
+                                @include img-res;
+                                width: 30%;
+                            }
+                        }
+                    }
+                    .pr-quality{
+                        .quantity{
+                            .quantity-select{
+                                .value{
+                                    cursor: default;
+                                    width: 40px;
+                                    height: 40px;
+                                    padding: 8px 0px;
+                                    color: #A9A9A9;
+                                    line-height: 24px;
+                                    border: 1px solid #E5E5E5;
+                                    background-color: #E5E5E5;
+                                    text-align: center;
+                                    display: inline-block;
+                                    margin-right: 3px;
+                                }
+                                .value-minus{
+                                    height: 40px;
+                                    line-height: 24px;
+                                    width: 40px;
+                                    margin-right: 3px;
+                                    display: inline-block;
+                                    cursor: pointer;
+                                    position: relative;
+                                    font-size: 18px;
+                                    color: $white;
+                                    text-align: center;
+                                    border: 1px solid #b2b2b2;
+                                    vertical-align: bottom;
+                                    -webkit-transition: all .2s;
+                                    transition: all .2s;
+
+                                    &::before{
+                                        content: "";
+                                        width: 13px;
+                                        height: 2px;
+                                        background: #000;
+                                        left: 50%;
+                                        margin-left: -7px;
+                                        top: 50%;
+                                        margin-top: -0.5px;
+                                        position: absolute;
+                                    }
+                                    &:hover{
+                                        background: #E5E5E5;
+                                    }
+                                }
+                                .value-plus{
+                                    height: 40px;
+                                    line-height: 24px;
+                                    width: 40px;
+                                    margin-right: 3px;
+                                    display: inline-block;
+                                    cursor: pointer;
+                                    position: relative;
+                                    font-size: 18px;
+                                    color: $white;
+                                    text-align: center;
+                                    border: 1px solid #b2b2b2;
+                                    vertical-align: bottom;
+                                    -webkit-transition: all .2s;
+                                    transition: all .2s;
+
+                                    &::before{
+                                        content: "";
+                                        width: 13px;
+                                        height: 2px;
+                                        background: #000;
+                                        left: 50%;
+                                        margin-left: -7px;
+                                        top: 50%;
+                                        margin-top: -0.5px;
+                                        position: absolute;
+                                    }
+                                    &::after{
+                                        content: "";
+                                        height: 13px;
+                                        width: 2px;
+                                        background: #000;
+                                        left: 50%;
+                                        margin-left: -1.4px;
+                                        top: 50%;
+                                        margin-top: -6.2px;
+                                        position: absolute;
+                                    }
+                                    &:hover{
+                                        background: #E5E5E5;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .pr-remove{
+                        .rem{
+                            position: relative;
+
+                            .close1{
+                                background: url($bgURL+'close_1.png') no-repeat 0px 0px;
+                                cursor: pointer;
+                                width: 28px;
+                                height: 28px;
+                                position: absolute;
+                                right: 15px;
+                                top: 28px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .checkout-form{
+            margin-top: 3rem;
+
+            >h4{
+                color: #0879c9;
+            }
+            .form-address{
+                .form-address-control,
+                .option-select{
+                    @include input;
+                    width: 100%;
+                    font-size: 15px;
+                    letter-spacing: 1px;
+                    padding: 13px 10px;
+                    margin-bottom: 20px;
+                    outline: none;
+                    border: none;
+                    border-bottom: 1px solid #F45C5D;
+                    -webkit-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.31);
+                            box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.31);
+                    line-height: 1.5;
+                    font-family: $ft-content;
+                    height: 49px;
+                }
+            }
+            .check_out{
+                @include button;
+                padding: 12px 25px;
+                letter-spacing: 1px;
+                background: #0879c9;
+                font-size: 16px;
+                color: $white;
+                border: none;
+                outline: none;
+                -webkit-transition: 0.5s all;
+                transition: 0.5s all;
+                cursor: pointer;
+                line-height: 1.5;
+                border-radius: 0.25rem;
+
+                &:hover{
+                    background: #F45C5D;
+                }
+            }
+            .checkout-right-basket{
+                margin-top: 20px;
+
+                >a{
+                    @include button;
+                    padding: 12px 25px;
+                    color: $white;
+                    font-size: 16px;
+                    background: #000;
+                    text-decoration: none;
+                    letter-spacing: 1px;
+                    display: inline-block;
+                    -webkit-transition: all .5s;
+                    transition: all .5s;
+
+                    &:hover{
+                        background: #F45C5D;
+                        opacity: .8;
+                    }
+                }
+            }
+        }
+
+    }
+}

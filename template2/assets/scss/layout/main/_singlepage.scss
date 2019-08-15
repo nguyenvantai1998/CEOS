@@ -1,0 +1,126 @@
+.singlePage{
+
+    .singleP-container{
+
+        .row-content{
+            @include container-mw(100%);
+            @include row-fb;
+
+            .col-left{
+                @include col-auto(41.666667%);
+                padding: 0 15px;
+            }
+            .col-right{
+                @include col-auto(58.333333%);
+                padding: 0 15px;
+
+                >h3{
+                    font-family: $ft-title-1;
+                    font-size: 25px;
+                    color: #000;
+                    margin-bottom: 1rem;
+                    line-height: 1.5;
+                    font-weight: 500;
+                }
+                .item-price{
+                    font-size: 18px;
+                    color: #d60404;
+                    letter-spacing: 1px;
+                    line-height: 1.9;
+                    font-family: $ft-content;
+                    margin-bottom: 1rem;
+
+                    del{
+                        font-size: 15px;
+                        color: #999;
+                        font-weight: 300;
+                        margin-left: 0.5rem;
+                        margin-right: 0.5rem;
+                    }
+                    label{
+                        color: #000;
+                        font-size: 15px;
+                    }
+                }
+                .item-infoagile{
+                    font-size: 18px;
+                    letter-spacing: 1px;
+                    line-height: 1.9;
+                    font-family: $ft-content;
+                    margin-bottom: 1rem;
+
+                    ul{
+                        li{
+                            margin-bottom: 1rem;
+                            display: block;
+                            font-size: 14px;
+                        }
+                    }
+                }
+                .item-single{
+                    border-top: 1px solid #0879c9;
+                    font-size: 18px;
+                    letter-spacing: 1px;
+                    line-height: 1.9;
+                    font-family: $ft-content;
+                    margin-bottom: 1rem;
+
+                    p{
+                        color: #000;
+                        letter-spacing: 0.5px;
+                        margin: 1rem 0;
+                        font-size: 15px;
+
+                        >i{
+                            color: #0879c9;
+                            font-size: 24px;
+                            margin-right: .5rem;
+                        }
+                    }
+                    ul{
+                        li{
+                            list-style: inside;
+                            font-size: 14px;
+                            line-height: 1.7;
+                            margin-bottom: 0.25rem;
+                        }
+                    }
+                }
+                .item-add-cart{
+                    width: 38%;
+
+                    .btn-add-cart{
+                        font-size: 13px;
+                        color: #fff;
+                        background: #0879c9;
+                        text-decoration: none;
+                        border: none;
+                        width: 100%;
+                        text-transform: uppercase;
+                        padding: 17px 13px;
+                        outline: none;
+                        letter-spacing: 1px;
+                        -webkit-box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.45);
+                                box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.45);
+                        font-weight: 600;
+                        cursor: pointer;
+                        border-radius: 4px;
+                        -webkit-transition: all .5s;
+                        transition: all .5s;
+
+                        &:hover{
+                            background: #000;
+                        }
+                    }
+                }
+            }
+        }
+
+        .row-comment{
+            @include container-mw(100%);
+            margin-top: 4rem;
+            padding: 0 15px;
+        }
+    }
+
+}

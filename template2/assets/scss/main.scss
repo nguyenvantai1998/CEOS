@@ -1,6 +1,8 @@
 @import "helper/custom.scss";
 @import "./helper/font.scss";
 
+// preload
+@import "./layout/preloader";
 #header{
     @import "layout/header/header";
 }
@@ -8,7 +10,6 @@
     @import "./layout/main/bannerpage";
 }
 #main{
-
     // our new
     .ourNew{
         @include container-mw(100%);
@@ -67,6 +68,8 @@
     @import "./layout/main/contactus";
     @import "./layout/main/googlemap";
     @import "./layout/main/payment";
+    @import "./layout/main/checkout";
+    @import "./layout/main/singlepage";
 }
 #footer{
    @import "layout/footer/footer"; 
@@ -87,6 +90,28 @@
         }
     }   
 }
+#scrollToTop{
+    text-decoration: none;
+    position: fixed;
+    bottom: 24px;
+    right: 1%;
+    overflow: hidden;
+    z-index: 999;
+    width: 64px;
+    height: 64px;
+    border: none;
+    text-indent: 100%;
+    background: url($bgURL+'move-up.png') no-repeat 0px 0px;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    display: none;
+
+    &:hover{
+        opacity: .8;
+    }
+}
+// call phone
+@import "./layout/phoneCall";
 // responsive
 @import "./layout/responsive";
 

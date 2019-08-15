@@ -288,79 +288,27 @@
 
             </div>
 
-            <!-- slide banner -->
-            <div class="hd-slide-banner">
-
-                <div class="fadeOut owl-carousel owl-theme">
-                    <div class="item item-1">
-                        <div class="item-container">
-                            <div class="space-banner">
-                                <div class="box-content">
-                                    <p>Get flat
-                                        <span>10%</span> Cashback</p>
-                                    <h3>The
-                                        <span>Big</span>
-                                        Sale
-                                    </h3>
-                                    <a class="btn-shopnow" href="#">Shop Now </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item item-2">
-                        <div class="item-container">
-                            <div class="space-banner">
-                                <div class="box-content">
-                                    <p>Get flat
-                                        <span>10%</span> Cashback</p>
-                                    <h3>The
-                                        <span>Big</span>
-                                        Sale
-                                    </h3>
-                                    <a class="btn-shopnow" href="#">Shop Now </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item item-3">
-                        <div class="item-container">
-                            <div class="space-banner">
-                                <div class="box-content">
-                                    <p>Get flat
-                                        <span>10%</span> Cashback</p>
-                                    <h3>The
-                                        <span>Big</span>
-                                        Sale
-                                    </h3>
-                                    <a class="btn-shopnow" href="#">Shop Now </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item item-4">
-                        <div class="item-container">
-                            <div class="space-banner">
-                                <div class="box-content">
-                                    <p>Get flat
-                                        <span>10%</span> Cashback</p>
-                                    <h3>The
-                                        <span>Big</span>
-                                        Sale
-                                    </h3>
-                                    <a class="btn-shopnow" href="#">Shop Now </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
         </div>
 
     </header>
 
-    <!-- main -->
+    <!-- banner page -->
+    <section id="bannerPage">
+        <div class="bnp-container"></div>
+        <div class="page-line">
+            <div class="pl-container">
+                <ul>
+                    <li>
+                        <a href="#">Home</a>
+                        <i>|</i>
+                    </li>
+                    <li>category</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- main page -->
     <main id="main">
 
         <!-- our new -->
@@ -370,9 +318,7 @@
 
                 <div class="title">
                     <h3>
-                        <span>O</span>ur
-                        <span>N</span>ew
-                        <span>P</span>roducts</h3>
+                        <span>C</span>ategory</h3>
                 </div>
 
                 <div class="row-container">
@@ -529,12 +475,51 @@
 
                             </section>
 
-                            <!-- product type -->
+                            <!-- highlights -->
+                            <section class="bannerBig">
+                                <div class="bnbig-container">
+                                    <div class="row-box">
+
+                                        <div class="box">
+                                            <div class="join-agile">
+                                                <div class="content-img">
+                                                    <div class="content">
+                                                        <h6>Smooth, Rich &amp; Loud Audio</h6>
+                                                        <h4>Branded Headphones</h4>
+                                                        <p>Sale up to 25% off all in store</p>
+                                                    </div>
+                                                    <div class="img">
+                                                        <img src="./assets/img/off1.png" alt="" class="img-fluid">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="box">
+                                            <div class="join-agile">
+                                                <div class="content-img">
+                                                    <div class="content">
+                                                        <h6>Smooth, Rich &amp; Loud Audio</h6>
+                                                        <h4>Branded Headphones</h4>
+                                                        <p>Sale up to 25% off all in store</p>
+                                                    </div>
+                                                    <div class="img">
+                                                        <img src="./assets/img/off1.png" alt="" class="img-fluid">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </section>
+
+                            <!-- new brand -->
                             <section class="productType">
 
                                 <div class="nb-container">
 
-                                    <h3 class="title">Tv & Audio</h3>
+                                    <h3 class="title">New Brand Mobiles</h3>
 
                                     <div class="row-product">
 
@@ -560,8 +545,23 @@
                                                         <del>$280.00</del>
                                                     </div>
                                                     <div class="snipcart-details">
-                                                        <input type="submit" name="submit" value="Add to cart"
-                                                            class="button btn-add">
+                                                        <form action="#" method="post">
+                                                            <fieldset>
+                                                                <input type="hidden" name="cmd" value="_cart" />
+                                                                <input type="hidden" name="add" value="1" />
+                                                                <input type="hidden" name="business" value=" " />
+                                                                <input type="hidden" name="item_name"
+                                                                    value="Samsung Galaxy J7" />
+                                                                <input type="hidden" name="amount" value="200.00" />
+                                                                <input type="hidden" name="discount_amount"
+                                                                    value="1.00" />
+                                                                <input type="hidden" name="currency_code" value="USD" />
+                                                                <input type="hidden" name="return" value=" " />
+                                                                <input type="hidden" name="cancel_return" value=" " />
+                                                                <input type="submit" name="submit" value="Add to cart"
+                                                                    class="button btn-add" />
+                                                            </fieldset>
+                                                        </form>
                                                     </div>
                                                 </div>
                                             </div>
@@ -577,6 +577,7 @@
                                                                 View</a>
                                                         </div>
                                                     </div>
+                                                    <span class="pro-new-top">New</span>
                                                 </div>
 
                                                 <div class="box-info-product">
@@ -588,8 +589,23 @@
                                                         <del>$280.00</del>
                                                     </div>
                                                     <div class="snipcart-details">
-                                                        <input type="submit" name="submit" value="Add to cart"
-                                                            class="button btn-add">
+                                                        <form action="#" method="post">
+                                                            <fieldset>
+                                                                <input type="hidden" name="cmd" value="_cart" />
+                                                                <input type="hidden" name="add" value="1" />
+                                                                <input type="hidden" name="business" value=" " />
+                                                                <input type="hidden" name="item_name"
+                                                                    value="Samsung Galaxy J7" />
+                                                                <input type="hidden" name="amount" value="200.00" />
+                                                                <input type="hidden" name="discount_amount"
+                                                                    value="1.00" />
+                                                                <input type="hidden" name="currency_code" value="USD" />
+                                                                <input type="hidden" name="return" value=" " />
+                                                                <input type="hidden" name="cancel_return" value=" " />
+                                                                <input type="submit" name="submit" value="Add to cart"
+                                                                    class="button btn-add" />
+                                                            </fieldset>
+                                                        </form>
                                                     </div>
                                                 </div>
                                             </div>
@@ -605,6 +621,7 @@
                                                                 View</a>
                                                         </div>
                                                     </div>
+                                                    <span class="pro-new-top">New</span>
                                                 </div>
 
                                                 <div class="box-info-product">
@@ -616,8 +633,23 @@
                                                         <del>$280.00</del>
                                                     </div>
                                                     <div class="snipcart-details">
-                                                        <input type="submit" name="submit" value="Add to cart"
-                                                            class="button btn-add">
+                                                        <form action="#" method="post">
+                                                            <fieldset>
+                                                                <input type="hidden" name="cmd" value="_cart" />
+                                                                <input type="hidden" name="add" value="1" />
+                                                                <input type="hidden" name="business" value=" " />
+                                                                <input type="hidden" name="item_name"
+                                                                    value="Samsung Galaxy J7" />
+                                                                <input type="hidden" name="amount" value="200.00" />
+                                                                <input type="hidden" name="discount_amount"
+                                                                    value="1.00" />
+                                                                <input type="hidden" name="currency_code" value="USD" />
+                                                                <input type="hidden" name="return" value=" " />
+                                                                <input type="hidden" name="cancel_return" value=" " />
+                                                                <input type="submit" name="submit" value="Add to cart"
+                                                                    class="button btn-add" />
+                                                            </fieldset>
+                                                        </form>
                                                     </div>
                                                 </div>
                                             </div>
@@ -629,23 +661,51 @@
 
                             </section>
 
-                            <!-- banner box -->
-                            <section class="bannerBox">
-                                <div class="bnbox-container">
-                                    <h3>Summer Carnival</h3>
-                                    <p>Get Extra 10% Off</p>
-                                    <div class="bg-right">
-                                        <img src="./assets/img/image1.png" alt="">
+                            <!-- highlights -->
+                            <section class="bannerBig">
+                                <div class="bnbig-container">
+                                    <div class="row-box">
+
+                                        <div class="box">
+                                            <div class="join-agile">
+                                                <div class="content-img">
+                                                    <div class="content">
+                                                        <h6>Smooth, Rich &amp; Loud Audio</h6>
+                                                        <h4>Branded Headphones</h4>
+                                                        <p>Sale up to 25% off all in store</p>
+                                                    </div>
+                                                    <div class="img">
+                                                        <img src="./assets/img/off1.png" alt="" class="img-fluid">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="box">
+                                            <div class="join-agile">
+                                                <div class="content-img">
+                                                    <div class="content">
+                                                        <h6>Smooth, Rich &amp; Loud Audio</h6>
+                                                        <h4>Branded Headphones</h4>
+                                                        <p>Sale up to 25% off all in store</p>
+                                                    </div>
+                                                    <div class="img">
+                                                        <img src="./assets/img/off1.png" alt="" class="img-fluid">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
                                     </div>
                                 </div>
                             </section>
 
-                            <!-- large appliances -->
+                            <!-- new brand -->
                             <section class="productType">
 
                                 <div class="nb-container">
 
-                                    <h3 class="title">Tv & Audio</h3>
+                                    <h3 class="title">New Brand Mobiles</h3>
 
                                     <div class="row-product">
 
@@ -671,8 +731,23 @@
                                                         <del>$280.00</del>
                                                     </div>
                                                     <div class="snipcart-details">
-                                                        <input type="submit" name="submit" value="Add to cart"
-                                                            class="button btn-add">
+                                                        <form action="#" method="post">
+                                                            <fieldset>
+                                                                <input type="hidden" name="cmd" value="_cart" />
+                                                                <input type="hidden" name="add" value="1" />
+                                                                <input type="hidden" name="business" value=" " />
+                                                                <input type="hidden" name="item_name"
+                                                                    value="Samsung Galaxy J7" />
+                                                                <input type="hidden" name="amount" value="200.00" />
+                                                                <input type="hidden" name="discount_amount"
+                                                                    value="1.00" />
+                                                                <input type="hidden" name="currency_code" value="USD" />
+                                                                <input type="hidden" name="return" value=" " />
+                                                                <input type="hidden" name="cancel_return" value=" " />
+                                                                <input type="submit" name="submit" value="Add to cart"
+                                                                    class="button btn-add" />
+                                                            </fieldset>
+                                                        </form>
                                                     </div>
                                                 </div>
                                             </div>
@@ -688,6 +763,7 @@
                                                                 View</a>
                                                         </div>
                                                     </div>
+                                                    <span class="pro-new-top">New</span>
                                                 </div>
 
                                                 <div class="box-info-product">
@@ -699,8 +775,23 @@
                                                         <del>$280.00</del>
                                                     </div>
                                                     <div class="snipcart-details">
-                                                        <input type="submit" name="submit" value="Add to cart"
-                                                            class="button btn-add">
+                                                        <form action="#" method="post">
+                                                            <fieldset>
+                                                                <input type="hidden" name="cmd" value="_cart" />
+                                                                <input type="hidden" name="add" value="1" />
+                                                                <input type="hidden" name="business" value=" " />
+                                                                <input type="hidden" name="item_name"
+                                                                    value="Samsung Galaxy J7" />
+                                                                <input type="hidden" name="amount" value="200.00" />
+                                                                <input type="hidden" name="discount_amount"
+                                                                    value="1.00" />
+                                                                <input type="hidden" name="currency_code" value="USD" />
+                                                                <input type="hidden" name="return" value=" " />
+                                                                <input type="hidden" name="cancel_return" value=" " />
+                                                                <input type="submit" name="submit" value="Add to cart"
+                                                                    class="button btn-add" />
+                                                            </fieldset>
+                                                        </form>
                                                     </div>
                                                 </div>
                                             </div>
@@ -716,6 +807,7 @@
                                                                 View</a>
                                                         </div>
                                                     </div>
+                                                    <span class="pro-new-top">New</span>
                                                 </div>
 
                                                 <div class="box-info-product">
@@ -727,8 +819,23 @@
                                                         <del>$280.00</del>
                                                     </div>
                                                     <div class="snipcart-details">
-                                                        <input type="submit" name="submit" value="Add to cart"
-                                                            class="button btn-add">
+                                                        <form action="#" method="post">
+                                                            <fieldset>
+                                                                <input type="hidden" name="cmd" value="_cart" />
+                                                                <input type="hidden" name="add" value="1" />
+                                                                <input type="hidden" name="business" value=" " />
+                                                                <input type="hidden" name="item_name"
+                                                                    value="Samsung Galaxy J7" />
+                                                                <input type="hidden" name="amount" value="200.00" />
+                                                                <input type="hidden" name="discount_amount"
+                                                                    value="1.00" />
+                                                                <input type="hidden" name="currency_code" value="USD" />
+                                                                <input type="hidden" name="return" value=" " />
+                                                                <input type="hidden" name="cancel_return" value=" " />
+                                                                <input type="submit" name="submit" value="Add to cart"
+                                                                    class="button btn-add" />
+                                                            </fieldset>
+                                                        </form>
                                                     </div>
                                                 </div>
                                             </div>
@@ -747,13 +854,151 @@
                     <!-- sidebar right -->
                     <div class="col-right sidebar-right">
 
-                        <div class="search-pro row-item">
-                            <h3>Search Here..</h3>
+                        <div class="search-pro row-item" style="border-bottom: none;">
+                            <h3>Brand</h3>
                             <form action="#" method="post">
                                 <input class="search" type="search" placeholder="Product name..." name="search"
                                     required="">
                                 <input class="btn-submit" type="submit" value=" ">
                             </form>
+                        </div>
+
+                        <div class="left-side row-item">
+                            <h3>Hot Category</h3>
+                            <div class="scroll-top-animation">
+                                <div class="box-scroll">
+
+                                    <div class="r-pro">
+                                        <div class="left-img">
+                                            <img src="./assets/img/k1.jpg" alt="" class="img-fluid">
+                                        </div>
+                                        <div class="right-content">
+                                            <a href="">Samsung Galaxy On7 Prime (Gold, 4GB RAM + 64GB Memory)</a>
+                                            <a href="" class="price">$12,990.00</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="r-pro">
+                                        <div class="left-img">
+                                            <img src="./assets/img/k2.jpg" alt="" class="img-fluid">
+                                        </div>
+                                        <div class="right-content">
+                                            <a href="">Samsung Galaxy On7 Prime (Gold, 4GB RAM + 64GB Memory)</a>
+                                            <a href="" class="price">$12,990.00</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="r-pro">
+                                        <div class="left-img">
+                                            <img src="./assets/img/k3.jpg" alt="" class="img-fluid">
+                                        </div>
+                                        <div class="right-content">
+                                            <a href="">Samsung Galaxy On7 Prime (Gold, 4GB RAM + 64GB Memory)</a>
+                                            <a href="" class="price">$12,990.00</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="r-pro">
+                                        <div class="left-img">
+                                            <img src="./assets/img/k2.jpg" alt="" class="img-fluid">
+                                        </div>
+                                        <div class="right-content">
+                                            <a href="">Samsung Galaxy On7 Prime (Gold, 4GB RAM + 64GB Memory)</a>
+                                            <a href="" class="price">$12,990.00</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="left-side row-item">
+                            <ul class="check-list">
+                                <li>
+                                    <input type="checkbox" class="checked">
+                                    <span class="span">Samsung</span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" class="checked">
+                                    <span class="span">Red Mi</span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" class="checked">
+                                    <span class="span">Apple</span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" class="checked">
+                                    <span class="span">Nexus</span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" class="checked">
+                                    <span class="span">Motorola</span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" class="checked">
+                                    <span class="span">Micromax</span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" class="checked">
+                                    <span class="span">Lenovo</span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" class="checked">
+                                    <span class="span">Oppo</span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" class="checked">
+                                    <span class="span">Sony</span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" class="checked">
+                                    <span class="span">LG</span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" class="checked">
+                                    <span class="span">One Plus</span>
+                                </li>
+                            </ul>
+                        </div>
+
+
+                        <div class="customer-rev row-item">
+                            <h3>Ram</h3>
+                            <ul class="check-list">
+                                <li>
+                                    <input type="checkbox" class="checked">
+                                    <span class="span">Less than 512 MB</span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" class="checked">
+                                    <span class="span">512 MB - 1 GB</span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" class="checked">
+                                    <span class="span">1 GB</span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" class="checked">
+                                    <span class="span">2 GB</span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" class="checked">
+                                    <span class="span">3 GB</span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" class="checked">
+                                    <span class="span">5 GB</span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" class="checked">
+                                    <span class="span">6 GB</span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" class="checked">
+                                    <span class="span">6 GB & Above</span>
+                                </li>
+
+                            </ul>
                         </div>
 
                         <div class="range row-item">
@@ -812,116 +1057,27 @@
                             </ul>
                         </div>
 
-                        <div class="customer-rev row-item">
-                            <h3>Customer Review</h3>
-                            <ul class="list-review">
-                                <li>
-                                    <a href="#">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <span>5.0</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <span>4.0</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star-half"></i>
-                                        <span>3.5</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <span>3.0</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star-half"></i>
-                                        <span>2.5</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-
                         <div class="left-side row-item">
-                            <h3>Electronics</h3>
+                            <h3>Offers</h3>
                             <ul class="check-list">
                                 <li>
                                     <input type="checkbox" class="checked">
-                                    <span class="span">Accessories</span>
+                                    <span class="span">Exchange Offer</span>
                                 </li>
                                 <li>
                                     <input type="checkbox" class="checked">
-                                    <span class="span">Cameras &amp; Photography</span>
+                                    <span class="span">No Cost EMI</span>
                                 </li>
                                 <li>
                                     <input type="checkbox" class="checked">
-                                    <span class="span">Car &amp; Vehicle Electronics</span>
-                                </li>
-                                <li>
-                                    <input type="checkbox" class="checked">
-                                    <span class="span">Computers &amp; Accessories</span>
-                                </li>
-                                <li>
-                                    <input type="checkbox" class="checked">
-                                    <span class="span">GPS &amp; Accessories</span>
-                                </li>
-                                <li>
-                                    <input type="checkbox" class="checked">
-                                    <span class="span">Headphones</span>
-                                </li>
-                                <li>
-                                    <input type="checkbox" class="checked">
-                                    <span class="span">Home Audio</span>
-                                </li>
-                                <li>
-                                    <input type="checkbox" class="checked">
-                                    <span class="span">Home Theater, TV &amp; Video</span>
-                                </li>
-                                <li>
-                                    <input type="checkbox" class="checked">
-                                    <span class="span">Mobiles &amp; Accessories</span>
-                                </li>
-                                <li>
-                                    <input type="checkbox" class="checked">
-                                    <span class="span">Portable Media Players</span>
-                                </li>
-                                <li>
-                                    <input type="checkbox" class="checked">
-                                    <span class="span">Tablets</span>
-                                </li>
-                                <li>
-                                    <input type="checkbox" class="checked">
-                                    <span class="span">Telephones &amp; Accessories</span>
-                                </li>
-                                <li>
-                                    <input type="checkbox" class="checked">
-                                    <span class="span">Wearable Technology</span>
+                                    <span class="span">Special Price</span>
                                 </li>
                             </ul>
                         </div>
 
                         <div class="left-side row-item">
-                            <h3>Cash On Delivery</h3>
+                            <h3>Cash On Delivery
+                            </h3>
                             <ul class="check-list">
                                 <li>
                                     <input type="checkbox" class="checked">
@@ -931,7 +1087,8 @@
                         </div>
 
                         <div class="left-side row-item">
-                            <h3>New Arrivals</h3>
+                            <h3>New Arrivals
+                            </h3>
                             <ul class="check-list">
                                 <li>
                                     <input type="checkbox" class="checked">
@@ -945,52 +1102,13 @@
                         </div>
 
                         <div class="left-side row-item">
-                            <h3>Best Seller</h3>
-                            <div class="scroll-top-animation">
-                                <div class="box-scroll">
-
-                                    <div class="r-pro">
-                                        <div class="left-img">
-                                            <img src="./assets/img/k1.jpg" alt="" class="img-fluid">
-                                        </div>
-                                        <div class="right-content">
-                                            <a href="">Samsung Galaxy On7 Prime (Gold, 4GB RAM + 64GB Memory)</a>
-                                            <a href="" class="price">$12,990.00</a>
-                                        </div>
-                                    </div>
-
-                                    <div class="r-pro">
-                                        <div class="left-img">
-                                            <img src="./assets/img/k2.jpg" alt="" class="img-fluid">
-                                        </div>
-                                        <div class="right-content">
-                                            <a href="">Samsung Galaxy On7 Prime (Gold, 4GB RAM + 64GB Memory)</a>
-                                            <a href="" class="price">$12,990.00</a>
-                                        </div>
-                                    </div>
-
-                                    <div class="r-pro">
-                                        <div class="left-img">
-                                            <img src="./assets/img/k3.jpg" alt="" class="img-fluid">
-                                        </div>
-                                        <div class="right-content">
-                                            <a href="">Samsung Galaxy On7 Prime (Gold, 4GB RAM + 64GB Memory)</a>
-                                            <a href="" class="price">$12,990.00</a>
-                                        </div>
-                                    </div>
-
-                                    <div class="r-pro">
-                                        <div class="left-img">
-                                            <img src="./assets/img/k2.jpg" alt="" class="img-fluid">
-                                        </div>
-                                        <div class="right-content">
-                                            <a href="">Samsung Galaxy On7 Prime (Gold, 4GB RAM + 64GB Memory)</a>
-                                            <a href="" class="price">$12,990.00</a>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
+                            <h3>Availability</h3>
+                            <ul class="check-list">
+                                <li>
+                                    <input type="checkbox" class="checked">
+                                    <span class="span">Exclude Out of Stock</span>
+                                </li>
+                            </ul>
                         </div>
 
                     </div>
@@ -1530,5 +1648,7 @@
     <script src="./assets/js/jquery-ui.min.js"></script>
     <script src="./assets/js/custome.js"></script>
 </body>
+
+</html>
 
 </html>

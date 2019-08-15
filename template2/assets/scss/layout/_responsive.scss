@@ -573,6 +573,20 @@
             }
         }
 
+        .singlePage{
+            .singleP-container {
+                .row-content {
+                    .col-left{
+                        @include col-auto(100%);
+                        margin-bottom: 25px;
+                    }
+                    .col-right{
+                        @include col-auto(100%);
+                    }
+                }
+            }
+        }
+
     }
 }
 
@@ -657,6 +671,45 @@
             }
         }
 
+        .checkout {
+            .checkout-container {
+                .checkout-top {
+                    .table-container {
+                        .table-sub {
+                            th{
+                                font-size: 13px;
+                            }
+                            th:nth-child(2){
+                                width: 20%;
+                            }
+                            .pr-quality {
+                                .quantity {
+                                    .quantity-select {
+                                        .value-minus,
+                                        .value,
+                                        .value-plus{
+                                            width: 20px;
+                                            height: 20px;
+                                        }
+                                        .value{
+                                            line-height: 0;
+                                        }
+                                    }
+                                }
+                            }
+                            .pr-remove {
+                                .rem {
+                                    .close1{
+                                        top: 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
     }
 }
 
@@ -713,6 +766,85 @@
             }
         }
 
+        .checkout {
+            .checkout-container {
+                @include container-mw(95%);
+
+                .checkout-top {
+                    >h4{
+                        font-size: 20px;
+                    }
+                    .table-container{
+                        display: block;
+                        width: 100%;
+                        overflow-x: auto;
+
+                        .table-sub{
+                            width: 700px;
+                            
+                            td {
+                                > a {
+                                    > img {
+                                        width: 70% !important;
+                                    }
+                                }
+                            }
+                            .pr-remove {
+                                .rem {
+                                    .close1 {
+                                        top: 28px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    // .table-container {
+                    //     .table-sub{
+                            
+                    //     }
+
+                    //     // .table-sub{
+                    //     //     @include container-mw(95%);
+                    //     // background: red;
+                    //     // overflow-x: auto;
+                    //     // }
+
+                    //     // .table-sub {
+                    //     //     th{
+                    //     //         font-size: 13px;
+                    //     //     }
+                    //     //     th:nth-child(2){
+                    //     //         width: 20%;
+                    //     //     }
+                    //     //     .pr-quality {
+                    //     //         .quantity {
+                    //     //             .quantity-select {
+                    //     //                 .value-minus,
+                    //     //                 .value,
+                    //     //                 .value-plus{
+                    //     //                     width: 20px;
+                    //     //                     height: 20px;
+                    //     //                 }
+                    //     //                 .value{
+                    //     //                     line-height: 0;
+                    //     //                 }
+                    //     //             }
+                    //     //         }
+                    //     //     }
+                    //     //     .pr-remove {
+                    //     //         .rem {
+                    //     //             .close1{
+                    //     //                 top: 0;
+                    //     //             }
+                    //     //         }
+                    //     //     }
+                    //     // }
+                    // }
+                }
+            }
+        }
+
     }
 }
 
@@ -738,6 +870,7 @@
                 }
             }
         }
+
         .ourCustomers {
             .ocm-container {
                 .title{
@@ -749,6 +882,19 @@
                 }
             }
         }
+
+        .singlePage {
+            .singleP-container{
+                .row-content {
+                    .col-right {
+                        .item-add-cart {
+                            width: 50%;
+                        }
+                    }
+                }
+            }
+        }
+
     }
 }
 
@@ -804,6 +950,13 @@
                             }
                         }
                     }
+                    .col-right {
+                        .row-item {
+                            .search{
+                                width: 75%;
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -846,6 +999,13 @@
                                         }
                                     }
                                 }
+                            }
+                        }
+                    }
+                    .col-right {
+                        .row-item {
+                            .search{
+                                width: 78%;
                             }
                         }
                     }

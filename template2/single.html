@@ -19,10 +19,10 @@
 <body>
 
     <!-- loader -->
-    <div id="overlayer"></div>
+    <!-- <div id="overlayer"></div>
     <span class="loader">
         <img src="./assets/img/preload-2.gif" alt="">
-    </span>
+    </span> -->
 
     <!-- header -->
     <header id="header">
@@ -302,7 +302,7 @@
                         <a href="#">Home</a>
                         <i>|</i>
                     </li>
-                    <li>Contact Us</li>
+                    <li>SINGLE PRODUCT</li>
                 </ul>
             </div>
         </div>
@@ -311,93 +311,100 @@
     <!-- main page -->
     <main id="main">
 
-        <!-- contact us -->
-        <section class="contactUS about">
-
-            <div class="ctus-container ab-container">
+        <!-- single page -->
+        <section class="singlePage about">
+            <div class="singleP-container ab-container">
 
                 <h3 class="title">
-                    <span>C</span>ontact
-                    <span>U</span>s
-                </h3>
+                    <span>S</span>ingle
+                    <span>P</span>age</h3>
 
-                <div class="row-contact">
+                <div class="row-content">
 
-                    <div class="col-contact">
-                        <div class="box-center">
-                            <div class="con-ic">
-                                <i class="fas fa-map-marker-alt"></i>
-                            </div>
-                            <h4>Address</h4>
-                            <p>1PO Box 8568954 Melbourne
-                                <label>Australia.</label>
-                            </p>
-                        </div>
+                    <div class="col-left col-box-image">
+
                     </div>
 
-                    <div class="col-contact">
-                        <div class="box-center">
-                            <div class="con-ic">
-                                <i class="fas fa-phone"></i>
-                            </div>
-                            <h4>Call Us</h4>
-                            <p>+(0121) 121 121
-                                <label>+(0121) 121 122</label>
-                            </p>
-                        </div>
-                    </div>
+                    <div class="col-right col-box-detail">
+                        <h3>Samsung Galaxy J7 Prime (Gold, 16 GB) (3 GB RAM)</h3>
 
-                    <div class="col-contact">
-                        <div class="box-center">
-                            <div class="con-ic">
-                                <i class="fas fa-envelope-open"></i>
-                            </div>
-                            <h4>Email</h4>
+                        <p class="item-price">
+                            <span class="price-new">$200.00</span>
+                            <del class="price-last">$280.00</del>
+                            <label>Free delivery</label>
+                        </p>
+
+                        <div class="item-infoagile">
+                            <ul>
+                                <li>
+                                    Cash on Delivery Eligible.
+                                </li>
+                                <li>
+                                    Shipping Speed to Delivery.
+                                </li>
+                                <li>
+                                    EMIs from $655/month.
+                                </li>
+                                <li>
+                                    Bank OfferExtra 5% off* with Axis Bank Buzz Credit CardT&amp;C
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="item-single">
                             <p>
-                                <a href="mailto:info@example.com">info@example1.com</a>
-                                <label>
-                                    <a href="mailto:info@example.com">info@example2.com</a>
-                                </label>
+                                <i class="far fa-hand-point-right"></i>
+                                <label>1 Year</label>Manufacturer Warranty</p>
+                            <ul>
+                                <li>
+                                    3 GB RAM | 16 GB ROM | Expandable Upto 256 GB
+                                </li>
+                                <li>
+                                    5.5 inch Full HD Display
+                                </li>
+                                <li>
+                                    13MP Rear Camera | 8MP Front Camera
+                                </li>
+                                <li>
+                                    3300 mAh Battery
+                                </li>
+                                <li>
+                                    Exynos 7870 Octa Core 1.6GHz Processor
+                                </li>
+                            </ul>
+                            <p>
+                                <i class="fas fa-retweet"></i>Net banking &amp; Credit/ Debit/ ATM card
                             </p>
                         </div>
+
+                        <div class="item-add-cart">
+                            <form action="#" method="post">
+                                <fieldset>
+                                    <input type="hidden" name="cmd" value="_cart">
+                                    <input type="hidden" name="add" value="1">
+                                    <input type="hidden" name="business" value=" ">
+                                    <input type="hidden" name="item_name" value="Samsung Galaxy J7 Prime">
+                                    <input type="hidden" name="amount" value="200.00">
+                                    <input type="hidden" name="discount_amount" value="1.00">
+                                    <input type="hidden" name="currency_code" value="USD">
+                                    <input type="hidden" name="return" value=" ">
+                                    <input type="hidden" name="cancel_return" value=" ">
+                                    <input type="submit" name="submit" value="Add to cart" class="btn-add-cart">
+                                </fieldset>
+                            </form>
+                        </div>
                     </div>
+
 
                 </div>
 
-                <div class="row-form">
-
-                    <div class="row-top">
-                        <div class="contact-form1">
-                            <label>Name</label>
-                            <input type="text" class="form-contact" name="Name" placeholder="" required="">
-                        </div>
-                        <div class="contact-form1">
-                            <label>E-mail</label>
-                            <input type="email" class="form-contact" name="Email" placeholder="" required="">
-                        </div>
-                    </div>
-
-                    <div class="row-body">
-                        <label>Message</label>
-                        <textarea name="Message" class="form-contact-text" placeholder="" required=""> </textarea>
-                    </div>
-
-                    <div class="row-bottom">
-                        <input type="submit" class="submit-form" value="Submit">
-                    </div>
-
+                <!-- comment -->
+                <div class="row-comment">
+                    <div class="fb-comments"
+                        data-href="https://developers.facebook.com/docs/plugins/comments#configurator" data-width="1140"
+                        data-numposts="10"></div>
                 </div>
 
-            </div>
-
-        </section>
-
-        <!-- google map -->
-        <section class="googleMap">
-            <div class="gm-container">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3928.783552798076!2d105.75412601461576!3d10.034712092827382!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31a089b46732d417%3A0x7abe6a544684bb39!2sThe+Coffee+House!5e0!3m2!1svi!2s!4v1565100634944!5m2!1svi!2s"
-                    frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
         </section>
 
@@ -928,6 +935,9 @@
     <script src="https://code.iconify.design/1/1.0.2/iconify.min.js"></script>
     <script src="./assets/js/minicart.js"></script>
     <script src="./assets/js/jquery-ui.min.js"></script>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous"
+        src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v4.0&appId=259016371442528&autoLogAppEvents=1"></script>
     <script src="./assets/js/custome.js"></script>
 </body>
 
