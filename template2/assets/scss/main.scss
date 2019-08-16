@@ -59,8 +59,8 @@
             
         }
     }
-
     @import "./layout/main/bannerbig";
+    @import "./layout/main/listpost";
 
     // page
     @import "./layout/main/about";
@@ -70,6 +70,7 @@
     @import "./layout/main/payment";
     @import "./layout/main/checkout";
     @import "./layout/main/singlepage";
+    @import "./layout/main/singlepost";
 }
 #footer{
    @import "layout/footer/footer"; 

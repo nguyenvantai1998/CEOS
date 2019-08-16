@@ -50,6 +50,14 @@ $(document).ready(function () {
     $('html,body').animate({ scrollTop: 0 }, 1000);
   });
 
+  // flex slide single
+  $(window).load(function() {
+    $('.flexslider').flexslider({
+      animation: "slide",
+      controlNav: "thumbnails"
+    });
+  });
+
 })
 
 // preloader

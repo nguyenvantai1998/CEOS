@@ -587,6 +587,33 @@
             }
         }
 
+        .singlePost {
+            .singleP-container{
+                .row-content{
+                    .col-left {
+                        @include col-auto(100%);
+                        margin-bottom: 25px;
+                    }
+                    .col-right{
+                        @include col-auto(100%);
+
+                        .row-item {
+                            >h3{
+                                text-align: center;
+                            }
+                            .box-scroll {
+                                .r-pro {
+                                    .left-img {
+                                        text-align: center;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
     }
 }
 
@@ -848,6 +875,29 @@
     }
 }
 
+@include res(374px){
+    .singlePost {
+        .singleP-container{
+            .row-content{
+                .col-left {
+                    .box-content{
+                        .meta{
+                            ul{
+                                flex-wrap: wrap;
+
+                                li{
+                                    @include col-auto(100%);
+                                    margin-bottom: 15px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 @include res(320px){
     #main {
 
@@ -1093,6 +1143,64 @@
                     }
                     .box:nth-child(2){
                         margin-top: 2.5rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// ---------------------- list post -------------------- //
+@include res(1199px){
+    #main{
+        .listPost {
+            .lp-container {
+                max-width: 95%;
+            }
+        }
+    }
+}
+
+@include res(991px){
+    #main{
+        .listPost {
+            .lp-container {
+                @include container-mw(100%);
+    
+                .box-img-content {
+                    .box-big{
+                        @include col-6;
+    
+                        .box-small {
+                            .img-date {
+                                .creative {
+                                    bottom: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include res(599px){
+    #main{
+        .listPost {
+            .lp-container {
+                .box-img-content {
+                    .box-big {
+                        @include col-auto(100%);
+                        .box-small{
+                            .img-date{
+                                .img{
+                                    img{
+                                        width: 100%;
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
             }

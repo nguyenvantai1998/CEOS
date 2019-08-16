@@ -1,0 +1,203 @@
+.listPost{
+    margin: 3rem 0 .1rem;
+
+    .lp-container{
+        @include container-mw(75%);
+
+        >h3{
+            font-family: $ft-title-1;
+            color: $color-4;
+            font-size: 38px;
+            letter-spacing: 1px;
+            text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.19);
+            text-align: center;
+            margin-bottom: 3rem;
+            line-height: 1.2;
+
+            >span{
+                color: $color-1;
+                font-size: 50px;
+                letter-spacing: 0;
+            }
+        }
+
+        .box-img-content{
+            @include row-fb;
+
+            .box-big{
+                @include col-4;
+                cursor: pointer;
+
+                .box-small{
+                    padding: 25px 15px;
+
+                    .img-date{
+                        position: relative;
+
+                        .img{
+                            overflow: hidden;
+                            max-height: 210px;
+
+                            img{
+                                @include img-res;
+                                transition: all .5s;
+                            }
+                        }
+                        .date{
+                            position: absolute;
+                            top: 10px;
+                            left: 10px;
+                            background-color: $white;
+                            box-shadow: 0 0 9px rgba(0,0,0,.1);
+                            z-index: 2;
+                            display: inline-block;
+                            min-width: 53px;
+                            text-align: center;
+                            color: #4C4C4C;
+
+                            .d{
+                                padding-top: 6px;
+                                font-size: 24px;
+                                display: block;
+                                color: #1B1919;
+                                font-family: $ft-content;
+                            }
+                            .m{
+                                padding-bottom: 10px;
+                                font-weight: 700;
+                                text-transform: uppercase;
+                                font-size: 12px;
+                                letter-spacing: .5px;
+                            }
+                        }
+                        .creative{
+                            position: absolute;
+                            bottom: 0;
+                            right: 0;
+                            left: 0;
+                            text-align: center;
+
+                            >div{
+                                display: inline-block;
+                                background: #D6D6D6;
+                                background: $color-1;
+                                color: $white;
+                                padding: 0 10px;
+                                font-family: $ft-content;
+                                opacity: .9;
+
+                                a{
+                                    line-height: 25px;
+                                    color: $white;
+                                    font-size: 12px;
+
+                                    &:hover{
+                                        text-decoration: underline;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .content{
+                        text-align: center;
+                        padding: 10px 0;
+
+                        .title{
+                            .title-sub{
+                                font-family: $ft-content;
+                                font-weight: 400;
+                                font-size: 22px;
+                                margin-bottom: 10px;
+                                line-height: 1.2;
+                                letter-spacing: .3px;
+                                transition: all .5s;
+                                cursor: pointer;
+
+                                &:hover{
+                                    color: $color-1;
+                                }
+                            }
+                            .meta{
+                                font-family: $ft-content;
+                                color: #4C4C4C;
+                                font-weight: 400;
+                                font-style: italic;
+                                margin-bottom: 10px;
+
+                                span{
+                                    a{
+                                        font-size: 14px;
+                                        color: #787878;
+                                        line-height: 1.7;
+
+                                        &:hover{
+                                            text-decoration: underline;
+                                        }
+                                    }
+                                }
+                                .hr{
+                                    margin: 0 3px;
+                                }
+                                .name{
+                                    a{
+                                        color: $color-1;
+                                    }
+                                }
+                                .name::before{
+                                    content: "By ";
+                                    color: unset;
+                                }
+                            }
+                        }
+                        .content-sub{
+                            line-height: 1.7;
+
+                            p{
+                                color: #4C4C4C;
+                                font-size: 14px;
+                                font-family: $ft-content;
+                            }
+                        }
+                    }
+                }
+
+                &:hover{
+                    .box-small{
+                        .img-date{
+                            .img{
+                                img{
+                                    transform: scale(1.1,1.1);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .button{
+            text-align: center;
+
+           .btn-loadMore{
+                font-size: 14px;
+                padding: 10px 20px;
+                line-height: 18px;
+                text-transform: uppercase;
+                letter-spacing: .3px;
+                border-radius: 0;
+                font-weight: 600;
+                background-color:$color-4;
+                color: $white;
+                border: 2px solid $color-4;
+                transition: all .5s;
+                cursor: pointer;
+                font-family: $ft-content;
+
+                &:hover{
+                    background: $color-1;
+                    color: $white;
+                    border: 2px solid $color-1;
+                }
+           } 
+        }
+    }
+}
