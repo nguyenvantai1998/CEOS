@@ -22,6 +22,12 @@
                         border: none;
                         background-color: rgb(245, 245, 245);
                         color: unset;
+                        position: relative;
+
+                        .icon-right{
+                            position: absolute;
+                            right: 10px;
+                        }
                     }
                     .active{
                         border-bottom: none;

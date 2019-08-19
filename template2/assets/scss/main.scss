@@ -71,6 +71,7 @@
     @import "./layout/main/checkout";
     @import "./layout/main/singlepage";
     @import "./layout/main/singlepost";
+    @import "./layout/main/category";
 }
 #footer{
    @import "layout/footer/footer"; 
@@ -113,6 +114,9 @@
 }
 // call phone
 @import "./layout/phoneCall";
+.call-content{
+    display: none;
+}
 // responsive
 @import "./layout/responsive";
 

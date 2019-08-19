@@ -921,7 +921,7 @@
     </div>
 
     <!-- Call Button -->
-    <div class="fix_tel">
+    <div class="fix_tel tel-1">
         <div class="ring-alo-phone ring-alo-green ring-alo-show" id="ring-alo-phoneIcon"
             style="right: 150px; bottom: -12px;">
             <div class="ring-alo-ph-circle"></div>
@@ -929,25 +929,18 @@
             <div class="ring-alo-ph-img-circle">
                 <p id="daoso2"></p>
                 <script>
-                    if (Math.random() < 0.5) {
-                        text = "<a href='tel:0907547807'><img class='lazy' src='./assets/img/goi.png' alt='G'></a>";
-                    } else {
+                    if (Math.random()) {
                         text = "<a href='tel:0907547807'><img class='lazy' src='./assets/img/goi.png' alt='G'></a>";
                     }
                     document.getElementById("daoso2").innerHTML = text;
                 </script>
-
             </div>
         </div>
         <div class="tel">
             <p id="daoso"></p>
 
             <script>
-                if (Math.random() < 0.5) {
-                    text = "<a href='tel:0907547807'><p class='fone'>Bấm để gọi ngay</p></a>";
-                } else {
-                    text = "<a href='tel:0907547807'><p class='fone'>Bấm để gọi ngay</p></a>";
-                }
+                text = "<a href='tel:0907547807'><p class='fone'> <span class='call-number'>0907547807</span> <span class='call-content'>Bấm để gọi</span> </p></a>";
                 document.getElementById("daoso").innerHTML = text;
             </script>
         </div>
