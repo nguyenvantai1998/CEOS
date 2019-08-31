@@ -1,0 +1,630 @@
+@import "../../helper/mixin.scss";
+@import "../../helper/variable.scss";
+@import "../../helper/font.scss";
+
+.hd-container{
+    @include container-mw(100%);
+    font-family: $ft-def;
+
+    .hd-top{
+        background-color: #8b030e;
+        width: 100%;
+        height: 80px;
+        text-align: center;
+        position: relative;
+        z-index: 6;
+
+        .hdTop-container{
+            z-index: 1;
+            width: 1263px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+
+            >a{
+                >img{
+                    @include img-res;
+                    width: 421px;
+                    float: left;
+                    height: 80px;
+                }
+            }
+        }
+    }
+
+    .hd-info{
+        position: relative;
+        z-index: 6;
+        background: white;
+        .hdInfo-container{
+            @include container-mw(1240px);
+            @include row-fb;
+            
+            .info-left{
+                @include col-auto(45%);
+            }
+            .info-right{
+                @include col-auto(55%);
+                padding-right: 10px;
+                display: flex;
+                justify-content: flex-end;
+
+                .list-info{
+                    margin-bottom: 2px;
+                    margin-top: 10px;
+                    text-align: right;
+                    font-family: $ft-def;
+                    display: flex;
+                    width: 599px;
+
+                    li{
+                        display: inline-block;
+                        position: relative;
+                        text-align: left;
+                        margin-right: 0;
+                        padding: 0 .5%;
+                        margin-right: 5px;
+                        
+                        a, span{
+                            font-size: 13px;
+                            color: #a4a4a4;
+                            text-align: left;
+                        }
+                        .tr-download-menu{
+                            &::before{
+                                content: "";
+                                background: url(https://image.yes24.vn/upload/Content/desktop/images/icon/bg.png) no-repeat;
+                                float: left;
+                                width: 15px;
+                                height: 15px;
+                                -ms-background-position: 0 -343px;
+                                background-position: 0 -343px;
+                            }
+                        }
+                        .tr-cs{
+                            &::before{
+                                content: "";
+                                background: url(https://image.yes24.vn/upload/Content/desktop/images/icon/bg.png) no-repeat;
+                                float: left;
+                                width: 15px;
+                                height: 15px;
+                                -ms-background-position: -37px -343px;
+                                background-position: -37px -343px;
+                            }
+                        }
+                        .tr-notify-main-home{
+                            &::before{
+                                width: 15px;
+                                height: 15px;
+                                content: "";
+                                background: url(https://image.yes24.vn/upload/Content/desktop/images/icon/icon_PC_V3.png) no-repeat;
+                                float: left;
+                                -ms-background-position: -334px -25px;
+                                background-position: -334px -25px;
+                                margin: 4px 2px 0 0;
+                            }
+                        }
+                        .language-vn{
+                            &::before{
+                                content: "";
+                                background: url(https://image.yes24.vn/upload/Content/desktop/images/icon/icon_PC_V3.png) no-repeat;
+                                -ms-background-position: -967px -37px;
+                                background-position: -967px -37px;
+                                width: 22px;
+                                height: 13px;
+                                position: relative;
+                                float: right;
+                            }
+                        }
+                        .language-en{
+                            margin-left: 5px;
+                            &::before{
+                                content: "";
+                                background: url(https://image.yes24.vn/upload/Content/desktop/images/icon/icon_PC_V3.png) no-repeat;
+                                -ms-background-position: -990px -37px;
+                                background-position: -990px -37px;
+                                width: 22px;
+                                height: 13px;
+                                position: relative;
+                                float: right;
+                                -webkit-filter: grayscale(100%);
+                                filter: grayscale(100%);
+                            }
+                        }
+                        .check-order{
+                            &::before{
+                                content: "";
+                                background: url(https://image.yes24.vn/upload/Content/desktop/images/icon/bg.png) no-repeat;
+                                float: left;
+                                width: 15px;
+                                height: 18px;
+                                -ms-background-position: -15px -192px;
+                                background-position: -15px -192px;
+                                background-size: 200px 368px;
+                                margin-right: 2px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .hd-body{
+        position: relative;
+        z-index: 6;
+        background: white;
+        padding-bottom: 10px;
+
+        .hdBody-container{
+            @include container-mw(1240px);
+            @include row-fb;
+            height: 55px;
+
+            .col-left{
+                @include col-auto(20%);
+
+                >a{
+                    >img{
+                        @include img-res;
+                    }
+                }
+            }
+
+            .col-right{
+                @include col-auto(80%);
+                font-display: $ft-def;
+
+                .list-unstyle{
+                    padding-left: 2px;
+                    @include row-fb;
+
+                    >li{
+                        height: 38px;
+
+                        >a{
+                            line-height: 1.4;
+                            font-family: $ft-def;
+                            color: #3e3e3e;
+                            font-size: 14px;
+
+                            >span{
+                                font-size: 13px;
+                            }
+                        }
+                    }
+                    .search{
+                        @include col-auto(37%);
+                        
+                        >input{
+                            @include input;
+                            width: 100%;
+                            height: 36px;
+                            border: solid 1px #dcdcdc;
+                            padding: 0 3%;
+                            margin-top: 15px;
+                        }
+                    }
+                    .product-view{
+                        @include col-auto(16%);
+                    }
+                    >li{
+                        .tr-top-keosao{
+                            &::before{
+                                background: url(https://image.yes24.vn/upload/Content/desktop/images/icon/icon_PC_V3.png) no-repeat;
+                                width: 53px;
+                                height: 28px;
+                                -ms-background-position: -359px -14px;
+                                background-position: -359px -14px;
+                                display: inline-block;
+                                margin-right: 5px;
+                                position: relative;
+                                top: 15px;
+                                margin-left: 25px;
+                                content: '';
+                            }
+                            >span{
+                                position: absolute;
+                                right: 25px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .hd-nav{
+        position: relative;
+        z-index: 6;
+        background: white;
+
+        .nav-container{
+            @include container-mw(100%);
+
+            .row-nav-show{
+                @include container-mw(1240px);
+                @include row-fb;
+                line-height: 38px;
+                padding-left: 15px;
+
+                .col-left{
+                    @include col-auto(18%);
+                    background-color: #fff;
+                    color: #0f5caa;
+                    position: relative;
+                    cursor: pointer;
+
+                    .fa-bars{
+                        background-color: #fff;
+                        font-size: 20px;
+                        float: left;
+                        height: 100%;
+                        cursor: pointer;
+                        width: 30px;
+                        line-height: 38px;
+                        text-align: left;
+                    }
+                    >span{
+                        width: 120px;
+                        text-align: left;
+                        height: 100%;
+                        cursor: pointer;
+                        padding-left: 0;
+                        font-family: $ft-def;
+                        font-weight: 600;
+                        line-height: 38px;
+                        font-size: 16px;
+                    }
+                    .fa-angle-down{
+                        position: absolute;
+                        right: 35%;
+                        top: 5px;
+                        font-size: 25px;
+                        color: #0f5aab;
+                        font-weight: 500;
+                    }
+
+                    // box list menu focus
+                    .box-list-menu-fc{
+                        background: white;
+                        position: absolute;
+                        top: 45px;
+                        right: 0;
+                        bottom: 0;
+                        left: 0;
+                        z-index: 10;
+                        width: 100%;
+                        height: 560px;
+                        font-family: $ft-def;
+                        display: none;
+
+                        .list-nav-ul{
+                            height: 450px;
+                            margin: 7px 0 12px;
+                            border-top: 1px solid #f0f0f0;
+
+                            >li{
+                                height: 40px;
+                                line-height: 40px;
+
+                                &:hover{
+                                    background-color: #69c;
+                                    .tr-submenu{
+                                        display: block;
+                                    }
+                                }
+
+                                h2{
+                                    font-weight: normal;
+                                    font-size: 14px;
+
+                                    >a{
+                                        color: #000;
+                                        max-height: 40px;
+                                        overflow: hidden;
+                                        white-space: nowrap;
+                                        text-overflow: ellipsis;
+                                        font-size: 15px;
+                                        margin-left: 20px;
+                                        display: block;
+                                        font-weight: normal;
+                                        font-family: $ft-def;
+
+                                        &:hover{
+                                            color: white;
+                                            text-decoration: underline;
+                                        }
+                                    }
+                                    a{
+                                        &::before{
+                                            margin-right: 10px;
+                                        }
+                                    }
+                                    a.tr-bg-all{
+                                        &::before{
+                                            -ms-content: "";
+                                            content: "";
+                                            background: url(https://image.yes24.vn/upload/Content/desktop/images/icon/bg.png) no-repeat;
+                                            float: left;
+                                        }
+                                    }
+                                    a.tr-hangnhap{
+                                        &::before{
+                                            width: 33px;
+                                            height: 40px;
+                                            -ms-background-position: -305px -37px;
+                                            background-position: -305px -37px;
+                                        }
+                                    }
+                                    a.tr-mypham{
+                                        &::before {
+                                            width: 33px;
+                                            height: 40px;
+                                            -ms-background-position: -305px -159px;
+                                            background-position: -305px -159px;
+                                        }
+                                    }
+                                    a.tr-giadung{
+                                        &::before {
+                                            width: 33px;
+                                            height: 40px;
+                                            -ms-background-position: -305px -322px;
+                                            background-position: -305px -322px;
+                                        }
+                                    }
+                                    a.tr-thoitrang{
+                                        &::before {
+                                            width: 33px;
+                                            height: 40px;
+                                            -ms-background-position: -305px -78px;
+                                            background-position: -305px -78px;
+                                        }
+                                    }
+                                    a.tr-thucpham{
+                                        &::before {
+                                            width: 33px;
+                                            height: 40px;
+                                            -ms-background-position: -305px -444px;
+                                            background-position: -305px -444px;
+                                        }
+                                    }
+                                    a.tr-mebe{
+                                        &::before {
+                                            width: 33px;
+                                            height: 40px;
+                                            -ms-background-position: -305px -282px;
+                                            background-position: -305px -282px;
+                                        }
+                                    }
+                                    a.tr-giaytui{
+                                        &::before {
+                                            width: 33px;
+                                            height: 40px;
+                                            -ms-background-position: -305px -198px;
+                                            background-position: -305px -198px;
+                                        }
+                                    }
+                                    a.tr-thethao{
+                                        &::before {
+                                            width: 33px;
+                                            height: 40px;
+                                            -ms-background-position: -305px -362px;
+                                            background-position: -305px -362px;
+                                        }
+                                    }
+                                    a.tr-phukien{
+                                        &::before {
+                                            width: 33px;
+                                            height: 40px;
+                                            -ms-background-position: -305px -241px;
+                                            background-position: -305px -241px;
+                                        }
+                                    }
+                                    a.tr-noiy{
+                                        &::before {
+                                            width: 33px;
+                                            height: 40px;
+                                            -ms-background-position: -305px -117px;
+                                            background-position: -305px -117px;
+                                        }
+                                    }
+                                    a.tr-dienmay{
+                                        &::before {
+                                            width: 33px;
+                                            height: 40px;
+                                            -ms-background-position: -305px -399px;
+                                            background-position: -305px -399px;
+                                        }
+                                    }
+                                }
+                                .tr-submenu{
+                                    height: 560px;
+                                    left: 220px;
+                                    padding-top: 7px;
+                                    box-sizing: border-box;
+                                    display: block;
+                                    background: white;
+                                    position: absolute;
+                                    z-index: 10;
+                                    top: 0;
+                                    overflow: hidden;
+                                    width: 992px !important;
+                                    line-height: 40px;
+                                    display: none;
+
+                                    .tr-submenu-small{
+                                        width: 744px;
+                                        float: left;
+                                        text-align: left;
+                                        height: 550px;
+                                        overflow: hidden;
+                                        column-count: 3;
+                                        column-gap: 20px;
+                                        column-fill: auto;
+                                        position: relative;
+                                        border-top: 1px solid #f0f0f0;
+                                        line-height: 40px;
+                                        padding-top: 5px;
+
+                                        .tr-uli-submenu-v4{
+                                            width: 100%;
+                                            float: left;
+                                            box-sizing: border-box;
+                                            margin-left: 20px;
+
+                                            h3.tr-name-red{
+                                                a{
+                                                    color: #d3364a;
+                                                    font-size: 14px;
+                                                    margin-left: 0;
+                                                    line-height: 21px;
+                                                    font-family: $ft-def;
+                                                    display: block;
+                                                    float: left; 
+                                                }
+                                                img{
+                                                    display: inline-block;
+                                                    width: 35px;
+                                                    padding-left: 5px;
+                                                    transform: translateY(30%);
+                                                    float: left;
+                                                }
+                                            }
+                                            h3{
+                                                a {
+                                                    font-family: $ft-def;
+                                                    font-weight: 600;
+                                                    color: #231f20;
+                                                    margin-left: 0;
+                                                    line-height: 21px;
+                                                    font-size: 14px;
+                                                    display: block;
+                                                }
+                                            }
+                                            .tr-ul-list-v4-main-home{
+                                                width: 100%;
+                                                float: left;
+
+                                                .r-ulli-list-v4-main-home{
+                                                    width: 100%;
+                                                }
+                                                li{
+                                                    a{
+                                                        color: #000;
+                                                        margin-left: 0;
+                                                        width: 100%;
+                                                        float: left;
+                                                        font-size: 13px;
+                                                        line-height: 21px;
+                                                        white-space: nowrap;
+                                                        overflow: hidden;
+                                                        text-overflow: ellipsis;
+                                                        max-width: 95%;
+                                                        text-transform: capitalize;
+                                                        font-family: $ft-def;
+                                                        font-weight: 300;
+                                                        display: block;
+
+                                                        &:hover{
+                                                            text-decoration: underline;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+
+                                    .tr-wrapper-brandlogo{
+                                        width: 248px;
+                                        text-align: left;
+                                        border-top: 1px solid #f0f0f0;
+                                        float: right;
+
+                                        >h3 {
+                                            color: #231f20;
+                                            font-family: $ft-def;
+                                            font-weight: bold;
+                                            width: 100%;
+                                            float: left;
+                                            font-size: 15px;
+                                            box-sizing: border-box;
+                                            padding-left: 20px;
+                                            text-align: left;
+                                        }
+                                        .tr-submnenu-brandlogo-li{
+                                            a{
+                                                width: 100%;
+                                                float: left;
+                                                padding-bottom: 17px;
+                                                box-sizing: border-box;
+                                                margin-left: 0;
+                                                padding-left: 20px;
+                                                display: block;
+
+                                                img{
+                                                    width: 200px;
+                                                    height: 85px;
+                                                    float: left;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .box-list-menu-fc-active{
+                        display: block;
+                    }
+                }
+                .col-right{
+                    @include col-auto(82%);
+
+                    .list-unstyle{
+                        .tr-li-me-right{
+                            >a{
+                                font-size: 14px;
+                                font-family: $ft-def;
+                                font-weight: 400;
+                                color: #333;
+                                margin: 0 10px;
+                                float: left;
+                                text-transform: uppercase;
+                            }
+                            .mn-keosao{
+                                &::before{
+                                    content: '';
+                                    width: 26px;
+                                    height: 26px;
+                                    background: url(https://yes24.vn/Upload/Event/2019/KS.png) no-repeat;
+                                    display: inline-table;
+                                    position: relative;
+                                    top: -18px;
+                                    margin-right: 5px;
+                                }
+                            }
+                            .mn-cafestyle{
+                                &::before{
+                                    content: '';
+                                    width: 26px;
+                                    height: 26px;
+                                    background: url(https://yes24.vn/Upload/Event/2019/CF.png) no-repeat;
+                                    display: inline-table;
+                                    position: relative;
+                                    top: -18px;
+                                    margin-right: 5px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+}

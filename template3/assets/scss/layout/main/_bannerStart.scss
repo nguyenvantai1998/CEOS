@@ -1,0 +1,41 @@
+.mainBannerStart{
+    .mbnt-container{
+        @include container-mw(1240px);
+        @include row-fb;
+        margin-top: 35px;
+
+        .box-banner{
+            @include col-6;
+
+            .row-title{
+                .th-title{
+                    h2{
+                        font-size: 30px;
+                        font-family: $ft-def;
+                        font-weight: bold;
+                        color: #333;
+                        display: inline-block;
+                    }
+                    span{
+                        font-size: 18px;
+                        font-family: $ft-def;
+                        font-weight: 300;
+                        margin-left: 10px;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+            .row-img{
+                img{
+                    @include img-res;
+                }
+            }
+        }
+        .banner-left{
+            padding-right: 8px;
+        }
+        .banner-right{
+            padding-left: 8px;
+        }
+    }
+}

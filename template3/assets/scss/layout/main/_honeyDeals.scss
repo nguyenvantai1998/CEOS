@@ -1,0 +1,167 @@
+.mainHoneyDeals{
+    .mhd-container{
+        @include container-mw(1240px);
+
+        .row-title{
+            line-height: 46px;
+            padding-bottom: 10px;
+            position: relative;
+            margin-top: 10px;
+
+            h2{
+                .tr-img-honney-deals-title {
+                    background: url(https://image.yes24.vn/upload/Content/desktop/images/icon/bg.png) no-repeat;
+                    width: 46px;
+                    height: 46px;
+                    -ms-background-position: -125px -402px;
+                    background-position: -125px -402px;
+                    float: left;
+                }
+                span:nth-child(2) {
+                    color: #ffc602;
+                    font-family: $ft-def;
+                    font-size: 28px;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                }
+                span:nth-child(3) {
+                    color: #000;
+                    font-family: $ft-def;
+                    font-size: 28px;
+                    text-transform: uppercase;
+                }
+                span:last-child {
+                    font-family: $ft-def;
+                    font-size: 14px;
+                    margin-left: 10px;
+                }
+            }
+            >a{
+                position: absolute;
+                top: 10%;
+                right: 0;
+                font-size: 14px;
+                text-decoration: none;
+                color: #3e3e3e;
+            }
+        }
+
+        .row-boxBanner{
+            @include row-fb;
+
+            .banner-left{
+                @include col-6;
+                padding: 17px 17px 17px 0;
+
+                .row-img{
+                    img{
+                        @include img-res;
+                    }
+                }
+                .row-content{
+                    @include row-fb;
+
+                    >h3{
+                        @include col-auto(80%);
+                        font-family: $ft-def;
+                        font-size: 14px;
+                        font-weight: normal;
+                        float: left;
+                        padding-top: 10px;
+                        width: 80%;
+                        text-overflow: ellipsis;
+                        &:hover{
+                            a{
+                                text-decoration: underline;
+                            }
+                        }
+                        a{
+                            color: unset;
+                            font-weight: bold;
+                            transition: all .5s;
+                        }
+                    }
+                    >span{
+                        font-family: $ft-def;
+                        font-size: 14px;
+                        font-weight: normal;
+                        float: left;
+                        width: 20%;
+                        padding-top: 10px;
+                        text-align: right;
+                        color: #999;
+                    }
+                    .time{
+                        &::before{
+                            content: '';
+                            width: 18px;
+                            height: 17px;
+                            position: relative;
+                            background: url(https://image.yes24.vn/Upload/Event/2018/pick-clock.png) no-repeat;
+                            display: inline-block;
+                            margin-right: 5px;
+                            top: 2px;
+                        }
+                    }
+                }
+            }
+            .banner-right{
+                @include col-6;
+                padding: 17px 0 17px 17px;
+
+                .row-img{
+                    img{
+                        @include img-res;
+                    }
+                }
+                .row-content{
+                    @include row-fb;
+
+                    >h3{
+                        @include col-auto(80%);
+                        font-family: $ft-def;
+                        font-size: 14px;
+                        font-weight: normal;
+                        float: left;
+                        padding-top: 10px;
+                        width: 80%;
+                        text-overflow: ellipsis;
+                        &:hover{
+                            a{
+                                text-decoration: underline;
+                            }
+                        }
+                        a{
+                            color: unset;
+                            font-weight: bold;
+                            transition: all .5s;
+                        }
+                    }
+                    >span{
+                        font-family: $ft-def;
+                        font-size: 14px;
+                        font-weight: normal;
+                        float: left;
+                        width: 20%;
+                        padding-top: 10px;
+                        text-align: right;
+                        color: #999;
+                    }
+                    .time{
+                        &::before{
+                            content: '';
+                            width: 18px;
+                            height: 17px;
+                            position: relative;
+                            background: url(https://image.yes24.vn/Upload/Event/2018/pick-clock.png) no-repeat;
+                            display: inline-block;
+                            margin-right: 5px;
+                            top: 2px;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
