@@ -7,26 +7,64 @@ $(document).ready(function () {
     loop: true,
     margin: 10,
     nav: true,
-    autoplay: true,
-    autoplayTimeout: 1000,
+    autoplay: false,
+    autoplayTimeout: 3000,
     autoplayHoverPause: true
   });
+
+  // $('.owl-carousel').owlCarousel({
+  //   loop: true,
+  //   margin: 10,
+  //   responsiveClass: true,
+  //   responsive: {
+  //     0: {
+  //       items: 1,
+  //       nav: true
+  //     },
+  //     600: {
+  //       items: 3,
+  //       nav: false
+  //     },
+  //     1000: {
+  //       items: 5,
+  //       nav: true,
+  //       loop: false,
+  //       margin: 20
+  //     }
+  //   }
+  // })
 
   $('.owl-carousel').owlCarousel({
     loop: true,
     margin: 10,
     responsiveClass: true,
     responsive: {
-      0: {
-        items: 1,
-        nav: true
+      1199: {
+        items: 5,
+        nav: true,
+        loop: false,
+        margin: 20
       },
       600: {
-        items: 3,
-        nav: false
+        items: 2,
+        nav: true,
+        loop: false,
+        margin: 20
       },
-      1000: {
-        items: 5,
+      425: {
+        items: 1,
+        nav: true,
+        loop: false,
+        margin: 20
+      },
+      375: {
+        items: 1,
+        nav: true,
+        loop: false,
+        margin: 20
+      },
+      320: {
+        items: 1,
         nav: true,
         loop: false,
         margin: 20
@@ -50,6 +88,26 @@ $(document).ready(function () {
       $('#th-mark-content').removeClass('th-mark-content-active');
     }
   })
+
+  // event show nav scroll page
+  var h = $('.hd-nav').height();
+  $(window).bind('scroll', function () {
+    var pos = window.scrollY;
+    if (pos >= h) {
+      $('.hd-nav').addClass('hd-nav-active');
+    } else {
+      $('.hd-nav').removeClass('hd-nav-active');
+    }
+  })
+
+  // event show nav mobile
+  $('#btn-leftmenu').click(function(){
+    $('.hd-nav-mb').addClass('hd-nav-mb-active');
+  })
+  $('#close-left').click(function(){
+    $('.hd-nav-mb').removeClass('hd-nav-mb-active');
+  })
+
 
   // scroll to top
   var h = $('#header').height();
