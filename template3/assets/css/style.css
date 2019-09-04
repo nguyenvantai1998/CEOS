@@ -1714,6 +1714,228 @@ input, select {
       padding-right: 8px; }
     #main .m-container .mainBannerStart .mbnt-container .banner-right {
       padding-left: 8px; }
+#main .mp-container {
+  max-width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box; }
+  #main .mp-container .bannerSlidePromotion .bnsdpr-container {
+    max-width: 1240px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 0 15px; }
+    #main .mp-container .bannerSlidePromotion .bnsdpr-container .outer {
+      position: relative; }
+      #main .mp-container .bannerSlidePromotion .bnsdpr-container .outer .fadeOut .owl-nav,
+      #main .mp-container .bannerSlidePromotion .bnsdpr-container .outer .fadeOut .owl-dots {
+        display: none !important; }
+      #main .mp-container .bannerSlidePromotion .bnsdpr-container .outer .fadeOut .item img {
+        vertical-align: middle;
+        max-width: 100%;
+        height: auto; }
+      #main .mp-container .bannerSlidePromotion .bnsdpr-container .outer #thumbs {
+        position: absolute;
+        right: 25px;
+        top: 40px;
+        width: 268px !important; }
+        #main .mp-container .bannerSlidePromotion .bnsdpr-container .outer #thumbs .owl-stage-outer .owl-stage {
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+          box-sizing: border-box;
+          width: 100% !important; }
+          #main .mp-container .bannerSlidePromotion .bnsdpr-container .outer #thumbs .owl-stage-outer .owl-stage .owl-item {
+            position: relative;
+            -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+            max-width: 100%;
+            box-sizing: border-box;
+            margin-right: 0 !important;
+            margin-bottom: 1px;
+            border: 1px solid #fff;
+            padding: 0 !important;
+            cursor: pointer; }
+          #main .mp-container .bannerSlidePromotion .bnsdpr-container .outer #thumbs .owl-stage-outer .owl-stage .current .item {
+            height: 80px !important;
+            padding: 0 !important;
+            position: relative !important; }
+            #main .mp-container .bannerSlidePromotion .bnsdpr-container .outer #thumbs .owl-stage-outer .owl-stage .current .item img {
+              vertical-align: middle;
+              max-width: 100%;
+              height: auto;
+              width: 100%; }
+        #main .mp-container .bannerSlidePromotion .bnsdpr-container .outer #thumbs .owl-nav,
+        #main .mp-container .bannerSlidePromotion .bnsdpr-container .outer #thumbs .owl-dots {
+          display: none !important; }
+    #main .mp-container .bannerSlidePromotion .bnsdpr-container .sub-bannerSlide {
+      max-width: 100%;
+      margin: 0 auto;
+      box-sizing: border-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      box-sizing: border-box;
+      margin: 10px 0 15px; }
+      #main .mp-container .bannerSlidePromotion .bnsdpr-container .sub-bannerSlide a img {
+        vertical-align: middle;
+        max-width: 100%;
+        height: auto; }
+      #main .mp-container .bannerSlidePromotion .bnsdpr-container .sub-bannerSlide .col-left {
+        position: relative;
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+        box-sizing: border-box; }
+      #main .mp-container .bannerSlidePromotion .bnsdpr-container .sub-bannerSlide .col-right {
+        position: relative;
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+        box-sizing: border-box; }
+  #main .mp-container .promotionMenuIcon {
+    border-bottom: solid 3px #69c;
+    border-top: solid 1px #ccc;
+    box-sizing: border-box;
+    background: #fff;
+    margin-bottom: 20px; }
+    #main .mp-container .promotionMenuIcon .prmmicon-container {
+      max-width: 1240px;
+      margin: 0 auto;
+      box-sizing: border-box;
+      padding: 0 15px; }
+      #main .mp-container .promotionMenuIcon .prmmicon-container .list-menuIcon {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        box-sizing: border-box; }
+        #main .mp-container .promotionMenuIcon .prmmicon-container .list-menuIcon li {
+          flex: 1;
+          width: calc(100%/13);
+          height: 85px;
+          display: inline-block;
+          list-style-type: none;
+          text-align: center;
+          cursor: pointer; }
+          #main .mp-container .promotionMenuIcon .prmmicon-container .list-menuIcon li a {
+            color: #999;
+            font-family: "Roboto", sans-serif;
+            font-weight: 400; }
+            #main .mp-container .promotionMenuIcon .prmmicon-container .list-menuIcon li a span {
+              display: block;
+              width: 100%;
+              text-align: center;
+              font-size: 14px;
+              -moz-box-sizing: border-box;
+              -ms-box-sizing: border-box;
+              box-sizing: border-box;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+              padding: 0 5px; }
+              #main .mp-container .promotionMenuIcon .prmmicon-container .list-menuIcon li a span::before {
+                content: '';
+                width: 35px;
+                height: 35px;
+                background: url(https://yes24.vn/upload/Content/desktop/images/icon/icon_PC_V3.png) no-repeat;
+                display: block;
+                margin: 10px auto; }
+            #main .mp-container .promotionMenuIcon .prmmicon-container .list-menuIcon li a span.pro-all::before {
+              background-position: -957px -97px; }
+            #main .mp-container .promotionMenuIcon .prmmicon-container .list-menuIcon li a span.pro-hangnhap::before {
+              background-position: -527px -63px; }
+            #main .mp-container .promotionMenuIcon .prmmicon-container .list-menuIcon li a span.pro-mypham::before {
+              background-position: -628px -63px; }
+            #main .mp-container .promotionMenuIcon .prmmicon-container .list-menuIcon li a span.pro-giadung::before {
+              background-position: -785px -63px;
+              width: 50px; }
+            #main .mp-container .promotionMenuIcon .prmmicon-container .list-menuIcon li a span.pro-thoitrang::before {
+              background-position: -563px -63px; }
+            #main .mp-container .promotionMenuIcon .prmmicon-container .list-menuIcon li a span.pro-thucpham::before {
+              background-position: -917px -60px; }
+            #main .mp-container .promotionMenuIcon .prmmicon-container .list-menuIcon li a span.pro-mebe::before {
+              background-position: -748px -63px; }
+            #main .mp-container .promotionMenuIcon .prmmicon-container .list-menuIcon li a span.pro-giaytui::before {
+              background-position: -665px -63px; }
+            #main .mp-container .promotionMenuIcon .prmmicon-container .list-menuIcon li a span.pro-thethao::before {
+              background-position: -832px -63px;
+              width: 45px; }
+            #main .mp-container .promotionMenuIcon .prmmicon-container .list-menuIcon li a span.pro-phukien::before {
+              background-position: -698px -63px;
+              width: 50px; }
+            #main .mp-container .promotionMenuIcon .prmmicon-container .list-menuIcon li a span.pro-noiy::before {
+              background-position: -597px -59px;
+              width: 33px; }
+            #main .mp-container .promotionMenuIcon .prmmicon-container .list-menuIcon li a span.pro-dienmay::before {
+              background-position: -880px -63px; }
+        #main .mp-container .promotionMenuIcon .prmmicon-container .list-menuIcon li.active {
+          background-color: #69c;
+          color: #fff; }
+          #main .mp-container .promotionMenuIcon .prmmicon-container .list-menuIcon li.active a {
+            color: white; }
+  #main .mp-container .promotionBox .prom-container {
+    max-width: 1240px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    padding: 0 10px; }
+    #main .mp-container .promotionBox .prom-container .box-promo {
+      position: relative;
+      -ms-flex: 0 0 33.333333%;
+      flex: 0 0 33.333333%;
+      max-width: 33.333333%;
+      box-sizing: border-box;
+      padding: 0 5px;
+      margin-bottom: 15px; }
+      #main .mp-container .promotionBox .prom-container .box-promo > a img {
+        vertical-align: middle;
+        max-width: 100%;
+        height: auto; }
+      #main .mp-container .promotionBox .prom-container .box-promo > a > .name {
+        font-size: 14px;
+        color: #333;
+        text-align: left;
+        line-height: 20px;
+        margin-top: 15px;
+        width: 100%;
+        float: left;
+        height: 40px;
+        overflow-y: hidden; }
+        #main .mp-container .promotionBox .prom-container .box-promo > a > .name .brand {
+          font: 14px "Roboto", sans-serif;
+          font-weight: bold;
+          color: #6799cc;
+          text-transform: uppercase;
+          text-align: left; }
+  #main .mp-container .promotionBox .row-pagination .th-paging {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+    padding: 60px 0; }
+    #main .mp-container .promotionBox .row-pagination .th-paging > li {
+      margin: 0 5px; }
+      #main .mp-container .promotionBox .row-pagination .th-paging > li a {
+        border-width: 1px;
+        border-style: solid;
+        border-color: #c2c2c2;
+        padding: 3px 10px;
+        padding: 3px 10px;
+        font: 15px "Roboto", sans-serif;
+        font-weight: bold;
+        margin-top: -3px;
+        color: #c2c2c2; }
+      #main .mp-container .promotionBox .row-pagination .th-paging > li .active {
+        background: #c2c2c2;
+        color: white; }
 
 #footer {
   @import url("https://use.fontawesome.com/releases/v5.8.2/css/all.css");
@@ -2713,6 +2935,30 @@ input, select {
     margin-top: 25px; }
     #main .m-container .mainBannerStart .mbnt-container .box-banner .row-title .th-title span {
       font-size: 15px; }
+  #main .mp-container .bannerSlidePromotion .bnsdpr-container .outer #thumbs {
+    display: none; }
+  #main .mp-container .bannerSlidePromotion .bnsdpr-container .sub-bannerSlide .col-left {
+    position: relative;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 10px; }
+  #main .mp-container .bannerSlidePromotion .bnsdpr-container .sub-bannerSlide .col-right {
+    position: relative;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    box-sizing: border-box; }
+  #main .mp-container .bannerSlidePromotion .bnsdpr-container .sub-bannerSlide a img {
+    width: 100%; }
+  #main .mp-container .promotionBox .prom-container .box-promo {
+    position: relative;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+    box-sizing: border-box;
+    margin-bottom: 15px; }
 
   #footer .ft-container .row-1 .row1-container {
     max-width: 100%;
@@ -2782,6 +3028,13 @@ input, select {
     margin-top: 25px; }
     #main .m-container .mainBannerStart .mbnt-container .banner-right .row-img img {
       width: 100%; }
+  #main .mp-container .promotionMenuIcon .prmmicon-container .list-menuIcon li {
+    position: relative;
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+    box-sizing: border-box;
+    margin-bottom: 10px; }
 
   #footer .ft-container .row-1 {
     height: auto;
@@ -2959,6 +3212,13 @@ input, select {
     font-size: 22px; }
   #main .m-container .mainSuggestion .msstion-container .row-title > a {
     display: none; }
+  #main .mp-container .promotionBox .prom-container .box-promo {
+    position: relative;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 10px; }
 
   #footer .ft-container .row-1 .row1-container .box {
     position: relative;

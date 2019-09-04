@@ -26,6 +26,12 @@
         @import "./layout/main/suggestion";
         @import "./layout/main/bannerStart";
     }
+    .mp-container{
+        @include container-mw(100%);
+        @import "./layout/main/slidePromotion";
+        @import "./layout/main/menuIcon";
+        @import "./layout/main/promotionBox";
+    }
 }
 #footer{
     @import "layout/footer/footer";
