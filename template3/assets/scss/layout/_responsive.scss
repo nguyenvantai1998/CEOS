@@ -789,6 +789,27 @@
                 }
             }
 
+            .prodetailTabContent{
+                .prodtct-container{
+                    .row-1{
+                        .filter-item-pro{
+                            .th-filter-item {
+                                @include col-6;
+                            }
+                        }
+                    }
+
+                    .row-2{
+                        .row-boxproduct{
+                            .item {
+                                @include col-4;
+                                margin-bottom: 15px;
+                            }
+                        }
+                    }
+                }
+            }
+
         }
     }
 
@@ -901,6 +922,37 @@
                     }
                 }
             }
+
+            .promotionMenuIcon-active{
+                position: unset;
+                left: unset;
+                right: unset;
+                top: unset;
+                width: unset;
+                z-index: unset;
+            }
+
+            .prodetailTabContent{
+                .prodtct-container{
+                    .row-1{
+                        .filter-item-pro{
+                            .th-filter-item {
+                                @include col-6;
+                            }
+                        }
+                    }
+
+                    .row-2{
+                        .row-boxproduct{
+                            .item {
+                                @include col-6;
+                                margin-bottom: 15px;
+                            }
+                        }
+                    }
+                }
+            }
+
         }
     }
 
@@ -1218,6 +1270,27 @@
                     .box-promo {
                         @include col-12;
                         margin-bottom: 10px;
+                    }
+                }
+            }
+
+            .prodetailTabContent{
+                .prodtct-container{
+                    .row-1{
+                        .filter-item-pro{
+                            .th-filter-item {
+                                @include col-12;
+                            }
+                        }
+                    }
+
+                    .row-2{
+                        .row-boxproduct{
+                            .item {
+                                @include col-12;
+                                margin-bottom: 15px;
+                            }
+                        }
                     }
                 }
             }

@@ -1,0 +1,152 @@
+.prodetailTabContent{
+    @include container-mw(100%);
+    background: #eeeeee;
+    padding-bottom: 25px;
+    margin-bottom: -25px;
+
+    .prodtct-container{
+        @include container-mw(1240px);
+        padding: 0 10px;
+
+        .row-1{
+            .filter-item-pro{
+                @include row-fb;
+                .th-filter-item{
+                    @include col-auto(20%);
+                    padding: 0 5px;
+                    
+                    a{
+                        padding: 10px 0;
+                        text-align: left;
+                        font-size: 13px;
+                        color: #999;
+                        background: #fff;
+                        margin-top: 10px;
+                        position: relative;
+                        text-decoration: none;
+                        display: block;
+                        width: 100%;
+
+                        .fa-star{
+                            margin-left: 10px;
+                            font-size: 12px;
+                        }
+
+                        .fa-sort-down{
+                            position: absolute;
+                            right: 10px;
+                            top: 4px;
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .row-2{
+            padding: 5px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            
+            .th-filter-title {
+                width: 100%;
+                padding: 10px 5px;
+                color: #fff;
+                font-family: $ft-def;
+                font-weight: bold;
+                font-size: 14px;
+                text-transform: uppercase;
+                background: #69c;
+            }
+            
+            .row-boxproduct{
+                @include row-fb;
+                background: white;
+                padding: 25px 15px;
+                .item{
+                    @include col-auto(20%);
+                    margin-bottom: 25px;
+    
+                    .th-product-item{
+                        padding:  8px;
+    
+                        >a{
+                            img{
+                                @include img-res;
+                            }
+                        }
+                        .th-product-info{
+                            >a{
+                                display: block;
+                                text-decoration: none;
+                                font-size: 13px;
+                                text-transform: uppercase;
+                                color: #333;
+                                font-family: $ft-def;
+                                font-weight: bold;
+                                margin-top: 10px;
+                            }
+                            >h3{
+                                >a{
+                                    font-size: 13px !important;
+                                    color: #333 !important;
+                                    display: block;
+                                    text-decoration: none;
+                                    font-weight: normal;
+                                    text-transform: none;
+                                    line-height: 20px;
+                                }
+                            }
+                        }
+                        .th-product-price{
+                            margin: 5px 0;
+                            .th-product-price-new{
+                                font-family: $ft-def;
+                                font-size: 17px;
+                                color: #d3364a;
+                                padding-right: 5px;
+                                font-weight: bold;
+                            }
+                            .th-product-price-old{
+                                font-family: $ft-def;
+                                font-size: 13px;
+                                text-decoration: line-through;
+                                color: #999;
+                                text-align: center;
+                            }
+                            .th-product-discount{
+                                background-color: unset;
+                                color: #000;
+                                width: unset;
+                                font-family: $ft-def;
+                                padding: 0 2px;
+                                font-size: 13px;
+                                display: inline-block;
+                                margin-left: 5px;
+                            }
+                        }
+                        .meta{
+                            margin-top: 8px;
+                            .th-serial-wrap{
+                                text-align: left;
+                                width: 100%;
+                                font-size: 12px;
+                                color: #999;
+                                margin-top: 2px;
+    
+                                .serial-num,
+                                >b{
+                                    color: #000;
+                                    font-family: $ft-def;
+                                    text-transform: uppercase;
+                                }
+                            }
+                        }  
+                    }
+                    
+                }
+            }
+        }
+
+    }
+}

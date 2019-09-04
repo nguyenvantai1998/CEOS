@@ -1,0 +1,56 @@
+.breadcrumb{
+    .breadcrumb-container{
+        @include container-mw(1240px);
+        @include row-fb;
+        padding: 0 15px;
+        margin-top: 10px;
+
+        .col-left{
+            @include col-8;
+
+            .list-link{
+                li{
+                    display: inline-block;
+
+                    a{
+                        color: #8a8a8a;
+                        font-size: 13px;
+                        font-family: $ft-def;
+                        font-weight: 300;
+
+                        >i{
+                            margin: 0 5px;
+                            font-weight: 300;
+                            font-size: 9px;
+                        }
+                    }
+                }
+            }
+        }
+        .col-right{
+            @include col-4;
+
+            .tab {
+                border-bottom: 29px solid #09b0f4;
+                border-left: 20px solid transparent;
+                color: #fff;
+                font-size: 14px;
+                height: 0;
+                line-height: 32px;
+                padding-left: 15px;
+
+                .chuy {
+                    font-weight: bold;
+                    font-size: 16px;
+                    color: #fdfb41;
+                }
+            }
+        }
+        .col-banner{
+            @include col-12;
+            img{
+                @include img-res;
+            }
+        }
+    }
+}
