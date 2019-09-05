@@ -71,7 +71,7 @@
                                     nhanh <br><span>Tp.HCM</span></a></li>
                             <li class="tr-login-km"><a href="#" class="tr-bg-all tr-km-right">Khuyến
                                     mãi <br><span>Giảm giá sốc</span></a></li>
-                            <li class="tr-login-regis"><a href="#" class="tr-bg-all tr-login-reg">Đăng nhập</a><a
+                            <li class="tr-login-regis" id="modalLoginRegi"><a href="#" class="tr-bg-all tr-login-reg">Đăng nhập</a><a
                                     href="#" class="tr-account-order">Đăng
                                     Ký</a>
                             </li>
@@ -364,7 +364,7 @@
                                         nhanh <br><span>Tp.HCM</span></a></li>
                                 <li class="tr-login-km"><a href="#" class="tr-bg-all tr-km-right">Khuyến
                                         mãi <br><span>Giảm giá sốc</span></a></li>
-                                <li class="tr-login-regis"><a href="#" class="tr-bg-all tr-login-reg">Đăng nhập</a><a
+                                <li class="tr-login-regis" id="modalLoginRegi2"><a href="#" class="tr-bg-all tr-login-reg">Đăng nhập</a><a
                                         href="#" class="tr-account-order">Đăng
                                         Ký</a>
                                 </li>
@@ -1692,6 +1692,218 @@
         <a href="#" id="scrollToTop">
             <span id="toTopHover"></span>
         </a>
+    </div>
+
+    <!-- login register -->
+    <div class="loginRegister">
+        <div class="loginRegister-container" id="loginRegister-close">
+
+            <div class="box-loginRegister">
+                <div class="tclose" id="tloginRegClose"></div>
+
+                <div class="box-left tab-loginRegis">
+                    <div class="tleft"></div>
+                    <div class="nav-tab">
+                        <a href="#" class="tab-login active" id="tab-login-click">Đăng
+                            Nhập</a><a href="#" class="tab-register" id="tab-register-click">Đăng Ký</a>
+                    </div>
+                    <div class="nav-content">
+                        <!-- login -->
+                        <div id="tr-login">
+                            <form class="login-block-1" id="LoginForm">
+                                <div class="form-group"><input type="text" class="form-control" id="log-username"
+                                        value="" placeholder="Nhập Id"></div>
+                                <div class="form-group"><input type="password" class="form-control" id="log-pwd"
+                                        placeholder="Mật khẩu">
+                                </div>
+                                <div class="form-group"><a href="#" class="tr-forgot-pwd" target="_blank">Bạn quên mật
+                                        khẩu?</a></div>
+                                <div class="form-group"><input type="button" name="btnLogin" value="Đăng Nhập"
+                                        id="btnLogin" class="btn btnLogin"></div>
+                            </form>
+                            <div class="tr-label">Hoặc đăng nhập bằng:</div>
+                        </div>
+
+                        <!-- register -->
+                        <div id="tr-register">
+                            <form class="login-block-1" id="input-join-form">
+                                <div class="tr-reg-wrapper">
+                                    <div class="tr-col-215 fix-left">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="LoginId" placeholder="Nhập ID">
+                                        </div>
+                                    </div>
+                                    <div class="tr-col-215 fix-right">
+                                        <div class="form-group"><select class="form-control" id="City" name="City">
+                                                <option value="Hà Nội">Hà Nội</option>
+                                                <option value="Hồ Chí Minh">Hồ Chí Minh</option>
+                                                <option value="An Giang">An Giang</option>
+                                                <option value="Bà Rịa - Vũng Tàu">Bà Rịa - Vũng Tàu</option>
+                                                <option value="Bắc Cạn">Bắc Cạn</option>
+                                                <option value="Bắc Giang">Bắc Giang</option>
+                                                <option value="Bạc Liêu">Bạc Liêu</option>
+                                                <option value="Bắc Ninh">Bắc Ninh</option>
+                                                <option value="Bến Tre">Bến Tre</option>
+                                                <option value="Bình Định">Bình Định</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tr-reg-wrapper">
+                                    <div class="tr-col-215 fix-left">
+                                        <div class="form-group">
+                                            <input type="password" class="form-control" id="Password"
+                                                placeholder="Mật khẩu">
+                                        </div>
+                                    </div>
+                                    <div class="tr-col-215 fix-right">
+                                        <div class="form-group">
+                                            <input type="password" class="form-control" id="ConfirmPassword"
+                                                placeholder="Nhập Lại Mật khẩu">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tr-reg-wrapper">
+                                    <div class="tr-col-215 fix-left">
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" id="Email" placeholder="Email">
+                                        </div>
+                                    </div>
+                                    <div class="tr-col-215 fix-right">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="Phones"
+                                                placeholder="Số Điện Thoại">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tr-reg-wrapper">
+                                    <div class="tr-col-215 fix-radio">
+                                        <div class="form-group tr-checkbox-gen" id="hdgender">
+                                            <span><input id="rbGenderList_0" type="radio" name="hdgender" value="MALE"
+                                                    class="tr-radio-btn"><label for="rbGenderList_0">Nam</label></span>
+                                            <span><input id="rbGenderList_1" type="radio" name="hdgender" value="FEMALE"
+                                                    class="tr-radio-btn" checked="checked"><label
+                                                    for="rbGenderList_1">Nữ</label></span>
+                                        </div>
+
+                                        <div class="form-group tr-checkbox-gen tr-checkbox-person" id="hdforeign">
+                                            <span style="line-height: 27px;width: 50%;"><input id="Person_foreign_1"
+                                                    type="radio" name="hdPerson" value="VietNam" class="tr-radio-btn"
+                                                    checked="checked"><label for="Person_foreign_1"
+                                                    style="font-size: 14px;">Vietnamese</label></span>
+                                            <span style="line-height: 27px;width: 50%;"><input id="Person_foreign_0"
+                                                    type="radio" name="hdPerson" value="NuocNgoai"
+                                                    class="tr-radio-btn"><label for="Person_foreign_0"
+                                                    style="font-size: 14px;">Others</label></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group nrterm">
+                                    <input id="agree" name="agree" type="checkbox" checked="checked"><label for="agree"
+                                        class="label-checkbox">Tôi đã đọc và đồng ý
+                                        với&nbsp;<a href="#">điều khoản sử
+                                            dụng</a>&nbsp;của Yes24.vn.</label>
+                                </div>
+                                <div class="form-group tr-btn-bottom"><input type="button" name="btnRegister"
+                                        value="Đăng Ký" id="btnRegister" class="btn btnRegister"></div>
+                                <div class="tr-label">Hoặc đăng ký bằng</div>
+                            </form>
+                        </div>
+
+                        <div class="tr-social">
+                            <div class="form-group">
+                                <div class="col-left">
+                                    <div class="nlitemsfb" id="bntFacebook">
+                                        <div class="mdi mdi-facebook">
+                                            <i class="fab fa-facebook-f"></i>
+                                        </div>
+                                        <div class="titlefb">Facebook</div>
+                                    </div>
+                                </div>
+                                <div class="col-right">
+                                    <div class="nlitemsgg" id="bntGoogle">
+                                        <div class="mdi mdi-google">
+                                            <i class="fab fa-google-plus-g"></i>
+                                        </div>
+                                        <div class="titlegg">Google +</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box-right interest">
+                    <div class="tright"></div>
+                    <div class="nallright">
+                        <div id="tab-login">
+                            <div class="nfdiv07">Quyền lợi</div>
+                            <div class="nfdiv08">CỦA</div>
+                            <div class="nfdiv09">Membership</div>
+                            <div class="v01">
+                                <div class="v01items bgblack">Thứ hạng</div>
+                                <div class="v01items bgsophia">
+                                    <div class="sppd">Sapphire</div>
+                                </div>
+                                <div class="v01items bgrubi">
+                                    <div class="sppd">Ruby</div>
+                                </div>
+                                <div class="v01items bgdiamond">
+                                    <div class="sppd">Diamond</div>
+                                </div>
+                            </div>
+                            <div class="v02">
+                                <div class="v02items bgblack">Yes Point</div>
+                                <div class="v02items fons20">+0.5<span>%</span></div>
+                                <div class="v02items fons20">+1<span>%</span></div>
+                                <div class="v02items fons20 fix-border-right">+1.5<span>%</span></div>
+                            </div>
+                            <div class="v03">
+                                <div class="v03items bgblack">Kẹo Sao</div>
+                                <div class="v03items fons20">+5<span>%</span></div>
+                                <div class="v03items fons20">+7<span>%</span></div>
+                                <div class="v03items fons20 fix-border-right">+10<span>%</span></div>
+                            </div>
+                            <div class="v04">
+                                <div class="v04items bgblack">Đổi Quà</div>
+                                <div class="v04items fons20">2 <span>lượt</span></div>
+                                <div class="v04items fons20">4 <span>lượt</span></div>
+                                <div class="v04items fons20 fix-border-right">6 <span>lượt</span></div>
+                            </div>
+                            <div class="v05">
+                                <div class="v05items bgblack">Đổi hàng</div>
+                                <div class="v05items fonsend"></div>
+                                <div class="v05items fonsend">1</div>
+                                <div class="v05items fonsend fix-border-right">2</div>
+                            </div>
+                            <div class="membershipdetails"><a href="#">CHI TIẾT</a><span
+                                    class="fa fa-caret-right"></span>
+                            </div>
+                        </div>
+
+                        <div id="tab-register">
+                            <div class="nrdiv01"><b>Ưu đãi</b><br>thành viên mới</div>
+                            <div class="nrdiv02">DÀNH CHO</div>
+                            <div class="nrdiv03"></div>
+                            <div class="bgserial_register">
+                                <div class="bgtext01">Giảm thêm <b>10%</b></div>
+                                <div class="bgtext02">KHM24</div>
+                                <div class="bgtext03">Mức giảm tối đa 100.000đ</div>
+                            </div>
+                            <div class="nrdiv04">Tặng&nbsp;<span>20,000 YesMoney</span>&nbsp;sử dụng khi thanh toán.
+                            </div>
+                            <div class="nrdiv05">Tặng&nbsp;<span>200,000 Kẹo sao</span>&nbsp;để tham gia<br>các hoạt
+                                động đổi quà, đấu giá ngược<br>trên trang&nbsp;<a
+                                    style="color: #1964b1; font-weight: bold;" href="http://keosao.yes24.vn"
+                                    target="_blank">keosao.yes24.vn</a></div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
     </div>
 
     <!-- js -->

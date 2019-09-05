@@ -52,8 +52,8 @@ $(document).ready(function () {
 
   // event show nav
   $('#showNavDesk').click(function () {
-    $('#box-list-menu-fc').addClass('box-list-menu-fc-active');
-    $('#th-mark-content').addClass('th-mark-content-active');
+    $('#box-list-menu-fc').toggleClass('box-list-menu-fc-active');
+    $('#th-mark-content').toggleClass('th-mark-content-active');
   });
   $('.closeNavBagDesk').click(function () {
     $('#box-list-menu-fc').removeClass('box-list-menu-fc-active');
@@ -88,6 +88,32 @@ $(document).ready(function () {
       $('.promotionMenuIcon').removeClass('promotionMenuIcon-active');
     }
   })
+
+  // event tab modal login register
+  $('#modalLoginRegi, #modalLoginRegi2').click(function(){
+    $('.loginRegister').addClass('loginRegister-active');
+  });
+  $('#loginRegister-close, #tloginRegClose').click(function(){
+    $('.loginRegister').removeClass('loginRegister-active');
+  });
+  $('#tab-register-click').click(function(){
+    $('#tr-login').hide();
+    $('#tr-register').show();
+    $('#tab-login').hide();
+    $('#tab-register').show();
+    $('#tab-register-click').addClass('active');
+    $('#tab-login-click').removeClass('active');
+  });
+  $('#tab-login-click').click(function(){
+    $('#tr-login').show();
+    $('#tr-register').hide();
+    $('#tab-login').show();
+    $('#tab-register').hide();
+    $('#tab-register-click').removeClass('active');
+    $('#tab-login-click').addClass('active');
+  });
+
+
 
   // event show nav mobile
   $('#btn-leftmenu').click(function () {

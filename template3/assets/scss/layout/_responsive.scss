@@ -1018,6 +1018,22 @@
         }
     }
 
+    .loginRegister{
+        .loginRegister-container{
+            padding: 0 15px;
+            .box-loginRegister {
+                @include container-mw(100%);
+
+                .box-left{
+                    @include col-12;
+                }
+                .box-right{
+                    display: none;
+                }
+            }
+        }
+    }
+
 }
 
 @include res(767px){
@@ -1346,6 +1362,26 @@
 
 
 
+        }
+    }
+
+    // login register
+    .loginRegister {
+        .loginRegister-container {
+            .box-loginRegister{
+                .box-left{
+                    .nav-content {
+                        #tr-register {
+                            .tr-reg-wrapper {
+                                .tr-col-215 {
+                                    @include col-12;
+                                    padding: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 

@@ -2494,6 +2494,551 @@ input, select {
   #scrollToTop:hover {
     opacity: .8; }
 
+.loginRegister {
+  display: none; }
+  .loginRegister .loginRegister-container {
+    max-width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1000; }
+    .loginRegister .loginRegister-container .box-loginRegister {
+      width: 780px;
+      min-height: 500px;
+      background: greenyellow;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      box-sizing: border-box;
+      position: relative; }
+      .loginRegister .loginRegister-container .box-loginRegister .box-left {
+        position: relative;
+        -ms-flex: 0 0 64%;
+        flex: 0 0 64%;
+        max-width: 64%;
+        box-sizing: border-box;
+        background: white; }
+        .loginRegister .loginRegister-container .box-loginRegister .box-left .tleft {
+          width: 100%;
+          height: 10px;
+          background-color: #007daf; }
+        .loginRegister .loginRegister-container .box-loginRegister .box-left .nav-tab {
+          height: 60px;
+          border-bottom: 1px solid #b8b8b8;
+          line-height: 30px;
+          padding: 0 30px; }
+          .loginRegister .loginRegister-container .box-loginRegister .box-left .nav-tab > a {
+            display: inline-block;
+            padding: 5px 7px;
+            border-bottom: 3px solid #fff;
+            font-size: 20px;
+            color: #999;
+            padding-top: 20px; }
+          .loginRegister .loginRegister-container .box-loginRegister .box-left .nav-tab > a.active {
+            display: inline-block;
+            padding: 5px 7px;
+            border-bottom: 3px solid #d3364a;
+            font-size: 20px;
+            -moz-box-sizing: border-box;
+            -ms-box-sizing: border-box;
+            box-sizing: border-box;
+            color: #333;
+            padding-top: 20px; }
+        .loginRegister .loginRegister-container .box-loginRegister .box-left .nav-content #tr-login {
+          padding: 20px 20px 0; }
+          .loginRegister .loginRegister-container .box-loginRegister .box-left .nav-content #tr-login .form-group {
+            margin-bottom: 15px; }
+            .loginRegister .loginRegister-container .box-loginRegister .box-left .nav-content #tr-login .form-group .form-control {
+              box-sizing: border-box;
+              display: block;
+              width: 100%;
+              height: 40px;
+              padding: 6px 12px;
+              font-size: 13px;
+              font-family: "Roboto", sans-serif;
+              font-weight: 400;
+              line-height: 1.42857143;
+              color: #555;
+              background-color: #fff;
+              background-image: none;
+              border: 1px solid #ccc;
+              box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+              transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s; }
+            .loginRegister .loginRegister-container .box-loginRegister .box-left .nav-content #tr-login .form-group a {
+              line-height: 40px; }
+            .loginRegister .loginRegister-container .box-loginRegister .box-left .nav-content #tr-login .form-group a.tr-forgot-pwd {
+              display: block;
+              width: 100%;
+              font-size: 15px;
+              color: #105baa;
+              text-decoration: underline;
+              font-family: "Roboto", sans-serif;
+              font-style: italic;
+              text-transform: none;
+              margin-bottom: 10px; }
+            .loginRegister .loginRegister-container .box-loginRegister .box-left .nav-content #tr-login .form-group .btnLogin {
+              color: #fff;
+              background-color: #d3364a;
+              border-color: #d3364a;
+              width: 100%;
+              height: 40px;
+              -ms-outline: none;
+              outline: none;
+              border: 0;
+              font-family: "Roboto", sans-serif;
+              font-weight: 600;
+              text-transform: uppercase;
+              font-size: 16px;
+              cursor: pointer; }
+          .loginRegister .loginRegister-container .box-loginRegister .box-left .nav-content #tr-login .tr-label {
+            font-size: 15px;
+            color: #707070;
+            margin-bottom: 10px;
+            width: 100%; }
+        .loginRegister .loginRegister-container .box-loginRegister .box-left .nav-content #tr-register {
+          padding: 20px 20px 0;
+          display: none; }
+          .loginRegister .loginRegister-container .box-loginRegister .box-left .nav-content #tr-register .tr-reg-wrapper {
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            box-sizing: border-box; }
+            .loginRegister .loginRegister-container .box-loginRegister .box-left .nav-content #tr-register .tr-reg-wrapper .tr-col-215 {
+              position: relative;
+              -ms-flex: 0 0 50%;
+              flex: 0 0 50%;
+              max-width: 50%;
+              box-sizing: border-box; }
+              .loginRegister .loginRegister-container .box-loginRegister .box-left .nav-content #tr-register .tr-reg-wrapper .tr-col-215 .form-group {
+                margin-bottom: 15px; }
+                .loginRegister .loginRegister-container .box-loginRegister .box-left .nav-content #tr-register .tr-reg-wrapper .tr-col-215 .form-group .form-control {
+                  box-sizing: border-box;
+                  display: block;
+                  width: 100%;
+                  height: 40px;
+                  padding: 6px 12px;
+                  font-size: 13px;
+                  font-family: "Roboto", sans-serif;
+                  font-weight: 400;
+                  line-height: 1.42857143;
+                  color: #555;
+                  background-color: #fff;
+                  background-image: none;
+                  border: 1px solid #ccc;
+                  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+                  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s; }
+            .loginRegister .loginRegister-container .box-loginRegister .box-left .nav-content #tr-register .tr-reg-wrapper .fix-left {
+              padding-right: 15px; }
+            .loginRegister .loginRegister-container .box-loginRegister .box-left .nav-content #tr-register .tr-reg-wrapper .fix-right {
+              padding-left: 15px; }
+            .loginRegister .loginRegister-container .box-loginRegister .box-left .nav-content #tr-register .tr-reg-wrapper .fix-radio {
+              font-family: "Roboto", sans-serif;
+              font-weight: 400;
+              margin-top: 8px; }
+              .loginRegister .loginRegister-container .box-loginRegister .box-left .nav-content #tr-register .tr-reg-wrapper .fix-radio input.tr-radio-btn {
+                border: none;
+                padding: 0;
+                margin-right: 5px;
+                margin-top: -2px;
+                width: 16px;
+                height: 16px;
+                -moz-transform: scale(1);
+                -ms-transform: scale(1);
+                -webkit-transform: scale(1);
+                transform: scale(1);
+                vertical-align: middle; }
+          .loginRegister .loginRegister-container .box-loginRegister .box-left .nav-content #tr-register .nrterm {
+            font-size: 13px;
+            text-align: left;
+            color: #707070; }
+            .loginRegister .loginRegister-container .box-loginRegister .box-left .nav-content #tr-register .nrterm a {
+              color: #3399cc;
+              text-transform: none;
+              font-weight: 700; }
+          .loginRegister .loginRegister-container .box-loginRegister .box-left .nav-content #tr-register .btnRegister {
+            color: #fff;
+            background-color: #d3364a;
+            border-color: #d3364a;
+            width: 100%;
+            height: 40px;
+            -ms-outline: none;
+            outline: none;
+            border: 0;
+            font-family: "Roboto", sans-serif;
+            font-weight: bold;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            font-size: 16px;
+            cursor: pointer; }
+          .loginRegister .loginRegister-container .box-loginRegister .box-left .nav-content #tr-register .tr-label {
+            font-size: 15px;
+            color: #707070;
+            margin-bottom: 10px;
+            width: 100%; }
+        .loginRegister .loginRegister-container .box-loginRegister .box-left .nav-content .tr-social {
+          padding: 0 20px 20px; }
+          .loginRegister .loginRegister-container .box-loginRegister .box-left .nav-content .tr-social .form-group {
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            box-sizing: border-box; }
+            .loginRegister .loginRegister-container .box-loginRegister .box-left .nav-content .tr-social .form-group .col-left {
+              position: relative;
+              -ms-flex: 0 0 50%;
+              flex: 0 0 50%;
+              max-width: 50%;
+              box-sizing: border-box;
+              padding-right: 5px; }
+              .loginRegister .loginRegister-container .box-loginRegister .box-left .nav-content .tr-social .form-group .col-left .nlitemsfb {
+                height: 40px;
+                background-color: #284786;
+                cursor: pointer;
+                position: relative;
+                line-height: 40px; }
+                .loginRegister .loginRegister-container .box-loginRegister .box-left .nav-content .tr-social .form-group .col-left .nlitemsfb .mdi-facebook {
+                  font-size: 20px;
+                  padding: 0 9px;
+                  -moz-box-sizing: border-box;
+                  -ms-box-sizing: border-box;
+                  box-sizing: border-box;
+                  text-align: center;
+                  width: 20%;
+                  color: #fff;
+                  float: left;
+                  background-color: #1a346e; }
+                .loginRegister .loginRegister-container .box-loginRegister .box-left .nav-content .tr-social .form-group .col-left .nlitemsfb .titlefb {
+                  color: #fff;
+                  font-size: 15px;
+                  font-weight: bold;
+                  font-family: "Roboto", sans-serif;
+                  margin-left: 50px; }
+            .loginRegister .loginRegister-container .box-loginRegister .box-left .nav-content .tr-social .form-group .col-right {
+              position: relative;
+              -ms-flex: 0 0 50%;
+              flex: 0 0 50%;
+              max-width: 50%;
+              box-sizing: border-box;
+              padding-left: 5px; }
+              .loginRegister .loginRegister-container .box-loginRegister .box-left .nav-content .tr-social .form-group .col-right .nlitemsgg {
+                height: 40px;
+                background-color: #e03c29;
+                cursor: pointer;
+                position: relative;
+                line-height: 40px; }
+                .loginRegister .loginRegister-container .box-loginRegister .box-left .nav-content .tr-social .form-group .col-right .nlitemsgg .mdi-google {
+                  font-size: 20px;
+                  padding: 0 9px;
+                  -moz-box-sizing: border-box;
+                  -ms-box-sizing: border-box;
+                  box-sizing: border-box;
+                  text-align: center;
+                  width: 20%;
+                  color: #fff;
+                  float: left;
+                  background-color: #d52e20; }
+                .loginRegister .loginRegister-container .box-loginRegister .box-left .nav-content .tr-social .form-group .col-right .nlitemsgg .titlegg {
+                  color: #fff;
+                  font-size: 15px;
+                  font-weight: bold;
+                  font-family: "Roboto", sans-serif;
+                  margin-left: 50px; }
+      .loginRegister .loginRegister-container .box-loginRegister .box-right {
+        position: relative;
+        -ms-flex: 0 0 36%;
+        flex: 0 0 36%;
+        max-width: 36%;
+        box-sizing: border-box; }
+        .loginRegister .loginRegister-container .box-loginRegister .box-right .tright {
+          width: 100%;
+          height: 10px;
+          background-color: #d3364a; }
+        .loginRegister .loginRegister-container .box-loginRegister .box-right .nallright {
+          width: 280px;
+          height: 500px;
+          background-color: #acacac;
+          position: relative;
+          color: #fff; }
+          .loginRegister .loginRegister-container .box-loginRegister .box-right .nallright #tab-login .nfdiv07 {
+            position: absolute;
+            top: 25px;
+            left: 35px;
+            font-size: 45px;
+            line-height: 55px;
+            font-family: "Roboto", sans-serif;
+            font-weight: bold;
+            text-shadow: 0 1px 2px #000;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6); }
+          .loginRegister .loginRegister-container .box-loginRegister .box-right .nallright #tab-login .nfdiv08 {
+            position: absolute;
+            top: 89px;
+            left: 33px;
+            font-size: 16px;
+            text-shadow: 0 1px 2px #000;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6); }
+          .loginRegister .loginRegister-container .box-loginRegister .box-right .nallright #tab-login .nfdiv09 {
+            position: absolute;
+            top: 70px;
+            left: 69px;
+            font-size: 29px;
+            line-height: 55px;
+            font-family: "Roboto", sans-serif;
+            font-weight: bold;
+            text-shadow: 0 1px 2px #000;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6); }
+          .loginRegister .loginRegister-container .box-loginRegister .box-right .nallright #tab-login .v01 {
+            position: absolute;
+            height: 86px;
+            border-top: 1px solid #d8d8d8;
+            border-bottom: 1px solid #d8d8d8;
+            clear: both;
+            margin-top: 144px;
+            font-size: 14px;
+            width: 100%;
+            left: 0;
+            right: 0;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            box-sizing: border-box; }
+            .loginRegister .loginRegister-container .box-loginRegister .box-right .nallright #tab-login .v01 .v01items {
+              width: 69px;
+              height: 86px;
+              position: relative;
+              -ms-flex: 0 0 69px;
+              flex: 0 0 69px;
+              max-width: 69px;
+              box-sizing: border-box;
+              border-right: 1px solid #d8d8d8;
+              line-height: 86px;
+              text-align: center; }
+            .loginRegister .loginRegister-container .box-loginRegister .box-right .nallright #tab-login .v01 .bgblack {
+              background-color: #7c7c7c;
+              height: 84px; }
+            .loginRegister .loginRegister-container .box-loginRegister .box-right .nallright #tab-login .v01 .bgdiamond {
+              border-right: none; }
+            .loginRegister .loginRegister-container .box-loginRegister .box-right .nallright #tab-login .v01 .bgsophia {
+              background: url(https://image.yes24.vn/upload/Content/desktop/images/bg/member_saphir.png) 15px 15px no-repeat; }
+              .loginRegister .loginRegister-container .box-loginRegister .box-right .nallright #tab-login .v01 .bgsophia .sppd {
+                padding-top: 25px; }
+            .loginRegister .loginRegister-container .box-loginRegister .box-right .nallright #tab-login .v01 .bgrubi {
+              background: url(https://image.yes24.vn/upload/Content/desktop/images/bg/member_rubi.png) 15px 15px no-repeat; }
+              .loginRegister .loginRegister-container .box-loginRegister .box-right .nallright #tab-login .v01 .bgrubi .sppd {
+                padding-top: 25px; }
+            .loginRegister .loginRegister-container .box-loginRegister .box-right .nallright #tab-login .v01 .bgdiamond {
+              background: url(https://image.yes24.vn/upload/Content/desktop/images/bg/member_diamond.png) 15px 15px no-repeat; }
+              .loginRegister .loginRegister-container .box-loginRegister .box-right .nallright #tab-login .v01 .bgdiamond .sppd {
+                padding-top: 25px; }
+          .loginRegister .loginRegister-container .box-loginRegister .box-right .nallright #tab-login .v02 {
+            position: absolute;
+            width: 100%;
+            height: 44px;
+            border-bottom: 1px solid #d8d8d8;
+            clear: both;
+            font-size: 14px;
+            top: 230px; }
+            .loginRegister .loginRegister-container .box-loginRegister .box-right .nallright #tab-login .v02 .v02items {
+              width: 69px;
+              height: 44px;
+              border-right: 1px solid #d8d8d8;
+              float: left;
+              line-height: 44px;
+              text-align: center; }
+            .loginRegister .loginRegister-container .box-loginRegister .box-right .nallright #tab-login .v02 .bgblack {
+              background-color: #7c7c7c;
+              height: 43px; }
+            .loginRegister .loginRegister-container .box-loginRegister .box-right .nallright #tab-login .v02 .fix-border-right {
+              border-right: 0; }
+          .loginRegister .loginRegister-container .box-loginRegister .box-right .nallright #tab-login .v03 {
+            position: absolute;
+            width: 100%;
+            height: 44px;
+            border-bottom: 1px solid #d8d8d8;
+            clear: both;
+            font-size: 14px;
+            top: 274px; }
+            .loginRegister .loginRegister-container .box-loginRegister .box-right .nallright #tab-login .v03 .v03items {
+              width: 69px;
+              height: 44px;
+              border-right: 1px solid #d8d8d8;
+              float: left;
+              line-height: 44px;
+              text-align: center; }
+            .loginRegister .loginRegister-container .box-loginRegister .box-right .nallright #tab-login .v03 .bgblack {
+              background-color: #7c7c7c;
+              height: 43px; }
+            .loginRegister .loginRegister-container .box-loginRegister .box-right .nallright #tab-login .v03 .fix-border-right {
+              border-right: 0; }
+          .loginRegister .loginRegister-container .box-loginRegister .box-right .nallright #tab-login .v04 {
+            position: absolute;
+            width: 100%;
+            height: 44px;
+            border-bottom: 1px solid #d8d8d8;
+            clear: both;
+            font-size: 14px;
+            top: 318px; }
+            .loginRegister .loginRegister-container .box-loginRegister .box-right .nallright #tab-login .v04 .v04items {
+              width: 69px;
+              height: 44px;
+              border-right: 1px solid #d8d8d8;
+              float: left;
+              line-height: 44px;
+              text-align: center; }
+            .loginRegister .loginRegister-container .box-loginRegister .box-right .nallright #tab-login .v04 .bgblack {
+              background-color: #7c7c7c;
+              height: 43px; }
+            .loginRegister .loginRegister-container .box-loginRegister .box-right .nallright #tab-login .v04 .fix-border-right {
+              border-right: 0; }
+          .loginRegister .loginRegister-container .box-loginRegister .box-right .nallright #tab-login .v05 {
+            position: absolute;
+            width: 100%;
+            height: 58px;
+            border-bottom: 1px solid #d8d8d8;
+            clear: both;
+            font-size: 14px;
+            top: 362px; }
+            .loginRegister .loginRegister-container .box-loginRegister .box-right .nallright #tab-login .v05 .v05items {
+              width: 69px;
+              height: 58px;
+              border-right: 1px solid #d8d8d8;
+              float: left;
+              line-height: 44px;
+              text-align: center; }
+            .loginRegister .loginRegister-container .box-loginRegister .box-right .nallright #tab-login .v05 .bgblack {
+              background-color: #7c7c7c;
+              height: 58px; }
+            .loginRegister .loginRegister-container .box-loginRegister .box-right .nallright #tab-login .v05 .fix-border-right {
+              border-right: 0; }
+          .loginRegister .loginRegister-container .box-loginRegister .box-right .nallright #tab-login .membershipdetails {
+            width: 95px;
+            height: 25px;
+            line-height: 27px;
+            position: absolute;
+            cursor: pointer;
+            bottom: 35px;
+            background-color: #333;
+            color: #fff;
+            text-transform: uppercase;
+            text-align: center;
+            left: 95px; }
+            .loginRegister .loginRegister-container .box-loginRegister .box-right .nallright #tab-login .membershipdetails a {
+              color: white; }
+            .loginRegister .loginRegister-container .box-loginRegister .box-right .nallright #tab-login .membershipdetails span {
+              margin-left: 10px; }
+          .loginRegister .loginRegister-container .box-loginRegister .box-right .nallright #tab-register {
+            display: none; }
+            .loginRegister .loginRegister-container .box-loginRegister .box-right .nallright #tab-register .nrdiv01 {
+              position: absolute;
+              top: 27px;
+              left: 25px;
+              font-size: 31px;
+              text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+              font-family: "Roboto", sans-serif;
+              font-weight: 600; }
+              .loginRegister .loginRegister-container .box-loginRegister .box-right .nallright #tab-register .nrdiv01 b {
+                font-size: 45px;
+                font-weight: normal;
+                line-height: 55px;
+                font-family: "Roboto", sans-serif;
+                font-weight: 600; }
+            .loginRegister .loginRegister-container .box-loginRegister .box-right .nallright #tab-register .nrdiv02 {
+              position: absolute;
+              top: 50px;
+              font-size: 16px;
+              right: 25px;
+              text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6); }
+            .loginRegister .loginRegister-container .box-loginRegister .box-right .nallright #tab-register .nrdiv03 {
+              position: absolute;
+              top: 135px;
+              font-size: 15px;
+              left: 17px; }
+            .loginRegister .loginRegister-container .box-loginRegister .box-right .nallright #tab-register .bgserial_register {
+              background: url(https://image.yes24.vn/upload/Content/desktop/images/bg/bg_seiral_login_resgister.png) 15px 15px no-repeat;
+              position: absolute;
+              top: 158px;
+              left: 3px;
+              width: 260px;
+              height: 140px; }
+              .loginRegister .loginRegister-container .box-loginRegister .box-right .nallright #tab-register .bgserial_register .bgtext01 {
+                width: 160px;
+                text-align: center;
+                height: 30px;
+                margin-top: 33px;
+                margin-left: 57px;
+                font-size: 18px;
+                font-style: italic;
+                display: flex;
+                text-transform: uppercase;
+                line-height: 22px; }
+              .loginRegister .loginRegister-container .box-loginRegister .box-right .nallright #tab-register .bgserial_register .bgtext02 {
+                clear: both;
+                width: 150px;
+                color: #0f5caa;
+                height: 30px;
+                line-height: 30px;
+                margin-left: 92px;
+                margin-top: 10px;
+                text-align: center;
+                font-weight: bold;
+                font-size: 32px;
+                font-style: italic; }
+              .loginRegister .loginRegister-container .box-loginRegister .box-right .nallright #tab-register .bgserial_register .bgtext03 {
+                width: 100%;
+                text-align: center;
+                height: 30px;
+                margin-top: 10px;
+                margin-left: 5px;
+                font-size: 13px;
+                font-style: italic; }
+            .loginRegister .loginRegister-container .box-loginRegister .box-right .nallright #tab-register .nrdiv04 {
+              position: absolute;
+              top: 337px;
+              line-height: 18px;
+              font-size: 14px;
+              left: 17px; }
+              .loginRegister .loginRegister-container .box-loginRegister .box-right .nallright #tab-register .nrdiv04 span {
+                font-size: 15px;
+                font-weight: bold;
+                color: #0043ff; }
+            .loginRegister .loginRegister-container .box-loginRegister .box-right .nallright #tab-register .nrdiv05 {
+              position: absolute;
+              top: 403px;
+              line-height: 18px;
+              font-size: 14px;
+              left: 17px; }
+              .loginRegister .loginRegister-container .box-loginRegister .box-right .nallright #tab-register .nrdiv05 span {
+                font-size: 15px;
+                color: #f108f5;
+                font-weight: bold; }
+      .loginRegister .loginRegister-container .box-loginRegister .tclose {
+        width: 27px;
+        height: 27px;
+        position: absolute;
+        top: -10px;
+        right: -10px;
+        background: url(https://image.yes24.vn/upload/Content/mobile/images/ic_close.png) no-repeat;
+        cursor: pointer;
+        z-index: 500; }
+
+.loginRegister-active {
+  display: block; }
+
 @media screen and (max-width: 1199px) {
   #header .hd-container {
     display: none; }
@@ -3315,7 +3860,22 @@ input, select {
     flex: 0 0 50%;
     max-width: 50%;
     box-sizing: border-box;
-    margin-bottom: 15px; } }
+    margin-bottom: 15px; }
+
+  .loginRegister .loginRegister-container {
+    padding: 0 15px; }
+    .loginRegister .loginRegister-container .box-loginRegister {
+      max-width: 100%;
+      margin: 0 auto;
+      box-sizing: border-box; }
+      .loginRegister .loginRegister-container .box-loginRegister .box-left {
+        position: relative;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+        box-sizing: border-box; }
+      .loginRegister .loginRegister-container .box-loginRegister .box-right {
+        display: none; } }
 @media screen and (max-width: 767px) {
   #header .hd-container-mobile .hd-top-mb .col-bottom {
     margin-top: 10px; }
@@ -3483,6 +4043,14 @@ input, select {
     box-sizing: border-box;
     margin-bottom: 10px; }
   #footer .ft-container .row-4 .row4-container .row-body .row-boxcontent .box-ft-3 {
+    position: relative;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 0; }
+
+  .loginRegister .loginRegister-container .box-loginRegister .box-left .nav-content #tr-register .tr-reg-wrapper .tr-col-215 {
     position: relative;
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
