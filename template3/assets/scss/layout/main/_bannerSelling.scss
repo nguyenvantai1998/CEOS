@@ -1,0 +1,98 @@
+.bannerSelling{
+    .bnsl-container{
+        @include container-mw(100%);
+
+        .row-1{
+            @include container-mw(100%);
+            background: #ab2b1e;
+            
+            .row1-container{
+                @include container-mw(1240px);
+                img{
+                    @include img-res;
+                }
+            }
+        }
+
+        .row-2{
+            @include container-mw(100%);
+            background: white;
+
+            .row2-container{
+                @include container-mw(1240px);
+                @include row-fb;
+                padding: 15px 0;
+
+                >a{
+                    display: inline-block;
+                    position: relative;
+                    flex: 1;
+                    text-align: center;
+
+                    span{
+                        color: #000;
+                        font-family: $ft-def;
+                        font-size: 15px;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        display: block;
+                        padding-top: 10px;
+                        width: 100%;
+                    }
+                }
+                >a.active{
+                    span{
+                        font-weight: 600;
+                    }
+                }
+                a.tr-bg-all{
+                    &::before{
+                        width: 48px;
+                        height: 48px;
+                        display: block;
+                        margin: 0 auto;
+                        content: "";
+                        background: url(https://image.yes24.vn/upload/Content/desktop/images/icon/bg.png) no-repeat;
+                    }
+                }
+                a.tr-sp-top100:before {
+                    background: url(https://image.yes24.vn/upload/Content/desktop/images/icon/best/icon_01.png) no-repeat;
+                }
+                a.tr-sp-hangnhap:before {
+                    background: url(https://image.yes24.vn/upload/Content/desktop/images/icon/best/icon_02.png) no-repeat;
+                }
+                a.tr-sp-mypham:before {
+                    background: url(https://image.yes24.vn/upload/Content/desktop/images/icon/best/icon_03.png) no-repeat;
+                }
+                a.tr-sp-giadung:before {
+                    background: url(https://image.yes24.vn/upload/Content/desktop/images/icon/best/icon_04.png) no-repeat;
+                }
+                a.tr-sp-thoitrang:before {
+                    background: url(https://image.yes24.vn/upload/Content/desktop/images/icon/best/icon_05.png) no-repeat;
+                }
+                a.tr-sp-giaytui:before {
+                    background: url(https://image.yes24.vn/upload/Content/desktop/images/icon/best/icon_06.png) no-repeat;
+                }
+                a.tr-sp-noiy:before {
+                    background: url(https://image.yes24.vn/upload/Content/desktop/images/icon/best/icon_07.png) no-repeat;
+                }
+                a.tr-sp-thucpham:before {
+                    background: url(https://image.yes24.vn/upload/Content/desktop/images/icon/best/icon_08.png) no-repeat;
+                }
+                a.tr-sp-thethao:before {
+                    background: url(https://image.yes24.vn/upload/Content/desktop/images/icon/best/icon_09.png) no-repeat;
+                }
+                a.tr-sp-mebe:before {
+                    background: url(https://image.yes24.vn/upload/Content/desktop/images/icon/best/icon_10.png) no-repeat;
+                }
+                a.tr-sp-phukien:before {
+                    background: url(https://image.yes24.vn/upload/Content/desktop/images/icon/best/icon_11.png) no-repeat;
+                }
+                a.tr-sp-dienmay:before {
+                    background: url(https://image.yes24.vn/upload/Content/desktop/images/icon/best/icon_12.png) no-repeat;
+                }
+            }
+        }
+        
+    }
+}

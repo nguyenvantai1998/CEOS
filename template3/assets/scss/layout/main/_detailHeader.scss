@@ -1,0 +1,492 @@
+.detailHeader{
+    .dthd-container{
+        @include container-mw(1240px);
+        padding: 0 15px;
+
+        .dt-link{
+            ul{
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                display: inline-block;
+                li{
+                    display: inline-block;
+                    white-space: nowrap;
+                    a{
+                        color: #8a8a8a;
+                        display: inline-block;
+                        white-space: nowrap;
+                        font-size: 13px;
+                        font-family: $ft-def;
+                        font-weight: 400;
+                        line-height: 35px;
+                        i{
+                            font-weight: 300;
+                            font-size: 9px;
+                            margin: 0 5px;
+                        }
+                    }
+                }
+            }
+        }
+        .dt-product{
+            background: white;
+            padding: 35px 0;
+            @include container-mw(100%);
+            @include row-fb;
+
+            .col-left{
+                @include col-auto(40%);
+                padding: 0 20px 20px;
+
+                .owl-carousel{
+                    .item{
+                        img{
+                            @include img-res;
+                            height: 455px;
+                        }
+                    }
+                    .owl-nav{
+                        display: none;
+                    }
+                    .owl-dots{
+                        display: none;
+                    }
+                    .owl-dots-active{
+                        display: block;
+                    }
+                }
+
+            }
+            .col-right{
+                @include col-auto(60%);
+                font-family: $ft-def;
+                font-weight: 300;
+                line-height: 25px;
+                .row-title{
+                    .tr-prd-name2 {
+                        font-size: 20px;
+                        color: #333;
+                        margin-bottom: 10px;
+                        font-weight: normal;
+                        -moz-box-sizing: border-box;
+                        -ms-box-sizing: border-box;
+                        box-sizing: border-box;
+                        padding-right: 10px;
+                    }
+                }
+                ul.tr-prd-msp {
+                    margin-bottom: 0;
+                    line-height: 25px;
+                    @include container-mw(100%);
+                    @include row-fb;
+                    li{
+                        font-size: 14px;
+                        color: #777;
+                        display: inline-block;
+                        white-space: nowrap;
+                        line-height: 25px;
+                        margin: 0 15px;
+                        &:first-child{
+                            margin: 0;
+                        }
+                        &:nth-child(2){
+                            font-size: 15px;
+                            color: #0f5caa;
+                            font-weight: bold;
+                        }
+                        .tr-fa-yellow {
+                            color: #ffc52b;
+                        }
+                        a{
+                            color: #777;
+                        }
+                    }
+                }
+                ul.tr-prd-brandname{
+                    @include container-mw(100%);
+                    li{
+                        font-size: 14px;
+                        color: #777;
+                        display: inline-block;
+                        white-space: nowrap;
+                        a.tr-xuatxu-reg {
+                            color: #777 !important;
+                        }
+                    }
+                    li.tr-thuonghieu-reg {
+                        margin-left: 22px;
+                    }
+                    li:last-child {
+                        color: #999;
+                    }
+                    li:nth-child(2) a {
+                        color: #669acc;
+                    }
+                }
+                .tr-view-list-relative {
+                    @include container-mw(100%);
+                    margin-bottom: 10px;
+                    >a {
+                        font-size: 14px;
+                        color: #669acc;
+                        margin-left: 104px;
+                    }
+                }
+                .tr-prd-info1 {
+                    border-top: 1px solid #f0f0f0;
+                    @include row-fb;
+
+                    .tr-col-prd-info-left{
+                        @include col-auto(65%);
+                        border-right: 1px solid #f0f0f0;
+                        .tr-prd-price {
+                            border-bottom: 1px solid #f0f0f0;
+                            padding: 15px 0;
+                            ul{
+                                margin-bottom: 10px;
+                                li {
+                                    display: inline-block;
+                                    white-space: nowrap;
+                                    padding: 0 15px;
+                                    line-height: 30px;
+                                }
+                                li.th-detail-price {
+                                    font-weight: bold;
+                                    font-size: 24px;
+                                    color: #d3364a;
+                                    padding-left: 0;
+                                }
+                                li.linethrough-text {
+                                    font-weight: 300;
+                                    font-size: 16px;
+                                    color: #333;
+                                    text-decoration: line-through;
+                                }
+                                li.th-detail-discount {
+                                    background-color: #d3364a;
+                                    color: #fff;
+                                    font-size: 20px;
+                                    padding: 2px 7px;
+                                    font-weight: bold;
+                                }
+                            }
+                            .th-bg-none {
+                                font-size: 14px;
+                                margin-top: 5px;
+                                .mm-new-bg {
+                                    height: 30px;
+                                    line-height: 30px;
+                                    color: #fff;
+                                    width: auto;
+                                    margin-top: 5px;
+                                    width: 400px;
+                                    background-color: #669acc;
+                                    position: relative;
+                                    cursor: pointer;
+
+                                    .mm-circle-left {
+                                        width: 12px;
+                                        height: 12px;
+                                        background-color: #fff;
+                                        position: absolute;
+                                        left: -5px;
+                                        top: 10px;
+                                        border-radius: 50%;
+                                        z-index: 1;
+                                    }
+                                    .mm-circle-right {
+                                        width: 12px;
+                                        height: 12px;
+                                        background-color: #fff;
+                                        position: absolute;
+                                        right: -5px;
+                                        top: 10px;
+                                        border-radius: 50%;
+                                        z-index: 1;
+                                    }
+                                    .mm-sr-left {
+                                        padding-left: 20px;
+                                        padding-right: 20px;
+                                        border-right: 1px dashed #fff;
+                                        background-color: #669acc;
+                                        position: relative;
+                                        float: left;
+                                    }
+                                    .mm-sr-right {
+                                        float: left;
+                                        padding-left: 20px;
+                                        padding-right: 20px;
+                                        background-color: #669acc;
+                                        position: relative;
+                                        cursor: pointer;
+                                    }
+                                    .fa-caret-down {
+                                        margin-left: 10px;
+                                        position: absolute;
+                                        right: 20px;
+                                        top: 10px;
+                                    }
+                                }
+                            }
+                            .sr-detail {
+                                border: 1px solid #669acc;
+                                width: 398px;
+                                clear: both;
+                                // display: none;
+                                .sr-ct {
+                                    clear: both;
+                                    min-height: 60px;
+
+                                    .sr-content {
+                                        width: 270px;
+                                        float: left;
+                                        padding-left: 15px;
+                                        padding-top: 12px;
+                                        font-size: 12px;
+                                        color: #787878;
+                                        line-height: 18px;
+                                    }
+                                    .sr-get-sr {
+                                        width: 80px;
+                                        height: 27px;
+                                        line-height: 27px;
+                                        float: left;
+                                        text-align: center;
+                                        color: #669acc;
+                                        border: 1px solid #669acc;
+                                        border-radius: 15px;
+                                        font-size: 13px;
+                                        margin-top: 15px;
+                                        font-weight: bold;
+                                        cursor: pointer;
+                                    }
+                                }
+                            }
+                        }
+                        .tr-prd-color-size {
+                            color: #777;
+                            padding: 15px 0;
+                            >div {
+                                padding: 10px 0;
+                                font-size: 14px;
+                                &:first-child {
+                                    line-height: 33px;
+                                }
+                            }
+                            .tr-col-20 {
+                                width: 20%;
+                                float: left;
+                                line-height: 30px;
+                            }
+                            .tr-col-80 {
+                                width: 80%;
+                                float: left;
+                                ul.tr-prd-choose-type{
+                                    li.active{
+                                        border-color: #69c;
+                                        color: #69c;
+                                    }
+                                    li {
+                                        float: none;
+                                        display: inline-block;
+                                        border: 1px solid #ccc;
+                                        margin-right: 5.7px;
+                                        cursor: pointer;
+                                        text-align: center;
+                                        font-size: 15px;
+                                        white-space: nowrap;
+                                        line-height: 1.8;
+                                        padding: 2px 5px;
+                                        -ms-box-sizing: border-box;
+                                        -moz-box-sizing: border-box;
+                                        box-sizing: border-box;
+                                        width: auto;
+                                        margin-bottom: 5px;
+                                        height: auto;
+                                        color: #333;
+                                        font-weight: 400;
+                                    }
+                                }
+                                .tr-prd-btn-amount{
+                                    #tr-prd-val-amount {
+                                        height: 28.5px;
+                                        width: 55px;
+                                        text-align: center;
+                                        border: 1px solid #ddd;
+                                        outline: none;
+                                        font-size: 15px;
+                                        float: left;
+                                    }
+                                    .tr-prd-btn-minus a {
+                                        font-size: 15px;
+                                        font-weight: bold;
+                                        padding: 4px 10px;
+                                        background-color: #fff;
+                                        border: 1px solid #ddd;
+                                        border-right: 0;
+                                        float: left;
+                                        background-color: #ddd;
+                                        color: #fff;
+                                        height: 22px;
+                                    }
+                                    .tr-prd-btn-add a {
+                                        font-size: 15px;
+                                        font-weight: bold;
+                                        padding: 4px 10px;
+                                        background-color: #fff;
+                                        border: 1px solid #ddd;
+                                        border-left: 0;
+                                        float: left;
+                                        background-color: #ddd;
+                                        color: #fff;
+                                        height: 22px;
+                                    }
+                                }
+                            }
+                            .tr-prd-add-payment {
+                                margin-top: 10px;
+                                .tr-prd-addtocart {
+                                    float: left;
+                                    background-color: #d23e4c;
+                                    color: #fff;
+                                    padding: 10px 20px 5px;
+                                    line-height: 24px;
+                                    margin-right: 10px;
+                                    font-size: 15px;
+                                }
+                                .tr-prd-buynow {
+                                    float: left;
+                                    background-color: #0f5caa;
+                                    color: #fff;
+                                    padding: 8px 20px 5px;
+                                    line-height: 24px;
+                                    font-size: 15px;
+
+                                    &::before {
+                                        -ms-content: "";
+                                        content: "";
+                                        background: url(https://image.yes24.vn/upload/Content/desktop/images/icon/producticon.png)no-repeat;
+                                        float: left;
+                                        width: 33px;
+                                        height: 27px;
+                                        -ms-background-position: 1px -313px;
+                                        background-position: 1px -313px;
+                                    }
+                                }
+                                .tr-prd-like {
+                                    text-align: center;
+                                    .fa-heart {
+                                        font-size: 22px;
+                                        margin-top: 3px;
+                                        cursor: pointer;
+                                        color: #d6d6d6;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .tr-col-prd-info-right{
+                        @include col-auto(35%);
+                        padding-left: 20px;
+                        .tr-giao-nhanh {
+                            margin: 5px 0 10px;
+                            p{
+                                line-height: 1.5;
+                                font-size: 13px;
+                                color: #777;
+                                font-weight: 300;
+
+                                &:first-child {
+                                    font-weight: bold;
+                                    color: #0f5caa;
+                                    font-size: 15px;
+                                    margin-bottom: 5px;
+                                    text-transform: uppercase;
+                                }
+                            }
+                        }
+                        .tr-gn-tich-luy, 
+                        .tr-gn-fee,
+                        .tr-gn-supplier{
+                            margin-bottom: 10px;
+                            p{
+                                &:first-child{
+                                    font-weight: bold;
+                                    color: #333;
+                                    font-size: 14px;
+                                    margin-bottom: 5px;
+                                    margin-top: 10px;
+                                    text-transform: uppercase;
+                                }
+                            }
+                            .row-flex-small{
+                                @include row-fb;
+                                div.tr-col-50 {
+                                    @include col-6;
+                                    font-size: 13px;
+                                    line-height: 27px;
+                                    color: #777;
+                                }
+                                div.tr-col-50 {
+                                    @include col-6;
+                                    font-size: 13px;
+                                    line-height: 27px;
+                                    color: #777;
+                                }
+                                .tr-gn-yespoint{
+                                    &::before {
+                                        -ms-content: "";
+                                        content: "";
+                                        background: url(https://image.yes24.vn/upload/Content/desktop/images/icon/producticon.png)no-repeat;
+                                        float: left;
+                                        width: 33px;
+                                        height: 27px;
+                                        -ms-background-position: 1px -380px;
+                                        background-position: 1px -380px;
+                                    }
+                                }
+                                .tr-gn-keosao{
+                                    &::before {
+                                        -ms-content: "";
+                                        content: "";
+                                        background: url(https://image.yes24.vn/upload/Content/desktop/images/icon/producticon.png)no-repeat;
+                                        float: left;
+                                        width: 33px;
+                                        height: 27px;
+                                        -ms-background-position: 1px -352px;
+                                        background-position: 1px -352px;
+                                    }
+                                }
+                            }
+                            
+                        }
+                        .tr-gn-fee{
+                            p{
+                                a{
+                                    font-size: 13px;
+                                }
+                            }
+                        }
+                        .tr-gn-supplier{
+                            .fa-star {
+                                color: #c5bdbd;
+                                margin-right: 3px;
+                                height: 12px;
+                                font-size: 13px;
+                            }
+                            .tr-fa-yellow {
+                                color: #ffc52b;
+                            }
+                            p{
+                                a{
+                                    color: #777;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }  
+}

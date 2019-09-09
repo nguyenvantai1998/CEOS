@@ -33,6 +33,16 @@
         @import "./layout/main/promotionBox";
         @import "./layout/main/breadcrumbDetailPro";
         @import "./layout/main/prodetailTabContent";
+        @import "./layout/main/bannerSelling";
+        @import "./layout/main/topProduct";
+        @import "./layout/main/topSelling";
+        .bg-detail{
+            background-color: #ededed;
+            @include container-mw(100%);
+            @import "./layout/main/detailHeader";
+            @import "./layout/main/detailBody";
+            @import "./layout/main/detailFooter";
+        }
     }
 }
 #footer{

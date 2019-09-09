@@ -9,7 +9,9 @@ $(document).ready(function () {
     nav: true,
     autoplay: false,
     autoplayTimeout: 3000,
-    autoplayHoverPause: true
+    autoplayHoverPause: true,
+    thumbs: true,
+    thumbsPrerendered: true
   });
 
   $('.owl-carousel').owlCarousel({
@@ -79,7 +81,7 @@ $(document).ready(function () {
   })
 
   // event show scroll page promotion
-  var h = $('.hd-nav').height()+100;
+  var h = $('.hd-nav').height() + 100;
   $(window).bind('scroll', function () {
     var pos = window.scrollY;
     if (pos >= h) {
@@ -90,13 +92,13 @@ $(document).ready(function () {
   })
 
   // event tab modal login register
-  $('#modalLoginRegi, #modalLoginRegi2').click(function(){
+  $('#modalLoginRegi, #modalLoginRegi2').click(function () {
     $('.loginRegister').addClass('loginRegister-active');
   });
-  $('#loginRegister-close, #tloginRegClose').click(function(){
+  $('#loginRegister-close, #tloginRegClose').click(function () {
     $('.loginRegister').removeClass('loginRegister-active');
   });
-  $('#tab-register-click').click(function(){
+  $('#tab-register-click').click(function () {
     $('#tr-login').hide();
     $('#tr-register').show();
     $('#tab-login').hide();
@@ -104,7 +106,7 @@ $(document).ready(function () {
     $('#tab-register-click').addClass('active');
     $('#tab-login-click').removeClass('active');
   });
-  $('#tab-login-click').click(function(){
+  $('#tab-login-click').click(function () {
     $('#tr-login').show();
     $('#tr-register').hide();
     $('#tab-login').show();
@@ -112,8 +114,6 @@ $(document).ready(function () {
     $('#tab-register-click').removeClass('active');
     $('#tab-login-click').addClass('active');
   });
-
-
 
   // event show nav mobile
   $('#btn-leftmenu').click(function () {
@@ -232,6 +232,18 @@ $(document).ready(function () {
     bigimage.data("owl.carousel").to(number, 300, true);
   });
 
-
+  // tab detail product
+  $('#tab1').click(function () {
+    $('#tabContent1').show();
+    $('#tabContent2').hide();
+    $('#tab1 > a').addClass('active');
+    $('#tab2 > a').removeClass('active');
+  });
+  $('#tab2').click(function () {
+    $('#tabContent2').show();
+    $('#tabContent1').hide();
+    $('#tab2 > a').addClass('active');
+    $('#tab1 > a').removeClass('active');
+  });
 
 })
