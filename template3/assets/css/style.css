@@ -1714,6 +1714,569 @@ input, select {
       padding-right: 8px; }
     #main .m-container .mainBannerStart .mbnt-container .banner-right {
       padding-left: 8px; }
+  #main .m-container .about {
+    max-width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    background-color: #eeeeee; }
+    #main .m-container .about .ab-container {
+      max-width: 1240px;
+      margin: 0 auto;
+      box-sizing: border-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      box-sizing: border-box;
+      padding: 0 15px; }
+      #main .m-container .about .ab-container .menu-left {
+        position: relative;
+        -ms-flex: 0 0 20%;
+        flex: 0 0 20%;
+        max-width: 20%;
+        box-sizing: border-box; }
+        #main .m-container .about .ab-container .menu-left .title-large {
+          width: 248px;
+          height: 50px;
+          line-height: 50px;
+          font-size: 20px;
+          font-weight: bold;
+          text-transform: uppercase;
+          margin-top: 20px; }
+        #main .m-container .about .ab-container .menu-left .title-small {
+          width: 248px;
+          height: 30px;
+          line-height: 30px;
+          clear: both;
+          color: #777777;
+          cursor: pointer;
+          font-size: 14px; }
+          #main .m-container .about .ab-container .menu-left .title-small a {
+            color: #3e3e3e;
+            text-decoration: none; }
+            #main .m-container .about .ab-container .menu-left .title-small a:hover {
+              text-decoration: underline; }
+      #main .m-container .about .ab-container .contents-right {
+        position: relative;
+        -ms-flex: 0 0 80%;
+        flex: 0 0 80%;
+        max-width: 80%;
+        box-sizing: border-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        box-sizing: border-box; }
+        #main .m-container .about .ab-container .contents-right .th-breadcrumb {
+          width: 100%;
+          height: 35px;
+          line-height: 35px;
+          position: relative;
+          position: relative;
+          -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+          max-width: 100%;
+          box-sizing: border-box; }
+          #main .m-container .about .ab-container .contents-right .th-breadcrumb ul {
+            width: 70%;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            display: inline-block; }
+            #main .m-container .about .ab-container .contents-right .th-breadcrumb ul li {
+              display: inline-block;
+              white-space: nowrap; }
+              #main .m-container .about .ab-container .contents-right .th-breadcrumb ul li a {
+                color: #8a8a8a;
+                display: inline-block;
+                white-space: nowrap;
+                font-size: 13px; }
+                #main .m-container .about .ab-container .contents-right .th-breadcrumb ul li a i {
+                  font-weight: 300;
+                  font-size: 9px;
+                  margin: 0 5px; }
+        #main .m-container .about .ab-container .contents-right .left {
+          position: relative;
+          -ms-flex: 0 0 25%;
+          flex: 0 0 25%;
+          max-width: 25%;
+          box-sizing: border-box;
+          background: white; }
+          #main .m-container .about .ab-container .contents-right .left .logoim {
+            width: 159px;
+            height: 59px;
+            padding-top: 50px;
+            padding-left: 40px; }
+        #main .m-container .about .ab-container .contents-right .right {
+          position: relative;
+          -ms-flex: 0 0 75%;
+          flex: 0 0 75%;
+          max-width: 75%;
+          box-sizing: border-box;
+          background: white;
+          padding-bottom: 35px; }
+          #main .m-container .about .ab-container .contents-right .right .title {
+            max-width: 100%;
+            margin: 0 auto;
+            box-sizing: border-box;
+            line-height: 40px;
+            padding-top: 40px;
+            text-transform: uppercase;
+            font-weight: bold; }
+          #main .m-container .about .ab-container .contents-right .right .text1 {
+            max-width: 100%;
+            margin: 0 auto;
+            box-sizing: border-box;
+            height: 30px;
+            line-height: 30px;
+            font-size: 14px;
+            color: #777777; }
+          #main .m-container .about .ab-container .contents-right .right .img {
+            margin-top: 30px;
+            margin-bottom: 30px;
+            border-bottom: 1px solid #d7d7d7;
+            max-width: 80%;
+            margin: 0 auto;
+            box-sizing: border-box;
+            margin: unset; }
+            #main .m-container .about .ab-container .contents-right .right .img img {
+              vertical-align: middle;
+              max-width: 100%;
+              height: auto; }
+          #main .m-container .about .ab-container .contents-right .right .text2 {
+            max-width: 100%;
+            margin: 0 auto;
+            box-sizing: border-box;
+            height: 30px;
+            text-align: left;
+            font-size: 14px;
+            color: #777777;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            box-sizing: border-box;
+            margin-bottom: 15px; }
+            #main .m-container .about .ab-container .contents-right .right .text2 .left {
+              position: relative;
+              -ms-flex: 0 0 25%;
+              flex: 0 0 25%;
+              max-width: 25%;
+              box-sizing: border-box;
+              height: 40px;
+              line-height: 40px;
+              position: relative;
+              -ms-flex: 0 0 165px;
+              flex: 0 0 165px;
+              max-width: 165px;
+              box-sizing: border-box; }
+            #main .m-container .about .ab-container .contents-right .right .text2 .right {
+              position: relative;
+              -ms-flex: 0 0 75%;
+              flex: 0 0 75%;
+              max-width: 75%;
+              box-sizing: border-box;
+              height: 40px;
+              line-height: 40px;
+              position: relative;
+              -ms-flex: 0 0 470px;
+              flex: 0 0 470px;
+              max-width: 470px;
+              box-sizing: border-box; }
+            #main .m-container .about .ab-container .contents-right .right .text2 .right-long {
+              width: 470px;
+              height: 40px;
+              line-height: 20px;
+              line-height: 25px; }
+  #main .m-container .regulations .reg-container .reg-container-sub .row-content-fill {
+    position: relative;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    background: white; }
+    #main .m-container .regulations .reg-container .reg-container-sub .row-content-fill .rule-titles {
+      max-width: 100%;
+      margin: 0 auto;
+      box-sizing: border-box;
+      line-height: 35px;
+      border-bottom: 1px solid #e1e1e1;
+      color: #669acc;
+      font-weight: bold;
+      margin-left: 30px;
+      padding-top: 10px;
+      margin-right: 30px; }
+    #main .m-container .regulations .reg-container .reg-container-sub .row-content-fill .rule-contents .rule-items {
+      max-width: 100%;
+      margin: 0 auto;
+      box-sizing: border-box;
+      margin-left: 30px;
+      margin-right: 30px;
+      position: relative;
+      padding-left: 40px; }
+      #main .m-container .regulations .reg-container .reg-container-sub .row-content-fill .rule-contents .rule-items .numshow {
+        width: 25px;
+        height: 25px;
+        color: #fff;
+        text-align: center;
+        border-radius: 50%;
+        line-height: 25px;
+        margin-left: 30px;
+        background-color: #669acc;
+        position: absolute;
+        left: -30px;
+        top: 3px;
+        font-size: 14px; }
+      #main .m-container .regulations .reg-container .reg-container-sub .row-content-fill .rule-contents .rule-items .rule-text1 {
+        max-width: 100%;
+        margin: 0 auto;
+        box-sizing: border-box;
+        line-height: 30px;
+        font-size: 14px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #000;
+        margin-top: 15px; }
+      #main .m-container .regulations .reg-container .reg-container-sub .row-content-fill .rule-contents .rule-items .rule-text2 {
+        max-width: 100%;
+        margin: 0 auto;
+        box-sizing: border-box;
+        text-align: left;
+        font-size: 13px;
+        line-height: 25px;
+        margin-bottom: 30px;
+        color: #777777; }
+  #main .m-container .manage .man-container .contents-right .row-content-fill .rule-contents .rule-items2 {
+    max-width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    margin-left: 30px;
+    margin-right: 30px;
+    position: relative;
+    margin-top: 20px; }
+    #main .m-container .manage .man-container .contents-right .row-content-fill .rule-contents .rule-items2 .rule-text3 {
+      max-width: 100%;
+      margin: 0 auto;
+      box-sizing: border-box;
+      text-align: left;
+      font-size: 13px;
+      line-height: 25px;
+      margin-bottom: 30px;
+      color: #777777; }
+  #main .m-container .event .evt-container .evt-container-sub .row-content-fill {
+    position: relative;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    background: white; }
+    #main .m-container .event .evt-container .evt-container-sub .row-content-fill .event-items {
+      position: relative;
+      -ms-flex: 0 0 33.333333%;
+      flex: 0 0 33.333333%;
+      max-width: 33.333333%;
+      box-sizing: border-box;
+      padding: 15px; }
+      #main .m-container .event .evt-container .evt-container-sub .row-content-fill .event-items .evnet-img > a img {
+        vertical-align: middle;
+        max-width: 100%;
+        height: auto; }
+      #main .m-container .event .evt-container .evt-container-sub .row-content-fill .event-items .event-titles {
+        margin-top: 15px;
+        font-size: 15px;
+        line-height: 20px; }
+        #main .m-container .event .evt-container .evt-container-sub .row-content-fill .event-items .event-titles a {
+          color: #3e3e3e;
+          text-decoration: none; }
+      #main .m-container .event .evt-container .evt-container-sub .row-content-fill .event-items .event-info {
+        width: 100%;
+        margin-top: 5px;
+        font-size: 13px;
+        line-height: 20px;
+        color: #999999; }
+  #main .m-container .recruitment .recr-container .recr-container-sub .row-content-fill-1 {
+    position: relative;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    background: white; }
+    #main .m-container .recruitment .recr-container .recr-container-sub .row-content-fill-1 .img {
+      padding-top: 20px;
+      padding-bottom: 20px;
+      text-align: center;
+      padding-right: 30px;
+      padding-left: 30px; }
+      #main .m-container .recruitment .recr-container .recr-container-sub .row-content-fill-1 .img img {
+        vertical-align: middle;
+        max-width: 100%;
+        height: auto; }
+  #main .m-container .recruitment .recr-container .recr-container-sub .row-content-fill-2 {
+    position: relative;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    background: white;
+    margin-top: 20px; }
+    #main .m-container .recruitment .recr-container .recr-container-sub .row-content-fill-2 .full-recruitment .recruitment-titles {
+      max-width: 100%;
+      margin: 0 auto;
+      box-sizing: border-box;
+      line-height: 35px;
+      border-bottom: 1px solid #6699cc;
+      padding-top: 30px;
+      margin-top: 20px;
+      margin-left: 30px;
+      margin-right: 30px;
+      font-weight: bold;
+      color: #000;
+      font-size: 15px;
+      text-align: center;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      box-sizing: border-box; }
+      #main .m-container .recruitment .recr-container .recr-container-sub .row-content-fill-2 .full-recruitment .recruitment-titles .items1 {
+        position: relative;
+        -ms-flex: 0 0 60%;
+        flex: 0 0 60%;
+        max-width: 60%;
+        box-sizing: border-box;
+        height: 35px;
+        text-align: left; }
+      #main .m-container .recruitment .recr-container .recr-container-sub .row-content-fill-2 .full-recruitment .recruitment-titles .items2 {
+        position: relative;
+        -ms-flex: 0 0 20%;
+        flex: 0 0 20%;
+        max-width: 20%;
+        box-sizing: border-box;
+        height: 35px;
+        text-align: left; }
+      #main .m-container .recruitment .recr-container .recr-container-sub .row-content-fill-2 .full-recruitment .recruitment-titles .items3,
+      #main .m-container .recruitment .recr-container .recr-container-sub .row-content-fill-2 .full-recruitment .recruitment-titles .items4 {
+        position: relative;
+        -ms-flex: 0 0 10%;
+        flex: 0 0 10%;
+        max-width: 10%;
+        box-sizing: border-box;
+        height: 35px;
+        text-align: left; }
+    #main .m-container .recruitment .recr-container .recr-container-sub .row-content-fill-2 .full-recruitment .recruitment-info {
+      position: relative;
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+      max-width: 100%;
+      box-sizing: border-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      box-sizing: border-box;
+      line-height: 60px;
+      border-bottom: 1px solid #e1e1e1;
+      margin-left: 30px;
+      color: #777777;
+      font-size: 14px;
+      text-align: center; }
+      #main .m-container .recruitment .recr-container .recr-container-sub .row-content-fill-2 .full-recruitment .recruitment-info .items1 {
+        position: relative;
+        -ms-flex: 0 0 60%;
+        flex: 0 0 60%;
+        max-width: 60%;
+        box-sizing: border-box;
+        text-align: left;
+        color: #6699cc;
+        font-size: 15px;
+        font-weight: bold; }
+        #main .m-container .recruitment .recr-container .recr-container-sub .row-content-fill-2 .full-recruitment .recruitment-info .items1 a {
+          color: #6699cc; }
+      #main .m-container .recruitment .recr-container .recr-container-sub .row-content-fill-2 .full-recruitment .recruitment-info .items2 {
+        position: relative;
+        -ms-flex: 0 0 20%;
+        flex: 0 0 20%;
+        max-width: 20%;
+        box-sizing: border-box;
+        line-height: 60px;
+        text-align: left; }
+      #main .m-container .recruitment .recr-container .recr-container-sub .row-content-fill-2 .full-recruitment .recruitment-info .items3,
+      #main .m-container .recruitment .recr-container .recr-container-sub .row-content-fill-2 .full-recruitment .recruitment-info .items4 {
+        position: relative;
+        -ms-flex: 0 0 10%;
+        flex: 0 0 10%;
+        max-width: 10%;
+        box-sizing: border-box;
+        line-height: 60px;
+        text-align: left; }
+  #main .m-container .partner .part-container .part-container-sub .row-content-fill {
+    position: relative;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    background: white; }
+    #main .m-container .partner .part-container .part-container-sub .row-content-fill .supplier-top {
+      max-width: 100%;
+      margin: 0 auto;
+      box-sizing: border-box;
+      height: 260px;
+      padding-top: 40px;
+      margin-left: 35px;
+      background: url(https://image.yes24.vn/upload/Content/Images/AboutUs_06.jpg) no-repeat;
+      background-position: -4px 30px;
+      position: relative;
+      margin-right: 35px;
+      width: 100%; }
+      #main .m-container .partner .part-container .part-container-sub .row-content-fill .supplier-top .sup-text1 {
+        color: #6699cc;
+        position: absolute;
+        top: 66px;
+        left: 65px;
+        font-size: 26px;
+        line-height: 24px; }
+      #main .m-container .partner .part-container .part-container-sub .row-content-fill .supplier-top .sup-text2 {
+        color: #adad99;
+        position: absolute;
+        top: 100px;
+        left: 65px;
+        font-size: 15px;
+        line-height: 24px; }
+      #main .m-container .partner .part-container .part-container-sub .row-content-fill .supplier-top .sup-text3 {
+        position: absolute;
+        bottom: 25px;
+        font-size: 20px; }
+      #main .m-container .partner .part-container .part-container-sub .row-content-fill .supplier-top .sup-text4 {
+        color: #999999;
+        max-width: 100%;
+        margin: 0 auto;
+        box-sizing: border-box;
+        position: absolute;
+        left: 0px;
+        bottom: -40px;
+        line-height: 24px; }
+    #main .m-container .partner .part-container .part-container-sub .row-content-fill .supplier-middle {
+      max-width: 100%;
+      margin: 0 auto;
+      box-sizing: border-box;
+      height: 680px;
+      margin-left: 35px;
+      margin-right: 35px;
+      position: relative;
+      padding-top: 20px;
+      width: 100%; }
+      #main .m-container .partner .part-container .part-container-sub .row-content-fill .supplier-middle .inputs {
+        width: 530px;
+        height: 35px;
+        margin-top: 25px;
+        margin-left: auto;
+        margin-right: auto;
+        border-bottom: 1px solid #ebebeb; }
+        #main .m-container .partner .part-container .part-container-sub .row-content-fill .supplier-middle .inputs .inputstext {
+          width: 530px;
+          height: 30px;
+          border: none;
+          outline: none;
+          font-size: 17px; }
+        #main .m-container .partner .part-container .part-container-sub .row-content-fill .supplier-middle .inputs .selectCategory {
+          width: 530px;
+          height: 30px;
+          border: none;
+          font-size: 17px;
+          outline: none; }
+      #main .m-container .partner .part-container .part-container-sub .row-content-fill .supplier-middle .warning {
+        max-width: 100%;
+        margin: 0 auto;
+        box-sizing: border-box;
+        height: 10px;
+        margin-top: 5px;
+        margin-left: 198px;
+        margin-right: auto;
+        color: #999999;
+        font-size: 13px;
+        font-style: italic; }
+      #main .m-container .partner .part-container .part-container-sub .row-content-fill .supplier-middle .sup-button {
+        background-color: #d23e4c;
+        border: 1px solid #d23e4c;
+        color: #fff;
+        width: 165px;
+        height: 45px;
+        position: absolute;
+        bottom: 100px;
+        left: 198px;
+        cursor: pointer;
+        line-height: 45px;
+        text-align: center; }
+    #main .m-container .partner .part-container .part-container-sub .row-content-fill .supplier-bottom {
+      max-width: 100%;
+      margin: 0 auto;
+      box-sizing: border-box;
+      height: 490px;
+      margin-left: 35px;
+      clear: both;
+      background: url(https://image.yes24.vn/upload/Content/Images/AboutUs_07.jpg) no-repeat;
+      background-position: -2px 0px;
+      position: relative;
+      width: 100%; }
+      #main .m-container .partner .part-container .part-container-sub .row-content-fill .supplier-bottom .bottom-text1 {
+        position: absolute;
+        top: -30px;
+        font-size: 20px; }
+      #main .m-container .partner .part-container .part-container-sub .row-content-fill .supplier-bottom .bottom-text2 {
+        position: absolute;
+        bottom: 172px;
+        font-size: 20px; }
+      #main .m-container .partner .part-container .part-container-sub .row-content-fill .supplier-bottom .bottom-text3 {
+        color: #999999;
+        position: absolute;
+        left: 30px;
+        bottom: 101px; }
+      #main .m-container .partner .part-container .part-container-sub .row-content-fill .supplier-bottom .bottom-text4 {
+        color: #999999;
+        position: absolute;
+        left: 30px;
+        bottom: 71px; }
+      #main .m-container .partner .part-container .part-container-sub .row-content-fill .supplier-bottom .bottom-text5 {
+        color: #999999;
+        position: absolute;
+        left: 30px;
+        bottom: 39px; }
+      #main .m-container .partner .part-container .part-container-sub .row-content-fill .supplier-bottom .bottom-text6 {
+        color: #999999;
+        position: absolute;
+        left: 358px;
+        bottom: 101px; }
+      #main .m-container .partner .part-container .part-container-sub .row-content-fill .supplier-bottom .bottom-text7 {
+        color: #999999;
+        position: absolute;
+        left: 358px;
+        bottom: 71px; }
+      #main .m-container .partner .part-container .part-container-sub .row-content-fill .supplier-bottom .bottom-text8 {
+        color: #999999;
+        position: absolute;
+        left: 358px;
+        bottom: 39px; }
+      #main .m-container .partner .part-container .part-container-sub .row-content-fill .supplier-bottom .bottom-text9 {
+        color: #999999;
+        position: absolute;
+        left: 670px;
+        bottom: 101px; }
+      #main .m-container .partner .part-container .part-container-sub .row-content-fill .supplier-bottom .bottom-text10 {
+        color: #999999;
+        position: absolute;
+        left: 670px;
+        bottom: 71px; }
+      #main .m-container .partner .part-container .part-container-sub .row-content-fill .supplier-bottom .bottom-text11 {
+        color: #6699cc;
+        position: absolute;
+        left: 670px;
+        bottom: 39px;
+        font-weight: bold; }
 #main .mp-container {
   max-width: 100%;
   margin: 0 auto;
@@ -4867,6 +5430,39 @@ input, select {
     margin-top: 25px; }
     #main .m-container .mainBannerStart .mbnt-container .box-banner .row-title .th-title span {
       font-size: 15px; }
+  #main .m-container .about .ab-container .menu-left {
+    display: none; }
+  #main .m-container .about .ab-container .contents-right {
+    position: relative;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    box-sizing: border-box; }
+    #main .m-container .about .ab-container .contents-right .left {
+      display: none; }
+    #main .m-container .about .ab-container .contents-right .right {
+      position: relative;
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+      max-width: 100%;
+      box-sizing: border-box;
+      padding-left: 15px;
+      padding-right: 15px; }
+      #main .m-container .about .ab-container .contents-right .right .img {
+        position: relative;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+        box-sizing: border-box; }
+        #main .m-container .about .ab-container .contents-right .right .img img {
+          width: 100%; }
+      #main .m-container .about .ab-container .contents-right .right .text2 .right {
+        position: relative;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        padding-left: 0; }
   #main .mp-container .bannerSlidePromotion .bnsdpr-container .outer #thumbs {
     display: none; }
   #main .mp-container .bannerSlidePromotion .bnsdpr-container .sub-bannerSlide .col-left {
@@ -5022,6 +5618,64 @@ input, select {
     margin-top: 25px; }
     #main .m-container .mainBannerStart .mbnt-container .banner-right .row-img img {
       width: 100%; }
+  #main .m-container .event .evt-container .evt-container-sub .row-content-fill .event-items {
+    position: relative;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+    box-sizing: border-box;
+    margin-bottom: 25px; }
+  #main .m-container .recruitment .recr-container .recr-container-sub .row-content-fill-2 .full-recruitment .recruitment-titles .items1 {
+    position: relative;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    font-size: 20px; }
+  #main .m-container .recruitment .recr-container .recr-container-sub .row-content-fill-2 .full-recruitment .recruitment-titles .items2,
+  #main .m-container .recruitment .recr-container .recr-container-sub .row-content-fill-2 .full-recruitment .recruitment-titles .items3,
+  #main .m-container .recruitment .recr-container .recr-container-sub .row-content-fill-2 .full-recruitment .recruitment-titles .items4 {
+    display: none; }
+  #main .m-container .recruitment .recr-container .recr-container-sub .row-content-fill-2 .full-recruitment .recruitment-info {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    line-height: 1.9; }
+    #main .m-container .recruitment .recr-container .recr-container-sub .row-content-fill-2 .full-recruitment .recruitment-info .items1 {
+      position: relative;
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+      max-width: 100%;
+      box-sizing: border-box; }
+    #main .m-container .recruitment .recr-container .recr-container-sub .row-content-fill-2 .full-recruitment .recruitment-info .items2 {
+      position: relative;
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+      max-width: 100%;
+      box-sizing: border-box;
+      line-height: 1.9; }
+    #main .m-container .recruitment .recr-container .recr-container-sub .row-content-fill-2 .full-recruitment .recruitment-info .items3, #main .m-container .recruitment .recr-container .recr-container-sub .row-content-fill-2 .full-recruitment .recruitment-info .items4 {
+      display: none; }
+  #main .m-container .partner .part-container .part-container-sub .row-content-fill .supplier-top .sup-text4 {
+    bottom: -60px; }
+    #main .m-container .partner .part-container .part-container-sub .row-content-fill .supplier-top .sup-text4 br {
+      display: none; }
+  #main .m-container .partner .part-container .part-container-sub .row-content-fill .supplier-middle {
+    padding-top: 60px; }
+    #main .m-container .partner .part-container .part-container-sub .row-content-fill .supplier-middle .inputs {
+      width: 100%; }
+      #main .m-container .partner .part-container .part-container-sub .row-content-fill .supplier-middle .inputs .inputstext {
+        width: 100%; }
+      #main .m-container .partner .part-container .part-container-sub .row-content-fill .supplier-middle .inputs .selectCategory {
+        width: 100%; }
+    #main .m-container .partner .part-container .part-container-sub .row-content-fill .supplier-middle .warning {
+      margin-left: 0;
+      height: auto; }
+    #main .m-container .partner .part-container .part-container-sub .row-content-fill .supplier-middle .sup-button {
+      position: unset;
+      width: 100%;
+      margin-top: 15px; }
+  #main .m-container .partner .part-container .part-container-sub .row-content-fill .supplier-bottom {
+    display: none; }
   #main .mp-container .promotionMenuIcon .prmmicon-container .list-menuIcon li {
     position: relative;
     -ms-flex: 0 0 25%;
@@ -5339,6 +5993,28 @@ input, select {
     font-size: 22px; }
   #main .m-container .mainSuggestion .msstion-container .row-title > a {
     display: none; }
+  #main .m-container .about .ab-container .contents-right .right {
+    padding-bottom: 0; }
+    #main .m-container .about .ab-container .contents-right .right .title {
+      padding-top: 0; }
+    #main .m-container .about .ab-container .contents-right .right .text1 {
+      height: auto; }
+    #main .m-container .about .ab-container .contents-right .right .text2 {
+      height: auto; }
+      #main .m-container .about .ab-container .contents-right .right .text2 .right {
+        height: auto;
+        line-height: 25px; }
+      #main .m-container .about .ab-container .contents-right .right .text2 .right-long {
+        height: auto; }
+  #main .m-container .event .evt-container .evt-container-sub .row-content-fill .event-items {
+    position: relative;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 25px; }
+    #main .m-container .event .evt-container .evt-container-sub .row-content-fill .event-items img {
+      width: 100%; }
   #main .mp-container .promotionBox .prom-container .box-promo {
     position: relative;
     -ms-flex: 0 0 100%;

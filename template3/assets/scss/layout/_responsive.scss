@@ -752,6 +752,37 @@
                     }
                 }
             }
+
+            .about{
+                .ab-container{
+                    .menu-left{
+                        display: none;
+                    }
+                    .contents-right{
+                        @include col-12;
+                        .left{
+                            display: none;
+                        }
+                        .right{
+                            @include col-12;
+                            padding-left: 15px;
+                            padding-right: 15px;
+                            .img{
+                                @include col-12;
+                                img{
+                                    width: 100%;
+                                }
+                            }
+                            .text2{
+                                .right{
+                                    @include col-12;
+                                    padding-left: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
 
         .mp-container{
@@ -969,6 +1000,97 @@
                         .row-img{
                             img{
                                 width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .event{
+                .evt-container{
+                    .evt-container-sub{
+                        .row-content-fill{
+                            .event-items {
+                                @include col-6;
+                                margin-bottom: 25px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .recruitment{
+                .recr-container{
+                    .recr-container-sub{
+                        .row-content-fill-2{
+                            .full-recruitment{
+                                .recruitment-titles{
+                                    .items1 {
+                                        @include col-12;
+                                        font-size: 20px;
+                                    }
+                                    .items2,
+                                    .items3,
+                                    .items4{
+                                        display: none;
+                                    }
+                                }
+                                .recruitment-info{
+                                    margin-top: 15px;
+                                    margin-bottom: 15px;
+                                    line-height: 1.9;
+                                    .items1{
+                                        @include col-12;
+                                    }
+                                    .items2{
+                                        @include col-12;
+                                        line-height: 1.9;
+                                    }
+                                    .items3,.items4{
+                                        display: none;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .partner{
+                .part-container{
+                    .part-container-sub{
+                        .row-content-fill{
+                            .supplier-top{
+                                .sup-text4{
+                                    bottom: -60px;
+                                    br{
+                                        display: none;
+                                    }
+                                }
+                            }
+                            .supplier-middle{
+                                padding-top: 60px;
+                                .inputs {
+                                    width: 100%;
+                                    .inputstext{
+                                        width: 100%;
+                                    }
+                                    .selectCategory{
+                                        width: 100%;
+                                    }
+                                }
+                                .warning{
+                                    margin-left: 0;
+                                    height: auto;
+                                }
+                                .sup-button{
+                                    position: unset;
+                                    width: 100%;
+                                    margin-top: 15px;
+                                }
+                            }
+                            .supplier-bottom{
+                                display: none;
                             }
                         }
                     }
@@ -1467,6 +1589,49 @@
                         }
                         >a{
                             display: none;
+                        }
+                    }
+                }
+            }
+
+            .about{
+                .ab-container{
+                    .contents-right{
+                        .right{
+                            padding-bottom: 0;
+
+                            .title{
+                                padding-top: 0;
+                            }
+                            .text1 {
+                                height: auto;
+                            }
+                            .text2{
+                                height: auto;
+                                .right{
+                                    height: auto;
+                                    line-height: 25px;
+                                }
+                                .right-long{
+                                    height: auto;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .event{
+                .evt-container{
+                    .evt-container-sub{
+                        .row-content-fill{
+                            .event-items {
+                                @include col-12;
+                                margin-bottom: 25px;
+                                img{
+                                    width: 100%;
+                                }
+                            }
                         }
                     }
                 }

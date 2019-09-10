@@ -25,6 +25,12 @@
         @import "./layout/main/proview";
         @import "./layout/main/suggestion";
         @import "./layout/main/bannerStart";
+        @import "./layout/main/about";
+        @import "./layout/main/regulations";
+        @import "./layout/main/manage";
+        @import "./layout/main/event";
+        @import "./layout/main/recruitment";
+        @import "./layout/main/partner";
     }
     .mp-container{
         @include container-mw(100%);

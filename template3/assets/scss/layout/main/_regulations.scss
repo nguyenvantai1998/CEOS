@@ -1,0 +1,62 @@
+.regulations{
+    .reg-container{
+        .reg-container-sub{
+            .row-content-fill{
+                @include col-12;
+                background: white;
+
+                .rule-titles {
+                    @include container-mw(100%);
+                    line-height: 35px;
+                    border-bottom: 1px solid #e1e1e1;
+                    color: #669acc;
+                    font-weight: bold;
+                    margin-left: 30px;
+                    padding-top: 10px;
+                    margin-right: 30px;
+                }
+                .rule-contents {
+                    .rule-items {
+                        @include container-mw(100%);
+                        margin-left: 30px;
+                        margin-right: 30px;
+                        position: relative;
+                        padding-left: 40px;
+
+                        .numshow {
+                            width: 25px;
+                            height: 25px;
+                            color: #fff;
+                            text-align: center;
+                            border-radius: 50%;
+                            line-height: 25px;
+                            margin-left: 30px;
+                            background-color: #669acc;
+                            position: absolute;
+                            left: -30px;
+                            top: 3px;
+                            font-size: 14px;
+                        }
+                        .rule-text1 {
+                            @include container-mw(100%);
+                            line-height: 30px;
+                            font-size: 14px;
+                            font-weight: bold;
+                            text-transform: uppercase;
+                            color: #000;
+                            margin-top: 15px;
+                        }
+                        .rule-text2 {
+                            @include container-mw(100%);
+                            text-align: left;
+                            font-size: 13px;
+                            line-height: 25px;
+                            margin-bottom: 30px;
+                            color: #777777;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

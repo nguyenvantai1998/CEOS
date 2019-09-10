@@ -1,0 +1,25 @@
+.manage{
+    .man-container{
+        .contents-right{
+            .row-content-fill{
+                .rule-contents{
+                    .rule-items2 {
+                        @include container-mw(100%);
+                        margin-left: 30px;
+                        margin-right: 30px;
+                        position: relative;
+                        margin-top: 20px;
+                        .rule-text3 {
+                            @include container-mw(100%);
+                            text-align: left;
+                            font-size: 13px;
+                            line-height: 25px;
+                            margin-bottom: 30px;
+                            color: #777777;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
