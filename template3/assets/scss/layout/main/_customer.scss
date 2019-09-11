@@ -1,0 +1,103 @@
+.customer{
+    .custo-container{
+        .row-banner{
+            background-color: #dde2e6;
+            .box-img{
+                @include container-mw(1240px);
+                padding: 0 15px;
+                img{
+                    @include img-res;
+                }
+            }
+        }
+        .row-content{
+            @include container-mw(1240px);
+            padding: 10px;
+            .th-breadcrumb {
+                width: 100%;
+                line-height: 35px;
+                position: relative;
+                ul {
+                    width: 70%;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    display: inline-block;
+                    li {
+                        display: inline-block;
+                        white-space: nowrap;
+                        a {
+                            color: #8a8a8a;
+                            display: inline-block;
+                            white-space: nowrap;
+                            font-size: 13px;
+                            i{
+                                font-size: 9px;
+                                margin: 0 5px;
+                            }
+                        }
+                    }
+                }
+            }
+            .row-content{
+                border-top: 1px solid #f0f0f0;
+                padding: 30px 0;
+                @include row-fb;
+                .col-left{
+                    @include col-6;
+                }
+                .col-right{
+                    @include col-6;
+                }
+                .tr-group-cs {
+                    margin-bottom: 20px;
+                    span.tr-cs-newmember:before {
+                        width: 62px;
+                        height: 62px;
+                        -ms-background-position: 0 -10px;
+                        background-position: 0 1px;
+                        margin-right: 10px;
+                        content: "";
+                        background: url(https://file.yes24.vn/Content/desktop/images/bg-icon-ttkh.png) no-repeat;
+                        float: left;
+                    }
+                    .tr-img-cs-left.left {
+                        width: 72px;
+                        float: left;
+                    }
+                    .tr-content-cs-right.left {
+                        width: calc(100% - 72px);
+                        float: left;
+                    }
+                    .tr-title-cs>a.tr-for-mem-cs {
+                        font-weight: bold;
+                        font-size: 17px;
+                        color: #69c;
+                        padding: 20px 0 10px;
+                        text-transform: uppercase;
+                        display: block;
+                    }
+                    ul.tr-list-content-cs {
+                        width: 100%;
+                        float: left;
+                        li.tr-li-list-content {
+                            padding: 5px 0;
+                            i.fa.fa-circle {
+                                font-size: 9px;
+                                color: #69c;
+                                -moz-transform: translateY(-33%);
+                                -ms-transform: translateY(-33%);
+                                -webkit-transform: translateY(-33%);
+                                transform: translateY(-33%);
+                                margin-right: 5px;
+                            }
+                        }
+                        .tr-li-list-content>a {
+                            color: #777;
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+        }  
+    }
+}

@@ -246,4 +246,9 @@ $(document).ready(function () {
     $('#tab1 > a').removeClass('active');
   });
 
+  // event check box
+  $('#checkBox').click(function(){
+    $('#checkBox').toggleClass('active');
+  });
+  
 })

@@ -906,6 +906,23 @@
                 }
             }
 
+            .appliances{
+                .applian-container{
+                    .row-3{
+                        .tr-slider-brand-catesub {
+                            display: none;
+                        }
+                    }
+                    .row-4{
+                        .col-left-list{
+                            display: none;
+                        }
+                        .col-right-box{
+                            @include col-12;
+                        }
+                    }
+                }
+            }
         }
     }
 
@@ -1176,6 +1193,36 @@
                     }
                 }
             }
+
+            .appliances{
+                .applian-container{
+                    .row-2{
+                        .tr-3banner-master-cate{
+                            li {
+                                @include col-12;
+                                margin-bottom: 10px;
+                                padding-right: 0;
+                                img{
+                                    width: 100%;
+                                }
+                            }
+                        }
+                    }
+                    .row-4{
+                        .col-right-box{
+                            .row-1{
+                                display: none;
+                            }
+                            .row-2{
+                                .th-product-item {
+                                    @include col-6;
+                                    margin-bottom: 25px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 
@@ -1411,6 +1458,30 @@
                                         }
                                     }
                                 }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .appliances{
+                .applian-container{
+                    .row-4{
+                        .col-right-box{
+                            .row-1{
+                                display: none;
+                            }
+                            .row-2{
+                                .th-product-item {
+                                    @include col-12;
+                                    margin-bottom: 25px;
+                                    img{
+                                        width: 100%;
+                                    }
+                                }
+                            }
+                            .th-paging{
+                                display: none;
                             }
                         }
                     }
