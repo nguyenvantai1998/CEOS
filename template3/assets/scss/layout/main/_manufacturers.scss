@@ -1,0 +1,146 @@
+.manufacturers{
+    .manufactur-container{
+        @include container-mw(1240px);
+        padding: 0 15px;
+        .th-breadcrumb {
+            width: 100%;
+            height: 35px;
+            line-height: 35px;
+            position: relative;
+            ul {
+                width: 70%;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                display: inline-block;
+                li {
+                    display: inline-block;
+                    white-space: nowrap;
+                    a {
+                        color: #8a8a8a;
+                        display: inline-block;
+                        white-space: nowrap;
+                        font-size: 13px;
+                        i{
+                            font-size: 9px;
+                            margin: 0 5px;
+                        }
+                    }
+                }
+            }
+        }
+        .titles{
+            position: relative;
+            top: 0px;
+            z-index: 0; 
+            height: 40px;
+            line-height: 40px;
+            background-color: #eeeeee;
+            @include container-mw(1240px);
+            @include row-fb;
+            .left{
+                @include col-auto(70%);
+                padding-left: 10px;
+                #alpha-title{
+                    @include row-fb;
+                    li{
+                        flex: 1;
+                        width: 31px;
+                        text-align: center;
+                        cursor: pointer;
+                    }
+                }
+            }
+            .right{
+                @include col-auto(30%);
+                padding-left: 10px;
+                display: flex;
+                justify-content: flex-end;
+                padding-right: 15px;
+                .inputtext {
+                    width: 280px;
+                    height: 30px;
+                    position: relative;
+                    margin-top: 5px;
+                    background-color: #fff;
+                    .inputsearch {
+                        width: 220px;
+                        height: 25px;
+                        -ms-outline: none;
+                        outline: none;
+                        border: 1px solid #fff;
+                        position: absolute;
+                        top: 0px;
+                        padding-left: 15px;
+                    }
+                    .icon-search {
+                        position: absolute;
+                        top: 9%;
+                        font-size: 22px;
+                        right: 1%;
+                        width: 27px;
+                        height: 29px;
+                        -ms-background-position: 0 -362px;
+                        -o-background-position: 0 -362px;
+                        background-position: 0 -362px;
+                    }
+                    a.tr-bg-all:before {
+                        -ms-content: "";
+                        content: "";
+                        background: url(https://image.yes24.vn/upload/Content/desktop/images/icon/bg.png) no-repeat;
+                        float: left;
+                    }
+                    [class*="icon-"] {
+                        background-image: url(https://image.yes24.vn/upload/Content/desktop/images/icon/bg.png);
+                        -ms-background-size: 380px 700px;
+                        background-size: 380px 700px;
+                        -ms-background-repeat: no-repeat;
+                        background-repeat: no-repeat;
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+        .th-list-brand{
+            .alpha{
+                @include row-fb;
+                border-bottom: 1px solid #d7d7d7;
+                .left{
+                    @include col-auto(10%);
+                    .items {
+                        width: 50px;
+                        height: 50px;
+                        line-height: 50px;
+                        background-color: #6699cc;
+                        color: #fff;
+                        text-align: center;
+                        -ms-border-radius: 50px;
+                        -o-border-radius: 50px;
+                        border-radius: 50px;
+                        margin-top: 20px;
+                        margin-bottom: 20px;
+                        font-size: 25px;
+                    }
+                }
+                .right{
+                    @include col-auto(90%);
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                    @include row-fb;
+                    font-family: $ft-def;
+                    .items{
+                        @include col-3;
+                        line-height: 20px;
+                        font-size: 14px;
+                        a {
+                            color: #3e3e3e;
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+            .alpha:last-child{
+                border-bottom: none;
+            }
+        }
+    }
+}

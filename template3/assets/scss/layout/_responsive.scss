@@ -923,6 +923,249 @@
                     }
                 }
             }
+
+            .customer{
+                .custo-container{
+                    @include container-mw(100%);
+                    .row-content{
+                        line-height: 25px;
+                        .row-content{
+                            .col-left{
+                                @include col-12;
+                                margin-bottom: 50px;
+                                .tr-group-cs{
+                                    @include container-mw(100%);
+                                }
+                            }
+                            .col-right{
+                                @include col-12;
+                            }
+                            .tr-group-cs{
+                                .tr-img-cs-left.left {
+                                    @include col-3;
+                                }
+                                ul.tr-list-content-cs{
+                                    @include col-9;
+                                }
+                                a.left.tr-question{
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .manufacturers{
+                .manufactur-container{
+                    .titles{
+                        display: none;
+                    }
+                    .th-list-brand{
+                        .alpha{
+                            border-bottom: none;
+                            .left {
+                                @include col-12;
+                                .items{
+                                    @include container-mw(100%);
+                                    width: 100%;
+                                    height: auto;
+                                    line-height: 30px;
+                                }
+                            }
+                            .right{
+                                @include col-12;
+                                .items {
+                                    @include col-12;
+                                    border-bottom: 1px solid #d7d7d7;
+                                    padding: 5px 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .delivery {
+                .deliver-container{
+                    padding: 0;
+                    .tr-imgage-gn{
+                        > div{
+                            >h3{
+                                padding-top: 23px;
+                                font-size: 15px;
+                                font-weight: 300;
+                            }
+                            >h2{
+                                font-size: 22px;
+                                margin-top: 47px;
+                            }
+                            .giao-nhanh-info > h4 {
+                                display: none;
+                            }
+                            span.bg-yes24-light{
+                                display: none;
+                            }
+                            .giao-nhanh-info{
+                                > span.district-info{
+                                    display: none;
+                                }
+                            }
+                        }
+                        img{
+                            height: 111.38px;
+                            width: 100%;
+                        }
+                    }
+                    .tr-topseller-menu{
+                        .tr-link-catology-content-img{
+                            @include row-fb;
+                            a.active:after {
+                                display: none;
+                            }
+                            a{
+                                @include col-3;
+                                margin: 15px 0;
+                            }
+                        }
+                    }
+                }
+
+                .rowBoxAllShip {
+                    .rowBoxAll-container {
+                        > h4 {
+                            > select {
+                                display: none;
+                            }
+                        }
+                    }
+                    .rowBoxAll-Product{
+                        .rowBoxAllProduct-container{
+                            .th-product-item-wrap {
+                                @include col-4;
+                                margin-bottom: 25px;
+                            }
+                        }
+                    }
+                    .rowBoxAllSlide-Product{
+                        .rowBoxAllSlide-container{
+                            display: none;
+                        }
+                    }
+                }
+            }
+
+            .cartOrder{
+                .cartOr-container{
+                    @include container-mw(100%);
+                    padding: 0 15px;
+                    .cart-contents{
+                        .cart-logo {
+                            text-align: center;
+                            >a{
+                                img{
+                                    width: 150px;
+                                }
+                            }
+                        }
+                        .back-home{
+                            padding: 20px;
+                        }
+                        .cart-direct{
+                            .items02,
+                            .items03,
+                            .items04,
+                            .items05{
+                                display: none;
+                            }
+                            .items01{
+                                @include col-12;
+                            }
+                        }
+                        .cart-titles{
+                            display: none;
+                        }
+                        .BasketList{
+                            margin-top: 25px;
+                            @include row-fb;
+                            .item-delivery{
+                                @include col-3;
+                                padding: 0 15px;
+                                .col-left{
+                                    @include col-12;
+                                    .cart-products{
+                                        .items02,
+                                        .items03,
+                                        .items04,
+                                        .items05,
+                                        .items06{
+                                            @include col-12;
+                                            margin-bottom: 15px;
+                                            text-align: left;
+                                        }
+                                        .items02{
+                                            margin-top: 10px;
+                                            .images{
+                                                >a{
+                                                    img{
+                                                        width: 100%;
+                                                    }
+                                                }
+                                            }
+                                            .infos{
+                                                @include col-12;
+                                                margin-top: 10px;
+                                                margin-left: 0;
+                                            }
+                                        }
+                                        .items03{
+                                            p{
+                                                text-align: left;
+                                            }
+                                        }
+                                        .items05{
+                                            p{
+                                                text-align: left;
+                                            }
+                                        }
+                                        .items04{
+                                            .qty-change-left {
+                                                margin-left: 0;
+                                            }
+                                        }
+                                        .items06{
+                                            .btdelete {
+                                                margin: unset;
+                                            }
+                                        }
+                                    }
+                                }
+                                .cart-delivery-total{
+                                    @include col-12;
+                                    margin-top: 25px;
+                                }
+                            }
+                        }
+                        .BasketTotal{
+                            height: auto;
+                            padding-bottom: 0;
+                            .bktt-content{
+                                .cart-total {
+                                    @include col-12;
+                                    margin-bottom: 15px;
+                                }
+                                .cart-button{
+                                    @include col-12;
+                                    .btnorder{
+                                    @include container-mw(100%);
+                                    width: 100%;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 
@@ -1368,8 +1611,6 @@
                 }
             }
 
-
-
         }
 
         .mp-container{
@@ -1482,6 +1723,165 @@
                             }
                             .th-paging{
                                 display: none;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .delivery {
+                .deliver-container{
+                    padding: 0;
+                    .tr-topseller-menu{
+                        .tr-link-catology-content-img{
+                            @include row-fb;
+                            a.active:after {
+                                display: none;
+                            }
+                            a{
+                                @include col-3;
+                                margin: 15px 0;
+                            }
+                        }
+                    }
+                }
+
+                .rowBoxAllShip {
+                    .rowBoxAll-container {
+                        > h4 {
+                            > select {
+                                display: none;
+                            }
+                        }
+                    }
+                    .rowBoxAll-Product{
+                        .rowBoxAllProduct-container{
+                            .th-product-item-wrap {
+                                @include col-6;
+                                margin-bottom: 25px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .cartOrder{
+                .cartOr-container{
+                    @include container-mw(100%);
+                    padding: 0 15px;
+                    .cart-contents{
+                        .cart-logo {
+                            text-align: center;
+                            >a{
+                                img{
+                                    width: 150px;
+                                }
+                            }
+                        }
+                        .back-home{
+                            padding: 20px;
+                        }
+                        .cart-direct{
+                            .items02,
+                            .items03,
+                            .items04,
+                            .items05{
+                                display: none;
+                            }
+                            .items01{
+                                @include col-12;
+                            }
+                        }
+                        .cart-titles{
+                            display: none;
+                        }
+                        .BasketList{
+                            margin-top: 25px;
+                            @include row-fb;
+                            .item-delivery{
+                                @include col-6;
+                                padding: 0 15px;
+                                .col-left{
+                                    @include col-12;
+                                    .cart-products{
+                                        .items02,
+                                        .items03,
+                                        .items04,
+                                        .items05,
+                                        .items06{
+                                            @include col-12;
+                                            margin-bottom: 15px;
+                                            text-align: left;
+                                        }
+                                        .items02{
+                                            margin-top: 10px;
+                                            .images{
+                                                >a{
+                                                    img{
+                                                        width: 100%;
+                                                    }
+                                                }
+                                            }
+                                            .infos{
+                                                @include col-12;
+                                                margin-top: 10px;
+                                                margin-left: 0;
+                                            }
+                                        }
+                                        .items03{
+                                            p{
+                                                text-align: left;
+                                            }
+                                        }
+                                        .items05{
+                                            p{
+                                                text-align: left;
+                                            }
+                                        }
+                                        .items04{
+                                            .qty-change-left {
+                                                margin-left: 0;
+                                            }
+                                        }
+                                        .items06{
+                                            .btdelete {
+                                                margin: unset;
+                                            }
+                                        }
+                                    }
+                                }
+                                .cart-delivery-total{
+                                    @include col-12;
+                                    margin-top: 25px;
+                                }
+                            }
+                        }
+                        .BasketTotal{
+                            height: auto;
+                            padding-bottom: 0;
+                            .bktt-content{
+                                .cart-total {
+                                    @include col-12;
+                                    margin-bottom: 15px;
+                                    .delete-all{
+                                        @include col-12;
+                                    }
+                                    .total-title{
+                                        @include col-6;
+                                        text-align: left;
+                                        padding-left: 25px;
+                                    }
+                                    .total-prices{
+                                        @include col-6;
+                                    }
+                                }
+                                .cart-button{
+                                    @include col-12;
+                                    .btnorder{
+                                    @include container-mw(100%);
+                                    width: 100%;
+                                    }
+                                }
                             }
                         }
                     }
@@ -1788,6 +2188,197 @@
                                     }
                                     .tr-col-prd-info-right{
                                         padding-left: 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .customer{
+                .custo-container{
+                    @include container-mw(100%);
+                    .row-content{
+                        .row-content{
+                            .col-left{
+                                @include col-12;
+                                margin-bottom: 10px !important;
+                                .tr-group-cs{
+                                    @include container-mw(100%);
+                                }
+                            }
+                            .col-right{
+                                @include col-12;
+                            }
+                            .tr-group-cs{
+                                .tr-img-cs-left.left {
+                                    @include col-12;
+                                }
+                                ul.tr-list-content-cs{
+                                    @include col-12;
+                                }
+                                a.left.tr-question{
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .delivery {
+                .deliver-container{
+                    padding: 0;
+                    .tr-topseller-menu{
+                        .tr-link-catology-content-img{
+                            @include row-fb;
+                            a.active:after {
+                                display: none;
+                            }
+                            a{
+                                @include col-4;
+                                margin: 15px 0;
+                            }
+                        }
+                    }
+                }
+
+                .rowBoxAllShip {
+                    .rowBoxAll-container {
+                        > h4 {
+                            > select {
+                                display: none;
+                            }
+                        }
+                    }
+                    .rowBoxAll-Product{
+                        .rowBoxAllProduct-container{
+                            .th-product-item-wrap {
+                                @include col-12;
+                                margin-bottom: 25px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .cartOrder{
+                .cartOr-container{
+                    @include container-mw(100%);
+                    padding: 0 15px;
+                    .cart-contents{
+                        .cart-logo {
+                            text-align: center;
+                            >a{
+                                img{
+                                    width: 150px;
+                                }
+                            }
+                        }
+                        .back-home{
+                            padding: 20px;
+                        }
+                        .cart-direct{
+                            .items02,
+                            .items03,
+                            .items04,
+                            .items05{
+                                display: none;
+                            }
+                            .items01{
+                                @include col-12;
+                            }
+                        }
+                        .cart-titles{
+                            display: none;
+                        }
+                        .BasketList{
+                            margin-top: 25px;
+                            @include row-fb;
+                            .item-delivery{
+                                @include col-12;
+                                padding: 0 15px;
+                                margin-bottom: 25px;
+                                .col-left{
+                                    @include col-12;
+                                    .cart-products{
+                                        .items02,
+                                        .items03,
+                                        .items04,
+                                        .items05,
+                                        .items06{
+                                            @include col-12;
+                                            margin-bottom: 15px;
+                                            text-align: left;
+                                        }
+                                        .items02{
+                                            margin-top: 10px;
+                                            .images{
+                                                >a{
+                                                    img{
+                                                        width: 100%;
+                                                    }
+                                                }
+                                            }
+                                            .infos{
+                                                @include col-12;
+                                                margin-top: 10px;
+                                                margin-left: 0;
+                                            }
+                                        }
+                                        .items03{
+                                            p{
+                                                text-align: left;
+                                            }
+                                        }
+                                        .items05{
+                                            p{
+                                                text-align: left;
+                                            }
+                                        }
+                                        .items04{
+                                            .qty-change-left {
+                                                margin-left: 0;
+                                            }
+                                        }
+                                        .items06{
+                                            .btdelete {
+                                                margin: unset;
+                                            }
+                                        }
+                                    }
+                                }
+                                .cart-delivery-total{
+                                    @include col-12;
+                                    margin-top: 25px;
+                                }
+                            }
+                        }
+                        .BasketTotal{
+                            height: auto;
+                            padding-bottom: 0;
+                            .bktt-content{
+                                .cart-total {
+                                    @include col-12;
+                                    margin-bottom: 15px;
+                                    .delete-all{
+                                        @include col-12;
+                                    }
+                                    .total-title{
+                                        @include col-6;
+                                        text-align: left;
+                                        padding-left: 25px;
+                                    }
+                                    .total-prices{
+                                        @include col-6;
+                                    }
+                                }
+                                .cart-button{
+                                    @include col-12;
+                                    .btnorder{
+                                    @include container-mw(100%);
+                                    width: 100%;
                                     }
                                 }
                             }

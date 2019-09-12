@@ -44,6 +44,9 @@
         @import "./layout/main/topSelling";
         @import "./layout/main/appliances";
         @import "./layout/main/customer";
+        @import "./layout/main/manufacturers";
+        @import "./layout/main/delivery";
+        @import "./layout/main/cart";
         .bg-detail{
             background-color: #ededed;
             @include container-mw(100%);
