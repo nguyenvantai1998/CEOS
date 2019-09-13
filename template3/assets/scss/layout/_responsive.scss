@@ -1166,6 +1166,39 @@
                     }
                 }
             }
+
+            .todaySalePage{
+                .tdsp-container{
+                    .todaysale-slide{
+                        .owl-theme{
+                            .item{
+                                .hot-left{
+                                    @include col-12;
+                                    justify-content: center;
+                                }
+                                .hot-right{
+                                    @include col-12;
+                                }
+                            }
+                        }
+                    }
+                    .todaysale-boxProduct{
+                        .todas-boxpr-container {
+                            @include container-mw(100%);
+                            padding: 0 15px;
+                            padding-top: 15px;
+                            padding-bottom: 15px;
+                        }
+                    }
+                    .row-boxProslide{
+                        .ca-list{
+                            .box {
+                                @include col-12;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 
@@ -1880,6 +1913,37 @@
                                     .btnorder{
                                     @include container-mw(100%);
                                     width: 100%;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .todaySalePage{
+                .tdsp-container{
+                    .todaysale-top{
+                        .wrapper{
+                            .top-right {
+                                display: none;
+                            }
+                            .top-left{
+                                @include col-12;
+                            }
+                        }
+                    }
+                    .row-boxProslide {
+                        .ca-list{
+                            .box{
+                                .owl-theme{
+                                    .item{
+                                        .hot-left {
+                                            @include col-12;
+                                        }
+                                        .hot-right{
+                                            @include col-12;
+                                        }
                                     }
                                 }
                             }

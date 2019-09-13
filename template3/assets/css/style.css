@@ -4711,6 +4711,451 @@ input, select {
               color: #fff;
               text-transform: uppercase;
               cursor: pointer; }
+  #main .mp-container .todaySalePage .tdsp-container .todaysale-top {
+    background: #d3354b;
+    height: 100px;
+    font-family: "Roboto", sans-serif; }
+    #main .mp-container .todaySalePage .tdsp-container .todaysale-top .wrapper {
+      max-width: 1240px;
+      margin: 0 auto;
+      box-sizing: border-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      box-sizing: border-box;
+      padding: 0 15px; }
+      #main .mp-container .todaySalePage .tdsp-container .todaysale-top .wrapper .top-left {
+        position: relative;
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+        box-sizing: border-box; }
+        #main .mp-container .todaySalePage .tdsp-container .todaysale-top .wrapper .top-left img {
+          vertical-align: middle;
+          max-width: 100%;
+          height: auto;
+          margin: 20px 15px 0 0; }
+      #main .mp-container .todaySalePage .tdsp-container .todaysale-top .wrapper .top-right {
+        position: relative;
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+        box-sizing: border-box;
+        color: #fff;
+        display: flex;
+        height: auto;
+        -ms-align-items: center;
+        -o-align-items: center;
+        -webkit-align-items: center;
+        align-items: center;
+        justify-content: flex-end;
+        padding-right: 40px;
+        padding-top: 25px; }
+        #main .mp-container .todaySalePage .tdsp-container .todaysale-top .wrapper .top-right .day {
+          font-weight: bold;
+          margin-right: 15px;
+          font-size: 18px;
+          text-transform: uppercase; }
+        #main .mp-container .todaySalePage .tdsp-container .todaysale-top .wrapper .top-right .countdown span {
+          background: #000;
+          font-size: 37px;
+          border-radius: 5px;
+          margin-right: 10px;
+          position: relative; }
+          #main .mp-container .todaySalePage .tdsp-container .todaysale-top .wrapper .top-right .countdown span::after {
+            content: ':';
+            position: absolute;
+            right: -10px; }
+          #main .mp-container .todaySalePage .tdsp-container .todaysale-top .wrapper .top-right .countdown span:last-child::after {
+            display: none; }
+  #main .mp-container .todaySalePage .tdsp-container .todaysale-slide {
+    max-width: 1240px;
+    margin: 0 auto;
+    box-sizing: border-box; }
+    #main .mp-container .todaySalePage .tdsp-container .todaysale-slide .owl-theme .owl-dots button {
+      background: none;
+      border: none;
+      outline: none;
+      padding: 0; }
+    #main .mp-container .todaySalePage .tdsp-container .todaysale-slide .owl-theme .owl-dots .owl-dot.active span {
+      background-color: #ce283f; }
+    #main .mp-container .todaySalePage .tdsp-container .todaysale-slide .owl-theme .owl-nav button {
+      position: absolute;
+      top: 50%;
+      background: none;
+      outline: none;
+      border: none;
+      color: #D6D6D6;
+      font-size: 50px; }
+    #main .mp-container .todaySalePage .tdsp-container .todaysale-slide .owl-theme .owl-nav .owl-prev {
+      left: 0; }
+    #main .mp-container .todaySalePage .tdsp-container .todaysale-slide .owl-theme .owl-nav .owl-next {
+      right: 0; }
+    #main .mp-container .todaySalePage .tdsp-container .todaysale-slide .owl-theme .item {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      box-sizing: border-box; }
+      #main .mp-container .todaySalePage .tdsp-container .todaysale-slide .owl-theme .item .hot-left {
+        position: relative;
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+        box-sizing: border-box;
+        text-align: right;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        justify-content: flex-end; }
+        #main .mp-container .todaySalePage .tdsp-container .todaysale-slide .owl-theme .item .hot-left a {
+          text-align: right; }
+          #main .mp-container .todaySalePage .tdsp-container .todaysale-slide .owl-theme .item .hot-left a img {
+            vertical-align: middle;
+            max-width: 100%;
+            height: auto;
+            width: 400px; }
+      #main .mp-container .todaySalePage .tdsp-container .todaysale-slide .owl-theme .item .hot-right {
+        position: relative;
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+        box-sizing: border-box;
+        padding-top: 85px;
+        padding-left: 60px; }
+        #main .mp-container .todaySalePage .tdsp-container .todaysale-slide .owl-theme .item .hot-right b {
+          font-size: 24px;
+          font-weight: bold;
+          margin-bottom: 10px;
+          color: #333; }
+        #main .mp-container .todaySalePage .tdsp-container .todaysale-slide .owl-theme .item .hot-right .pro-name {
+          width: 80%; }
+          #main .mp-container .todaySalePage .tdsp-container .todaysale-slide .owl-theme .item .hot-right .pro-name a {
+            font-size: 20px;
+            color: #333;
+            font-weight: normal;
+            height: 54px;
+            overflow: hidden;
+            line-height: 1.3; }
+        #main .mp-container .todaySalePage .tdsp-container .todaysale-slide .owl-theme .item .hot-right .main-price {
+          display: inline-block;
+          width: 100%;
+          margin-top: -1px;
+          margin-bottom: 20px; }
+          #main .mp-container .todaySalePage .tdsp-container .todaysale-slide .owl-theme .item .hot-right .main-price li:nth-child(1) {
+            width: 20%;
+            float: left; }
+          #main .mp-container .todaySalePage .tdsp-container .todaysale-slide .owl-theme .item .hot-right .main-price .icon-downlrg {
+            -ms-background-position: -1px -526px;
+            background-position: -1px -526px;
+            width: 67px;
+            height: 83px;
+            display: inline-block;
+            -ms-background-size: initial;
+            background-size: initial;
+            background-image: url(https://image.yes24.vn/upload/Content/desktop/images/icon/bg.png);
+            background-repeat: no-repeat; }
+          #main .mp-container .todaySalePage .tdsp-container .todaysale-slide .owl-theme .item .hot-right .main-price .percent {
+            color: #fff;
+            font-size: 24px;
+            font-weight: bold;
+            margin: 30px 0 0 0;
+            display: block;
+            text-align: center; }
+            #main .mp-container .todaySalePage .tdsp-container .todaysale-slide .owl-theme .item .hot-right .main-price .percent sup {
+              font-size: 14px; }
+          #main .mp-container .todaySalePage .tdsp-container .todaysale-slide .owl-theme .item .hot-right .main-price .price {
+            color: #999;
+            font-size: 22px;
+            display: block;
+            margin-top: 10px;
+            text-decoration: line-through; }
+          #main .mp-container .todaySalePage .tdsp-container .todaysale-slide .owl-theme .item .hot-right .main-price .discount {
+            color: #d23448;
+            font-size: 36px;
+            font-weight: bold; }
+        #main .mp-container .todaySalePage .tdsp-container .todaysale-slide .owl-theme .item .hot-right .order {
+          background: #6699cc;
+          font-size: 22px;
+          color: #fff;
+          height: 55px;
+          display: inline-flex;
+          -ms-align-items: center;
+          -o-align-items: center;
+          -webkit-align-items: center;
+          align-items: center;
+          padding: 0 20px; }
+          #main .mp-container .todaySalePage .tdsp-container .todaysale-slide .owl-theme .item .hot-right .order .icon-cart {
+            -ms-background-position: -145px -582px;
+            background-position: -145px -582px;
+            width: 34px;
+            height: 29px;
+            display: inline-block;
+            -ms-background-size: initial;
+            background-size: initial;
+            background-image: url(https://image.yes24.vn/upload/Content/desktop/images/icon/bg.png);
+            background-repeat: no-repeat; }
+          #main .mp-container .todaySalePage .tdsp-container .todaysale-slide .owl-theme .item .hot-right .order span {
+            margin-left: 15px; }
+  #main .mp-container .todaySalePage .tdsp-container .todaysale-boxProduct {
+    max-width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    background-color: #ededed;
+    margin-bottom: 30px; }
+    #main .mp-container .todaySalePage .tdsp-container .todaysale-boxProduct .todas-boxpr-container {
+      max-width: 1240px;
+      margin: 0 auto;
+      box-sizing: border-box;
+      padding: 4px 0; }
+      #main .mp-container .todaySalePage .tdsp-container .todaysale-boxProduct .todas-boxpr-container .ca-title {
+        margin: 10px 0;
+        font-size: 20px;
+        font-weight: bold;
+        color: #333;
+        text-transform: uppercase; }
+        #main .mp-container .todaySalePage .tdsp-container .todaysale-boxProduct .todas-boxpr-container .ca-title span {
+          color: #676767;
+          font-size: 14px;
+          font-weight: 300;
+          margin-left: 5px;
+          text-transform: none; }
+        #main .mp-container .todaySalePage .tdsp-container .todaysale-boxProduct .todas-boxpr-container .ca-title .icon-calendar {
+          -ms-background-position: -98px -666px;
+          background-position: -98px -666px;
+          width: 22px;
+          height: 20px;
+          display: inline-block;
+          margin-right: 10px;
+          -ms-background-size: initial;
+          background-size: initial;
+          background-image: url(https://image.yes24.vn/upload/Content/desktop/images/icon/bg.png);
+          background-repeat: no-repeat; }
+  #main .mp-container .todaySalePage .tdsp-container .row-boxProslide {
+    max-width: 1240px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 0 15px; }
+    #main .mp-container .todaySalePage .tdsp-container .row-boxProslide .ca-list {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      box-sizing: border-box; }
+      #main .mp-container .todaySalePage .tdsp-container .row-boxProslide .ca-list .box {
+        position: relative;
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+        box-sizing: border-box;
+        border-right: 1px solid #ededed;
+        margin-bottom: 25px; }
+        #main .mp-container .todaySalePage .tdsp-container .row-boxProslide .ca-list .box .day {
+          display: inline-block;
+          padding: 5px 12px 6px;
+          background: #999;
+          color: #fff;
+          font-size: 18px;
+          text-transform: uppercase;
+          position: relative; }
+          #main .mp-container .todaySalePage .tdsp-container .row-boxProslide .ca-list .box .day::after {
+            -ms-content: "";
+            content: "";
+            border-left: 0 solid transparent;
+            border-right: 17px solid transparent;
+            position: absolute;
+            top: 0;
+            right: -17px;
+            border-bottom: 38px solid #999; }
+        #main .mp-container .todaySalePage .tdsp-container .row-boxProslide .ca-list .box .owl-theme {
+          background: white; }
+          #main .mp-container .todaySalePage .tdsp-container .row-boxProslide .ca-list .box .owl-theme .owl-dots {
+            display: none; }
+          #main .mp-container .todaySalePage .tdsp-container .row-boxProslide .ca-list .box .owl-theme .owl-nav button {
+            background: none;
+            outline: none;
+            border: none;
+            color: #D6D6D6;
+            position: absolute;
+            top: 40%;
+            font-size: 40px; }
+          #main .mp-container .todaySalePage .tdsp-container .row-boxProslide .ca-list .box .owl-theme .owl-nav .owl-prev {
+            left: 0; }
+          #main .mp-container .todaySalePage .tdsp-container .row-boxProslide .ca-list .box .owl-theme .owl-nav .owl-next {
+            right: 0; }
+          #main .mp-container .todaySalePage .tdsp-container .row-boxProslide .ca-list .box .owl-theme .item {
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            box-sizing: border-box;
+            padding: 0 25px; }
+            #main .mp-container .todaySalePage .tdsp-container .row-boxProslide .ca-list .box .owl-theme .item .hot-left {
+              position: relative;
+              -ms-flex: 0 0 50%;
+              flex: 0 0 50%;
+              max-width: 50%;
+              box-sizing: border-box; }
+              #main .mp-container .todaySalePage .tdsp-container .row-boxProslide .ca-list .box .owl-theme .item .hot-left a img {
+                vertical-align: middle;
+                max-width: 100%;
+                height: auto;
+                width: 250px;
+                height: 250px; }
+            #main .mp-container .todaySalePage .tdsp-container .row-boxProslide .ca-list .box .owl-theme .item .hot-right {
+              position: relative;
+              -ms-flex: 0 0 50%;
+              flex: 0 0 50%;
+              max-width: 50%;
+              box-sizing: border-box;
+              margin-top: 40px;
+              color: #3e3e3e; }
+              #main .mp-container .todaySalePage .tdsp-container .row-boxProslide .ca-list .box .owl-theme .item .hot-right b {
+                font-weight: bold;
+                text-transform: capitalize; }
+              #main .mp-container .todaySalePage .tdsp-container .row-boxProslide .ca-list .box .owl-theme .item .hot-right .pro-name {
+                font-size: 14px;
+                color: #333;
+                width: 80%;
+                line-height: 20px;
+                font-weight: normal;
+                height: 40px;
+                overflow: hidden; }
+              #main .mp-container .todaySalePage .tdsp-container .row-boxProslide .ca-list .box .owl-theme .item .hot-right .line {
+                border-bottom: 1px solid #555;
+                width: 100%;
+                line-height: 15px; }
+              #main .mp-container .todaySalePage .tdsp-container .row-boxProslide .ca-list .box .owl-theme .item .hot-right .main-price {
+                display: inline-block;
+                width: 100%;
+                margin-top: -1px;
+                margin-bottom: 20px;
+                display: -ms-flexbox;
+                display: flex;
+                -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+                box-sizing: border-box; }
+                #main .mp-container .todaySalePage .tdsp-container .row-boxProslide .ca-list .box .owl-theme .item .hot-right .main-price li:nth-child(1) {
+                  width: 30%;
+                  float: left; }
+                #main .mp-container .todaySalePage .tdsp-container .row-boxProslide .ca-list .box .owl-theme .item .hot-right .main-price li:nth-child(2) {
+                  width: 68%; }
+                  #main .mp-container .todaySalePage .tdsp-container .row-boxProslide .ca-list .box .owl-theme .item .hot-right .main-price li:nth-child(2) .price {
+                    color: #999;
+                    font-size: 18px;
+                    display: block;
+                    margin-top: 10px;
+                    text-decoration: line-through; }
+                  #main .mp-container .todaySalePage .tdsp-container .row-boxProslide .ca-list .box .owl-theme .item .hot-right .main-price li:nth-child(2) .discount {
+                    color: #d23448;
+                    font-size: 30px;
+                    font-weight: bold;
+                    margin-top: 5px; }
+                #main .mp-container .todaySalePage .tdsp-container .row-boxProslide .ca-list .box .owl-theme .item .hot-right .main-price .icon-down {
+                  -ms-background-position: -80px -527px;
+                  background-position: -80px -527px;
+                  width: 56px;
+                  height: 69px;
+                  display: inline-block;
+                  -ms-background-size: initial;
+                  background-size: initial;
+                  background-image: url(https://image.yes24.vn/upload/Content/desktop/images/icon/bg.png);
+                  background-repeat: no-repeat; }
+                  #main .mp-container .todaySalePage .tdsp-container .row-boxProslide .ca-list .box .owl-theme .item .hot-right .main-price .icon-down .percent {
+                    color: #fff;
+                    font-size: 20px;
+                    font-weight: bold;
+                    margin: 24px 0 0 0;
+                    display: block;
+                    text-align: center; }
+                    #main .mp-container .todaySalePage .tdsp-container .row-boxProslide .ca-list .box .owl-theme .item .hot-right .main-price .icon-down .percent > sup {
+                      font-size: 13px; }
+                    #main .mp-container .todaySalePage .tdsp-container .row-boxProslide .ca-list .box .owl-theme .item .hot-right .main-price .icon-down .percent > span {
+                      font-size: 11px; }
+      #main .mp-container .todaySalePage .tdsp-container .row-boxProslide .ca-list .box-right {
+        border-right: 0; }
+      #main .mp-container .todaySalePage .tdsp-container .row-boxProslide .ca-list .box-right-fix-date {
+        background: #e3e3e3;
+        margin-top: 28px;
+        height: 250px; }
+        #main .mp-container .todaySalePage .tdsp-container .row-boxProslide .ca-list .box-right-fix-date .sms-title {
+          width: 100%;
+          text-align: center;
+          color: #333;
+          font-size: 24px;
+          font-weight: bold;
+          margin: 25px 0 0;
+          text-transform: uppercase;
+          display: inline-flex;
+          -o-justify-content: center;
+          -webkit-justify-content: center;
+          justify-content: center;
+          -ms-align-items: center;
+          -o-align-items: center;
+          -webkit-align-items: center;
+          align-items: center; }
+          #main .mp-container .todaySalePage .tdsp-container .row-boxProslide .ca-list .box-right-fix-date .sms-title .icon-sms {
+            -ms-background-position: -160px -368px;
+            background-position: -160px -368px;
+            width: 26px;
+            height: 26px;
+            display: inline-block;
+            margin-right: 10px;
+            -ms-background-size: initial;
+            background-size: initial;
+            background-image: url(https://image.yes24.vn/upload/Content/desktop/images/icon/bg.png);
+            background-repeat: no-repeat; }
+        #main .mp-container .todaySalePage .tdsp-container .row-boxProslide .ca-list .box-right-fix-date .sms-title2 {
+          color: #777;
+          font-size: 14px;
+          text-align: center;
+          margin-bottom: 15px; }
+        #main .mp-container .todaySalePage .tdsp-container .row-boxProslide .ca-list .box-right-fix-date .check-list {
+          width: 95%;
+          display: inline-block;
+          margin-left: 18px; }
+          #main .mp-container .todaySalePage .tdsp-container .row-boxProslide .ca-list .box-right-fix-date .check-list li {
+            float: left;
+            width: 14%;
+            display: inline-block;
+            height: 75px;
+            background: #fff;
+            text-align: center;
+            padding-top: 20px; }
+            #main .mp-container .todaySalePage .tdsp-container .row-boxProslide .ca-list .box-right-fix-date .check-list li .cir {
+              background: #e1e1e1;
+              padding: 7px 16px;
+              -ms-border-radius: 25px;
+              border-radius: 25px;
+              cursor: pointer; }
+            #main .mp-container .todaySalePage .tdsp-container .row-boxProslide .ca-list .box-right-fix-date .check-list li .t-day {
+              display: block;
+              margin-top: 20px;
+              color: #676767;
+              font-size: 14px; }
+        #main .mp-container .todaySalePage .tdsp-container .row-boxProslide .ca-list .box-right-fix-date .sms-title3 {
+          color: #999999;
+          font-size: 13px;
+          display: inline-block;
+          margin: 15px 10px 0 17px; }
+        #main .mp-container .todaySalePage .tdsp-container .row-boxProslide .ca-list .box-right-fix-date .sms-btn {
+          font-size: 18px;
+          font-weight: bold;
+          color: #fff;
+          background: #d4354b;
+          border: 0;
+          padding: 5px 17px;
+          margin-top: 17px;
+          display: inline-block;
+          float: right;
+          margin-right: 25px;
+          text-transform: uppercase;
+          cursor: pointer;
+          -ms-outline: none;
+          outline: none; }
   #main .mp-container .bg-detail {
     background-color: #ededed;
     max-width: 100%;
@@ -7498,6 +7943,32 @@ input, select {
           margin: 0 auto;
           box-sizing: border-box;
           width: 100%; }
+  #main .mp-container .todaySalePage .tdsp-container .todaysale-slide .owl-theme .item .hot-left {
+    position: relative;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    justify-content: center; }
+  #main .mp-container .todaySalePage .tdsp-container .todaysale-slide .owl-theme .item .hot-right {
+    position: relative;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    box-sizing: border-box; }
+  #main .mp-container .todaySalePage .tdsp-container .todaysale-boxProduct .todas-boxpr-container {
+    max-width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 0 15px;
+    padding-top: 15px;
+    padding-bottom: 15px; }
+  #main .mp-container .todaySalePage .tdsp-container .row-boxProslide .ca-list .box {
+    position: relative;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    box-sizing: border-box; }
 
   #footer .ft-container .row-1 .row1-container {
     max-width: 100%;
@@ -8035,6 +8506,26 @@ input, select {
           margin: 0 auto;
           box-sizing: border-box;
           width: 100%; }
+  #main .mp-container .todaySalePage .tdsp-container .todaysale-top .wrapper .top-right {
+    display: none; }
+  #main .mp-container .todaySalePage .tdsp-container .todaysale-top .wrapper .top-left {
+    position: relative;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    box-sizing: border-box; }
+  #main .mp-container .todaySalePage .tdsp-container .row-boxProslide .ca-list .box .owl-theme .item .hot-left {
+    position: relative;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    box-sizing: border-box; }
+  #main .mp-container .todaySalePage .tdsp-container .row-boxProslide .ca-list .box .owl-theme .item .hot-right {
+    position: relative;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    box-sizing: border-box; }
 
   #footer .ft-container .row-4 .row4-container .row-nav .rownav-container ul li {
     margin-bottom: 10px; } }

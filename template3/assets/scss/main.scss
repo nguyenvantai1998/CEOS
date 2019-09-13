@@ -47,6 +47,7 @@
         @import "./layout/main/manufacturers";
         @import "./layout/main/delivery";
         @import "./layout/main/cart";
+        @import "./layout/main/today-sale";
         .bg-detail{
             background-color: #ededed;
             @include container-mw(100%);
