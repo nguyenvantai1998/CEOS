@@ -445,6 +445,20 @@
                                 color: #676767;
                                 font-size: 14px;
                             }
+                            .act {
+                                background: #669acc;
+                                padding: 8px 7px;
+                                .icon-check {
+                                    -ms-background-position: -166px -343px;
+                                    background-position: -166px -343px;
+                                    width: 19px;
+                                    height: 12px;
+                                    display: inline-block;
+                                    background-image: url(https://image.yes24.vn/upload/Content/desktop/images/icon/bg.png);
+                                    background-repeat: no-repeat;
+                                    background-size: 382px 690px;
+                                }
+                            }
                         }
                     }
                     .sms-title3 {

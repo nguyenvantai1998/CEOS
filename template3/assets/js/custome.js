@@ -247,8 +247,57 @@ $(document).ready(function () {
   });
 
   // event check box
-  $('#checkBox').click(function(){
+  $('#checkBox').click(function () {
     $('#checkBox').toggleClass('active');
   });
-  
+
+  //click add, sub number input cart
+  $('.add').click(function () {
+    if ($(this).prev().val() < 5) {
+      $(this).prev().val(+$(this).prev().val() + 1);
+    }
+  });
+  $('.sub').click(function () {
+    if ($(this).next().val() > 1) {
+      if ($(this).next().val() > 1) $(this).next().val(+$(this).next().val() - 1);
+    }
+  });
+
+  // check cms today sale
+  $('#checkTodaySale .t2').click(function () {
+    $('#checkTodaySale .t2 .cir').toggleClass('act');
+  });
+  $('#checkTodaySale .t3').click(function () {
+    $('#checkTodaySale .t3 .cir').toggleClass('act');
+  });
+  $('#checkTodaySale .t4').click(function () {
+    $('#checkTodaySale .t4 .cir').toggleClass('act');
+  });
+  $('#checkTodaySale .t5').click(function () {
+    $('#checkTodaySale .t5 .cir').toggleClass('act');
+  });
+  $('#checkTodaySale .t6').click(function () {
+    $('#checkTodaySale .t6 .cir').toggleClass('act');
+  });
+  $('#checkTodaySale .t7').click(function () {
+    $('#checkTodaySale .t7 .cir').toggleClass('act');
+  });
+  $('#checkTodaySale .t8').click(function () {
+    $('#checkTodaySale .t8 .cir').toggleClass('act');
+  });
+
 })
+
+// $(function () {
+
+//   var valueElement = $('#value');
+//   function incrementValue(e) {
+//     valueElement.text(Math.max(parseInt(valueElement.text()) + e.data.increment, 0));
+//     return false;
+//   }
+
+//   $('#plus').bind('click', { increment: 1 }, incrementValue);
+
+//   $('#minus').bind('click', { increment: -1 }, incrementValue);
+
+// });

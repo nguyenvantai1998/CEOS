@@ -48,6 +48,8 @@
         @import "./layout/main/delivery";
         @import "./layout/main/cart";
         @import "./layout/main/today-sale";
+        @import "./layout/main/koreazone";
+        @import "./layout/main/membership";
         .bg-detail{
             background-color: #ededed;
             @include container-mw(100%);

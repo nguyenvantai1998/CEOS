@@ -1199,6 +1199,19 @@
                     }
                 }
             }
+
+            .membership{
+                .membershi-container{
+                    .col-left{
+                        display: none;
+                    }
+                    .col-right{
+                        @include col-12;
+                        padding-top: 0;
+                        padding-left: 0;
+                    }
+                }
+            }
         }
     }
 
@@ -1494,6 +1507,23 @@
                                     @include col-6;
                                     margin-bottom: 25px;
                                 }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .koreazone{
+                .koreazon-container{
+                    .row-listProduct{
+                        .col-left{
+                            display: none;
+                        }
+                        .col-right{
+                            @include col-12;
+                            .th-product-item{
+                                @include col-4;
+                                margin-bottom: 25px;
                             }
                         }
                     }
@@ -1945,6 +1975,49 @@
                                             @include col-12;
                                         }
                                     }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .koreazone{
+                .koreazon-container{
+                    .row-listProduct{
+                        .col-right{
+                            @include col-12;
+                            .th-product-item{
+                                @include col-6;
+                                margin-bottom: 25px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .membership{
+                .membershi-container{
+                    .col-right{
+                        .mem-content-main{
+                            .maintop13{
+                                .maintop13-wrap{
+                                    li{
+                                        @include col-12;
+                                        margin-bottom: 25px;
+                                    }
+                                }
+                            }
+                        }
+                        .mem-uu-dai{
+                            display: none;
+                        }
+                        .th-quatang-content{
+                            margin-top: 35px;
+                            ul{
+                                li{
+                                    @include col-6;
+                                    margin-bottom: 25px;
                                 }
                             }
                         }
@@ -2444,6 +2517,52 @@
                                     @include container-mw(100%);
                                     width: 100%;
                                     }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .koreazone{
+                .koreazon-container{
+                    .row-listProduct{
+                        .col-right{
+                            @include col-12;
+                            .th-product-item{
+                                @include col-12;
+                                margin-bottom: 25px;
+                                img{
+                                    width: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .membership{
+                .membershi-container{
+                    .col-right{
+                        .mem-content-main{
+                            .maintop13{
+                                .maintop13-wrap{
+                                    li{
+                                        @include col-12;
+                                        margin-bottom: 25px;
+                                    }
+                                }
+                            }
+                        }
+                        .mem-uu-dai{
+                            display: none;
+                        }
+                        .th-quatang-content{
+                            margin-top: 35px;
+                            ul{
+                                li{
+                                    @include col-12;
+                                    margin-bottom: 25px;
                                 }
                             }
                         }
