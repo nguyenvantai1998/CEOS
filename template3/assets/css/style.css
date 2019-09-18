@@ -900,6 +900,173 @@ input, select {
   #header .hd-container-mobile {
     display: none; }
 
+#header-black .hdblack-container .hd-top {
+  width: 100%;
+  background: #e2a952;
+  padding: 3px 0; }
+  #header-black .hdblack-container .hd-top .hdtop-container {
+    max-width: 1240px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    box-sizing: border-box; }
+    #header-black .hdblack-container .hd-top .hdtop-container .col-left {
+      position: relative;
+      -ms-flex: 0 0 40%;
+      flex: 0 0 40%;
+      max-width: 40%;
+      box-sizing: border-box; }
+    #header-black .hdblack-container .hd-top .hdtop-container .col-right {
+      position: relative;
+      -ms-flex: 0 0 60%;
+      flex: 0 0 60%;
+      max-width: 60%;
+      box-sizing: border-box;
+      display: flex;
+      align-items: center;
+      font-family: "Roboto", sans-serif; }
+      #header-black .hdblack-container .hd-top .hdtop-container .col-right > ul li {
+        display: inline-block;
+        margin-right: 10px; }
+        #header-black .hdblack-container .hd-top .hdtop-container .col-right > ul li a {
+          display: inline-block;
+          color: #000;
+          text-decoration: none;
+          text-transform: uppercase;
+          font-weight: 400;
+          font-size: 13px; }
+#header-black .hdblack-container .hd-body {
+  width: 100%;
+  background: #000;
+  border-top: solid 1px #e2a952;
+  border-bottom: solid 1px #e2a952; }
+  #header-black .hdblack-container .hd-body .hdbody-container {
+    max-width: 1240px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    box-sizing: border-box; }
+    #header-black .hdblack-container .hd-body .hdbody-container .col-left {
+      position: relative;
+      -ms-flex: 0 0 70%;
+      flex: 0 0 70%;
+      max-width: 70%;
+      box-sizing: border-box;
+      font-family: "Roboto", sans-serif; }
+      #header-black .hdblack-container .hd-body .hdbody-container .col-left h1 {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        padding-bottom: 20px; }
+        #header-black .hdblack-container .hd-body .hdbody-container .col-left h1 > span {
+          display: inline-block;
+          color: #e2a952;
+          font-weight: 300;
+          font-weight: normal;
+          text-transform: uppercase;
+          font-style: italic;
+          font-size: 20px;
+          margin-left: 10px;
+          position: relative;
+          top: 42px; }
+        #header-black .hdblack-container .hd-body .hdbody-container .col-left h1 a img {
+          margin-top: 30px; }
+    #header-black .hdblack-container .hd-body .hdbody-container .col-right {
+      position: relative;
+      -ms-flex: 0 0 30%;
+      flex: 0 0 30%;
+      max-width: 30%;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: flex-end; }
+      #header-black .hdblack-container .hd-body .hdbody-container .col-right .tr-search {
+        display: inline-block;
+        position: relative;
+        top: 30px;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        box-sizing: border-box; }
+        #header-black .hdblack-container .hd-body .hdbody-container .col-right .tr-search li a {
+          color: #e2a952;
+          display: inline-block; }
+        #header-black .hdblack-container .hd-body .hdbody-container .col-right .tr-search li .tr-shopping-cart {
+          position: relative; }
+          #header-black .hdblack-container .hd-body .hdbody-container .col-right .tr-search li .tr-shopping-cart::before {
+            background: url(https://image.yes24.vn/upload/Content/desktop/images/icon/icon_PC_V3.png) no-repeat;
+            width: 27px;
+            height: 34px;
+            -ms-background-position: -593px -19px;
+            background-position: -593px -19px;
+            content: "";
+            display: inline-block;
+            margin-right: 5px;
+            position: relative;
+            top: 5px;
+            background: url(https://file.yes24.vn/Content/desktop/images/yes24-black/black-cart.png) no-repeat; }
+          #header-black .hdblack-container .hd-body .hdbody-container .col-right .tr-search li .tr-shopping-cart .tr-shopping-cart-count {
+            background: #e2a952;
+            color: #000;
+            top: 1px;
+            position: absolute;
+            right: 0;
+            font-size: 11px;
+            line-height: 20px;
+            text-align: center;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%; }
+        #header-black .hdblack-container .hd-body .hdbody-container .col-right .tr-search li .tr-login-reg {
+          font-weight: 300;
+          font-size: 14px;
+          width: 120px;
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+          box-sizing: border-box;
+          position: relative; }
+          #header-black .hdblack-container .hd-body .hdbody-container .col-right .tr-search li .tr-login-reg .tr-account-order {
+            position: absolute;
+            top: 0;
+            right: 0; }
+          #header-black .hdblack-container .hd-body .hdbody-container .col-right .tr-search li .tr-login-reg::before {
+            background: url(https://image.yes24.vn/upload/Content/desktop/images/icon/icon_PC_V3.png) no-repeat;
+            width: 29px;
+            height: 34px;
+            -ms-background-position: -550px -19px;
+            background-position: -550px -19px;
+            content: "";
+            display: inline-block;
+            margin-right: 5px;
+            position: relative;
+            top: 2px;
+            background: url(https://file.yes24.vn/Content/desktop/images/yes24-black/black-login.png) no-repeat; }
+        #header-black .hdblack-container .hd-body .hdbody-container .col-right .tr-search .tr-login-regis .tr-account-order {
+          position: absolute;
+          top: 18px;
+          right: 60px; }
+#header-black .hdblack-container .hd-banner {
+  background: #000;
+  border-bottom: solid 1px #e2a952; }
+  #header-black .hdblack-container .hd-banner .hdbanner-container {
+    max-width: 1240px;
+    margin: 0 auto;
+    box-sizing: border-box; }
+    #header-black .hdblack-container .hd-banner .hdbanner-container > a img {
+      vertical-align: middle;
+      max-width: 100%;
+      height: auto; }
+
 #main .m-container {
   max-width: 100%;
   margin: 0 auto;
@@ -6483,6 +6650,148 @@ input, select {
                 position: relative;
                 width: 100%;
                 float: left; }
+#main .mblack-container .boxBanner {
+  max-width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 15px 0;
+  background: #000; }
+  #main .mblack-container .boxBanner .boxBanner-container {
+    max-width: 1240px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    box-sizing: border-box; }
+    #main .mblack-container .boxBanner .boxBanner-container .box {
+      position: relative;
+      -ms-flex: 0 0 50%;
+      flex: 0 0 50%;
+      max-width: 50%;
+      box-sizing: border-box;
+      padding-bottom: 15px;
+      font-family: "Roboto", sans-serif;
+      margin-bottom: 15px; }
+      #main .mblack-container .boxBanner .boxBanner-container .box .pick-item {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        box-sizing: border-box; }
+        #main .mblack-container .boxBanner .boxBanner-container .box .pick-item > a {
+          display: block;
+          position: relative;
+          -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+          max-width: 100%;
+          box-sizing: border-box; }
+          #main .mblack-container .boxBanner .boxBanner-container .box .pick-item > a img {
+            vertical-align: middle;
+            max-width: 100%;
+            height: auto; }
+        #main .mblack-container .boxBanner .boxBanner-container .box .pick-item > h3 {
+          display: block;
+          position: relative;
+          -ms-flex: 0 0 70%;
+          flex: 0 0 70%;
+          max-width: 70%;
+          box-sizing: border-box;
+          font-weight: bold;
+          font-size: 14px;
+          float: left;
+          padding-top: 15px;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          overflow: hidden; }
+          #main .mblack-container .boxBanner .boxBanner-container .box .pick-item > h3 a {
+            display: block;
+            color: #e2a952;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px; }
+        #main .mblack-container .boxBanner .boxBanner-container .box .pick-item .time {
+          display: block;
+          position: relative;
+          -ms-flex: 0 0 30%;
+          flex: 0 0 30%;
+          max-width: 30%;
+          box-sizing: border-box;
+          font-weight: 400;
+          font-size: 16px;
+          float: left;
+          width: 30%;
+          padding-top: 10px;
+          text-align: right;
+          color: #e2a952; }
+          #main .mblack-container .boxBanner .boxBanner-container .box .pick-item .time::before {
+            content: '';
+            width: 18px;
+            height: 18px;
+            position: relative;
+            background: url(https://file.yes24.vn/Content/desktop/images/yes24-black/black-alarm.png) no-repeat;
+            display: inline-block;
+            margin-right: 5px;
+            top: 2px; }
+    #main .mblack-container .boxBanner .boxBanner-container .last-child {
+      padding-left: 15px; }
+    #main .mblack-container .boxBanner .boxBanner-container .frist-child {
+      padding-right: 15px; }
+#main .mblack-container .reason {
+  max-width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  background: #e2a952;
+  padding: 25px 0 35px 0; }
+  #main .mblack-container .reason .reaso-container {
+    max-width: 1240px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif; }
+    #main .mblack-container .reason .reaso-container .row-1 > p {
+      font-size: 30px;
+      font-weight: bold;
+      text-align: center;
+      padding: 25px 0 35px 0;
+      text-transform: uppercase; }
+    #main .mblack-container .reason .reaso-container .row-2 {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      box-sizing: border-box; }
+      #main .mblack-container .reason .reaso-container .row-2 > ul {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 100%; }
+        #main .mblack-container .reason .reaso-container .row-2 > ul li {
+          position: relative;
+          -ms-flex: 0 0 25%;
+          flex: 0 0 25%;
+          max-width: 25%;
+          box-sizing: border-box;
+          text-align: center;
+          line-height: 20px; }
+          #main .mblack-container .reason .reaso-container .row-2 > ul li img {
+            display: block;
+            max-width: 100%;
+            margin: 0 auto;
+            box-sizing: border-box; }
+          #main .mblack-container .reason .reaso-container .row-2 > ul li strong {
+            font-weight: bold;
+            font-size: 18px;
+            text-transform: uppercase;
+            display: block;
+            text-align: center;
+            padding-top: 15px; }
+          #main .mblack-container .reason .reaso-container .row-2 > ul li p {
+            text-align: center;
+            color: #000;
+            font-size: 16px; }
 
 #footer {
   @import url("https://use.fontawesome.com/releases/v5.8.2/css/all.css");
@@ -6778,6 +7087,8 @@ input, select {
               max-width: 100%;
               height: auto;
               margin-bottom: 5px; }
+            #footer .ft-container .row-4 .row4-container .row-body .row-boxcontent .box-ft-2 .text-themeBlack {
+              color: #e2a952; }
           #footer .ft-container .row-4 .row4-container .row-body .row-boxcontent .box-ft-3 {
             position: relative;
             -ms-flex: 0 0 25%;
@@ -6785,6 +7096,8 @@ input, select {
             max-width: 25%;
             box-sizing: border-box;
             padding: 0 15px; }
+            #footer .ft-container .row-4 .row4-container .row-body .row-boxcontent .box-ft-3 .text-themeBlack {
+              color: #e2a952; }
             #footer .ft-container .row-4 .row4-container .row-body .row-boxcontent .box-ft-3 a.tr-link-fb::before {
               width: 38px;
               height: 38px;
@@ -6824,10 +7137,14 @@ input, select {
             font-family: "Roboto", sans-serif; }
             #footer .ft-container .row-4 .row4-container .row-body .row-boxcontent .content h4 {
               margin-bottom: 10px; }
+            #footer .ft-container .row-4 .row4-container .row-body .row-boxcontent .content .text-themeBlack {
+              color: #e2a952; }
             #footer .ft-container .row-4 .row4-container .row-body .row-boxcontent .content .tr-ft-content {
               font-size: 12px;
               color: #777;
               line-height: 20px; }
+    #footer .ft-container .bg-blackTheme .row4-container {
+      background: #000 !important; }
 
 #scrollToTop {
   text-decoration: none;
@@ -6850,7 +7167,7 @@ input, select {
 .loginRegister {
   display: none; }
   .loginRegister .loginRegister-container {
-    max-width: 100%;
+    max-width: 780px;
     margin: 0 auto;
     box-sizing: border-box;
     display: -ms-flexbox;
@@ -6865,7 +7182,6 @@ input, select {
     right: 0;
     left: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.4);
     z-index: 1000; }
     .loginRegister .loginRegister-container .box-loginRegister {
       width: 780px;
@@ -7388,6 +7704,14 @@ input, select {
         background: url(https://image.yes24.vn/upload/Content/mobile/images/ic_close.png) no-repeat;
         cursor: pointer;
         z-index: 500; }
+  .loginRegister .loginRegister-close {
+    position: fixed;
+    z-index: 900;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4); }
 
 .loginRegister-active {
   display: block; }
@@ -7973,6 +8297,24 @@ input, select {
     #header .hd-container-mobile .hd-nav-mb-active {
       display: block; }
 
+  #header-black .hdblack-container {
+    max-width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box; }
+    #header-black .hdblack-container .hd-top {
+      display: none; }
+    #header-black .hdblack-container .hd-body .hdbody-container {
+      max-width: 100%;
+      margin: 0 auto;
+      box-sizing: border-box;
+      padding: 0 15px; }
+      #header-black .hdblack-container .hd-body .hdbody-container .col-left h1 > span {
+        display: none; }
+    #header-black .hdblack-container .hd-banner .hdbanner-container {
+      max-width: 100%;
+      margin: 0 auto;
+      box-sizing: border-box; }
+
   #main .m-container .mainBanner {
     display: none; }
   #main .m-container .mainTodaySale .mtdsale-container {
@@ -8408,6 +8750,29 @@ input, select {
     box-sizing: border-box;
     padding-top: 0;
     padding-left: 0; }
+  #main .mblack-container .boxBanner .boxBanner-container {
+    max-width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 0 15px; }
+    #main .mblack-container .boxBanner .boxBanner-container .box {
+      padding-top: 0;
+      padding-left: 0;
+      padding-right: 0;
+      position: relative;
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+      max-width: 100%;
+      box-sizing: border-box; }
+      #main .mblack-container .boxBanner .boxBanner-container .box .pick-item > a img {
+        width: 100% !important; }
+  #main .mblack-container .reason .reaso-container .row-2 > ul li {
+    position: relative;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+    box-sizing: border-box;
+    margin-bottom: 25px; }
 
   #footer .ft-container .row-1 .row1-container {
     max-width: 100%;
@@ -9036,6 +9401,24 @@ input, select {
   #header .hd-container-mobile .hd-top-mb .col-bottom {
     margin-top: 0; }
 
+  #header-black .hdblack-container .hd-body .hdbody-container .col-left {
+    position: relative;
+    -ms-flex: 0 0 20%;
+    flex: 0 0 20%;
+    max-width: 20%;
+    box-sizing: border-box; }
+    #header-black .hdblack-container .hd-body .hdbody-container .col-left h1 a img {
+      margin-top: 30px;
+      width: 130px; }
+  #header-black .hdblack-container .hd-body .hdbody-container .col-right {
+    position: relative;
+    -ms-flex: 0 0 80%;
+    flex: 0 0 80%;
+    max-width: 80%;
+    box-sizing: border-box; }
+    #header-black .hdblack-container .hd-body .hdbody-container .col-right .tr-search {
+      top: 18px; }
+
   #main .m-container .mainSuggestion .msstion-container .row-boxproduct .item {
     position: relative;
     -ms-flex: 0 0 100%;
@@ -9383,6 +9766,13 @@ input, select {
       max-width: 100%;
       box-sizing: border-box;
       margin-bottom: 25px; }
+  #main .mblack-container .reason .reaso-container .row-2 > ul li {
+    position: relative;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 25px; }
 
   #footer .ft-container .row-1 .row1-container .box {
     position: relative;

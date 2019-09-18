@@ -15,6 +15,9 @@
 #header{
     @import "layout/header/header";
 }
+#header-black{
+    @import "./layout/header-black/headerBlack.scss";
+}
 #main{
     .m-container{
         @include container-mw(100%);
@@ -57,6 +60,10 @@
             @import "./layout/main/detailBody";
             @import "./layout/main/detailFooter";
         }
+    }
+    .mblack-container{
+        @import "./layout/main/mainBlackTheme";
+        @import "./layout/main/reason";
     }
 }
 #footer{

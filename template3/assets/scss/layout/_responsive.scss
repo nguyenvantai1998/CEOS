@@ -677,6 +677,33 @@
         }
     }
 
+    #header-black{
+        .hdblack-container{
+            @include container-mw(100%);
+            .hd-top {
+                display: none;
+            }
+            .hd-body{
+                .hdbody-container{
+                    @include container-mw(100%);
+                    padding: 0 15px;
+                    .col-left{
+                        h1{
+                            > span{
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+            .hd-banner{
+                .hdbanner-container{
+                    @include container-mw(100%);
+                }
+            }
+        }
+    }
+
     // main
     #main{
         .m-container{
@@ -1209,6 +1236,41 @@
                         @include col-12;
                         padding-top: 0;
                         padding-left: 0;
+                    }
+                }
+            }
+        }
+
+        .mblack-container{
+            .boxBanner{
+                .boxBanner-container{
+                    @include container-mw(100%);
+                    padding: 0 15px;
+                    .box{
+                        padding-top: 0;
+                        padding-left: 0;
+                        padding-right: 0;
+                        @include col-12;
+                        .pick-item {
+                            > a {
+                                img{
+                                    width: 100% !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .reason{
+                .reaso-container{
+                    .row-2{
+                        > ul{
+                            li {
+                                @include col-6;
+                                margin-bottom: 25px;
+                            }
+                        }
                     }
                 }
             }
@@ -2069,6 +2131,32 @@
         }
     }
 
+    #header-black {
+        .hdblack-container {
+            .hd-body {
+                .hdbody-container {
+                    .col-left {
+                        @include col-auto(20%);
+                        h1 {
+                            a {
+                                img {
+                                    margin-top: 30px;
+                                    width: 130px;
+                                }
+                            }
+                        }
+                    }
+                    .col-right{
+                        @include col-auto(80%);
+                        .tr-search{
+                            top:18px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
     // main
     #main {
         .m-container {
@@ -2564,6 +2652,21 @@
                                     @include col-12;
                                     margin-bottom: 25px;
                                 }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .mblack-container {
+            .reason {
+                .reaso-container {
+                    .row-2 {
+                        > ul {
+                            li {
+                                @include col-12;
+                                margin-bottom: 25px;
                             }
                         }
                     }

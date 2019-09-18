@@ -95,7 +95,10 @@ $(document).ready(function () {
   $('#modalLoginRegi, #modalLoginRegi2').click(function () {
     $('.loginRegister').addClass('loginRegister-active');
   });
-  $('#loginRegister-close, #tloginRegClose').click(function () {
+  $('#tloginRegClose').click(function () {
+    $('.loginRegister').removeClass('loginRegister-active');
+  });
+  $('#loginRegister-close').click(function () {
     $('.loginRegister').removeClass('loginRegister-active');
   });
   $('#tab-register-click').click(function () {
@@ -105,6 +108,7 @@ $(document).ready(function () {
     $('#tab-register').show();
     $('#tab-register-click').addClass('active');
     $('#tab-login-click').removeClass('active');
+    $('.loginRegister').show();
   });
   $('#tab-login-click').click(function () {
     $('#tr-login').show();

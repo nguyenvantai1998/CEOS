@@ -312,11 +312,17 @@
                                 margin-bottom: 5px;
                             }
                         }
+                        .text-themeBlack{
+                            color: #e2a952;
+                        }
                     }
                     .box-ft-3{
                         @include col-3;
                         padding: 0 15px;
 
+                        .text-themeBlack{
+                            color: #e2a952;
+                        }
                         a.tr-link-fb{
                             &::before{
                                 width: 38px;
@@ -364,6 +370,9 @@
                         h4{
                             margin-bottom: 10px;
                         }
+                        .text-themeBlack{
+                            color: #e2a952;
+                        }
                         .tr-ft-content{
                             font-size: 12px;
                             color: #777;
@@ -375,6 +384,9 @@
 
         }
     }
-
-
+    .bg-blackTheme{
+        .row4-container{
+           background: #000 !important; 
+        }
+    }
 }
