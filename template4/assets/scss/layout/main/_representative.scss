@@ -1,0 +1,48 @@
+.representative{
+    @include container-mw(100%);
+    background-color: #f2f2f2;
+    padding-top: 1.5rem;
+    padding-bottom: 2rem;
+    .represen-container{
+        @include container-mw(78.8%);
+        @include row-fb;
+        .col-box{
+            @include col-4;
+            padding: 0 15px;
+            font-family: $ft-def;
+            .box{
+                transition: all .3s;
+                figure{
+                    a{
+                        img{
+                            @include img-res;
+                        }
+                    }
+                }
+                .cat-box-content{
+                    background-color: #fff;
+                    text-align: center;
+                    padding: 1.8rem 1rem 2rem;
+                    color: #7b7f83;
+                    font-size: .8rem;
+                    line-height: 1.85;
+                    .cat-box-title {
+                        font-family: $ft-def2;
+                        font-weight: 400;
+                        font-size: 1rem;
+                        line-height: 1.1;
+                        letter-spacing: .05rem;
+                        margin-bottom: .8rem;
+                        text-transform: uppercase;
+                        a{
+                            color: #111;
+                        }
+                    }
+                }
+                &:hover{
+                    box-shadow: 0 17px 32px rgba(0, 0, 0, 0.07);
+                }
+            }
+        }
+    }
+}

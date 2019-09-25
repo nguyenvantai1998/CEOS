@@ -1,0 +1,194 @@
+.featuredProducts{
+    @include container-mw(100%);
+    background-color: #f2f2f2;
+    padding-bottom: 3rem;
+    padding-top: 2rem;
+    .featuredPro-container{
+        @include container-mw(77%);
+        .title{
+            font-size: 1.3rem;
+            text-transform: uppercase;
+            font-weight: 700;
+            line-height: 1.2;
+            color: #252525;
+            letter-spacing: 0;
+            font-family: $ft-def;
+        }
+        .box-listProduct{
+            margin-top: 1.5rem;
+            .listSlideProductHome{
+                .owl-nav{
+                    display: none;
+                }
+                .owl-dots{
+                    margin-top: 30px;
+                    button{
+                        border: none;
+                        outline: none;
+                        background: none;
+                        padding: 0;
+                        span{
+                            border: 0.2rem solid #95a9b3;
+                            background: none;
+                            width: .9rem;
+                            height: .9rem;
+                        }
+                    }
+                    .owl-dot.active{
+                        span{
+                            border-color: #0e0e0e;
+                            position: relative;
+                            &::before {
+                                content: '';
+                                display: block;
+                                width: .3rem;
+                                height: .3rem;
+                                position: absolute;
+                                left: 50%;
+                                top: 50%;
+                                margin-top: -2.5px;
+                                margin-left: -2.5px;
+                                background-color: #0e0e0e;
+                                opacity: 0;
+                                transition: all .3s;
+                                border-radius: 50%;
+                                opacity: 1;
+                                visibility: visible;
+                                transform: scale(1);
+                            }
+                        }
+                    }
+                }
+                .item{
+                    .product{
+                        &:hover{
+                            .product-image-container{
+                                .product-image{
+                                    &::after{
+                                        opacity: 1;
+                                        visibility: visible;
+                                    }
+                                }
+                                .btn-quickview{
+                                    opacity: 1;
+                                    visibility: visible;
+                                }
+                            }
+                        }
+                        .product-image-container{
+                            margin-bottom: 1.2rem;
+                            font-family: $ft-def;
+                            .product-image{
+                                position: relative;
+                                display: block;
+                                img{
+                                    @include img-res;
+                                }
+                                &::after{
+                                    content: '';
+                                    position: absolute;
+                                    left: 0;
+                                    right: 0;
+                                    top: 0;
+                                    bottom: 0;
+                                    background-color: rgba(0, 0, 0, 0.2);
+                                    opacity: 0;
+                                    visibility: hidden;
+                                    transition: all .3s;
+                                }
+                            }
+                            .btn-quickview {
+                                position: absolute;
+                                left: 50%;
+                                top: 40%;
+                                transform: translate3d(-50%, -50%, 0);
+                                display: inline-block;
+                                font-family: $ft-def2;
+                                font-weight: 400;
+                                font-size: .7rem;
+                                text-transform: uppercase;
+                                letter-spacing: 1px;
+                                color: #fff;
+                                background-color: #050203;
+                                padding: 1rem 1.5rem;
+                                white-space: nowrap;
+                                opacity: 0;
+                                visibility: hidden;
+                                transition: all 0.25s;
+                                text-decoration: none;
+                            }
+                            .product-label {
+                                position: absolute;
+                                z-index: 1;
+                                top: .8em;
+                                right: .8em;
+                                font-size: .78rem;
+                                font-weight: 600;
+                                line-height: 1;
+                                text-transform: uppercase;
+                                text-align: center;
+                                padding: .3rem .5rem;
+                                width: 50px;
+                                color: $white;
+                            }
+                            .label-sale {
+                                background-color: #e27c7c;
+                            }
+                            .label-hot{
+                                background-color: #62b959;
+                            }
+                            .product-label + .product-label {
+                                top: 2.3rem;
+                            }
+                        }
+                        .product-details{
+                            position: relative;
+                            .product-title {
+                                padding-right: 2.8rem;
+                                font-family: $ft-def;
+                                font-weight: 400;
+                                font-size: .9rem;
+                                line-height: 1.25;
+                                position: relative;
+                                margin-bottom: .5rem;
+                                a {
+                                    color: #4A5157;
+                                    &:hover{
+                                        text-decoration: underline;
+                                    }
+                                }
+                                i{
+                                    position: absolute;
+                                    color: #c1c3c5;
+                                    font-size: 18px;
+                                    right: 0;
+                                    top: 30%;
+                                    transition: all .2s;
+                                    cursor: pointer;
+                                    &:hover{
+                                        color: unset;
+                                    }
+                                }
+                            }
+                            .price-box{
+                                font-weight: 400;
+                                font-family: $ft-def2;
+                                color: #252525;
+                                span {
+                                    font-size: 1.1rem;
+                                }
+                                .old-price {
+                                    color: #6e6e6e;
+                                    text-decoration: line-through;
+                                }
+                                .old-price + .product-price {
+                                    margin-left: .5rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

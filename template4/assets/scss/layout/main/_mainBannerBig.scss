@@ -1,0 +1,180 @@
+.bannerBig{
+    @include container-mw(100%);
+    .bng-container{
+        @include container-mw(77%);
+        .bigBannerHome{
+            .owl-dots{
+                display: none !important;
+            }
+            .owl-nav{
+                button{
+                    position: absolute;
+                    top: 50%;
+                    display: block;
+                    width: 45px;
+                    height: 90px;
+                    margin: -45px 0 0;
+                    font-size: 7.5rem;
+                    line-height: 1;
+                    color: #d2cdc8;
+                    background-color: transparent;
+                    border: 0;
+                    border-radius: 0;
+                    transition: all .3s;
+                    font-weight: 100;
+                    outline: none;
+                    span{
+                        display: none;
+                    }
+                }
+                .owl-prev{
+                    left: -4rem;
+                    cursor: pointer;
+                    &:hover{
+                        &::before,
+                        &::after{
+                            background-color: #252525;
+                        }
+                    }
+                    &::before {
+                        top: 50%;
+                        margin-top: -16px;
+                        right: 0;
+                        transform: rotate(-45deg);
+                        content: '';
+                        display: block;
+                        background-color: #d2cdc8;
+                        width: 45px;
+                        height: 1px;
+                        position: absolute;
+                        transition: background 0.3s;
+                    }
+                    &::after {
+                        bottom: 50%;
+                        margin-bottom: -17px;
+                        right: 0;
+                        transform: rotate(45deg);
+                        content: '';
+                        display: block;
+                        background-color: #d2cdc8;
+                        width: 45px;
+                        height: 1px;
+                        position: absolute;
+                        transition: background 0.3s;
+                    }
+                }
+                .owl-next{
+                    right: -4rem;
+                    cursor: pointer;
+                    &:hover{
+                        &::before,
+                        &::after{
+                            background-color: #252525;
+                        }
+                    }
+                    &::before {
+                        top: 50%;
+                        margin-top: -16px;
+                        left: 0;
+                        transform: rotate(45deg);
+                        content: '';
+                        display: block;
+                        background-color: #d2cdc8;
+                        width: 45px;
+                        height: 1px;
+                        position: absolute;
+                        transition: background 0.3s;
+                    }
+                    &::after {
+                        bottom: 50%;
+                        margin-bottom: -17px;
+                        left: 0;
+                        transform: rotate(-45deg);
+                        content: '';
+                        display: block;
+                        background-color: #d2cdc8;
+                        width: 45px;
+                        height: 1px;
+                        position: absolute;
+                        transition: background 0.3s;
+                    }
+                }
+            }
+            .item{
+                .box-item{
+                    @include container-mw(100%);
+                    position: relative;
+                    background-color: #dddcd8;
+                    .box-img{
+                        img{
+                            @include img-res;
+                        }
+                    }
+                    .box-content{
+                        display: inline-block;
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        -ms-transform: translateY(-50%);
+                        -webkit-transform: translateY(-50%);
+                        z-index: 3;
+                        color: $white;
+                        padding: 2.8rem 2.5rem 2.6rem;
+                        background-color: #0e0e0e;
+                        min-width: 307px;
+                        h3 {
+                            color: $white;
+                            font-weight: 400;
+                            font-family: $ft-def;
+                            margin-bottom: .6rem;
+                            text-transform: uppercase;
+                            letter-spacing: .05rem;
+                            font-size: 1.1rem;
+                        }
+                        h1 {
+                            text-transform: uppercase;
+                            color: $white;
+                            font-weight: 300;
+                            font-family: $ft-def2;
+                            margin-bottom: 3.1rem;
+                            letter-spacing: 0;
+                            font-size: 2.8rem;
+                        }
+                        .btn {
+                            position: relative;
+                            font-weight: 400;
+                            font-size: .9rem;
+                            min-width: 108px;
+                            border-width: .2rem;
+                            padding: .55rem 1.5rem;
+                            border-radius: .2rem;
+                            letter-spacing: .05rem;
+                            z-index: 4;
+                            text-transform: uppercase;
+                            color: #fff;
+                            background-color: #111;
+                            border-color: #3c3c3c;
+                            box-shadow: none;
+                            font-family: $ft-def2;
+                            transition: all .5s;
+                            &:hover{
+                                color: #fff;
+                                background-color: #252525;
+                                border-color: #505050;
+                                box-shadow: none;
+                            }
+                        }
+                    }
+                    .box-right{
+                        left: auto;
+                        right: 3.5rem;
+                    }
+                    .box-left{
+                        right: auto;
+                        left: 3.5rem;
+                    }
+                }
+            }
+        }
+    }
+}

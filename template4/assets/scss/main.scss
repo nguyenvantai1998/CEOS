@@ -1,0 +1,61 @@
+@import "helper/custom.scss";
+@import "./helper/font.scss";
+#containerOverlow{
+    @include container-mw(100%);
+    #mobileColLeft{
+        @import "./layout/main/mobileColLeft";
+        @include container-mw(100%);
+        display: none;
+    }
+    #desktopColRight{
+        @include container-mw(100%);
+        #header{
+           @import "layout/header/header"; 
+        }
+        #main{
+            @import "./layout/main/mainBannerBig";
+            @import "./layout/main/representative";
+            @import "./layout/main/featuredProducts";
+            @import "./layout/main/newArrivals";
+            @import "./layout/main/posts";
+            .mpage-container{
+                @import "./layout/main/about";
+            }
+        }
+        #footer{
+            color: #90969a;
+            background-color: #1d1d1d;
+            line-height: 1.4;
+            font-size: .8rem;
+            padding-top: 3rem;
+            @import "layout/footer/footer";
+        }
+    }
+}
+#tab-closeNavmobile{
+    display: none;
+}
+#scrollToTop{
+    position: fixed;
+    z-index: 9999;
+    right: 4%;
+    bottom: 0;
+    @include button;
+    background-color: #333;
+    font-size: 25px;
+    width: 50px;
+    height: 35px;
+    font-family: $ft-def;
+    color: $white;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    cursor: pointer;
+    transition: all .7s;
+    padding-bottom: 35px;
+    font-weight: 300;
+    display: none;
+}
+#scrollToTop:hover{
+    background: #000;
+}
+@import "./layout/responsive";

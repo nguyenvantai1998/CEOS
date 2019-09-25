@@ -1,0 +1,633 @@
+/* responsive desktop show side bar mobile */
+@include res(991px){
+    #containerOverlow{
+        @include container-mw(100%);
+        overflow: hidden;
+        #mobileColLeft{
+            background-color: #0e0e0e;
+            @include container-mw(35%);
+            @include container(35%);
+            margin: unset;
+            position: fixed;
+            top: 0;
+            left: -35%;
+            bottom: 0;
+            display: flex;
+            z-index: 1000;
+            transition: all .5s;
+            .mobColLeft-container{
+                @include container-mw(100%);
+                width: 100%;
+                padding: 1.2rem 0 1rem;
+                position: relative;
+                .row-1{
+                    text-align: right;
+                    padding: 5px 15px;
+                    padding-bottom: 15px;
+                    .tab-close{
+                        background: none;
+                        outline: none;
+                        border: none;
+                        color: white;
+                        font-size: 1rem;
+                    }
+                }
+                .row-2{
+                    margin-bottom: 1rem;
+                    .nav-mobile{
+                        border-bottom: 1px solid #1a1a1a;
+                        .mobile-list{
+                            li{
+                                display: block;
+                                position: relative;
+                                border-top: 1px solid #1a1a1a;
+                                &:hover{
+                                    >a{
+                                        color: #b7b7b7;
+                                    }
+                                }
+                                >a{
+                                    text-transform: uppercase;
+                                }
+                                a {
+                                    font-family: $ft-def;
+                                    position: relative;
+                                    display: block;
+                                    padding: .7rem 0 .7rem 1rem;
+                                    margin-right: .9rem;
+                                    color: #fff;
+                                    transition: 3s;
+                                    font-size: .8rem;
+                                    line-height: 1.5;
+                                    button{
+                                        position: absolute;
+                                        right: 0;
+                                        top: 8px;
+                                        background: none;
+                                        outline: none;
+                                        border: none;
+                                        color: white;
+                                        i{
+                                            font-size: .9rem;
+                                            padding: 5px;
+                                            z-index: 1000;
+                                        }
+                                    }
+                                    .btn-up{
+                                        display: none;
+                                    }
+                                }
+                                .sub-product,
+                                .sub-trademark{
+                                    display: none;
+                                    li{
+                                        a{
+                                            padding-left: 1.7rem;
+                                            text-transform: unset;
+                                        }
+                                    }
+                                }
+                            }
+                            .active{
+                                >a{
+                                    color: #b7b7b7;
+                                }
+                            }
+                        }
+                    }
+                }
+                .row-3{
+                    padding: 15px 0;
+                   .social-icons{
+                       @include row-fb;
+                       justify-content: center;
+                       align-items: center;
+                       .social-icon {
+                            width: 2rem;
+                            height: 2rem;
+                            border: 0;
+                            font-size: 1rem;
+                            background-color: transparent;
+                            margin-bottom: 0;
+                            color: white;
+                        }
+                   } 
+                }
+            }
+        }
+        .mobileColLeft-active{
+            left: 0 !important;
+        }
+        #desktopColRight{
+            transition: all .5s;
+        }
+        .desktopColRight-active{
+            transform: translateX(35%);
+        }
+    }
+    #tab-closeNavmobile{
+        @include container-mw(100%);
+        position: fixed;
+        right: 0;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 100;
+        transition: all .5s;
+    }
+    .tab-closeNavmobile-active{
+        display: block !important;
+    }
+}
+
+/* responsive template */
+@include res(1199px){
+    #containerOverlow{
+        #desktopColRight {
+
+            // header
+            #header {
+                .hd-container{
+                    .hd-info {
+                        .hdif-container{
+                            @include container-mw(90%);
+                        }
+                    }
+                    .hd-top{
+                        .hdt-container{
+                            @include container-mw(90%);
+                        }
+                    }
+                    .hd-middle{
+                        .hdmd-container{
+                            @include container-mw(90%);
+                        }
+                    }
+                    .hd-bottom{
+                        .hdbt-container{
+                            .container{
+                                @include container-mw(90%);
+                            }
+                        }
+                    }
+                }
+            }
+
+            // main
+            #main{
+                .bannerBig{
+                    .bng-container{
+                        @include container-mw(90%);
+                        .bigBannerHome{
+                            .owl-nav{
+                                .owl-prev{
+                                    left: -3rem;
+                                }
+                                .owl-next{
+                                    right: -3rem;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .representative{
+                    .represen-container{
+                        @include container-mw(93%);
+                    }
+                }
+
+                .featuredProducts{
+                    .featuredPro-container{
+                        @include container-mw(90%);
+                    }
+                }
+
+                .newArrivals{
+                    .newArr-container{
+                        @include container-mw(90%);
+                    }
+                }
+            
+                .posts{
+                    .pos-container{
+                        @include container-mw(90%);
+                    }
+                }
+
+
+            }
+
+            // main page
+            #main{ 
+                .mpage-container{
+                    .about {
+                        .ab-container{
+                            @include container-mw(90%);
+                        }
+                        .ab-container2 {
+                            .row-container{
+                                @include container-mw(91.9%);
+                                .row-content{
+                                    .col{
+                                        @include col-4;
+                                        .member{
+                                            img{
+                                                width: 100%;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .ab-container3{
+                            .row-container{
+                                @include container-mw(91.9%);
+                                .row-content{
+                                    .col{
+                                        @include col-12;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            // footer
+            #footer{
+                .ft-container{
+                    @include container-mw(90%);
+                }
+            }
+
+        }
+    }
+}
+
+@include res(991px){
+    #containerOverlow{
+        #desktopColRight {
+
+            // header
+            #header {
+                .hd-container{
+                    .hd-info {
+                        .hdif-container{
+                            @include container-mw(95%);
+                        }
+                    }
+                    .hd-top{
+                        .hdt-container{
+                            @include container-mw(95%);
+                            .col-left{
+                                @include col-6;
+                            }
+                            .col-right{
+                                @include col-6;
+                            }
+                        }
+                    }
+                    .hd-middle{
+                        .hdmd-container{
+                            @include container-mw(95%);
+                            .col-right{
+                                .header-search{
+                                    @include row-fb;
+                                    .header-tabbar-mobile{
+                                        @include col-6;
+                                    }
+                                    .header-search-wrapper{
+                                        @include col-6;
+                                        form{
+                                            .form-control{
+                                                display: none;
+                                                position: absolute;
+                                                right: 0;
+                                                top: 15px;
+                                                width: 200px;
+                                            }
+                                            .form-control-active{
+                                                display: block;
+                                            }
+                                            .btn-tabbar{
+                                                display: block;
+                                                font-size: 1rem;
+                                                padding: 0 10px;
+                                                right: 2.5rem;
+                                            }
+                                            .btn-search{
+                                                font-size: 1rem;
+                                                padding: 0 10px;
+                                                right: 0;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .hd-bottom{
+                        display: none;
+                    }
+                }
+            }
+
+            // main
+            #main{
+                .bannerBig{
+                    .bng-container{
+                        @include container-mw(100%);
+                        .bigBannerHome{
+                            .owl-nav{
+                                display: none;
+                            }
+                        }
+                    }
+                }
+
+                .representative{
+                    .represen-container{
+                        @include container-mw(98%);
+                    }
+                }
+
+                .featuredProducts{
+                    .featuredPro-container{
+                        @include container-mw(95%);
+                    }
+                }
+
+                .newArrivals{
+                    .newArr-container{
+                        @include container-mw(95%);
+                    }
+                }
+            
+                .posts{
+                    .pos-container{
+                        @include container-mw(95%);
+                    }
+                }
+            }
+
+            // main page
+            #main{
+                .mpage-container{
+                    .about{
+                        .ab-container{
+                            .row-2{
+                                .box-content{
+                                    .col-left{
+                                        @include col-12;
+                                    }
+                                    .col-right{
+                                        @include col-12;
+                                        padding: 0;
+                                    }
+                                }
+                            }
+                        }
+                        .ab-container2{
+                            .row-container{
+                                .row-content{
+                                    .col{
+                                        @include col-6;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            // footer
+            #footer{
+                .ft-container{
+                    @include container-mw(95%);
+                }
+            }
+
+        }
+    }
+}
+
+@include res(767px){
+    #containerOverlow {
+        #desktopColRight {
+            // header
+            #header{
+                .hd-container {
+                    .hd-info {
+                        .hdif-container {
+                            .col-left{
+                                display: none;
+                            }
+                            .col-right{
+                                @include col-12;
+                            }
+                        }
+                    }
+
+                    .hd-top {
+                        .hdt-container{
+                            .col-right{
+                                .hdt-menu{
+                                    ul{
+                                        li:first-child{
+                                            display: none;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            // main
+            #main {
+                .representative {
+                    .represen-container {
+                        .col-box {
+                            @include col-12;
+                            .box{
+                                figure{
+                                    a{
+                                        img{
+                                            width: 100%;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .newArrivals{
+                    .newArr-container{
+                        .row-productHight{
+                            .col-big{
+                                @include col-12;
+                                .product{
+                                    .product-image-container{
+                                        .product-image{
+                                            img{
+                                                width: 100%;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            .col-list{
+                                @include col-12;
+                                margin-top: 25px;
+                                .col-pro{
+                                    @include col-12;
+                                    margin-bottom: 15px;
+                                    .product{
+                                        .product-image-container{
+                                            .product-image{
+                                                img{
+                                                    width: 100%;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .posts{
+                    .pos-container{
+                        .box-img-content{
+                            .box-big{
+                                @include col-12;
+                                margin-bottom: 25px;
+                                .box-small{
+                                    .img-date{
+                                        .img{
+                                            max-height: unset !important;
+                                            img{
+                                                width: 100%;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            // footer
+            #footer{
+                .ft-container{
+                    .footer-top {
+                        .fttop-container{
+                            .col-left{
+                                @include col-12;
+                                .col{
+                                    @include col-12;
+                                }
+                            }
+                            .col-right{
+                                @include col-12;
+                                margin-top: 15px;
+                                margin-bottom: 15px;
+                                .social-icons{
+                                    justify-content: flex-start;
+                                }
+                            }
+                        }
+                    }
+
+                    .footer-body{
+                        .ftbody-container{
+                            .col-left{
+                                @include col-12;
+                            }
+                            .col-right{
+                                @include col-12;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include res(599px){
+    #containerOverlow {
+        #desktopColRight {
+
+            // main page
+            #main{
+                .mpage-container{
+                    .about{
+                        .ab-container2{
+                            .row-container{
+                                .row-content{
+                                    .col{
+                                        @include col-12;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            // footer
+            #footer{
+                .ft-container{
+                    .footer-body{
+                        .ftbody-container{
+                            .col-left{
+                                @include col-12;
+                            }
+                            .col-right{
+                                @include col-12;
+                                .row-1{
+                                    .col-left{
+                                        @include col-12;
+                                    }
+                                    .col-right{
+                                        @include col-12;
+                                    }
+                                }
+                                .row-2{
+                                    .col-left{
+                                        @include col-12;
+                                    }
+                                    .col-right{
+                                        @include col-12;
+                                        img{
+                                            width: 100%;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include res(424px){
+    
+}
+
+@include res(375px){
+    
+}
+
+@include res(320px){
+    
+}
