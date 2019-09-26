@@ -252,6 +252,33 @@
                             }
                         }
                     }
+
+                    .news{
+                        .ne-container{
+                            @include container-mw(95%);
+                            .row-2{
+                                .col-left{
+                                    .widget{
+                                        .simple-entry-list{
+                                            .entry-media{
+                                                @include col-12;
+                                                margin-bottom: 15px;
+                                                a{
+                                                    img{
+                                                        width: 100%;
+                                                    }
+                                                }
+                                            }
+                                            .entry-info{
+                                                @include col-12;
+                                                padding-right: 0;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
             }
 
@@ -394,6 +421,66 @@
                                 .row-content{
                                     .col{
                                         @include col-6;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .news{
+                        .ne-container{
+                            .row-2{
+                                .col-right{
+                                    @include col-12;
+                                }
+                                .col-left{
+                                    @include col-12;
+                                    padding-left: 0;
+                                    padding-right: 0;
+                                    .widget{
+                                        .simple-entry-list{
+                                            .entry-media{
+                                                @include col-3;
+                                                margin-bottom: 15px;
+                                                a{
+                                                    img{
+                                                        width: 100%;
+                                                    }
+                                                }
+                                            }
+                                            .entry-info{
+                                                @include col-8;
+                                                padding-right: 0;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .single {
+                        .singl-container {
+                            .row-2 {
+                                .col-right {
+                                    .entry {
+                                        .entry-body {
+                                            .comment-respond {
+                                                .form-group {
+                                                    textarea.form-control{
+                                                        max-width: 100%;
+                                                        min-width: 100%;
+                                                    }
+                                                    .form-control{
+                                                        padding: 0.5rem 0 !important;
+                                                    }
+                                                    input.form-control{
+                                                        max-width: 100%;
+                                                        min-width: 100%;
+                                                    }
+                                                }
+                                            }
+                                        }
                                     }
                                 }
                             }
@@ -574,6 +661,23 @@
                                 .row-content{
                                     .col{
                                         @include col-12;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .news {
+                        .ne-container {
+                            .row-2 {
+                                .col-right {
+                                    .entry {
+                                        .entry-body{
+                                            margin-left: 0;
+                                            .entry-date{
+                                                display: none;
+                                            }
+                                        }
                                     }
                                 }
                             }

@@ -20,6 +20,8 @@
             @import "./layout/main/posts";
             .mpage-container{
                 @import "./layout/main/about";
+                @import "./layout/main/new";
+                @import "./layout/main/single";
             }
         }
         #footer{
