@@ -1,0 +1,140 @@
+.contact{
+    @include container-mw(100%);
+    .contac-container{
+        @include container-mw(77%);
+        font-family: $ft-def;
+        padding-bottom: 40px;
+        .row-1{
+            .breadcrumb{
+                @include container(100%);
+                padding: 1rem 0;
+                li{
+                    display: inline-block;
+                    a{
+                        color: #0e0e0e;
+                    }
+                }
+                li + li{
+                    padding-left: .7rem;
+                    i{
+                        margin-right: 10px;
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+        .row-2{
+            @include container-mw(100%);
+            margin-bottom: 3rem;
+            iframe{
+                @include container-mw(100%);
+                @include container(100%);
+                min-height: 400px;
+            }
+        }
+        .row-3{
+            @include container-mw(100%);
+            @include row-fb;
+            font-family: $ft-def;
+            padding: 1rem 0 3rem;
+            .title{
+                text-transform: uppercase;
+                font-size: 1.5rem;
+                font-weight: 600;
+                line-height: 1.1;
+                margin-bottom: 1.2rem;
+                color: #252525;
+                letter-spacing: 0;
+            }
+            .col-left{
+                @include col-8;
+                padding-right: 15px;
+                form{
+                    margin-bottom: 4rem;
+                    .required-field{
+                        >label::after {
+                            content: '*';
+                            color: #e02b27;
+                            font-size: .8rem;
+                            margin: 0 0 0 .45rem;
+                        }
+                    }
+                    .form-group {
+                        margin-bottom: 1.2rem;
+                        label {
+                            color: #777;
+                            font-weight: 400;
+                            font-size: .9rem;
+                            margin: 0 0 .6rem;
+                            display: block;
+                            width: 100%;
+                        }
+                        .form-control {
+                            padding: .5rem 1rem;
+                            font-size: 1.4rem;
+                            line-height: 1.5;
+                            font-weight: 400;
+                            font-family: $ft-def;
+                            color: #777;
+                            background-color: #fff;
+                            border: 1px solid #e6e6e6;
+                            border-radius: 0;
+                            margin-bottom: 1rem;
+                            transition: all .3s;
+                            display: block;
+                            width: 70%;
+                            background-clip: padding-box;
+                        }
+                        textarea.form-control{
+                            height: 196px;
+                            width: 95%;
+                        }
+                    }
+                    .form-footer{
+                        .btn {
+                            margin-right: 3rem;
+                            padding: .65rem 1.6rem;
+                            font-size: .9rem;
+                            line-height: 1.5;
+                            font-family: $ft-def2;
+                            letter-spacing: .1rem;
+                            text-transform: uppercase;
+                            transition: all .3s;
+                            cursor: pointer;
+                        }
+                        .btn-primary {
+                            color: #fff;
+                            background-color: #0e0e0e;
+                            border-color: #0e0e0e;
+                            box-shadow: none;
+                        }
+                    }
+                }
+            }
+            .col-right{
+                @include col-4;
+                padding-left: 15px;
+                .contact-info {
+                    margin-bottom: 3rem;
+                    >div {
+                        margin-bottom: 1.2rem;
+                    }
+                    p{
+                        box-sizing: border-box;
+                        margin: 0px 0px 10px;
+                        font-size: 15px;
+                        font-family: $ft-def3;
+                        color: #777;
+                        line-height: 1.5;
+                        span.bold{
+                            font-weight: 600;
+                        }
+                    }
+                    p.bold{
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+    }
+}

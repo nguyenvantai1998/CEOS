@@ -279,6 +279,34 @@
                             }
                         }
                     }
+
+                    .contact{
+                        .contac-container{
+                            @include container-mw(90%);
+                        }
+                    }
+
+                    .cart{
+                        .car-container{
+                            @include container-mw(90%);
+                            .row-2{
+                                .col-left{
+                                    @include col-12;
+                                    padding-right: 0;
+                                }
+                                .col-right{
+                                    @include col-12;
+                                    padding-left: 0;
+                                }
+                            }
+                        }
+                    }
+
+                    .compare{
+                        .compar-container{
+                            @include container-mw(90%);
+                        }
+                    }
                 }
             }
 
@@ -486,6 +514,57 @@
                             }
                         }
                     }
+                    
+                    .contact{
+                        .contac-container{
+                            .row-3{
+                                .col-left{
+                                    @include col-12;
+                                    padding-right: 0;
+                                    form{
+                                        .form-group{
+                                            .form-control{
+                                                width: 100%;
+                                                padding: .5rem 0;
+                                            }
+                                            textarea.form-control{
+                                                width: 100%;
+                                            }
+                                        }
+                                    }
+                                }
+                                .col-right{
+                                    @include col-12;
+                                }
+                            }
+                        }
+                    }
+
+                    .cart{
+                        .car-container{
+                            .row-2{
+                                .col-left{
+                                    @include col-12;
+                                    padding-right: 0;
+                                    form {
+                                        .cart-table-container {
+                                            overflow: hidden;
+                                            overflow-x: scroll;
+                                            .table{
+                                                @include container(1000px);
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .compare{
+                        .compar-container{
+                            @include container-mw(90%);
+                        }
+                    }
                 }
             }
 
@@ -603,6 +682,24 @@
                                             }
                                         }
                                     }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            // main page
+            #main{
+                .mpage-container{
+                    .compare{
+                        .compar-container{
+                            @include container-mw(90%);
+                            .row-2{
+                                overflow: hidden;
+                                overflow-x: scroll;
+                                .compare-info{
+                                    width: 1000px;
                                 }
                             }
                         }

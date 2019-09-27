@@ -1,0 +1,97 @@
+.compare{
+    @include container-mw(100%);
+    .compar-container{
+        @include container-mw(77%);
+        font-family: $ft-def;
+        .row-1{
+            .title{
+                @include container-mw(280px);
+                h2{
+                    font-size: 1.5rem;
+                    font-weight: 700;
+                    line-height: 1.1;
+                    margin-bottom: 1.3rem;
+                    color: #252525;
+                    letter-spacing: 0;
+                }
+            }
+        }
+        .row-2{
+            padding-bottom: 35px;
+            .compare-info.compare {
+                border-radius: 3px;
+                tr {
+                    td:first-child {
+                        font-weight: 600;
+                        width: 8%;
+                        background: #f8f8f8;
+                        vertical-align: top;
+                    }
+                }
+                td {
+                    vertical-align: middle;
+                }
+            }
+            .compare-info {
+                color: #777777;
+                border-style: hidden;
+                box-shadow: 0 0 0 1px #e5e5e5;
+                width: 100%;
+                background: #ffffff;
+                border-collapse: collapse;
+                td {
+                    padding: 15px 19px;
+                    width: 20%;
+                    border-right: 1px solid #f1f1f1;
+                    border-bottom: 1px solid #f1f1f1;
+                    line-height: 1.6;
+                    a{
+                        color: unset;
+                    }
+                    .rating_stars{
+                        color: #fccd36;
+                    }
+                    .price{
+                        color: #018bc8;
+                        font-weight: 600;
+                    }
+                }
+                .action{
+                    padding-bottom: 25px;
+                    .btn-holder {
+                        .btn {
+                            margin: 0 5px 5px 0;
+                            margin-right: 5px;
+                        }
+                        .btn-primary {
+                            background-color: #0e0e0e;
+                            border-color: #0e0e0e;
+                            box-shadow: none;
+                            padding: 1rem 2.6rem;
+                            font-size: 1rem;
+                            line-height: 1.5;
+                            font-family: $ft-def2;
+                            letter-spacing: .1rem;
+                            text-transform: uppercase;
+                            transition: all .3s;
+                        }
+                        .btn.btn-icon {
+                            padding: 0;
+                            text-align: center;
+                            color: #ffffff;
+                            width: 38px;
+                            height: 38px;
+                            background: #777777;
+                            padding: 10px 15px;
+                            border-radius: .2rem;
+                        }
+                    }
+                }
+            }
+        }
+
+
+
+
+    }
+}
