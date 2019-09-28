@@ -16,7 +16,7 @@ $(document).ready(function () {
             $('#hd-bottom-sticky').removeClass('hd-bottom-sticky');
         }
     })
-    
+
     // big banner home
     $('.bigBannerHome').owlCarousel({
         items: 1,
@@ -68,42 +68,73 @@ $(document).ready(function () {
     //---------- event mobile --------------//
 
     // show hide input search
-    $('#tabbar-search').click(function(){
+    $('#tabbar-search').click(function () {
         $('#input-search').toggleClass('form-control-active');
     });
 
     // toggle menu mobile
-    $('#tabbbar-nav-mobile').click(function(){
+    $('#tabbbar-nav-mobile').click(function () {
         $('#desktopColRight').addClass('desktopColRight-active');
         $('#mobileColLeft').addClass('mobileColLeft-active');
         $('#tab-closeNavmobile').addClass('tab-closeNavmobile-active');
     });
-    $('#tab-closeNavmobile, #tab-closeNavmobile2').click(function(){
+    $('#tab-closeNavmobile, #tab-closeNavmobile2').click(function () {
         $('#desktopColRight').removeClass('desktopColRight-active');
         $('#mobileColLeft').removeClass('mobileColLeft-active');
         $('#tab-closeNavmobile').removeClass('tab-closeNavmobile-active');
     });
-    
+
     // toggle submenu nav
-    $('#nav-mobile ul li a .btn-dow1').click(function(){
+    $('#nav-mobile ul li a .btn-dow1').click(function () {
         $('#nav-mobile ul li .sub-product').slideDown("slow");
         $('#nav-mobile ul li a .btn-dow1').hide();
         $('#nav-mobile ul li a .btn-up1').show();
     });
-    $('#nav-mobile ul li a .btn-up1').click(function(){
+    $('#nav-mobile ul li a .btn-up1').click(function () {
         $('#nav-mobile ul li .sub-product').slideUp("slow");
         $('#nav-mobile ul li a .btn-dow1').show();
         $('#nav-mobile ul li a .btn-up1').hide();
     });
-    $('#nav-mobile ul li a .btn-dow2').click(function(){
+    $('#nav-mobile ul li a .btn-dow2').click(function () {
         $('#nav-mobile ul li .sub-trademark').slideDown("slow");
         $('#nav-mobile ul li a .btn-dow2').hide();
         $('#nav-mobile ul li a .btn-up2').show();
     });
-    $('#nav-mobile ul li a .btn-up2').click(function(){
+    $('#nav-mobile ul li a .btn-up2').click(function () {
         $('#nav-mobile ul li .sub-trademark').slideUp("slow");
         $('#nav-mobile ul li a .btn-dow2').show();
         $('#nav-mobile ul li a .btn-up2').hide();
     });
+
+    // login register
+    $('#showModal-loginReg').click(function () {
+        $('#loginRegister,.bg-closeLoginReg').show();
+    });
+    $('#btn-closrLoginReg, #closeLoginReg').click(function () {
+        $('#loginRegister,.bg-closeLoginReg').hide();
+    });
+
+    // list product sildebar product
+    $('.listProductSB').owlCarousel({
+        items: 1,
+        loop: true,
+        margin: 10,
+        nav: false,
+        autoplay: false,
+        autoplayTimeout: 3500
+    });
+
+    // scroll slide range sildebar product
+    $("#slider-range").slider({
+        range: true,
+        min: 0,
+        max: 500,
+        values: [75, 300],
+        slide: function (event, ui) {
+            $("#amount").val("$" + ui.values[0] + " - $" + ui.values[1]);
+        }
+    });
+    $("#amount").val("$" + $("#slider-range").slider("values", 0) +
+        " - $" + $("#slider-range").slider("values", 1));
 
 })

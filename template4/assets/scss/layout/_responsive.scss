@@ -307,6 +307,23 @@
                             @include container-mw(90%);
                         }
                     }
+
+                    .product{
+                        .produc-container{
+                            @include container-mw(90%);
+                            .row-2{
+                                .col-left{
+                                    @include col-12;
+                                    margin-bottom: 25px;
+                                    padding-right: 0;
+                                }
+                                .col-right{
+                                    @include col-12;
+                                    padding-left: 0;
+                                }
+                            }
+                        }
+                    }
                 }
             }
 
@@ -318,6 +335,11 @@
             }
 
         }
+    }
+
+    // login register
+    #loginRegister{
+        @include container(90%);
     }
 }
 
@@ -565,6 +587,30 @@
                             @include container-mw(90%);
                         }
                     }
+
+                    .product{
+                        .produc-container{
+                            .row-2{
+                                .col-right{
+                                    .list-pro{
+                                        .col{
+                                            @include col-6;
+                                            padding-bottom: 30px;
+                                            .product {
+                                                .product-image-container {
+                                                    .product-image{
+                                                        img{
+                                                            width: 100%;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
             }
 
@@ -743,6 +789,18 @@
             }
         }
     }
+
+    // login register
+    #loginRegister{
+        top: 1.5%;
+        .container{
+            .col{
+                @include col-12;
+                padding-left: 0;
+                padding-right: 0;
+            }
+        }
+    }
 }
 
 @include res(599px){
@@ -774,6 +832,35 @@
                                             .entry-date{
                                                 display: none;
                                             }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .product{
+                        .produc-container{
+                            .row-2{
+                                .col-right{
+                                    .toolbox{
+                                        @include row-fb;
+                                        .toolbox-left{
+                                            @include col-12;
+                                            margin-bottom: 15px;
+                                        }
+                                        .toolbox-show{
+                                            @include col-12;
+                                            margin-bottom: 15px;
+                                            margin-left: unset;
+                                        }
+                                        .layout-modes{
+                                            margin-left: 0;
+                                        }
+                                    }
+                                    .list-pro{
+                                        .col{
+                                            @include col-12;
                                         }
                                     }
                                 }

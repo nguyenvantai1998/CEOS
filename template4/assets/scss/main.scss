@@ -25,6 +25,8 @@
                 @import "./layout/main/contact";
                 @import "./layout/main/cart";
                 @import "./layout/main/compare";
+                @import "./layout/main/policy";
+                @import "./layout/main/product";
             }
         }
         #footer{
@@ -36,6 +38,112 @@
             @import "layout/footer/footer";
         }
     }
+}
+#loginRegister{
+    position: fixed;
+    top: 30%;
+    right: 0;
+    left: 0;
+    z-index: 1042;
+    font-family: $ft-def;
+    @include container(55%);
+    display: none;
+    .container{
+        background: white;
+        @include container(100%);
+        padding: 1.5rem 2rem;
+        @include row-fb;
+        position: relative;
+        z-index: 1043;
+        .col{
+            @include col-6;
+        }
+        .col-left{
+            padding-right: 20px;
+            border-right: 1px solid #f5f6f6;
+        }
+        .col-right{
+            padding-left: 20px;
+        }
+        .title {
+            font-size: 1rem;
+            font-weight: 600;
+            line-height: 2;
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+        }
+        form{
+            display: block;
+            margin-bottom: 1rem;
+            label {
+                color: #777;
+                font-family: $ft-def;
+                font-size: .8rem;
+                font-weight: 400;
+                line-height: 1;
+                text-transform: capitalize;
+                width: 100%;
+                display: block;
+                margin-bottom: 5px;
+                .required {
+                    color: #e02b27;
+                    font-size: .8rem;
+                }
+            }
+            input{
+                @include input;
+                border: 1px solid #ddd;
+                padding: .8rem 1rem;
+                border-radius: 2px;
+                margin-bottom: 1.3rem;
+                height: calc(2em + 0.75rem + 2px);
+            }
+            .btn{
+                @include button;
+                line-height: 1.5;
+                font-family: $ft-def2;
+                text-transform: uppercase;
+                border-radius: 2px;
+                transition: all .3s;
+                color: #fff;
+                background-color: #0e0e0e;
+                border-color: #0e0e0e;
+                box-shadow: none;
+                padding: .6rem 1.7rem;
+                text-shadow: none;
+                font-size: 12px;
+                letter-spacing: .025em;
+            }
+        }
+        .forget-password {
+            color: #0e0e0e;
+            font-size: .8rem;
+            margin-top: 25px;
+            display: block;
+        }
+        .mfp-close{
+            @include button;
+            color: #333;
+            position: absolute;
+            top: 0;
+            right: 0;
+            font-size: 28px;
+            padding-left: 25px;
+            background: none;
+            cursor: pointer;
+        }
+    }
+}
+#closeLoginReg{
+    @include container-mw(100%);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1041;
+    display: none;
 }
 #tab-closeNavmobile{
     display: none;

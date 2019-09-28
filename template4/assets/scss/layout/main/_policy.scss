@@ -1,0 +1,44 @@
+.policy{
+    @include container-mw(100%);
+    font-family: $ft-def;
+    .polic-container{
+        .row-1{
+            .breadcrumb{
+                @include container(100%);
+                padding: 1rem 0;
+                li{
+                    display: inline-block;
+                    a{
+                        color: #0e0e0e;
+                    }
+                }
+                li + li{
+                    padding-left: .7rem;
+                    i{
+                        margin-right: 10px;
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+        .row-2{
+            h2{
+                font-weight: 600;
+                line-height: 1.1;
+                margin-bottom: 1.2rem;
+                color: #252525;
+                letter-spacing: 0;
+                font-size: 1.3rem;
+            }
+            p{
+                margin: 0px 0px 15px;
+                padding: 0px;
+                text-align: justify;
+                color: rgb(0, 0, 0);
+                font-family: $ft-def;
+                font-size: 14px;
+                line-height: 1.4;
+            }
+        }
+    }
+}
