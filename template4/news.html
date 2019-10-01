@@ -113,7 +113,8 @@
                                 <div class="hdt-menu">
                                     <ul>
                                         <li><a href="#">Sản phẩm yêu thích (0) </a></li>
-                                        <li><a href="#" class="login-link">Đăng nhập/Đăng ký</a></li>
+                                        <li><a href="#" class="login-link" id="showModal-loginReg">Đăng nhập/Đăng ký</a>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
@@ -161,14 +162,14 @@
                                     </div>
 
                                     <div class="header-search-wrapper">
-                                        <form>
+                                        <div>
                                             <input type="search" class="form-control" id="input-search" name="search"
                                                 placeholder="Tìm kiếm...">
-                                            <button class="btn btn-tabbar" id="tabbbar-nav-mobile"><i
+                                            <button type="submit" class="btn btn-tabbar" id="tabbbar-nav-mobile"><i
                                                     class="fas fa-bars"></i></button>
                                             <button class="btn btn-search" id="tabbar-search" type="submit"><i
                                                     class="fas fa-search"></i></button>
-                                        </form>
+                                        </div>
                                     </div>
 
                                 </div>
@@ -259,7 +260,7 @@
 
                                                 <div class="dropdown-cart-action">
                                                     <div class="btn-1">
-                                                        <a href="#" class="btn">Xem giỏ hàng</a>
+                                                        <a href="carts.html" class="btn">Xem giỏ hàng</a>
                                                     </div>
                                                     <div class="btn-2">
                                                         <a href="#" class="btn">Thanh toán</a>
@@ -318,12 +319,14 @@
                                                     himenaeos. Nulla nunc dui, tristique in semper vel, congue sed
                                                     ligula.</p>
 
-                                                <a href="#" class="read-more">Xem thêm <i class="fas fa-angle-double-right"></i></a>
+                                                <a href="#" class="read-more">Xem thêm <i
+                                                        class="fas fa-angle-double-right"></i></a>
                                             </div>
 
                                             <div class="entry-meta">
                                                 <span><i class="far fa-calendar-alt"></i>April 22, 2019</span>
-                                                <span><i class="fas fa-user-alt"></i>By <a href="#">Đoàn Nguyễn</a></span>
+                                                <span><i class="fas fa-user-alt"></i>By <a href="#">Đoàn
+                                                        Nguyễn</a></span>
                                                 <span><i class="fas fa-folder-open"></i>
                                                     <a href="#">Haircuts &amp; hairstyles</a>
                                                 </span>
@@ -355,12 +358,14 @@
                                                     himenaeos. Nulla nunc dui, tristique in semper vel, congue sed
                                                     ligula.</p>
 
-                                                <a href="#" class="read-more">Xem thêm <i class="fas fa-angle-double-right"></i></a>
+                                                <a href="#" class="read-more">Xem thêm <i
+                                                        class="fas fa-angle-double-right"></i></a>
                                             </div>
 
                                             <div class="entry-meta">
                                                 <span><i class="far fa-calendar-alt"></i>April 22, 2019</span>
-                                                <span><i class="fas fa-user-alt"></i>By <a href="#">Đoàn Nguyễn</a></span>
+                                                <span><i class="fas fa-user-alt"></i>By <a href="#">Đoàn
+                                                        Nguyễn</a></span>
                                                 <span><i class="fas fa-folder-open"></i>
                                                     <a href="#">Haircuts &amp; hairstyles</a>
                                                 </span>
@@ -369,68 +374,78 @@
                                     </article>
                                 </div>
 
-                                <div class="col-left">
-                                    <div class="widget widget-search">
-                                        <form class="search-form">
-                                            <input type="search" class="form-control" placeholder="Tìm kiếm bài viết ở đây..." name="timkiem" required="">
-                                            <button type="submit" class="search-submit" title="Tìm kiếm" name="searchtt">
-                                                <i class="fas fa-search"></i>
-                                                <span class="sr-only">Tìm kiếm</span>
-                                            </button>
-                                        </form>
-                                    </div>
+                                <div class="col-left" id="colLeftSictky">
+                                    <div class="boxStickyTop">
+                                        <div class="widget widget-search">
+                                            <form class="search-form">
+                                                <input type="search" class="form-control"
+                                                    placeholder="Tìm kiếm bài viết ở đây..." name="timkiem" required="">
+                                                <button type="submit" class="search-submit" title="Tìm kiếm"
+                                                    name="searchtt">
+                                                    <i class="fas fa-search"></i>
+                                                    <span class="sr-only">Tìm kiếm</span>
+                                                </button>
+                                            </form>
+                                        </div>
 
-                                    <div class="widget widget-categories">
-                                        <h4 class="widget-title">Danh mục tin tức</h4>
-                            
-                                        <ul class="list">
-                                            <li><a href="#"><i class="fas fa-caret-right"></i> All about clothing</a></li>
-                                            <li><a href="#"><i class="fas fa-caret-right"></i> Make-up &amp; beauty</a></li>
-                                            <li><a href="#"><i class="fas fa-caret-right"></i> Accessories</a></li>
-                                            <li><a href="#"><i class="fas fa-caret-right"></i> Fashion trends</a></li>
-                                            <li><a href="#"><i class="fas fa-caret-right"></i> Haircuts &amp; hairstyles</a></li>
-                                        </ul>
-                                    </div>
+                                        <div class="widget widget-categories">
+                                            <h4 class="widget-title">Danh mục tin tức</h4>
 
-                                    <div class="widget">
-                                        <h4 class="widget-title">Bài viết gần đây</h4>
-                            
-                                        <ul class="simple-entry-list">
-                                            <li>
-                                                <div class="entry-media">
-                                                    <a href="#">
-                                                        <img src="http://porto03.123corp.com.vn/thumb/65x43/1/data/upload/post-3.jpg" alt="Post">
-                                                    </a>
-                                                </div>
-                                                <div class="entry-info">
-                                                    <a href="#">Hello World!</a>
-                                                    <div class="entry-meta">
-                                                        April 22, 2019
+                                            <ul class="list">
+                                                <li><a href="#"><i class="fas fa-caret-right"></i> All about
+                                                        clothing</a></li>
+                                                <li><a href="#"><i class="fas fa-caret-right"></i> Make-up &amp;
+                                                        beauty</a></li>
+                                                <li><a href="#"><i class="fas fa-caret-right"></i> Accessories</a></li>
+                                                <li><a href="#"><i class="fas fa-caret-right"></i> Fashion trends</a>
+                                                </li>
+                                                <li><a href="#"><i class="fas fa-caret-right"></i> Haircuts &amp;
+                                                        hairstyles</a></li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="widget">
+                                            <h4 class="widget-title">Bài viết gần đây</h4>
+
+                                            <ul class="simple-entry-list">
+                                                <li>
+                                                    <div class="entry-media">
+                                                        <a href="#">
+                                                            <img src="http://porto03.123corp.com.vn/thumb/65x43/1/data/upload/post-3.jpg"
+                                                                alt="Post">
+                                                        </a>
                                                     </div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="entry-media">
-                                                    <a href="#">
-                                                        <img src="http://porto03.123corp.com.vn/thumb/65x43/1/data/upload/post-3.jpg" alt="Post">
-                                                    </a>
-                                                </div>
-                                                <div class="entry-info">
-                                                    <a href="#">Post Format - Image Gallery</a>
-                                                    <div class="entry-meta">
-                                                        April 22, 2019
+                                                    <div class="entry-info">
+                                                        <a href="#">Hello World!</a>
+                                                        <div class="entry-meta">
+                                                            April 22, 2019
+                                                        </div>
                                                     </div>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="entry-media">
+                                                        <a href="#">
+                                                            <img src="http://porto03.123corp.com.vn/thumb/65x43/1/data/upload/post-3.jpg"
+                                                                alt="Post">
+                                                        </a>
+                                                    </div>
+                                                    <div class="entry-info">
+                                                        <a href="#">Post Format - Image Gallery</a>
+                                                        <div class="entry-meta">
+                                                            April 22, 2019
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
 
-                                    <div class="widget">
-                                        <h4 class="widget-title">Tagcloud</h4>
-                            
-                                        <div class="tagcloud">
-                                            <a href="#">Fashion</a>
-                                            <a href="#">Shoes</a>
+                                        <div class="widget">
+                                            <h4 class="widget-title">Tagcloud</h4>
+
+                                            <div class="tagcloud">
+                                                <a href="#">Fashion</a>
+                                                <a href="#">Shoes</a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

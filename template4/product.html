@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="./assets/css/jquery-ui.css">
     <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css">
     <link rel="stylesheet" href="./assets/css/owl.carousel.css">
     <link rel="stylesheet" href="./assets/css/style.css">
@@ -114,7 +113,8 @@
                                 <div class="hdt-menu">
                                     <ul>
                                         <li><a href="#">Sản phẩm yêu thích (0) </a></li>
-                                        <li><a href="#" class="login-link">Đăng nhập/Đăng ký</a></li>
+                                        <li><a href="#" class="login-link" id="showModal-loginReg">Đăng nhập/Đăng ký</a>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
@@ -162,14 +162,14 @@
                                     </div>
 
                                     <div class="header-search-wrapper">
-                                        <form>
+                                        <div>
                                             <input type="search" class="form-control" id="input-search" name="search"
                                                 placeholder="Tìm kiếm...">
-                                            <button class="btn btn-tabbar" id="tabbbar-nav-mobile"><i
+                                            <button type="submit" class="btn btn-tabbar" id="tabbbar-nav-mobile"><i
                                                     class="fas fa-bars"></i></button>
                                             <button class="btn btn-search" id="tabbar-search" type="submit"><i
                                                     class="fas fa-search"></i></button>
-                                        </form>
+                                        </div>
                                     </div>
 
                                 </div>
@@ -260,7 +260,7 @@
 
                                                 <div class="dropdown-cart-action">
                                                     <div class="btn-1">
-                                                        <a href="#" class="btn">Xem giỏ hàng</a>
+                                                        <a href="carts.html" class="btn">Xem giỏ hàng</a>
                                                     </div>
                                                     <div class="btn-2">
                                                         <a href="#" class="btn">Thanh toán</a>

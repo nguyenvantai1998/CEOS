@@ -324,6 +324,22 @@
                             }
                         }
                     }
+
+                    .singleCategory {
+                        .singleCatego-container {
+                            .row-2 {
+                                .col-right{
+                                    @include col-12;
+                                    padding-right: 0;
+                                }
+                                .col-left{
+                                    @include col-12;
+                                    padding-left: 0;
+                                    margin-top: 25px;
+                                }
+                            }
+                        }
+                    }
                 }
             }
 
@@ -377,7 +393,7 @@
                                     }
                                     .header-search-wrapper{
                                         @include col-6;
-                                        form{
+                                        div{
                                             .form-control{
                                                 display: none;
                                                 position: absolute;
@@ -572,8 +588,20 @@
                                         .cart-table-container {
                                             overflow: hidden;
                                             overflow-x: scroll;
-                                            .table{
-                                                @include container(1000px);
+                                            .table.table-cart {
+                                                tr {
+                                                    .tong-phu{
+                                                        padding-left: 10px;
+                                                    }
+                                                    td{
+                                                        .input-group{
+                                                            button{
+                                                                right: -5px;
+                                                                font-size: 12px;
+                                                            }
+                                                        }
+                                                    }
+                                                }
                                             }
                                         }
                                     }
@@ -607,6 +635,30 @@
                                             }
                                         }
                                     }
+                                }
+                            }
+                        }
+                    }
+
+                    .singleCategory {
+                        .singleCatego-container {
+                            .row-2 {
+                                .col-right{
+                                    .boxSlideImg{
+                                        @include col-12;
+                                        padding-right: 0;
+                                    }
+                                    .boxContentDetail{
+                                        @include col-12;
+                                        padding-left: 0;
+                                        margin-top: 35px;
+                                        margin-bottom: 25px;
+                                    }
+                                }
+                                .col-left{
+                                    @include col-12;
+                                    padding-left: 0;
+                                    margin-top: 25px;
                                 }
                             }
                         }
@@ -750,6 +802,52 @@
                             }
                         }
                     }
+
+                    .cart{
+                        .car-container{
+                            .row-2{
+                                .col-left{
+                                    form {
+                                        .cart-table-container {
+                                            .table.table-cart {
+                                                thead{
+                                                    display: none;
+                                                }
+                                                tbody{
+                                                    .product-row{
+                                                        @include row-fb;
+                                                        .product-col{
+                                                            @include col-12;
+                                                        }
+                                                        td{
+                                                            @include col-12;
+                                                            text-align: center;
+                                                            border-top: none;
+                                                            margin-bottom: 15px;
+                                                            .input-group {
+                                                                @include container(15%);
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                                tfoot{
+                                                    td{
+                                                        .float-left{
+                                                            display: none;
+                                                        }
+                                                        .float-right{
+                                                            float: unset !important;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
                 }
             }
 
@@ -805,10 +903,62 @@
 
 @include res(599px){
     #containerOverlow {
+        #mobileColLeft {
+            max-width: 50%;
+            width: 50%;
+            left: -50%;
+            .mobColLeft-container {
+                .row-2{
+                    .nav-mobile{
+                        .mobile-list{
+                            li {
+                                a{
+                                    font-size: .7rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
         #desktopColRight {
 
             // main page
             #main{
+                .bannerBig{
+                    .bng-container{
+                        .bigBannerHome{
+                            .item{
+                                .box-item{
+                                    .box-right {
+                                        right: 0;
+                                    }
+                                    .box-left{
+                                        left: 0;
+                                    }
+                                    .box-content{
+                                        top: 70%;
+                                        padding: 1.2rem 1.2rem 1.6rem;
+                                        h3{
+                                            font-size: 11px;
+                                        }
+                                        h1{
+                                            font-size: 25px;
+                                            margin-bottom: 2rem;
+                                        }
+                                    }
+                                    .box-img{
+                                        img{
+                                            min-height: 400px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
                 .mpage-container{
                     .about{
                         .ab-container2{
@@ -870,6 +1020,60 @@
                 }
             }
 
+            // main page
+            #main {
+                .mpage-container {
+                    .cart {
+                        .car-container {
+                            .row-2 {
+                                .col-left {
+                                    form {
+                                        .cart-table-container {
+                                            .table.table-cart{
+                                                tbody {
+                                                    .product-row{
+                                                        .product-col{
+                                                            @include row-fb;
+                                                            padding-right: 0;
+                                                            .product-image-container{
+                                                                @include col-12;
+                                                                margin-right: 0;
+                                                                a{
+                                                                    img{
+                                                                        width: 100%;
+                                                                    }
+                                                                }
+                                                            }
+                                                            .product-title{
+                                                                @include col-12;
+                                                                text-align: center;
+                                                            }
+                                                        }
+                                                        td{
+                                                            .input-group{
+                                                                @include container(20%);
+                                                                button {
+                                                                    right: -10px;
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                                tfoot{
+                                                    .btn{
+                                                        padding-left: 0;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
             // footer
             #footer{
                 .ft-container{
@@ -909,7 +1113,27 @@
 }
 
 @include res(424px){
-    
+    #containerOverlow{
+        #desktopColRight {
+            #main {
+                .bannerBig{
+                    .bng-container{
+                        .bigBannerHome{
+                            .item{
+                                .box-item{
+                                    .box-img{
+                                        img{
+                                            min-height: 350px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 @include res(375px){

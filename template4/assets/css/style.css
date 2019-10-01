@@ -497,11 +497,11 @@ input, select {
                   position: relative;
                   width: 100%;
                   background-color: #fff; }
-                  #containerOverlow #desktopColRight #header .hd-container .hd-middle .hdmd-container .col-right .header-search .header-search-wrapper form {
+                  #containerOverlow #desktopColRight #header .hd-container .hd-middle .hdmd-container .col-right .header-search .header-search-wrapper div {
                     width: 220px;
                     position: relative;
                     margin: 0; }
-                    #containerOverlow #desktopColRight #header .hd-container .hd-middle .hdmd-container .col-right .header-search .header-search-wrapper form .form-control {
+                    #containerOverlow #desktopColRight #header .hd-container .hd-middle .hdmd-container .col-right .header-search .header-search-wrapper div .form-control {
                       width: 100%;
                       border-radius: 0;
                       height: 30px;
@@ -516,7 +516,7 @@ input, select {
                       box-shadow: none;
                       border: 0;
                       text-transform: uppercase; }
-                    #containerOverlow #desktopColRight #header .hd-container .hd-middle .hdmd-container .col-right .header-search .header-search-wrapper form .btn {
+                    #containerOverlow #desktopColRight #header .hd-container .hd-middle .hdmd-container .col-right .header-search .header-search-wrapper div .btn {
                       position: absolute;
                       right: .6rem;
                       top: 50%;
@@ -534,7 +534,7 @@ input, select {
                       border-radius: 0;
                       -webkit-transform: translateY(-50%);
                       transform: translateY(-50%); }
-                    #containerOverlow #desktopColRight #header .hd-container .hd-middle .hdmd-container .col-right .header-search .header-search-wrapper form .btn-tabbar {
+                    #containerOverlow #desktopColRight #header .hd-container .hd-middle .hdmd-container .col-right .header-search .header-search-wrapper div .btn-tabbar {
                       display: none; }
         #containerOverlow #desktopColRight #header .hd-container .hd-bottom {
           max-width: 100%;
@@ -1907,68 +1907,69 @@ input, select {
             flex: 0 0 25%;
             max-width: 25%;
             box-sizing: border-box;
-            padding-left: 15px; }
-            #containerOverlow #desktopColRight #main .mpage-container .news .ne-container .row-2 .col-left .widget {
+            padding-left: 15px;
+            position: relative; }
+            #containerOverlow #desktopColRight #main .mpage-container .news .ne-container .row-2 .col-left .boxStickyTop .widget {
               margin-bottom: 1.5rem; }
-              #containerOverlow #desktopColRight #main .mpage-container .news .ne-container .row-2 .col-left .widget form {
+              #containerOverlow #desktopColRight #main .mpage-container .news .ne-container .row-2 .col-left .boxStickyTop .widget form {
                 position: relative;
                 margin: 0; }
-              #containerOverlow #desktopColRight #main .mpage-container .news .ne-container .row-2 .col-left .widget .widget-title {
+              #containerOverlow #desktopColRight #main .mpage-container .news .ne-container .row-2 .col-left .boxStickyTop .widget .widget-title {
                 font-size: 1.2rem;
                 line-height: 1.2;
                 font-weight: bold;
                 color: #252525;
                 margin: 0 0 .7rem; }
-              #containerOverlow #desktopColRight #main .mpage-container .news .ne-container .row-2 .col-left .widget .list {
+              #containerOverlow #desktopColRight #main .mpage-container .news .ne-container .row-2 .col-left .boxStickyTop .widget .list {
                 width: 100%;
                 margin: 0 auto;
                 box-sizing: border-box; }
-                #containerOverlow #desktopColRight #main .mpage-container .news .ne-container .row-2 .col-left .widget .list li {
+                #containerOverlow #desktopColRight #main .mpage-container .news .ne-container .row-2 .col-left .boxStickyTop .widget .list li {
                   margin: 0;
                   padding: 0;
                   display: block;
                   position: relative; }
-                  #containerOverlow #desktopColRight #main .mpage-container .news .ne-container .row-2 .col-left .widget .list li a {
+                  #containerOverlow #desktopColRight #main .mpage-container .news .ne-container .row-2 .col-left .boxStickyTop .widget .list li a {
                     font-size: .9rem;
                     color: #000;
                     position: relative;
                     display: block;
                     padding: .9rem 0 .8rem .5rem;
                     border-bottom: 1px solid #EDEDDE; }
-              #containerOverlow #desktopColRight #main .mpage-container .news .ne-container .row-2 .col-left .widget .simple-entry-list {
+              #containerOverlow #desktopColRight #main .mpage-container .news .ne-container .row-2 .col-left .boxStickyTop .widget .simple-entry-list {
                 list-style: none;
                 margin: 0;
                 padding: 0; }
-                #containerOverlow #desktopColRight #main .mpage-container .news .ne-container .row-2 .col-left .widget .simple-entry-list li {
+                #containerOverlow #desktopColRight #main .mpage-container .news .ne-container .row-2 .col-left .boxStickyTop .widget .simple-entry-list li {
                   margin: 0 0 .5rem;
                   display: -ms-flexbox;
                   display: flex;
                   -ms-flex-wrap: wrap;
                   flex-wrap: wrap;
                   box-sizing: border-box; }
-                #containerOverlow #desktopColRight #main .mpage-container .news .ne-container .row-2 .col-left .widget .simple-entry-list .entry-media {
+                #containerOverlow #desktopColRight #main .mpage-container .news .ne-container .row-2 .col-left .boxStickyTop .widget .simple-entry-list .entry-media {
                   position: relative;
                   -ms-flex: 0 0 25%;
                   flex: 0 0 25%;
                   max-width: 25%;
                   box-sizing: border-box;
                   border-radius: 0; }
-                  #containerOverlow #desktopColRight #main .mpage-container .news .ne-container .row-2 .col-left .widget .simple-entry-list .entry-media a img {
+                  #containerOverlow #desktopColRight #main .mpage-container .news .ne-container .row-2 .col-left .boxStickyTop .widget .simple-entry-list .entry-media a img {
                     vertical-align: middle;
                     max-width: 100%;
                     height: auto; }
-                #containerOverlow #desktopColRight #main .mpage-container .news .ne-container .row-2 .col-left .widget .simple-entry-list .entry-info {
+                #containerOverlow #desktopColRight #main .mpage-container .news .ne-container .row-2 .col-left .boxStickyTop .widget .simple-entry-list .entry-info {
                   color: #0e0e0e;
                   text-decoration: none;
                   transition: all .3s;
                   padding-left: 10px; }
-                  #containerOverlow #desktopColRight #main .mpage-container .news .ne-container .row-2 .col-left .widget .simple-entry-list .entry-info a {
+                  #containerOverlow #desktopColRight #main .mpage-container .news .ne-container .row-2 .col-left .boxStickyTop .widget .simple-entry-list .entry-info a {
                     color: #000; }
-                  #containerOverlow #desktopColRight #main .mpage-container .news .ne-container .row-2 .col-left .widget .simple-entry-list .entry-info .entry-meta {
+                  #containerOverlow #desktopColRight #main .mpage-container .news .ne-container .row-2 .col-left .boxStickyTop .widget .simple-entry-list .entry-info .entry-meta {
                     font-size: .8rem;
                     color: #888;
                     margin-top: 10px; }
-              #containerOverlow #desktopColRight #main .mpage-container .news .ne-container .row-2 .col-left .widget .tagcloud a {
+              #containerOverlow #desktopColRight #main .mpage-container .news .ne-container .row-2 .col-left .boxStickyTop .widget .tagcloud a {
                 display: block;
                 padding: .7rem .8rem;
                 background-color: #e1e1e1;
@@ -1978,7 +1979,7 @@ input, select {
                 line-height: 11px;
                 float: left;
                 margin: 0 .7rem .7rem 0; }
-            #containerOverlow #desktopColRight #main .mpage-container .news .ne-container .row-2 .col-left .widget-search .form-control {
+            #containerOverlow #desktopColRight #main .mpage-container .news .ne-container .row-2 .col-left .boxStickyTop .widget-search .form-control {
               max-width: none;
               width: 100%;
               padding: .9rem .9rem;
@@ -1992,7 +1993,7 @@ input, select {
               border-radius: 0;
               margin-bottom: 1rem;
               transition: all .3s; }
-            #containerOverlow #desktopColRight #main .mpage-container .news .ne-container .row-2 .col-left .widget-search .search-submit {
+            #containerOverlow #desktopColRight #main .mpage-container .news .ne-container .row-2 .col-left .boxStickyTop .widget-search .search-submit {
               position: absolute;
               right: 15px;
               top: 60%;
@@ -2007,6 +2008,9 @@ input, select {
               font-size: 1rem;
               font-weight: 300;
               color: #0e0e0e; }
+            #containerOverlow #desktopColRight #main .mpage-container .news .ne-container .row-2 .col-left .boxStickyTop-active {
+              position: -webkit-sticky;
+              position: sticky; }
     #containerOverlow #desktopColRight #main .mpage-container .single .singl-container .row-2 .col-right .entry .entry-body {
       padding-bottom: 0;
       border-bottom: 0; }
@@ -3060,6 +3064,373 @@ input, select {
                         text-decoration: line-through; }
                       #containerOverlow #desktopColRight #main .mpage-container .product .produc-container .row-2 .col-right .list-pro .col .product .product-details .price-box .old-price + .product-price {
                         margin-left: .5rem; }
+    #containerOverlow #desktopColRight #main .mpage-container .singleCategory .singleCatego-container .row-2 .col-right {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      box-sizing: border-box; }
+      #containerOverlow #desktopColRight #main .mpage-container .singleCategory .singleCatego-container .row-2 .col-right .boxSlideImg {
+        position: relative;
+        -ms-flex: 0 0 58.333333%;
+        flex: 0 0 58.333333%;
+        max-width: 58.333333%;
+        box-sizing: border-box;
+        padding-right: 15px;
+        margin-top: -20px; }
+        #containerOverlow #desktopColRight #main .mpage-container .singleCategory .singleCatego-container .row-2 .col-right .boxSlideImg .slider-container {
+          cursor: grab; }
+          #containerOverlow #desktopColRight #main .mpage-container .singleCategory .singleCatego-container .row-2 .col-right .boxSlideImg .slider-container:hover .owl-nav {
+            opacity: 1 !important; }
+          #containerOverlow #desktopColRight #main .mpage-container .singleCategory .singleCatego-container .row-2 .col-right .boxSlideImg .slider-container:hover .slider .item .content .boxIMhover {
+            opacity: 1 !important; }
+          #containerOverlow #desktopColRight #main .mpage-container .singleCategory .singleCatego-container .row-2 .col-right .boxSlideImg .slider-container .owl-dots {
+            display: none; }
+          #containerOverlow #desktopColRight #main .mpage-container .singleCategory .singleCatego-container .row-2 .col-right .boxSlideImg .slider-container .owl-dots-active {
+            display: block; }
+          #containerOverlow #desktopColRight #main .mpage-container .singleCategory .singleCatego-container .row-2 .col-right .boxSlideImg .slider-container .owl-nav {
+            opacity: 0;
+            transition: all .5s; }
+            #containerOverlow #desktopColRight #main .mpage-container .singleCategory .singleCatego-container .row-2 .col-right .boxSlideImg .slider-container .owl-nav button {
+              position: absolute;
+              top: 40%;
+              background: none;
+              border: none;
+              outline: none;
+              font-size: 45px;
+              font-weight: 700; }
+            #containerOverlow #desktopColRight #main .mpage-container .singleCategory .singleCatego-container .row-2 .col-right .boxSlideImg .slider-container .owl-nav .owl-prev {
+              left: 15px; }
+            #containerOverlow #desktopColRight #main .mpage-container .singleCategory .singleCatego-container .row-2 .col-right .boxSlideImg .slider-container .owl-nav .owl-next {
+              right: 30px; }
+          #containerOverlow #desktopColRight #main .mpage-container .singleCategory .singleCatego-container .row-2 .col-right .boxSlideImg .slider-container .owl-stage-outer {
+            margin-top: 10px; }
+            #containerOverlow #desktopColRight #main .mpage-container .singleCategory .singleCatego-container .row-2 .col-right .boxSlideImg .slider-container .owl-stage-outer .owl-stage .owl-item .item {
+              margin-right: 10px; }
+          #containerOverlow #desktopColRight #main .mpage-container .singleCategory .singleCatego-container .row-2 .col-right .boxSlideImg .slider-container .thumbnail-slider-container .owl-nav {
+            display: none !important;
+            opacity: 0 !important; }
+          #containerOverlow #desktopColRight #main .mpage-container .singleCategory .singleCatego-container .row-2 .col-right .boxSlideImg .slider-container .slider .item {
+            background: red; }
+            #containerOverlow #desktopColRight #main .mpage-container .singleCategory .singleCatego-container .row-2 .col-right .boxSlideImg .slider-container .slider .item .content {
+              position: relative; }
+              #containerOverlow #desktopColRight #main .mpage-container .singleCategory .singleCatego-container .row-2 .col-right .boxSlideImg .slider-container .slider .item .content .boxIMhover {
+                position: absolute;
+                width: 50%;
+                height: 50%;
+                z-index: 1000;
+                left: 0;
+                right: 0;
+                top: 0;
+                background: white;
+                opacity: 0;
+                transition: all .5s; }
+                #containerOverlow #desktopColRight #main .mpage-container .singleCategory .singleCatego-container .row-2 .col-right .boxSlideImg .slider-container .slider .item .content .boxIMhover img {
+                  vertical-align: middle;
+                  max-width: 100%;
+                  height: auto; }
+      #containerOverlow #desktopColRight #main .mpage-container .singleCategory .singleCatego-container .row-2 .col-right .boxContentDetail {
+        position: relative;
+        -ms-flex: 0 0 41.666667%;
+        flex: 0 0 41.666667%;
+        max-width: 41.666667%;
+        box-sizing: border-box;
+        padding-left: 15px; }
+        #containerOverlow #desktopColRight #main .mpage-container .singleCategory .singleCatego-container .row-2 .col-right .boxContentDetail .product-single-details {
+          font-family: "Open Sans", sans-serif; }
+          #containerOverlow #desktopColRight #main .mpage-container .singleCategory .singleCatego-container .row-2 .col-right .boxContentDetail .product-single-details .product-title {
+            color: #21293c;
+            font-weight: 600;
+            font-size: 1.5rem;
+            letter-spacing: -.01em;
+            margin-bottom: .3rem;
+            line-height: 1.25;
+            font-family: "Open Sans", sans-serif; }
+          #containerOverlow #desktopColRight #main .mpage-container .singleCategory .singleCatego-container .row-2 .col-right .boxContentDetail .product-single-details .ratings-container {
+            margin-bottom: 1.1rem; }
+            #containerOverlow #desktopColRight #main .mpage-container .singleCategory .singleCatego-container .row-2 .col-right .boxContentDetail .product-single-details .ratings-container .product-ratings {
+              position: relative;
+              display: inline-block;
+              font-size: .7rem;
+              letter-spacing: 0.1em;
+              line-height: 1;
+              font-family: 'porto'; }
+              #containerOverlow #desktopColRight #main .mpage-container .singleCategory .singleCatego-container .row-2 .col-right .boxContentDetail .product-single-details .ratings-container .product-ratings i {
+                color: #777; }
+              #containerOverlow #desktopColRight #main .mpage-container .singleCategory .singleCatego-container .row-2 .col-right .boxContentDetail .product-single-details .ratings-container .product-ratings i.active {
+                color: #000; }
+            #containerOverlow #desktopColRight #main .mpage-container .singleCategory .singleCatego-container .row-2 .col-right .boxContentDetail .product-single-details .ratings-container .rating-link {
+              font-weight: 500;
+              color: #90939a;
+              letter-spacing: .025em;
+              margin-left: .7rem; }
+          #containerOverlow #desktopColRight #main .mpage-container .singleCategory .singleCatego-container .row-2 .col-right .boxContentDetail .product-single-details .price-box {
+            color: #0e0e0e;
+            font-weight: 700;
+            margin-bottom: 1.4rem;
+            font-family: "Oswald", sans-serif; }
+            #containerOverlow #desktopColRight #main .mpage-container .singleCategory .singleCatego-container .row-2 .col-right .boxContentDetail .product-single-details .price-box .old-price {
+              font-weight: 600;
+              font-size: 1rem;
+              color: #6e6e6e;
+              text-decoration: line-through; }
+            #containerOverlow #desktopColRight #main .mpage-container .singleCategory .singleCatego-container .row-2 .col-right .boxContentDetail .product-single-details .price-box .old-price + .product-price {
+              margin-left: .7rem;
+              font-size: 1.3rem; }
+          #containerOverlow #desktopColRight #main .mpage-container .singleCategory .singleCatego-container .row-2 .col-right .boxContentDetail .product-single-details p {
+            margin-bottom: 1rem; }
+          #containerOverlow #desktopColRight #main .mpage-container .singleCategory .singleCatego-container .row-2 .col-right .boxContentDetail .product-single-details .product-desc {
+            font-size: .9rem;
+            line-height: 1.92;
+            letter-spacing: .005em;
+            padding-bottom: 1.7rem;
+            border-bottom: 1px solid #dae2e6;
+            margin-bottom: 1.7rem;
+            color: #777; }
+          #containerOverlow #desktopColRight #main .mpage-container .singleCategory .singleCatego-container .row-2 .col-right .boxContentDetail .product-single-details .product-single-share {
+            display: flex;
+            align-items: center; }
+            #containerOverlow #desktopColRight #main .mpage-container .singleCategory .singleCatego-container .row-2 .col-right .boxContentDetail .product-single-details .product-single-share label {
+              color: #7b858a;
+              font-family: "Open Sans", sans-serif;
+              font-size: .9rem;
+              line-height: 1.1;
+              font-weight: 600;
+              letter-spacing: .005em;
+              text-transform: uppercase;
+              margin-right: .8rem; }
+            #containerOverlow #desktopColRight #main .mpage-container .singleCategory .singleCatego-container .row-2 .col-right .boxContentDetail .product-single-details .product-single-share a {
+              display: inline-flex;
+              align-items: center;
+              justify-content: center;
+              background: #4c4c4c;
+              color: #fff;
+              border-radius: 50%;
+              width: 30px;
+              height: 30px;
+              margin-right: 7px;
+              font-size: 12px; }
+          #containerOverlow #desktopColRight #main .mpage-container .singleCategory .singleCatego-container .row-2 .col-right .boxContentDetail .product-single-details form {
+            margin-bottom: 2.5rem; }
+            #containerOverlow #desktopColRight #main .mpage-container .singleCategory .singleCatego-container .row-2 .col-right .boxContentDetail .product-single-details form .product-filters-container {
+              margin-bottom: 2.5rem; }
+              #containerOverlow #desktopColRight #main .mpage-container .singleCategory .singleCatego-container .row-2 .col-right .boxContentDetail .product-single-details form .product-filters-container .product-single-filter {
+                display: flex;
+                align-items: center;
+                padding-bottom: 1.7rem;
+                border-bottom: 1px solid #dae2e6; }
+                #containerOverlow #desktopColRight #main .mpage-container .singleCategory .singleCatego-container .row-2 .col-right .boxContentDetail .product-single-details form .product-filters-container .product-single-filter label {
+                  color: #21293c;
+                  font-weight: 600;
+                  font-size: .9rem;
+                  line-height: 1.1;
+                  font-family: "Open Sans", sans-serif;
+                  letter-spacing: .005em;
+                  text-transform: uppercase;
+                  margin-right: 1.3rem;
+                  margin-bottom: 0; }
+                #containerOverlow #desktopColRight #main .mpage-container .singleCategory .singleCatego-container .row-2 .col-right .boxContentDetail .product-single-details form .product-filters-container .product-single-filter b {
+                  color: #777;
+                  padding: 3px 0; }
+                  #containerOverlow #desktopColRight #main .mpage-container .singleCategory .singleCatego-container .row-2 .col-right .boxContentDetail .product-single-details form .product-filters-container .product-single-filter b input {
+                    margin-top: -2px; }
+              #containerOverlow #desktopColRight #main .mpage-container .singleCategory .singleCatego-container .row-2 .col-right .boxContentDetail .product-single-details form .product-filters-container .product-single-filter + .product-single-filter {
+                margin-top: 1.2rem; }
+            #containerOverlow #desktopColRight #main .mpage-container .singleCategory .singleCatego-container .row-2 .col-right .boxContentDetail .product-single-details form .product-action {
+              justify-content: flex-start;
+              margin-bottom: 2.1rem;
+              display: flex;
+              align-items: center; }
+              #containerOverlow #desktopColRight #main .mpage-container .singleCategory .singleCatego-container .row-2 .col-right .boxContentDetail .product-single-details form .product-action .product-single-qty {
+                max-width: 104px;
+                max-height: 43px; }
+                #containerOverlow #desktopColRight #main .mpage-container .singleCategory .singleCatego-container .row-2 .col-right .boxContentDetail .product-single-details form .product-action .product-single-qty .bootstrap-touchspin.input-group {
+                  display: flex;
+                  align-items: stretch;
+                  flex-wrap: nowrap;
+                  max-width: 100%;
+                  padding-right: 0;
+                  max-height: 43px; }
+                #containerOverlow #desktopColRight #main .mpage-container .singleCategory .singleCatego-container .row-2 .col-right .boxContentDetail .product-single-details form .product-action .product-single-qty .btn.btn-outline {
+                  color: #8798a1;
+                  border-color: #dae2e6; }
+                #containerOverlow #desktopColRight #main .mpage-container .singleCategory .singleCatego-container .row-2 .col-right .boxContentDetail .product-single-details form .product-action .product-single-qty .btn {
+                  position: relative;
+                  z-index: 2;
+                  font-family: "Oswald", sans-serif;
+                  display: inline-flex;
+                  align-items: center;
+                  justify-content: center;
+                  min-width: 31px;
+                  font-size: 2rem;
+                  padding: .5rem;
+                  line-height: 1;
+                  margin: 0;
+                  background: none;
+                  border: none;
+                  outline: none; }
+                #containerOverlow #desktopColRight #main .mpage-container .singleCategory .singleCatego-container .row-2 .col-right .boxContentDetail .product-single-details form .product-action .product-single-qty .bootstrap-touchspin .form-control {
+                  color: #21293c;
+                  font-size: 1rem;
+                  letter-spacing: .05em;
+                  padding: .5rem .2rem;
+                  max-width: none;
+                  box-shadow: none;
+                  width: 30px; }
+              #containerOverlow #desktopColRight #main .mpage-container .singleCategory .singleCatego-container .row-2 .col-right .boxContentDetail .product-single-details form .product-action .product-single-qty + .add-cart {
+                margin-left: .7rem;
+                font-weight: 400;
+                font-size: .8rem;
+                line-height: 1;
+                font-family: "Oswald", sans-serif;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                background-color: #0e0e0e;
+                color: #fff;
+                padding: .85rem 1rem;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                transition: all .3s;
+                text-decoration: none;
+                cursor: pointer; }
+                #containerOverlow #desktopColRight #main .mpage-container .singleCategory .singleCatego-container .row-2 .col-right .boxContentDetail .product-single-details form .product-action .product-single-qty + .add-cart i {
+                  margin-right: 5px; }
+              #containerOverlow #desktopColRight #main .mpage-container .singleCategory .singleCatego-container .row-2 .col-right .boxContentDetail .product-single-details form .product-action .paction {
+                margin-left: 10px;
+                font-size: 1.2rem;
+                color: #c1c3c5; }
+    #containerOverlow #desktopColRight #main .mpage-container .singleCategory .singleCatego-container .row-2 .col-left .colLeft-container .widget {
+      padding: 1rem;
+      border: 1px solid #efefef;
+      border-bottom: none;
+      margin: 0; }
+      #containerOverlow #desktopColRight #main .mpage-container .singleCategory .singleCatego-container .row-2 .col-left .colLeft-container .widget:last-child {
+        border-bottom: 1px solid #efefef; }
+    #containerOverlow #desktopColRight #main .mpage-container .singleCategory .singleCatego-container .row-2 .col-left .colLeft-container .widget-title {
+      font-weight: 400;
+      font-size: .9rem;
+      line-height: 1.1;
+      text-transform: uppercase;
+      font-family: "Oswald", sans-serif;
+      margin: 0; }
+      #containerOverlow #desktopColRight #main .mpage-container .singleCategory .singleCatego-container .row-2 .col-left .colLeft-container .widget-title a {
+        color: #252525;
+        position: relative;
+        display: block; }
+        #containerOverlow #desktopColRight #main .mpage-container .singleCategory .singleCatego-container .row-2 .col-left .colLeft-container .widget-title a i {
+          position: absolute;
+          right: 0;
+          font-weight: 300;
+          margin-right: 5px; }
+    #containerOverlow #desktopColRight #main .mpage-container .singleCategory .singleCatego-container .row-2 .col-left .colLeft-container .widget-body {
+      padding-top: .7rem;
+      padding-bottom: .9rem; }
+      #containerOverlow #desktopColRight #main .mpage-container .singleCategory .singleCatego-container .row-2 .col-left .colLeft-container .widget-body .cat-list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        margin-top: 10px; }
+        #containerOverlow #desktopColRight #main .mpage-container .singleCategory .singleCatego-container .row-2 .col-left .colLeft-container .widget-body .cat-list li {
+          margin-bottom: .7rem; }
+          #containerOverlow #desktopColRight #main .mpage-container .singleCategory .singleCatego-container .row-2 .col-left .colLeft-container .widget-body .cat-list li a {
+            font-weight: 400;
+            color: #777;
+            transition: all .3s; }
+            #containerOverlow #desktopColRight #main .mpage-container .singleCategory .singleCatego-container .row-2 .col-left .colLeft-container .widget-body .cat-list li a:hover {
+              text-decoration: underline;
+              color: #0e0e0e; }
+            #containerOverlow #desktopColRight #main .mpage-container .singleCategory .singleCatego-container .row-2 .col-left .colLeft-container .widget-body .cat-list li a span {
+              float: right; }
+      #containerOverlow #desktopColRight #main .mpage-container .singleCategory .singleCatego-container .row-2 .col-left .colLeft-container .widget-body .config-size-list {
+        display: flex; }
+        #containerOverlow #desktopColRight #main .mpage-container .singleCategory .singleCatego-container .row-2 .col-left .colLeft-container .widget-body .config-size-list label {
+          display: flex;
+          align-items: center; }
+      #containerOverlow #desktopColRight #main .mpage-container .singleCategory .singleCatego-container .row-2 .col-left .colLeft-container .widget-body .listProductSB .owl-dots {
+        display: none; }
+      #containerOverlow #desktopColRight #main .mpage-container .singleCategory .singleCatego-container .row-2 .col-left .colLeft-container .widget-body .listProductSB .item {
+        font-family: "Open Sans", sans-serif; }
+        #containerOverlow #desktopColRight #main .mpage-container .singleCategory .singleCatego-container .row-2 .col-left .colLeft-container .widget-body .listProductSB .item .product {
+          margin-bottom: 1.2rem;
+          width: 100%;
+          clear: both; }
+          #containerOverlow #desktopColRight #main .mpage-container .singleCategory .singleCatego-container .row-2 .col-left .colLeft-container .widget-body .listProductSB .item .product .product-image-container {
+            float: left;
+            max-width: 70px;
+            margin-bottom: .5rem;
+            position: relative;
+            display: block;
+            background-color: #fafafa;
+            overflow: hidden;
+            margin: 0 0 1rem; }
+          #containerOverlow #desktopColRight #main .mpage-container .singleCategory .singleCatego-container .row-2 .col-left .colLeft-container .widget-body .listProductSB .item .product a {
+            color: #0e0e0e;
+            text-decoration: none;
+            transition: all .3s; }
+          #containerOverlow #desktopColRight #main .mpage-container .singleCategory .singleCatego-container .row-2 .col-left .colLeft-container .widget-body .listProductSB .item .product .product-details {
+            margin-left: 90px;
+            text-align: left;
+            padding: 0; }
+            #containerOverlow #desktopColRight #main .mpage-container .singleCategory .singleCatego-container .row-2 .col-left .colLeft-container .widget-body .listProductSB .item .product .product-details .product-title {
+              font-size: .8rem;
+              margin-bottom: .3rem;
+              margin-top: .1rem; }
+              #containerOverlow #desktopColRight #main .mpage-container .singleCategory .singleCatego-container .row-2 .col-left .colLeft-container .widget-body .listProductSB .item .product .product-details .product-title a {
+                color: #4a5157;
+                line-height: 1.25;
+                font-weight: 400; }
+            #containerOverlow #desktopColRight #main .mpage-container .singleCategory .singleCatego-container .row-2 .col-left .colLeft-container .widget-body .listProductSB .item .product .product-details .ratings-container {
+              font-size: .6rem;
+              color: #c3c5c9; }
+              #containerOverlow #desktopColRight #main .mpage-container .singleCategory .singleCatego-container .row-2 .col-left .colLeft-container .widget-body .listProductSB .item .product .product-details .ratings-container .rating-ac {
+                color: #4a5157; }
+            #containerOverlow #desktopColRight #main .mpage-container .singleCategory .singleCatego-container .row-2 .col-left .colLeft-container .widget-body .listProductSB .item .product .product-details .price-box {
+              margin-top: 10px;
+              font-family: "Oswald", sans-serif;
+              line-height: 1;
+              font-weight: 400;
+              color: #252525; }
+              #containerOverlow #desktopColRight #main .mpage-container .singleCategory .singleCatego-container .row-2 .col-left .colLeft-container .widget-body .listProductSB .item .product .product-details .price-box .old-price {
+                color: #6e6e6e;
+                text-decoration: line-through; }
+    #containerOverlow #desktopColRight #main .mpage-container .singleCategory .singleCatego-container .row-2 .col-left .colLeft-container .widget-scrolRig {
+      margin-top: 20px; }
+      #containerOverlow #desktopColRight #main .mpage-container .singleCategory .singleCatego-container .row-2 .col-left .colLeft-container .widget-scrolRig .ui-widget.ui-widget-content {
+        height: 4px;
+        border-radius: 0;
+        border: none;
+        background: #EFEFEF; }
+      #containerOverlow #desktopColRight #main .mpage-container .singleCategory .singleCatego-container .row-2 .col-left .colLeft-container .widget-scrolRig .ui-slider .ui-slider-handle {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        top: -5px;
+        background: #0e0e0e; }
+      #containerOverlow #desktopColRight #main .mpage-container .singleCategory .singleCatego-container .row-2 .col-left .colLeft-container .widget-scrolRig .ui-slider-horizontal .ui-slider-range {
+        background: #0e0e0e; }
+      #containerOverlow #desktopColRight #main .mpage-container .singleCategory .singleCatego-container .row-2 .col-left .colLeft-container .widget-scrolRig .row-showPrice {
+        margin-top: 20px; }
+        #containerOverlow #desktopColRight #main .mpage-container .singleCategory .singleCatego-container .row-2 .col-left .colLeft-container .widget-scrolRig .row-showPrice .btn {
+          font-size: .8rem;
+          padding: .1rem .5rem;
+          letter-spacing: .08em;
+          cursor: pointer;
+          color: #fff;
+          background-color: #0e0e0e;
+          border-color: #0e0e0e;
+          box-shadow: none;
+          line-height: 1.5;
+          font-family: "Oswald", sans-serif;
+          text-transform: uppercase;
+          border-radius: 2px;
+          transition: all .3s; }
+        #containerOverlow #desktopColRight #main .mpage-container .singleCategory .singleCatego-container .row-2 .col-left .colLeft-container .widget-scrolRig .row-showPrice input {
+          text-align: center;
+          border: none;
+          outline: none;
+          color: #777; }
     #containerOverlow #desktopColRight #footer {
       color: #90969a;
       background-color: #1d1d1d;
@@ -3704,6 +4075,21 @@ input, select {
       max-width: 100%;
       box-sizing: border-box;
       padding-left: 0; }
+  #containerOverlow #desktopColRight #main .mpage-container .singleCategory .singleCatego-container .row-2 .col-right {
+    position: relative;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding-right: 0; }
+  #containerOverlow #desktopColRight #main .mpage-container .singleCategory .singleCatego-container .row-2 .col-left {
+    position: relative;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding-left: 0;
+    margin-top: 25px; }
   #containerOverlow #desktopColRight #footer .ft-container {
     max-width: 90%;
     margin: 0 auto;
@@ -3756,20 +4142,20 @@ input, select {
         flex: 0 0 50%;
         max-width: 50%;
         box-sizing: border-box; }
-        #containerOverlow #desktopColRight #header .hd-container .hd-middle .hdmd-container .col-right .header-search .header-search-wrapper form .form-control {
+        #containerOverlow #desktopColRight #header .hd-container .hd-middle .hdmd-container .col-right .header-search .header-search-wrapper div .form-control {
           display: none;
           position: absolute;
           right: 0;
           top: 15px;
           width: 200px; }
-        #containerOverlow #desktopColRight #header .hd-container .hd-middle .hdmd-container .col-right .header-search .header-search-wrapper form .form-control-active {
+        #containerOverlow #desktopColRight #header .hd-container .hd-middle .hdmd-container .col-right .header-search .header-search-wrapper div .form-control-active {
           display: block; }
-        #containerOverlow #desktopColRight #header .hd-container .hd-middle .hdmd-container .col-right .header-search .header-search-wrapper form .btn-tabbar {
+        #containerOverlow #desktopColRight #header .hd-container .hd-middle .hdmd-container .col-right .header-search .header-search-wrapper div .btn-tabbar {
           display: block;
           font-size: 1rem;
           padding: 0 10px;
           right: 2.5rem; }
-        #containerOverlow #desktopColRight #header .hd-container .hd-middle .hdmd-container .col-right .header-search .header-search-wrapper form .btn-search {
+        #containerOverlow #desktopColRight #header .hd-container .hd-middle .hdmd-container .col-right .header-search .header-search-wrapper div .btn-search {
           font-size: 1rem;
           padding: 0 10px;
           right: 0; }
@@ -3882,10 +4268,11 @@ input, select {
     #containerOverlow #desktopColRight #main .mpage-container .cart .car-container .row-2 .col-left form .cart-table-container {
       overflow: hidden;
       overflow-x: scroll; }
-      #containerOverlow #desktopColRight #main .mpage-container .cart .car-container .row-2 .col-left form .cart-table-container .table {
-        width: 1000px;
-        margin: 0 auto;
-        box-sizing: border-box; }
+      #containerOverlow #desktopColRight #main .mpage-container .cart .car-container .row-2 .col-left form .cart-table-container .table.table-cart tr .tong-phu {
+        padding-left: 10px; }
+      #containerOverlow #desktopColRight #main .mpage-container .cart .car-container .row-2 .col-left form .cart-table-container .table.table-cart tr td .input-group button {
+        right: -5px;
+        font-size: 12px; }
   #containerOverlow #desktopColRight #main .mpage-container .compare .compar-container {
     max-width: 90%;
     margin: 0 auto;
@@ -3899,6 +4286,30 @@ input, select {
     padding-bottom: 30px; }
     #containerOverlow #desktopColRight #main .mpage-container .product .produc-container .row-2 .col-right .list-pro .col .product .product-image-container .product-image img {
       width: 100%; }
+  #containerOverlow #desktopColRight #main .mpage-container .singleCategory .singleCatego-container .row-2 .col-right .boxSlideImg {
+    position: relative;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding-right: 0; }
+  #containerOverlow #desktopColRight #main .mpage-container .singleCategory .singleCatego-container .row-2 .col-right .boxContentDetail {
+    position: relative;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding-left: 0;
+    margin-top: 35px;
+    margin-bottom: 25px; }
+  #containerOverlow #desktopColRight #main .mpage-container .singleCategory .singleCatego-container .row-2 .col-left {
+    position: relative;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding-left: 0;
+    margin-top: 25px; }
   #containerOverlow #desktopColRight #footer .ft-container {
     max-width: 95%;
     margin: 0 auto;
@@ -3966,6 +4377,37 @@ input, select {
       overflow-x: scroll; }
       #containerOverlow #desktopColRight #main .mpage-container .compare .compar-container .row-2 .compare-info {
         width: 1000px; }
+  #containerOverlow #desktopColRight #main .mpage-container .cart .car-container .row-2 .col-left form .cart-table-container .table.table-cart thead {
+    display: none; }
+  #containerOverlow #desktopColRight #main .mpage-container .cart .car-container .row-2 .col-left form .cart-table-container .table.table-cart tbody .product-row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    box-sizing: border-box; }
+    #containerOverlow #desktopColRight #main .mpage-container .cart .car-container .row-2 .col-left form .cart-table-container .table.table-cart tbody .product-row .product-col {
+      position: relative;
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+      max-width: 100%;
+      box-sizing: border-box; }
+    #containerOverlow #desktopColRight #main .mpage-container .cart .car-container .row-2 .col-left form .cart-table-container .table.table-cart tbody .product-row td {
+      position: relative;
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+      max-width: 100%;
+      box-sizing: border-box;
+      text-align: center;
+      border-top: none;
+      margin-bottom: 15px; }
+      #containerOverlow #desktopColRight #main .mpage-container .cart .car-container .row-2 .col-left form .cart-table-container .table.table-cart tbody .product-row td .input-group {
+        width: 15%;
+        margin: 0 auto;
+        box-sizing: border-box; }
+  #containerOverlow #desktopColRight #main .mpage-container .cart .car-container .row-2 .col-left form .cart-table-container .table.table-cart tfoot td .float-left {
+    display: none; }
+  #containerOverlow #desktopColRight #main .mpage-container .cart .car-container .row-2 .col-left form .cart-table-container .table.table-cart tfoot td .float-right {
+    float: unset !important; }
   #containerOverlow #desktopColRight #footer .ft-container .footer-top .fttop-container .col-left {
     position: relative;
     -ms-flex: 0 0 100%;
@@ -4012,6 +4454,26 @@ input, select {
       padding-left: 0;
       padding-right: 0; } }
 @media screen and (max-width: 599px) {
+  #containerOverlow #mobileColLeft {
+    max-width: 50%;
+    width: 50%;
+    left: -50%; }
+    #containerOverlow #mobileColLeft .mobColLeft-container .row-2 .nav-mobile .mobile-list li a {
+      font-size: .7rem; }
+  #containerOverlow #desktopColRight #main .bannerBig .bng-container .bigBannerHome .item .box-item .box-right {
+    right: 0; }
+  #containerOverlow #desktopColRight #main .bannerBig .bng-container .bigBannerHome .item .box-item .box-left {
+    left: 0; }
+  #containerOverlow #desktopColRight #main .bannerBig .bng-container .bigBannerHome .item .box-item .box-content {
+    top: 70%;
+    padding: 1.2rem 1.2rem 1.6rem; }
+    #containerOverlow #desktopColRight #main .bannerBig .bng-container .bigBannerHome .item .box-item .box-content h3 {
+      font-size: 11px; }
+    #containerOverlow #desktopColRight #main .bannerBig .bng-container .bigBannerHome .item .box-item .box-content h1 {
+      font-size: 25px;
+      margin-bottom: 2rem; }
+  #containerOverlow #desktopColRight #main .bannerBig .bng-container .bigBannerHome .item .box-item .box-img img {
+    min-height: 400px; }
   #containerOverlow #desktopColRight #main .mpage-container .about .ab-container2 .row-container .row-content .col {
     position: relative;
     -ms-flex: 0 0 100%;
@@ -4051,6 +4513,37 @@ input, select {
     flex: 0 0 100%;
     max-width: 100%;
     box-sizing: border-box; }
+  #containerOverlow #desktopColRight #main .mpage-container .cart .car-container .row-2 .col-left form .cart-table-container .table.table-cart tbody .product-row .product-col {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    padding-right: 0; }
+    #containerOverlow #desktopColRight #main .mpage-container .cart .car-container .row-2 .col-left form .cart-table-container .table.table-cart tbody .product-row .product-col .product-image-container {
+      position: relative;
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+      max-width: 100%;
+      box-sizing: border-box;
+      margin-right: 0; }
+      #containerOverlow #desktopColRight #main .mpage-container .cart .car-container .row-2 .col-left form .cart-table-container .table.table-cart tbody .product-row .product-col .product-image-container a img {
+        width: 100%; }
+    #containerOverlow #desktopColRight #main .mpage-container .cart .car-container .row-2 .col-left form .cart-table-container .table.table-cart tbody .product-row .product-col .product-title {
+      position: relative;
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+      max-width: 100%;
+      box-sizing: border-box;
+      text-align: center; }
+  #containerOverlow #desktopColRight #main .mpage-container .cart .car-container .row-2 .col-left form .cart-table-container .table.table-cart tbody .product-row td .input-group {
+    width: 20%;
+    margin: 0 auto;
+    box-sizing: border-box; }
+    #containerOverlow #desktopColRight #main .mpage-container .cart .car-container .row-2 .col-left form .cart-table-container .table.table-cart tbody .product-row td .input-group button {
+      right: -10px; }
+  #containerOverlow #desktopColRight #main .mpage-container .cart .car-container .row-2 .col-left form .cart-table-container .table.table-cart tfoot .btn {
+    padding-left: 0; }
   #containerOverlow #desktopColRight #footer .ft-container .footer-body .ftbody-container .col-left {
     position: relative;
     -ms-flex: 0 0 100%;
@@ -4089,5 +4582,8 @@ input, select {
       box-sizing: border-box; }
       #containerOverlow #desktopColRight #footer .ft-container .footer-body .ftbody-container .col-right .row-2 .col-right img {
         width: 100%; } }
+@media screen and (max-width: 424px) {
+  #containerOverlow #desktopColRight #main .bannerBig .bng-container .bigBannerHome .item .box-item .box-img img {
+    min-height: 350px; } }
 
 /*# sourceMappingURL=style.css.map */

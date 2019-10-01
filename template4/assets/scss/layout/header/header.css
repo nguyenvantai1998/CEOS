@@ -389,11 +389,11 @@
             position: relative;
             width: 100%;
             background-color: #fff; }
-            .hd-container .hd-middle .hdmd-container .col-right .header-search .header-search-wrapper form {
+            .hd-container .hd-middle .hdmd-container .col-right .header-search .header-search-wrapper div {
               width: 220px;
               position: relative;
               margin: 0; }
-              .hd-container .hd-middle .hdmd-container .col-right .header-search .header-search-wrapper form .form-control {
+              .hd-container .hd-middle .hdmd-container .col-right .header-search .header-search-wrapper div .form-control {
                 width: 100%;
                 border-radius: 0;
                 height: 30px;
@@ -408,7 +408,7 @@
                 box-shadow: none;
                 border: 0;
                 text-transform: uppercase; }
-              .hd-container .hd-middle .hdmd-container .col-right .header-search .header-search-wrapper form .btn {
+              .hd-container .hd-middle .hdmd-container .col-right .header-search .header-search-wrapper div .btn {
                 position: absolute;
                 right: .6rem;
                 top: 50%;
@@ -426,7 +426,7 @@
                 border-radius: 0;
                 -webkit-transform: translateY(-50%);
                 transform: translateY(-50%); }
-              .hd-container .hd-middle .hdmd-container .col-right .header-search .header-search-wrapper form .btn-tabbar {
+              .hd-container .hd-middle .hdmd-container .col-right .header-search .header-search-wrapper div .btn-tabbar {
                 display: none; }
   .hd-container .hd-bottom {
     max-width: 100%;
